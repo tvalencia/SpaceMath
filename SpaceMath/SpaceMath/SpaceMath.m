@@ -142,8 +142,13 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 							SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]],
 							Evaluator -> Automatic, Method -> "Preemptive"], "Text"],
 	Style[" If you use SpaceMath in your research, please cite","Text"]];
-	Print [Style[" \[Bullet] Yo merengues","Text"]];
-	Print [Style[" \[Bullet] Los colados","Text"]]
+	Print [Style["\[Bullet] SpaceMath Version 1.0","Text"]];
+	Print [Style["\[Bullet] Authors:  ","Text"]];
+	Print [Style["M. A. Arroyo-Ure\[NTilde]a","Text"]];
+	Print [Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico","Text"]];
+	Print [Style["E. A. Herrera-Chac\[OAcute]n","Text"]];
+	Print [Style["T. A. Valencia-P\[EAcute]rez","Text"]];
+	Print [Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla","Text"]];
 	];
 
 
