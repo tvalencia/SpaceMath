@@ -4,7 +4,7 @@ Run the following instructions in a Notebook of Mathematica
 
 Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/master/SpaceMath/Install.m"]
 
-InstallNumericalAnalysis[]
+InstallSpaceMath[]
 
 Manual installation
 
