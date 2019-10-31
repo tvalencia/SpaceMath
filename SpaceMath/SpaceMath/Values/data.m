@@ -46,6 +46,28 @@ EpsZINF::usage="See later."
 EpsWSUP::usage="See later."
 EpsWINF::usage="See later."
 
+(*Signal Strengths*)
+(*Reference: ARXIV:1809.10733*)
+(*central values for gluon production*)
+Rbb::usage="See later."
+Rtautau::usage="See later."
+Rww::usage="See later."
+Rzz::usage="See later."
+Rgammagamma::usage="See later."
+
+(*Signal Strengths to 2\[Sigma]*)
+(*Reference: ARXIV:1809.10733*)
+RbbSUP2sig::usage="See later."
+RbbINF2sig::usage="See later."
+RtautauSUP2sig::usage="See later."
+RtautauINF2sig::usage="See later."
+RwwSUP2sig::usage="See later."
+RwwINF2sig::usage="See later."
+RzzSUP2sig::usage="See later."
+RzzINF2sig::usage="See later."
+RgammagammaINF2sig::usage="See later."
+RgammagammaSUP2sig::usage="See later."
+
 (* ------------------------------------------------------------------------ *)
 
 Begin["`Package`"]
@@ -93,5 +115,28 @@ EpsZSUP=0+0.1;
 EpsZINF=0-0.1;
 EpsWSUP=-0.2+0.13;
 EpsWINF=-0.2-0.13;
+
+(*Signal Strengths*)
+(*Reference: ARXIV:1809.10733*)
+(*central values for gluon production*)
+Rbb = 1.02;
+Rtautau = 1.11;
+Rww = 1.08;
+Rzz = 1.19;
+Rgammagamma = 1.10;
+
+(*Signal Strengths to 2\[Sigma]*)
+(*Reference: ARXIV:1809.10733*)
+RbbSUP2sig=1.32;
+RbbINF2sig=0.72;
+RtautauSUP2sig=1.45;
+RtautauINF2sig=0.77;
+RwwSUP2sig=1.4202;
+RwwINF2sig=0.739804;
+RzzSUP2sig=1.42007;
+RzzINF2sig=0.959928;
+RgammagammaINF2sig=0.909912;
+RgammagammaSUP2sig=1.29009;
+
 
 End[]
