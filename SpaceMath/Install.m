@@ -33,12 +33,12 @@ Otherwise it will install the latest stable version.";
 InstallSpaceMathTo::usage="InstallSpaceMathTo is an option of InstallSpaceMath. It specifies, the full path \
 to the directory where SpaceMath will be installed.";
 
-$PathToFCArc::usage="$PathToFCArc specifies where the installer should look for the zipped SpaceMath version. \
+$PathToSPArc::usage="$PathToSPArc specifies where the installer should look for the zipped SpaceMath version. \
 If the value is not empty, the installer will use the specified file instead of downloading it from the official \
 website."
 
-If[ !ValueQ[$PathToFCArc],
-	$PathToFCArc = ""
+If[ !ValueQ[$PathToSPArc],
+	$PathToSPArc = ""
 ];
 
 If[  $VersionNumber == 8,
@@ -129,8 +129,8 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 	];
 
 	(* Download SpaceMath tarball	*)
-	If[ $PathToFCArc=!="",
-		tmpzip = $PathToFCArc;
+	If[ $PathToSPArc=!="",
+		tmpzip = $PathToSPArc;
 		WriteString["stdout", "Installing SpaceMath from ", tmpzip," ..."],
 		WriteString["stdout", "Downloading SpaceMath from ", gitzip," ..."];
 		tmpzip=FCGetUrl[gitzip];
@@ -153,7 +153,7 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 		Abort[],
 		WriteString["stdout", "done! \n"];
 		(* Delete the downloaded file	*)
-		If[ $PathToFCArc==="",
+		If[ $PathToSPArc==="",
 			Quiet@DeleteFile[tmpzip];
 		]
 	];
