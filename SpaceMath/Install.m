@@ -7,7 +7,7 @@ InstallSpaceMath::failed =
 
 InstallSpaceMathQuiet::usage="InstallSpaceMathQuiet is the silent mode of installing SpaceMath, where the \
 installer does not ask you any questions but silently overwrites any existing SpaceMath installation and \
-modifies Mathematica's options accordingly. FeynArts is not installed. The main purpose of this mode is \
+modifies Mathematica's options accordingly. The main purpose of this mode is \
 to facilitate the installation of SpaceMath on Mathematica Online.";
 
 AutoOverwriteSpaceMathDirectory::usage="AutoOverwriteSpaceMathDirectory is an option of InstallSpaceMath. If \
