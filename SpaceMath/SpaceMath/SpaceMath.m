@@ -62,12 +62,12 @@ expansion of f about the point x == x0 through (x-x0)^n."
 
 (* Implementation of the package *)
 
-MakeFeynCalcPrivateContext::usage =
-"MakeFeynCalcPrivateContext[val] constructs
-FeynCalc`Private`val.";
+MakeSpaceMathPrivateContext::usage =
+"MakeSpaceMathPrivateContext[val] constructs
+SpaceMath`Private`val.";
 
-FCDeclareHeader::usage =
-"FCDeclareHeader is an internal SpeedPackage function to declare
+SMDeclareHeader::usage =
+"SMDeclareHeader is an internal SpeedPackage function to declare
 objects inside an .m file in the same manner as it is done in
 the JLink package. It may be used by SpeedPackage addons."
 
@@ -75,7 +75,7 @@ Begin["`Private`"]
 
 (* New features*)
 
-FCDeclareHeader[file_] :=
+SMDeclareHeader[file_] :=
 	Module[ {strm, einput, moreLines = True},
 		strm = OpenRead[file];
 		If[ Head[strm] =!= InputStream,
@@ -92,8 +92,8 @@ FCDeclareHeader[file_] :=
 		Close[file]
 	];
 
-MakeFeynCalcPrivateContext[x_String] :=
-	MakeFeynCalcPrivateContext[x] =	ToExpression["SpaceMath`Private`"<>x];
+MakeSpaceMathPrivateContext[x_String] :=
+	MakeSpaceMathPrivateContext[x] =	ToExpression["SpaceMath`Private`"<>x];
 
 End[];
 
@@ -110,10 +110,10 @@ listValues = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"Values"}]];
 
 AppendTo[$ContextPath, "SpaceMath`Package`"];
 
-FCDeclareHeader/@listHiggsData;
-FCDeclareHeader/@listLFVprocesses;
-FCDeclareHeader/@listObliquePar;
-FCDeclareHeader/@listValues;
+SMDeclareHeader/@listHiggsData;
+SMDeclareHeader/@listLFVprocesses;
+SMDeclareHeader/@listObliquePar;
+SMDeclareHeader/@listValues;
 (*
 Get/@boostrappingList
 *)
@@ -146,7 +146,6 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 	Print [Style["\[Bullet] Authors:  ","Text"]];
 	Print [Style["M. A. Arroyo-Ure\[NTilde]a","Text"]];
 	Print [Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico","Text"]];
-	Print [Style["E. A. Herrera-Chac\[OAcute]n","Text"]];
 	Print [Style["T. A. Valencia-P\[EAcute]rez","Text"]];
 	Print [Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla","Text"]];
 	];
@@ -154,7 +153,7 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 
 BeginPackage["SpaceMath`"];
 If[ Global`$LoadAddOns=!={},
-	FCDeclareHeader/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns];
+	SMDeclareHeader/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns];
 	Get/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns]
 ];
 EndPackage[];
