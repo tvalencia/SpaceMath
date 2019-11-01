@@ -93,11 +93,6 @@ MakeSpaceMathPrivateContext[x_String] :=
 
 End[];
 
-(*
-boostrappingList = Join[
-	Map[ToFileName[{$SpaceMathDirectory,"Utilities"},#]&, {"Utilities.m"}]
-];
-*)
 
 listHiggsData = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"HiggsData"}]];
 listLFVprocesses = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"LFVprocesses"}]];
@@ -110,9 +105,7 @@ SMDeclareHeader/@listHiggsData;
 SMDeclareHeader/@listLFVprocesses;
 SMDeclareHeader/@listObliquePar;
 SMDeclareHeader/@listValues;
-(*
-Get/@boostrappingList
-*)
+
 Get/@listHiggsData;
 Get/@listLFVprocesses;
 Get/@listObliquePar;
