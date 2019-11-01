@@ -831,9 +831,7 @@ PlotStyle -> {{Orange, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP];
 RGam1sigWXYZ[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-Rgam1sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
-],
- {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+Rgam1sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP], {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
 RGam[
