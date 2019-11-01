@@ -45,16 +45,16 @@ If[ Global`$SpaceMathStartupMessages=!=False,
 
 BeginPackage["SpaceMath`"]
 
-HiggsData::usage = "NumLimit[expr, x->x0] numerically finds the limiting \
-value of expr as x approaches x0."
+HiggsData::usage = "The implementation of the Higgs boson data within the SpaceMath code, \
+was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
 LFVprocesses::usage =
-"NumD[expr, x, x0] gives a numerical approximation to the derivative of expr \
-with respect to x at the point x0."
+"The implementation of the Higgs boson data within the SpaceMath code, \
+was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
 ObliquePar::usage =
-"NumSeries[f, {x, x0, n}] gives a numerical approximation to the series \
-expansion of f about the point x == x0 through (x-x0)^n."
+"The implementation of the Higgs boson data within the SpaceMath code, \
+was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
 (* Implementation of the package *)
 
