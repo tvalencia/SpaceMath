@@ -2,10 +2,6 @@
 
 (* Created by the Wolfram Workbench OCT/2019 *)
 
-(*
-  This package is a modified copy of the NumericalCalculus package, 
-  that is provided to help with documentation generation.
-*)
 
 If[ MemberQ[$Packages,"SpaceMath`"],
 	Print["SpaceMath is already loaded! To reload it, please restart the kernel."];
@@ -67,9 +63,9 @@ MakeSpaceMathPrivateContext::usage =
 SpaceMath`Private`val.";
 
 SMDeclareHeader::usage =
-"SMDeclareHeader is an internal SpeedPackage function to declare
+"SMDeclareHeader is an internal SpaceMath function to declare
 objects inside an .m file in the same manner as it is done in
-the JLink package. It may be used by SpeedPackage addons."
+the JLink package. It may be used by SpaceMath addons."
 
 Begin["`Private`"]
 
