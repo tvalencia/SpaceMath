@@ -336,9 +336,6 @@ RGam2sigX::usage ="See later"
 dataRGAMone1sig::usage ="See later"
 dataRGAMone2sig::usage ="See later"
 
-(*EXPORTING TABLES FOR RGAMone*)
-TableRGAMone::usage ="See later"
-
 (*R gamma to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
 (*\[Mu]\[Gamma]\[Gamma]*)
 Rgam2sig::usage ="See later"
@@ -366,7 +363,6 @@ dataRBOTone1sig::usage ="See later"
 dataRBOTone2sig::usage ="See later"
 
 (*EXPORTING TABLES FOR RBOTone*)
-TableRBOTone::usage ="See later"
 Rb::usage ="See later"
 
 (* Individual process *)
