@@ -12,4 +12,4 @@ Download (https://github.com/spacemathproject/SpaceMath/archive/master.zip)
 
 Unzip the folder inside $UserBaseDirectory/Applications
 
-This should install SpaceMathApp on your system.
+This should install SpaceMath on your system.
