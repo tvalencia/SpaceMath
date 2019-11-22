@@ -150,23 +150,6 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 		Quiet@DeleteDirectory[unzipDir, DeleteContents -> True];
 	];
 
-	(* Activate the documentation	*)
-	(*
-	WriteString["stdout", "Setting up the help system ... "];
-	RenameDirectory[FileNameJoin[{packageDir,"DocOutput"}],FileNameJoin[{packageDir,"Documentation"}]];
-	Quiet@DeleteDirectory[FileNameJoin[{packageDir,"DocSource"}], DeleteContents -> True];
-
-	If[ OptionValue[AutoDisableInsufficientVersionWarning],
-
-		SetOptions[$FrontEnd, MessageOptions -> {"InsufficientVersionWarning" -> False}],
-
-		Null,
-		If[ ChoiceDialog[strDisableWarning, WindowFloating->True, WindowTitle->"Documentation system"],
-			SetOptions[$FrontEnd, MessageOptions -> {"InsufficientVersionWarning" -> False}]
-		]
-	];
-*)
-
 	WriteString["stdout", "done! \n"];
 
 	(* To have the documentation available immediately after installing SpaceMath (following the advice of Szabolcs Horv'at) *)
