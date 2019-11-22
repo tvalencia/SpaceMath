@@ -49,8 +49,8 @@ Needs["Utilities`URLTools`"];
 Options[InstallSpaceMath]={
 	AutoDisableInsufficientVersionWarning-> None,
 	AutoOverwriteSpaceMathDirectory-> None,
-	SpaceMathDevelopmentVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/master.zip",
-	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/master.zip",
+	SpaceMathDevelopmentVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developer.zip",
+	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developer.zip",
 	InstallSpaceMathDevelopmentVersion->False,
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
@@ -180,6 +180,7 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 	];
 
 	(* Activate the documentation	*)
+	(*
 	WriteString["stdout", "Setting up the help system ... "];
 	RenameDirectory[FileNameJoin[{packageDir,"DocOutput"}],FileNameJoin[{packageDir,"Documentation"}]];
 	Quiet@DeleteDirectory[FileNameJoin[{packageDir,"DocSource"}], DeleteContents -> True];
@@ -193,7 +194,7 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 			SetOptions[$FrontEnd, MessageOptions -> {"InsufficientVersionWarning" -> False}]
 		]
 	];
-
+*)
 
 	WriteString["stdout", "done! \n"];
 
