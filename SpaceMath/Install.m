@@ -37,7 +37,6 @@ If[ !ValueQ[$PathToSPArc],
 ];
 
 If[  $VersionNumber == 8,
-(*To use FetchURL in MMA8 we need to load URLTools first *)
 Needs["Utilities`URLTools`"];
 ];
 
