@@ -90,13 +90,13 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 		Message[InstallSpaceMath::notcomp];
 		Abort[]
 	];
-
+(*
 	If[$VersionNumber == 8,
 		(*To use FetchURL in MMA8 we need to load URLTools first *)
 		FCGetUrl[x_]:= Utilities`URLTools`FetchURL[x],
 		FCGetUrl[x_]:= URLSave[x,CreateTemporary[]]
 	];
-
+*)
 
 	(* If the package directory already exists, ask the user about overwriting *)
 	If[ DirectoryQ[packageDir],
