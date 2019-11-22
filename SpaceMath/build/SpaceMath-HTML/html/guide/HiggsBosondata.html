@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>Higgs Boson data&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{1.0, , , }" />
+<meta name="keywords" content="HiggsBosondata" />
+
+<meta name="description" content="The implementation of the Higgs boson data within the SpaceMath code , was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y. " />
+<script language="JavaScript" type="text/javascript">baselang='HiggsBosondata';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="/webMathematica/Resources/Documentation/English/css/reference.css" />
+
+<script src="/webMathematica/Resources/Documentation/English/javascript/reference.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/documentation-search.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/faster-page-load.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/hyperlink-filter.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/brokenlinks.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/clipboard.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/image-swap.js"></script>
+
+<!--#include virtual="/2013/includes/carousel-head.html"--> 
+</head>
+<body id="guide">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">SPACE MATH GUIDE</span></span>
+  </div>
+  
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1><a name="942062912"></a>Higgs Boson data</h1>
+ <p class="intro"><a name="2001916300"></a>The implementation of the Higgs boson data within the SpaceMath code , was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y.   </p>
+ <p class="intro">
+  <a name="1322507612"></a>
+  <span class="Subsection">Signal strength modifiers <span class="special-character Mu">&#956;</span></span>
+ </p>
+ <p class="singleFunction"><a name="1567743671"></a>For a production process <img style="vertical-align:middle;" title="mu_i" src="Files/HiggsBosondata/Image_1.png" width="13" height="21" alt="mu_i" /> and a decay <img style="vertical-align:middle;" title="mu_j" src="Files/HiggsBosondata/Image_2.png" width="15" height="21" alt="mu_j" /> , the signal strength is defined as<br /><img src="Files/HiggsBosondata/CellNone_4.png" height="36" width="88" alt="" style="vertical-align:middle;" /><strong> and </strong><img src="Files/HiggsBosondata/CellNone_6.png" height="36" width="95" alt="" style="vertical-align:middle;" />.<br />respectively, where <span class="special-character Sigma">&#963;</span>(i<span class="special-character Rule">&#62754;</span> h)  and BR(h<span class="special-character Rule">&#62754;</span>j) are the Higgs boson production cross section and the<br />branching ratio of the Higgs boson decaying into j-channel, here i=ggh, VBF, Wh,<br />Zh, tth and j =bb&#772;, <img style="vertical-align:middle;" title="SuperMinus[tau]tau^+" src="Files/HiggsBosondata/Image_7.png" width="115" height="21" alt="SuperMinus[tau]tau^+" /> , <img style="vertical-align:middle;" title="WW^*" src="Files/HiggsBosondata/Image_8.png" width="33" height="21" alt="WW^*" /> , <img style="vertical-align:middle;" title="ZZ^*" src="Files/HiggsBosondata/Image_9.png" width="24" height="21" alt="ZZ^*" /> , <span class="special-character Gamma">&#947;</span><span class="special-character Gamma">&#947;</span>, gg, <img style="vertical-align:middle;" title="mu^-mu^+" src="Files/HiggsBosondata/Image_10.png" width="37" height="21" alt="mu^-mu^+" /><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> In the special case when<br /><img style="vertical-align:middle;" title="mu_i" src="Files/HiggsBosondata/Image_11.png" width="13" height="21" alt="mu_i" /> <img style="vertical-align:middle;" title="=mu_j" src="Files/HiggsBosondata/Image_12.png" width="30" height="21" alt="=mu_j" /> =1, the SM is recovered. Because <span class="special-character Sigma">&#963;</span> and BR cannot be independently mea-<br />sured without additional assumptions and only the product <img style="vertical-align:middle;" title="mu_i" src="Files/HiggsBosondata/Image_13.png" width="13" height="21" alt="mu_i" /> <span class="special-character CenterDot">&#183;</span> <img style="vertical-align:middle;" title="mu_j" src="Files/HiggsBosondata/Image_14.png" width="15" height="21" alt="mu_j" /> can be extracted<br />experimentally, the signal strength <img style="vertical-align:middle;" title="mu_(ij)" src="Files/HiggsBosondata/Image_15.png" width="16" height="21" alt="mu_(ij)" /> can be denied as follows:<br /><img src="Files/HiggsBosondata/CellNone_17.png" height="36" width="156" alt="" style="vertical-align:middle;" />.<br />In this version of <em><strong>SpaceMath</strong></em> we only consider the Higgs boson production cross<br />section via gluon fusion and we use the narrow width approximation<br /><img src="Files/HiggsBosondata/CellNone_19.png" height="65" width="172" alt="" style="vertical-align:middle;" /></p>
+ <h3><a name="2082881751"></a><span class="Subsection">H</span><span class="Subsection">iggs boson coupling modifiers </span><span class="Subsection"><h2 class="Subsection"><span class="special-character Kappa">&#954;</span></h2></span></h3>
+ <div class="Text"><a name="1422965881"></a>The coupling modifiers <img style="vertical-align:middle;" title="kappa_i" src="Files/HiggsBosondata/Image_20.png" width="12" height="21" alt="kappa_i" />, are introduced to quantify the deviations of the SM - like<br />Higgs boson to other particles.The coupling modifiers <img style="vertical-align:middle;" title="kappa_i" src="Files/HiggsBosondata/Image_21.png" width="12" height="21" alt="kappa_i" />, for a production or a<br />decay mode, are defined as follows :<br /><img src="Files/HiggsBosondata/CellNone_23.png" height="36" width="96" alt="" style="vertical-align:middle;" /></div>
+ <div class="expandWrap"
+     id="Reference">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Reference</a><a class="collapse" title="hide" href="#">Reference</a></h2>
+   <div class="expanded">
+    <div class="GuideDelimiterTop"><!-- --></div>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+	
+</div>
+
+
+</body></html>

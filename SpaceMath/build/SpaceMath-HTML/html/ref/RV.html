@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>RV&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{1.0, , , }" />
+<meta name="keywords" content="RV" />
+
+<meta name="description" content="RV[ghtt_, ghbb_, ghVV_, x_, y_, xmin_, xmax_, ymin_, ymax_, xlabel_, ylabel_, xfor_, yfor_, xformin_, xformax_, xforstep_, yformin_, yformax_, yforstep_, PP_][[i]] This command evaluates RV with V=W, Z when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghVV are the h-top top, h-bottom bottom, h-VV couplings. Here, h represents to SM-like Higgs boson. Labels x and y indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the initial and final values defined by users. Argument xlabel (ylabel) is used for indicates the axis-X label (axis-Y label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the intervale from xformin (yformin) to xformax (yformax), respectively. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])" />
+<script language="JavaScript" type="text/javascript">baselang='RV';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="/webMathematica/Resources/Documentation/English/css/reference.css" />
+
+<script src="/webMathematica/Resources/Documentation/English/javascript/reference.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/documentation-search.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/faster-page-load.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/hyperlink-filter.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/brokenlinks.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/clipboard.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/image-swap.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="/2013/javascript/toggle-highlight.js"></script>
+</head>
+<body id="ref" class="function">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">SPACE MATH SYMBOL</span></span>
+  </div>
+  <ul class="dropdown">
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/SpaceMath/tutorial/SpaceMath.html#509267359"><span class="dropdownPad">SpaceMath PackageSpaceMath Overview</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/SpaceMath/guide/HiggsBosondata.html"><span class="dropdownPad">Higgs Boson data</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1>RV</h1>
+ <img src="Files/RV/1.png"
+     height="49"
+     width="8"
+     alt="" />
+ <div class="ObjectNameTranslation"></div>
+ <div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p>
+    <div>
+     <img src="Files/RV/I_2.png"
+         height="22"
+         width="17"
+         alt="Click for copyable input" />
+    </div>
+    <div id="i_1_out" class="IFL"></div>
+   </p>
+  </div>
+  <div class="functionIntro">
+   <p><span class="IF"><span class="specialcharacters">RV<span class="openbracket">[</span>ghtt_<span class="comma">,</span>ghbb_<span class="comma">,</span>ghVV_<span class="comma">,</span>x_<span class="comma">,</span>y_<span class="comma">,</span>xmin_<span class="comma">,</span>xmax_<span class="comma">,</span>ymin_<span class="comma">,</span>ymax_<span class="comma">,</span>xlabel_<span class="comma">,</span>ylabel_<span class="comma">,</span>xfor_<span class="comma">,</span>yfor_<span class="comma">,</span>xformin_<span class="comma">,</span>xformax_<span class="comma">,</span>xforstep_<span class="comma">,</span>yformin_<span class="comma">,</span>yformax_<span class="comma">,</span>yforstep_<span class="comma">,</span>PP_<span class="closebracket">]</span><span class="openbracket">[</span><span class="openbracket">[</span>i<span class="closebracket">]</span><span class="closebracket">]</span></span></span> <br />This command evaluates <table class="InCell">
+     <tr><td class="lab" /><td class="Input"><div>
+        <img src="Files/RV/I_2.png"
+            height="22"
+            width="17"
+            alt="Click for copyable input" />
+       </div><div id="i_1_out" class="IFL"></div></td></tr>
+    </table> with V=W, Z when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghVV are the h-top top, h-bottom bottom, h-VV couplings. Here, h represents to SM-like Higgs boson. Labels x and y indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the initial and final values defined by users. Argument xlabel (ylabel) is used for indicates the axis-X label (axis-Y label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the intervale from xformin (yformin) to xformax (yformax), respectively. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1<span class="special-character Sigma">&#963;</span> (2<span class="special-character Sigma">&#963;</span>)</p>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Tutorials">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Tutorials</a><a class="collapse" title="hide" href="#">Tutorials</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li><a name="341631938"></a><a class="package-symbol" href="../tutorial/SpaceMath.html#509267359">SpaceMath Package</a>
+<a class="package-symbol" href="../tutorial/SpaceMathOverview.html">SpaceMath Overview</a></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedGuides">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Guides</a><a class="collapse" title="hide" href="#">Related Guides</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="44376836"></a>
+      <a class="package-symbol" href="../guide/HiggsBosondata.html">Higgs Boson data</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedLinks">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Links</a><a class="collapse" title="hide" href="#">Related Links</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li><a name="1038487239"></a><a class="package-symbol" href="../ref/RBOTone.html">RBOTone</a>
+<a class="package-symbol" href="../ref/RGAMone.html">RGAMone</a>
+<a class="package-symbol" href="../ref/RTAUone.html">RTAUone</a>
+<a class="package-symbol" href="../ref/RVone.html">RVone</a>
+<a class="package-symbol" href="../ref/RXALL.html">RXALL</a></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+	
+</div>
+
+
+</body></html>
