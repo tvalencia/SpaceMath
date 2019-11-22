@@ -5,11 +5,6 @@ InstallSpaceMath::notcomp =
 InstallSpaceMath::failed =
 "Download of `1` failed. Installation aborted!";
 
-InstallSpaceMathQuiet::usage="InstallSpaceMathQuiet is the silent mode of installing SpaceMath, where the \
-installer does not ask you any questions but silently overwrites any existing SpaceMath installation and \
-modifies Mathematica's options accordingly. The main purpose of this mode is \
-to facilitate the installation of SpaceMath on Mathematica Online.";
-
 AutoOverwriteSpaceMathDirectory::usage="AutoOverwriteSpaceMathDirectory is an option of InstallSpaceMath. If \
 set to True, the existing SpaceMath directory will be deleted without any further notice. The default
 value None means that the user will be asked by a dialog. False means that the directory will be overwritten.";
@@ -55,20 +50,11 @@ Options[InstallSpaceMath]={
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
 
-Options[InstallSpaceMathQuiet]=
-	Options[InstallSpaceMath];
-
-InstallSpaceMathQuiet[]:=
-	InstallSpaceMath[
-		AutoDisableInsufficientVersionWarning-> True,
-		AutoOverwriteSpaceMathDirectory-> True
-	];
-
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
 				strDisableWarning,FCGetUrl, configFileProlog,
 				strOverwriteFCdit, zipDir, strEnableTraditionalForm,
-				useTraditionalForm, configFile},
+				useTraditionalForm},
 
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
