@@ -50,10 +50,18 @@ Options[InstallSpaceMath]={
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
 
+(*
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
 				strDisableWarning,FCGetUrl, configFileProlog,
 				strOverwriteFCdit, zipDir, strEnableTraditionalForm,
+				useTraditionalForm},
+*)
+				
+InstallSpaceMath[OptionsPattern[]]:=
+	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
+				FCGetUrl, configFileProlog,
+				strOverwriteFCdit, zipDir,
 				useTraditionalForm},
 
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
@@ -66,6 +74,7 @@ InstallSpaceMath[OptionsPattern[]]:=
 	packageName = "SpaceMath";
 	packageDir = OptionValue[InstallSpaceMathTo];
 
+(*
 strDisableWarning="To make the documentation work, we need to disable the warning that appears \
 when you open a notebook that was created with a newer Mathematica version. Otherwise this \
 warning will pop up every time you use the Documentation Center to read info on SpaceMath functions \
@@ -78,6 +87,7 @@ only if the format type of new output cells is set to TraditionalForm. The defau
 Do you want to allow SpaceMath to change the default output format to TraditionalForm whenever it is loaded? \
 This will only affect the current SpaceMath front end session and will not influence any subsequent Mathematica \
 sessions, i.e. the changes are not persistent.";
+*)
 
 strOverwriteFCdit="Looks like SpaceMath is already installed. Do you want to replace the content \
 of " <> packageDir <> " with the downloaded version of SpaceMath? If you are using any custom configuration \
