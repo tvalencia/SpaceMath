@@ -49,19 +49,11 @@ Options[InstallSpaceMath]={
 	InstallSpaceMathDevelopmentVersion->False,
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
-
-(*
+	
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
-				strDisableWarning,FCGetUrl, configFileProlog,
-				strOverwriteFCdit, zipDir, strEnableTraditionalForm,
-				useTraditionalForm},
-*)
-				
-InstallSpaceMath[OptionsPattern[]]:=
-	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
-				FCGetUrl, configFileProlog,
-				strOverwriteFCdit, zipDir,
+				SMgetUrl, configFileProlog,
+				OverwriteSM, zipDir,
 				useTraditionalForm},
 
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
@@ -74,22 +66,7 @@ InstallSpaceMath[OptionsPattern[]]:=
 	packageName = "SpaceMath";
 	packageDir = OptionValue[InstallSpaceMathTo];
 
-(*
-strDisableWarning="To make the documentation work, we need to disable the warning that appears \
-when you open a notebook that was created with a newer Mathematica version. Otherwise this \
-warning will pop up every time you use the Documentation Center to read info on SpaceMath functions \
-in Mathematica 8 and 9. This setting is harmless and can be always undone via \
-\"SetOptions[$FrontEnd, MessageOptions -> {\"InsufficientVersionWarning\" -> True}]\". Should we do this now?";
-
-strEnableTraditionalForm="SpaceMath makes an extensive use of Mathematica's typesetting capabilities to \
-format the output in a nice and easily readable manner. However, the built-in typesetting is available \
-only if the format type of new output cells is set to TraditionalForm. The default value is StandardForm. \
-Do you want to allow SpaceMath to change the default output format to TraditionalForm whenever it is loaded? \
-This will only affect the current SpaceMath front end session and will not influence any subsequent Mathematica \
-sessions, i.e. the changes are not persistent.";
-*)
-
-strOverwriteFCdit="Looks like SpaceMath is already installed. Do you want to replace the content \
+OverwriteSM="Looks like SpaceMath is already installed. Do you want to replace the content \
 of " <> packageDir <> " with the downloaded version of SpaceMath? If you are using any custom configuration \
 files or add-ons that are located in that directory, please backup them in advance.";
 
@@ -102,9 +79,8 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 	];
 
 	If[$VersionNumber == 8,
-		(*To use FetchURL in MMA8 we need to load URLTools first *)
-		FCGetUrl[x_]:= Utilities`URLTools`FetchURL[x],
-		FCGetUrl[x_]:= URLSave[x,CreateTemporary[]]
+		SMgetUrl[x_]:= Utilities`URLTools`FetchURL[x],
+		SMgetUrl[x_]:= URLSave[x,CreateTemporary[]]
 	];
 
 
@@ -116,7 +92,7 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 			Quiet@DeleteDirectory[packageDir, DeleteContents -> True],
 
 			Null,
-			If[ ChoiceDialog[strOverwriteFCdit,{"Yes, overwrite the " <> packageName <>" directory"->True,
+			If[ ChoiceDialog[OverwriteSM,{"Yes, overwrite the " <> packageName <>" directory"->True,
 				"No, I need to do a backup first. Abort installation."->False}, WindowFloating->True, WindowTitle->"Existing SpaceMath Installation detected"],
 				Quiet@DeleteDirectory[packageDir, DeleteContents -> True],
 				Abort[]
@@ -129,7 +105,7 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 		tmpzip = $PathToSPArc;
 		WriteString["stdout", "Installing SpaceMath from ", tmpzip," ..."],
 		WriteString["stdout", "Downloading SpaceMath from ", gitzip," ..."];
-		tmpzip=FCGetUrl[gitzip];
+		tmpzip=SMgetUrl[gitzip];
 	];
 
 	If[tmpzip===$Failed,
