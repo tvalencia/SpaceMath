@@ -10,25 +10,25 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9879,        256]
-NotebookOptionsPosition[      6309,        174]
-NotebookOutlinePosition[      8722,        234]
-CellTagsIndexPosition[      8679,        231]
+NotebookDataLength[      9470,        268]
+NotebookOptionsPosition[      5658,        182]
+NotebookOutlinePosition[      8098,        242]
+CellTagsIndexPosition[      8055,        239]
 WindowTitle->Installation
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[GridBox[{
-   {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "5931f53f-2a1a-4808-aac8-864d82aebbfa"], Cell[TextData[Cell[BoxData[
+   {Cell["SPACE MATH TUTORIAL", "PacletNameCell"], Cell[TextData[Cell[BoxData[
+    
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"241df597-1128-4fc3-b9d2-efcc9d3c7b93"],
+        }]],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -60,44 +60,43 @@ Installation.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$14281], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$15320], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/Installation", ".html"]], None}]}]},
       Appearance->None,
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
-     LineSpacing->{1.4, 0},ExpressionUUID->
-     "0d3fa96e-329f-4d27-b8b1-8da88da5eaa4"]], "AnchorBar",ExpressionUUID->
-     "9cbdadd8-b2b6-4201-84a7-67bf2e684a7a"]}
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"4f982598-0f7d-4a04-bcd7-136a45191d59"],
+ CellID->1],
 
 Cell[CellGroupData[{
 
 Cell[TextData[StyleBox["Installation", "Section"]], "Title",
- CellID->509267359,ExpressionUUID->"39723679-3f46-4745-bb15-789a0d614427"],
+ CellID->509267359],
 
 Cell["\<\
-Existen dos maneras de instalar SpaMath y sus respectivas variantes.\
+SpaceMath can be installed on any computer that runs Mathematica 8.0 or \
+higher. However, future releases of SpaceMath will require Mathematica 10.1 \
+or higher.\
 \>", "Text",
- CellID->1534169418,ExpressionUUID->"bb09ba71-c2b7-439a-b521-63b90f0c9bd8"],
+ CellID->1534169418],
 
 Cell[TextData[StyleBox["Automatic Installation", "Section"]], "Text",
- CellID->1335388957,ExpressionUUID->"7fdbdf94-3d43-48bd-aa19-e7a9d52d3d06"],
+ CellID->1335388957],
 
 Cell[TextData[{
- "Run the following instructions in a Notebook of Mathematica\n",
- Cell[BoxData[
+ "Run the following instructions in a Mathematica session: ",
+ StyleBox[Cell[BoxData[
   RowBox[{
-   TemplateBox[{Cell[
-      TextData["Import"]],"paclet:ref/Import"},
-    "RefLink",
-    BaseStyle->{"InlineFormula"}], "[", 
+   ButtonBox["Import",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/Import"], "[", 
    RowBox[{
     RowBox[{
      StyleBox[
@@ -115,24 +114,25 @@ Cell[TextData[{
            StyleBox["raw", "TI"], ".", "githubusercontent", ".", "com"}], "/",
            "spacemathproject"}], "/", "SpaceMath"}], "/", "master"}], "/", 
        "SpaceMath"}], "/", 
-      RowBox[{"Install", ".", "m"}]}], "\"\<\>"}]}]}]], "InlineFormula",
-  ExpressionUUID->"4e4a6b98-7fd1-4f12-afe0-c79efc9ddb44"],
- "]\n",
+      RowBox[{"Install", ".", "m"}]}], "\"\<\>"}]}]}]], "TI"], "TI"],
+ StyleBox["]", "TI"],
+ "\n",
  Cell[BoxData[
-  RowBox[{
-   TemplateBox[{Cell[
-      TextData["InstallSpaceMath"]],"paclet:SpaceMath/ref/InstallSpaceMath"},
-    "RefLink",
-    BaseStyle->{"InlineFormula"}], "[", "]"}]], "InlineFormula",
-  ExpressionUUID->"f6f4b25e-f470-41c7-817e-c51056ee0825"]
+  StyleBox[
+   RowBox[{
+    ButtonBox["InstallSpaceMath",
+     BaseStyle->"Link",
+     ButtonData->"paclet:SpaceMath/ref/InstallSpaceMath"], "[", "]"}], "TI"]],
+   "TI"]
 }], "Text",
- CellID->650896142,ExpressionUUID->"11db3a43-4ffd-444c-99af-7e614bbd9e9f"],
+ CellID->1759321443],
 
 Cell[TextData[StyleBox["Manual installation", "Section"]], "Text",
- CellID->1555914184,ExpressionUUID->"16b23d0e-8309-409d-be9c-e4c50a04248c"],
+ CellID->1555914184],
 
 Cell[TextData[{
- "Download from ",
+ "The latest version of the program, including expansion packs, is hosted at \
+the page ",
  Cell[BoxData[
   RowBox[{
    RowBox[{"https", ":"}], "//", 
@@ -141,36 +141,44 @@ Cell[TextData[{
      RowBox[{
       RowBox[{
        RowBox[{"github", ".", "com"}], "/", "spacemathproject"}], "/", 
-      TemplateBox[{Cell[
-         TextData["SpaceMath"]],"paclet:ref/SpaceMath"},
-       "RefLink",
-       BaseStyle->{"InlineFormula"}]}], "/", "archive"}], "/", 
-    RowBox[{"master", ".", "zip"}]}]}]], "InlineFormula",ExpressionUUID->
-  "000c8720-5ccc-4448-a6dd-80b4436e46fd"],
- "\nUnzip the folder inside ",
- Cell[BoxData[
-  RowBox[{"$UserBaseDirectory", "/", "Applications"}]], "InlineFormula",
-  ExpressionUUID->"6a2f536b-6efd-45d4-ba82-a4370e5ea406"],
- "\nThis should install SpaceMath on your system."
+      ButtonBox["SpaceMath",
+       BaseStyle->"Link",
+       ButtonData->"paclet:ref/SpaceMath"]}], "/", "archive"}], "/", 
+    RowBox[{"master", ".", "zip"}]}]}]], "TI"]
 }], "Text",
- CellID->181369405,ExpressionUUID->"da0bc10b-e5b9-4f0d-8f8b-0e43756bd275"],
-
-Cell["XXXX.", "Caption",
- CellID->1891092685,ExpressionUUID->"be25fbaf-98bf-4fdd-ba8e-7ed1cc908740"],
+ CellID->181369405],
 
 Cell[CellGroupData[{
 
-Cell[BoxData["XXXX"], "Input",
- CellLabel->"In[1]:=",
- CellID->2058623809,ExpressionUUID->"a8afa79b-65cf-4a01-8f67-6d54aa7b1ec7"],
+Cell[TextData[{
+ "After downloading and uncompressing the zip file, place the folder \
+SpaceMath and all its contents within the directory ",
+ StyleBox["$UserBaseDirectory/Applications/", "TI"],
+ ". Here, $UserBaseDirectory can be found by running $UserBaseDirectory \
+within a Mathematica session:"
+}], "Text",
+ CellID->862494424],
 
-Cell[BoxData["XXXX"], "Output",
+Cell[BoxData["$UserBaseDirectory"], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2058623809],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"/", "home"}], "/", "xxxx"}], "/.", "Mathematica"}]], "Input",
  CellLabel->"Out[1]=",
- CellID->1181321046,ExpressionUUID->"856af88b-36de-4111-8ad4-8de5b0b7fee1"]
-}, Open  ]]
+ CellID->1908691420]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"67a17177-d8e2-4134-bc9e-34ef3a7d60e7"]
+Cell["This should install SpaceMath on your system.", "Text",
+ CellID->362652525],
+
+Cell["XXXX.", "Caption",
+ CellID->1891092685]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -186,21 +194,21 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 11, 22, 9, 15, 28.857607}", 
+   "built" -> "{2019, 11, 25, 13, 42, 47.931694}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
     "status" -> "None", "summary" -> 
-    "Existen dos maneras de instalar SpaMath y sus respectivas variantes. \
-Automatic Installation Run the following instructions in a Notebook of \
-Mathematica \
+    "SpaceMath can be installed on any computer that runs Mathematica 8.0 or \
+higher. However, future releases of SpaceMath will require Mathematica 10.1 \
+or higher. Automatic Installation Run the following instructions in a \
+Mathematica session: \
 Import[https://raw.githubusercontent.com/spacemathproject/SpaceMath/master/\
 SpaceMath/Install.m\"] InstallSpaceMath[]", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$14227, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$15264, "title" -> 
     "Installation", "titlemodifier" -> "", "windowtitle" -> "Installation", 
-    "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/Installation", 
-    "WorkflowDockedCell" -> ""}, "SearchTextTranslated" -> ""},
+    "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/Installation"}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
    Cell[
@@ -233,34 +241,37 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[584, 21, 2609, 56, 55, "AnchorBarGrid",ExpressionUUID->"4f982598-0f7d-4a04-bcd7-136a45191d59",
+Cell[584, 21, 2321, 54, 70, "AnchorBarGrid",ExpressionUUID->"296c6e82-e449-405a-a564-dae0f7df3d15",
  CellID->1],
 Cell[CellGroupData[{
-Cell[3218, 81, 135, 1, 47, "Title",ExpressionUUID->"39723679-3f46-4745-bb15-789a0d614427",
+Cell[2930, 79, 80, 1, 70, "Title",ExpressionUUID->"39723679-3f46-4745-bb15-789a0d614427",
  CellID->509267359],
-Cell[3356, 84, 168, 3, 37, "Text",ExpressionUUID->"bb09ba71-c2b7-439a-b521-63b90f0c9bd8",
+Cell[3013, 82, 207, 5, 70, "Text",ExpressionUUID->"bb09ba71-c2b7-439a-b521-63b90f0c9bd8",
  CellID->1534169418],
-Cell[3527, 89, 145, 1, 46, "Text",ExpressionUUID->"7fdbdf94-3d43-48bd-aa19-e7a9d52d3d06",
+Cell[3223, 89, 90, 1, 70, "Text",ExpressionUUID->"7fdbdf94-3d43-48bd-aa19-e7a9d52d3d06",
  CellID->1335388957],
-Cell[3675, 92, 1170, 36, 179, "Text",ExpressionUUID->"11db3a43-4ffd-444c-99af-7e614bbd9e9f",
- CellID->650896142],
-Cell[4848, 130, 142, 1, 46, "Text",ExpressionUUID->"16b23d0e-8309-409d-be9c-e4c50a04248c",
+Cell[3316, 92, 965, 35, 70, "Text",ExpressionUUID->"4cdff573-7ccd-434e-8a33-b170de8fd311",
+ CellID->1759321443],
+Cell[4284, 129, 87, 1, 70, "Text",ExpressionUUID->"16b23d0e-8309-409d-be9c-e4c50a04248c",
  CellID->1555914184],
-Cell[4993, 133, 817, 22, 156, "Text",ExpressionUUID->"da0bc10b-e5b9-4f0d-8f8b-0e43756bd275",
+Cell[4374, 132, 496, 16, 70, "Text",ExpressionUUID->"da0bc10b-e5b9-4f0d-8f8b-0e43756bd275",
  CellID->181369405],
-Cell[5813, 157, 100, 1, 38, "Caption",ExpressionUUID->"be25fbaf-98bf-4fdd-ba8e-7ed1cc908740",
- CellID->1891092685],
 Cell[CellGroupData[{
-Cell[5938, 162, 129, 2, 29, "Input",ExpressionUUID->"a8afa79b-65cf-4a01-8f67-6d54aa7b1ec7",
+Cell[4895, 152, 331, 7, 70, "Text",ExpressionUUID->"d9fedf53-c219-40b1-ab4b-58a673b975d8",
+ CellID->862494424],
+Cell[5229, 161, 88, 2, 70, "Input",ExpressionUUID->"a8afa79b-65cf-4a01-8f67-6d54aa7b1ec7",
  CellID->2058623809],
-Cell[6070, 166, 130, 2, 38, "Output",ExpressionUUID->"856af88b-36de-4111-8ad4-8de5b0b7fee1",
- CellID->1181321046]
-}, Open  ]]
+Cell[5320, 165, 152, 5, 70, "Input",ExpressionUUID->"9dd7ad94-2baf-4f27-8532-5d28099269d8",
+ CellID->1908691420]
 }, Open  ]],
-Cell[6227, 172, 78, 0, 70, "FooterCell",ExpressionUUID->"67a17177-d8e2-4134-bc9e-34ef3a7d60e7"]
+Cell[5487, 173, 81, 1, 70, "Text",ExpressionUUID->"93f12153-f6d8-42ff-ae01-e2f0298e9033",
+ CellID->362652525],
+Cell[5571, 176, 45, 1, 70, "Caption",ExpressionUUID->"be25fbaf-98bf-4fdd-ba8e-7ed1cc908740",
+ CellID->1891092685]
+}, Open  ]],
+Cell[5631, 180, 23, 0, 70, "FooterCell",ExpressionUUID->"f646d4e8-9cf4-4cc4-a8ec-30f0ddde04f5"]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
