@@ -226,7 +226,12 @@ to indicates the steps from xmin to xmax. "
 (******************************************************************************************************************************************************)
 (*********************************************************End OF RBottom************************************************************************************)
 (******************************************************************************************************************************************************)
-
+RV::usage="RV[ghtt_,ghbb_,ghVV_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(V\)]\) with V=W, \
+Z when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghVV are the h-top top, h-bottom bottom, h-VV \
+couplings. Here, h represents to SM-like Higgs boson. Labels x and y \
+indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
+initial and final values defined by users. Argument xlabel (ylabel) is used \
+for indicates the axis-X label (axis-Y label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the intervale from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
 RXALL::usage="\!\(\*
 StyleBox[\"RXALL\",\nFontWeight->\"Bold\"]\)\!\(\*
