@@ -288,11 +288,11 @@ StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ylabel_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"PP_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt are ghbb are the h-top top, \
-h-bottom bottom and h-tau tau couplings. Here, h represents to SM-like Higgs boson. The label x \
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt are ghbb are the htt, \
+hbb and htt couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
-to indicates the intervales from xmin to xmax. "
+to indicates the steps from xmin to xmax. "
 
 RXALL1sig::usage ="See later"
 
