@@ -32,8 +32,6 @@ $PathToSPArc::usage="$PathToSPArc specifies where the installer should look for 
 If the value is not empty, the installer will use the specified file instead of downloading it from the official \
 website."
 
-DeleteSpaceMath::
-
 If[ !ValueQ[$PathToSPArc],
 	$PathToSPArc = ""
 ];
