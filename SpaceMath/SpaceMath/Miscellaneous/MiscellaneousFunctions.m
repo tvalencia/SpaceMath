@@ -27,7 +27,7 @@ Module[
    Quiet@DeleteDirectory[packageDirSM, DeleteContents -> True],
    Null,
    If[ ChoiceDialog[DeleteSM,{"Yes, delete the " <> packageSM <>" package"->True,
-    "No, I need to do a backup first. Abort installation."->False}, WindowFloating->True, WindowTitle->"Existing SpaceMath Installation detected"],
+    "No, I need it yet. Abort the deletion."->False}, WindowFloating->True, WindowTitle->"Existing SpaceMath Installation detected"],
 	Quiet@DeleteDirectory[packageDirSM, DeleteContents -> True],
 	Abort[]
 	 ]
