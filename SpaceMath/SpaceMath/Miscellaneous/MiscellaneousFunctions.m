@@ -5,6 +5,11 @@ to the directory where SpaceMath will be installed.";
 
 InstalledSpaceMath::usage="Directory SpaceMath"
 
+Begin["`Package`"]
+End[]
+
+Begin["`MiscellaneousFunctions`Private`"]
+
 
 Options[DeleteSpaceMath]=
 {
@@ -26,14 +31,20 @@ Module[
   If[ OptionValue[AutoDeleteSpaceMathDirectory],
    Quiet@DeleteDirectory[packageDirSM, DeleteContents -> True],
    Null,
-   If[ ChoiceDialog[DeleteSM,{"Yes, delete the " <> packageSM <>" package"->True,
-    "No, I need it yet. Abort the deletion."->False}, WindowFloating->True, WindowTitle->"Existing SpaceMath Installation detected"],
-	Quiet@DeleteDirectory[packageDirSM, DeleteContents -> True],
-	Abort[]
+   If[
+   	 ChoiceDialog[
+   	 	DeleteSM,
+   	 		{"Yes, delete the " <> packageSM <>" package"->True,
+   	 		 "No, I need it yet. Abort the deletion."->False
+   	 		}, WindowFloating->True],
+	 Quiet@DeleteDirectory[packageDirSM, DeleteContents -> True],
+	 Abort[]
 	 ]
 	]
    ];
 
- WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
+ WriteString["stdout", "\n Delete complete! Good bye ... \n"];
 
 ];
+
+End[]
