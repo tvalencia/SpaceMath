@@ -43,7 +43,7 @@ Module[
 	]
    ];
 
- WriteString["stdout", "\n Delete complete! Good bye ... \n"];
+ WriteString["stdout", "\n Package removed! Good bye ... \n"];
 
 ];
 
