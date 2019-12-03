@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9468,        268]
+NotebookDataLength[      9469,        268]
 NotebookOptionsPosition[      5658,        182]
-NotebookOutlinePosition[      8096,        242]
-CellTagsIndexPosition[      8053,        239]
+NotebookOutlinePosition[      8097,        242]
+CellTagsIndexPosition[      8054,        239]
 WindowTitle->Installation
 WindowFrame->Normal*)
 
@@ -60,7 +60,7 @@ Installation.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19496], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19501], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/Installation", ".html"]], None}]}]},
@@ -194,7 +194,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 2, 15, 5, 29.351170}", 
+   "built" -> "{2019, 12, 2, 20, 51, 27.202672}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -206,7 +206,7 @@ or higher. Automatic Installation Run the following instructions in a \
 Mathematica session: \
 Import[https://raw.githubusercontent.com/spacemathproject/SpaceMath/master/\
 SpaceMath/Install.m\"] InstallSpaceMath[]", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$19440, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$19445, "title" -> 
     "Installation", "titlemodifier" -> "", "windowtitle" -> "Installation", 
     "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/Installation"}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
@@ -241,7 +241,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[584, 21, 2321, 54, 70, "AnchorBarGrid",ExpressionUUID->"9f6740be-c297-4693-88dc-b47d5a09748c",
+Cell[584, 21, 2321, 54, 70, "AnchorBarGrid",ExpressionUUID->"3b0b8b31-904d-4e1f-a521-e9c952a6d0f2",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2930, 79, 80, 1, 70, "Title",ExpressionUUID->"39723679-3f46-4745-bb15-789a0d614427",
@@ -269,7 +269,7 @@ Cell[5487, 173, 81, 1, 70, "Text",ExpressionUUID->"93f12153-f6d8-42ff-ae01-e2f02
 Cell[5571, 176, 45, 1, 70, "Caption",ExpressionUUID->"be25fbaf-98bf-4fdd-ba8e-7ed1cc908740",
  CellID->1891092685]
 }, Open  ]],
-Cell[5631, 180, 23, 0, 70, "FooterCell",ExpressionUUID->"ca24f5c4-bdb1-4bbf-bccd-cad431a2863e"]
+Cell[5631, 180, 23, 0, 70, "FooterCell",ExpressionUUID->"fafaebdd-a797-4dd7-9f8e-7ea749ab054c"]
 }
 ]
 *)

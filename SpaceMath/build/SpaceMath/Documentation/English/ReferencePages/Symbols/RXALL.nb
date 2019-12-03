@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18585,        518]
-NotebookOptionsPosition[     12390,        397]
-NotebookOutlinePosition[     15800,        470]
-CellTagsIndexPosition[     15715,        465]
+NotebookDataLength[     18591,        522]
+NotebookOptionsPosition[     12446,        402]
+NotebookOutlinePosition[     15805,        474]
+CellTagsIndexPosition[     15720,        469]
 WindowTitle->RXALL
 WindowFrame->Normal*)
 
@@ -99,7 +99,7 @@ html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible ->
            URL[
             StringJoin[
              If[
-              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$14317], 
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$14322], 
               "http://reference.wolfram.com/system-modeler/", 
               "http://reference.wolfram.com/language/"], 
              "SpaceMath/ref/RXALL", ".html"]], None}]}]},
@@ -134,21 +134,26 @@ mCH_, x_, y_, xmin_, xmax_, ymin_, ymax_, xlabel_, ylabel_, xfor_, yfor_, \
 xformin_, xformax_, xforstep_, yformin_, yformax_, yforstep_, \
 PP_][[i]]\[Rule] This command evaluates all signal strengths, when there is \
 dependence on two or more parameters. The arguments ghtt, ghbb, ghZZ, ghWW, \
-ghtautau and gCH are the htt, hbb, hZZ, hWW, htautau and \
-\\!\\(\\*SuperscriptBox[\\(hH\\), \\(-\\)]\\)\\!\\(\\*SuperscriptBox[\\(H\\), \
-\\(+\\)]\\) couplings. Here, h represents to SM-like Higgs boson while t and \
-b are the top and bottom quarks; V=Z, W are the gauge bosons, tau is the tau \
-lepton and \\!\\(\\*SuperscriptBox[\\(H\\), \\(-\\)]\\) is a charged scalar \
-boson. Labels x and y indicate the parameters to constraint, while xmin \
-(ymin) and xmax (ymax) are the initial and final values defined by users. \
-Argument xlabel (ylabel) is used for indicates the X axis label (Y axis \
-label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) \
-represent an additional parameter to constraint, namely: initial value, final \
-value and the steps from xformin (yformin) to xformax (yformax), \
-respectively; mCH stands for the charged scalar boson. Label [[i]] stands for \
-confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an \
-option for plotting functions that specifies how many initial sample points \
-to use.\""
+ghtautau and gCH are the htt, hbb, hZZ, hWW, htautau and ",
+     Cell[BoxData[
+      RowBox[{
+       SuperscriptBox["hH", "-"], 
+       SuperscriptBox["H", "+"]}]], "Input"],
+     " couplings. Here, h represents to SM-like Higgs boson while t and b are \
+the top and bottom quarks; V=Z, W are the gauge bosons, tau is the tau lepton \
+and ",
+     Cell[BoxData[
+      SuperscriptBox["H", "-"]], "Input"],
+     " is a charged scalar boson. Labels x and y indicate the parameters to \
+constraint, while xmin (ymin) and xmax (ymax) are the initial and final \
+values defined by users. Argument xlabel (ylabel) is used for indicates the X \
+axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), \
+xforstep (yforstep) represent an additional parameter to constraint, namely: \
+initial value, final value and the steps from xformin (yformin) to xformax \
+(yformax), respectively; mCH stands for the charged scalar boson. Label [[i]] \
+stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), \
+Finally, PP is an option for plotting functions that specifies how many \
+initial sample points to use.\""
     }]]}
   }]], "Usage",
  GridBoxOptions->{
@@ -410,7 +415,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2019, 12, 2, 15, 5, 17.977753}", 
+   "built" -> "{2019, 12, 2, 20, 51, 13.902308}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -422,22 +427,21 @@ ghWW_, ghtautau_, gCH_, mCH_, x_, y_, xmin_, xmax_, ymin_, ymax_, xlabel_, \
 ylabel_, xfor_, yfor_, xformin_, xformax_, xforstep_, yformin_, yformax_, \
 yforstep_, PP_][[i]]-> This command evaluates all signal strengths, when \
 there is dependence on two or more parameters. The arguments ghtt, ghbb, \
-ghZZ, ghWW, ghtautau and gCH are the htt, hbb, hZZ, hWW, htautau and \
-SuperscriptBox[hH, -]SuperscriptBox[H, +] couplings. Here, h represents to \
-SM-like Higgs boson while t and b are the top and bottom quarks; V=Z, W are \
-the gauge bosons, tau is the tau lepton and SuperscriptBox[H, -] is a charged \
-scalar boson. Labels x and y indicate the parameters to constraint, while \
-xmin (ymin) and xmax (ymax) are the initial and final values defined by \
-users. Argument xlabel (ylabel) is used for indicates the X axis label (Y \
-axis label). The arguments xfor (yfor), xformin (yformin), xforstep \
-(yforstep) represent an additional parameter to constraint, namely: initial \
-value, final value and the steps from xformin (yformin) to xformax (yformax), \
-respectively; mCH stands for the charged scalar boson. Label [[i]] stands for \
-confidence level, i=1 (2) indicates 1\\[Sigma] (2\\[Sigma]), Finally, PP is \
-an option for plotting functions that specifies how many initial sample \
-points to use.\"", "synonyms" -> {}, "tabletags" -> {}, "title" -> "RXALL", 
-    "titlemodifier" -> "", "windowtitle" -> "RXALL", "type" -> "Symbol", 
-    "uri" -> "SpaceMath/ref/RXALL"}},
+ghZZ, ghWW, ghtautau and gCH are the htt, hbb, hZZ, hWW, htautau and hH^- H^+ \
+couplings. Here, h represents to SM-like Higgs boson while t and b are the \
+top and bottom quarks; V=Z, W are the gauge bosons, tau is the tau lepton and \
+H^- is a charged scalar boson. Labels x and y indicate the parameters to \
+constraint, while xmin (ymin) and xmax (ymax) are the initial and final \
+values defined by users. Argument xlabel (ylabel) is used for indicates the X \
+axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), \
+xforstep (yforstep) represent an additional parameter to constraint, namely: \
+initial value, final value and the steps from xformin (yformin) to xformax \
+(yformax), respectively; mCH stands for the charged scalar boson. Label [[i]] \
+stands for confidence level, i=1 (2) indicates 1\\[Sigma] (2\\[Sigma]), \
+Finally, PP is an option for plotting functions that specifies how many \
+initial sample points to use.\"", "synonyms" -> {}, "tabletags" -> {}, 
+    "title" -> "RXALL", "titlemodifier" -> "", "windowtitle" -> "RXALL", 
+    "type" -> "Symbol", "uri" -> "SpaceMath/ref/RXALL"}},
 CellContext->"Global`",
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
@@ -457,69 +461,69 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[6352, 159, 259, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"98c9d9a6-b0a4-4461-b1d1-e0dc4964b67a",
+  Cell[6408, 164, 259, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"c5983df8-eb28-4814-8857-5bf327ef4bdc",
    CellTags->"PrimaryExamplesSection",
    CellID->1]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 15525, 458}
+ {"PrimaryExamplesSection", 15530, 462}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[577, 21, 3589, 90, 70, "AnchorBarGrid",ExpressionUUID->"02e56318-7e04-492b-ae36-61a147663fec",
+Cell[577, 21, 3589, 90, 70, "AnchorBarGrid",ExpressionUUID->"78353d8d-7e5b-4078-a65d-295267b5ac60",
  CellID->1],
-Cell[4169, 113, 162, 6, 70, "ObjectNameGrid",ExpressionUUID->"c78b970a-a9b2-4e2b-8e10-1bde4382f4e8"],
-Cell[4334, 121, 1993, 34, 70, "Usage",ExpressionUUID->"102048c2-f410-4f22-9142-248a62ef2fe4",
+Cell[4169, 113, 162, 6, 70, "ObjectNameGrid",ExpressionUUID->"488ce839-93cc-4eb5-ad4c-d3f1c5ffa784"],
+Cell[4334, 121, 2049, 39, 70, "Usage",ExpressionUUID->"102048c2-f410-4f22-9142-248a62ef2fe4",
  CellID->982511436],
 Cell[CellGroupData[{
-Cell[6352, 159, 259, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"98c9d9a6-b0a4-4461-b1d1-e0dc4964b67a",
+Cell[6408, 164, 259, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"c5983df8-eb28-4814-8857-5bf327ef4bdc",
  CellTags->"PrimaryExamplesSection",
  CellID->1],
 Cell[CellGroupData[{
-Cell[6636, 173, 187, 6, 70, "ExampleSection",ExpressionUUID->"ae7ca6e6-a3dd-4469-b721-05af27930722",
+Cell[6692, 178, 187, 6, 70, "ExampleSection",ExpressionUUID->"d41505d9-4fe1-4dc5-ac9c-7f79bf362533",
  CellID->1],
-Cell[6826, 181, 119, 3, 70, "Input",ExpressionUUID->"188b314d-1b60-46fc-bc87-bcdef116a893",
+Cell[6882, 186, 119, 3, 70, "Input",ExpressionUUID->"188b314d-1b60-46fc-bc87-bcdef116a893",
  CellID->1345636595],
-Cell[6948, 186, 966, 30, 70, "Input",ExpressionUUID->"8a7ca539-5167-47de-a381-f0746048396c",
+Cell[7004, 191, 966, 30, 70, "Input",ExpressionUUID->"8a7ca539-5167-47de-a381-f0746048396c",
  CellID->2058623809],
-Cell[7917, 218, 1023, 33, 70, "Input",ExpressionUUID->"04e754a4-8ff5-46a0-99c8-2f0b0fb1de83",
+Cell[7973, 223, 1023, 33, 70, "Input",ExpressionUUID->"04e754a4-8ff5-46a0-99c8-2f0b0fb1de83",
  CellID->1959503054],
-Cell[8943, 253, 1043, 33, 70, "Input",ExpressionUUID->"89a1ba54-3d55-4669-8363-8ee8dc439db4",
+Cell[8999, 258, 1043, 33, 70, "Input",ExpressionUUID->"89a1ba54-3d55-4669-8363-8ee8dc439db4",
  CellID->90209605],
-Cell[9989, 288, 168, 5, 70, "Input",ExpressionUUID->"9a4abfa8-3538-48f4-aabc-79a67ed00698",
+Cell[10045, 293, 168, 5, 70, "Input",ExpressionUUID->"9a4abfa8-3538-48f4-aabc-79a67ed00698",
  CellID->785542046],
-Cell[10160, 295, 174, 5, 70, "Input",ExpressionUUID->"1cc2e0d9-60eb-41d1-9a88-eb8b47bee3f7",
+Cell[10216, 300, 174, 5, 70, "Input",ExpressionUUID->"1cc2e0d9-60eb-41d1-9a88-eb8b47bee3f7",
  CellID->1055765423]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10383, 306, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"a73e3a77-fed6-4c90-8dcc-eda4d2ad366b"],
-Cell[10417, 308, 152, 7, 70, "TutorialsSection",ExpressionUUID->"696e1c63-c5cd-46ad-811f-b6ac20c29828",
+Cell[10439, 311, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"234ff7a1-c1f1-4048-84bd-6614ebca1a0b"],
+Cell[10473, 313, 152, 7, 70, "TutorialsSection",ExpressionUUID->"696e1c63-c5cd-46ad-811f-b6ac20c29828",
  CellID->250839057],
-Cell[10572, 317, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"eb634065-28c6-45b8-951f-b7138e2ebc1d"],
-Cell[10606, 319, 363, 11, 70, "Tutorials",ExpressionUUID->"82536126-e1ea-46d4-8109-0adff4e24848",
+Cell[10628, 322, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"b31818c7-1a75-4d46-b520-0beefb0fdc24"],
+Cell[10662, 324, 363, 11, 70, "Tutorials",ExpressionUUID->"82536126-e1ea-46d4-8109-0adff4e24848",
  CellID->341631938],
-Cell[10972, 332, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"7a08f0da-4ad4-49e9-a846-b05003120c8d"]
+Cell[11028, 337, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"269cde28-2470-4ae4-800f-b6670c49e752"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11040, 337, 156, 7, 70, "MoreAboutSection",ExpressionUUID->"354299ec-ff6b-4c47-8274-e72d71fc379d",
+Cell[11096, 342, 156, 7, 70, "MoreAboutSection",ExpressionUUID->"354299ec-ff6b-4c47-8274-e72d71fc379d",
  CellID->38303248],
-Cell[11199, 346, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"dfc93f97-9e99-4941-b84c-175566f9fe69"],
-Cell[11233, 348, 175, 5, 70, "MoreAbout",ExpressionUUID->"f66a5a05-93e9-46e6-bfd6-a17b7a1da054",
+Cell[11255, 351, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"b7d2095e-09fe-4155-b111-cb15cdb8eeda"],
+Cell[11289, 353, 175, 5, 70, "MoreAbout",ExpressionUUID->"1358d3a8-0a24-4c45-ac42-64fd9d90209e",
  CellID->1],
-Cell[11411, 355, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"ae90726c-a9fd-4f84-94b5-85e0cfb3506e"]
+Cell[11467, 360, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"3212ce53-7858-49da-988a-4773e554f313"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11479, 360, 160, 7, 70, "RelatedLinksSection",ExpressionUUID->"0720d46e-7120-44a4-be10-4893ba00ed7b",
+Cell[11535, 365, 160, 7, 70, "RelatedLinksSection",ExpressionUUID->"0720d46e-7120-44a4-be10-4893ba00ed7b",
  CellID->1584193535],
-Cell[11642, 369, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"6b1843c7-22d1-4668-9d3d-6583adfa8fbc"],
-Cell[11676, 371, 672, 21, 70, "RelatedLinks",ExpressionUUID->"94717176-1b53-400a-a829-51d6e6f7c70d",
+Cell[11698, 374, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"465b7511-df38-473b-8c37-8200d3b3b03c"],
+Cell[11732, 376, 672, 21, 70, "RelatedLinks",ExpressionUUID->"94717176-1b53-400a-a829-51d6e6f7c70d",
  CellID->1038487239]
 }, Open  ]],
-Cell[12363, 395, 23, 0, 70, "FooterCell",ExpressionUUID->"3964d42a-336e-4fff-b187-cfa037bbc141"]
+Cell[12419, 400, 23, 0, 70, "FooterCell",ExpressionUUID->"2d227740-dff1-4af6-919a-8eb120594fb5"]
 }
 ]
 *)
