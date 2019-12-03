@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    639880,      10639]
-NotebookOptionsPosition[    634546,      10532]
-NotebookOutlinePosition[    634957,      10548]
-CellTagsIndexPosition[    634914,      10545]
+NotebookDataLength[    641057,      10662]
+NotebookOptionsPosition[    635188,      10545]
+NotebookOutlinePosition[    635599,      10561]
+CellTagsIndexPosition[    635556,      10558]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -10509,29 +10509,42 @@ Cell[TextData[StyleBox[ButtonBox["References",
 
 Cell[CellGroupData[{
 
-Cell[TextData[{
- ButtonBox["Guides",
-  BaseStyle->"Link",
-  ButtonData->"paclet:SpaceMath/guide/SpaceMath"],
- "\n",
- ButtonBox["SpaceMath",
-  BaseStyle->"Link",
-  ButtonData->"paclet:SpaceMath/guide/SpaceMath"]
-}], "TOCChapter",
+Cell[TextData[StyleBox[ButtonBox["Guides",
+ BaseStyle->"Link",
+ ButtonData->"paclet:SpaceMath/guide/SpaceMath"], "Section"]], "TOCChapter",
  CellChangeTimes->{{3.784380731636696*^9, 3.7843807406018457`*^9}, {
   3.784380778640788*^9, 3.784380783769105*^9}, {3.784381818272297*^9, 
-  3.78438182014781*^9}},
+  3.78438182014781*^9}, {3.784381863445079*^9, 3.7843818786775417`*^9}},
  CellID->525055234,ExpressionUUID->"3b3c80bb-6317-4c39-958b-ae3ed0fb9eb7"],
 
-Cell[TextData[ButtonBox["SpaceMath",
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox[ButtonBox["SpaceMath",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/guide/SpaceMath"]], "TOCSection",
- CellID->1648239889,ExpressionUUID->"98d31c03-669b-48d8-a402-2400253b021f"]
-}, Closed]]
+ ButtonData->"paclet:SpaceMath/guide/SpaceMath"], "Subsection"]], "TOCSection",\
+
+ CellID->1648239889,ExpressionUUID->"98d31c03-669b-48d8-a402-2400253b021f"],
+
+Cell["", "TOCSubsection",
+ CellChangeTimes->{{3.7843819234312563`*^9, 3.7843819234312983`*^9}},
+ CellID->1820152157,ExpressionUUID->"a7a8747e-38f4-4be6-8e30-b79d37595710"],
+
+Cell["", "TOCSubsection",
+ CellChangeTimes->{{3.784381924358898*^9, 3.7843819243589573`*^9}},
+ CellID->1573923234,ExpressionUUID->"d972dc57-003c-46ef-befa-ebee8d9df938"],
+
+Cell["", "TOCSubsection",
+ CellChangeTimes->{{3.7843819245569077`*^9, 3.7843819245569553`*^9}},
+ CellID->222489064,ExpressionUUID->"dc68e5a7-952e-4f5a-a409-de31f3afb806"],
+
+Cell["", "TOCSubsection",
+ CellID->1379498561,ExpressionUUID->"a416a673-f1bb-4eca-bdf2-d0743c2ad856"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{835, 971},
-WindowMargins->{{324, Automatic}, {19, Automatic}},
+WindowMargins->{{Automatic, 291}, {Automatic, 31}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
   CharacterEncoding -> "UTF-8"]
@@ -10635,11 +10648,21 @@ Cell[633256, 10493, 283, 6, 27, "TOCChapter",ExpressionUUID->"2e02fa6e-0ae3-4208
 Cell[633542, 10501, 283, 6, 27, "TOCChapter",ExpressionUUID->"0e65e8ef-47f8-46a3-be0a-918dd025172c",
  CellID->1439191964],
 Cell[CellGroupData[{
-Cell[633850, 10511, 468, 12, 49, "TOCChapter",ExpressionUUID->"3b3c80bb-6317-4c39-958b-ae3ed0fb9eb7",
+Cell[633850, 10511, 427, 6, 31, "TOCChapter",ExpressionUUID->"3b3c80bb-6317-4c39-958b-ae3ed0fb9eb7",
  CellID->525055234],
-Cell[634321, 10525, 197, 3, 29, "TOCSection",ExpressionUUID->"98d31c03-669b-48d8-a402-2400253b021f",
- CellID->1648239889]
-}, Closed]]
+Cell[CellGroupData[{
+Cell[634302, 10521, 223, 4, 31, "TOCSection",ExpressionUUID->"98d31c03-669b-48d8-a402-2400253b021f",
+ CellID->1648239889],
+Cell[634528, 10527, 171, 2, 20, "TOCSubsection",ExpressionUUID->"a7a8747e-38f4-4be6-8e30-b79d37595710",
+ CellID->1820152157],
+Cell[634702, 10531, 169, 2, 20, "TOCSubsection",ExpressionUUID->"d972dc57-003c-46ef-befa-ebee8d9df938",
+ CellID->1573923234],
+Cell[634874, 10535, 170, 2, 20, "TOCSubsection",ExpressionUUID->"dc68e5a7-952e-4f5a-a409-de31f3afb806",
+ CellID->222489064],
+Cell[635047, 10539, 101, 1, 20, "TOCSubsection",ExpressionUUID->"a416a673-f1bb-4eca-bdf2-d0743c2ad856",
+ CellID->1379498561]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }
 ]
