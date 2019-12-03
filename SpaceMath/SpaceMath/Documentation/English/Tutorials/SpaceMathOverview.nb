@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    641927,      10670]
-NotebookOptionsPosition[    635667,      10555]
-NotebookOutlinePosition[    636078,      10571]
-CellTagsIndexPosition[    636035,      10568]
+NotebookDataLength[    639880,      10639]
+NotebookOptionsPosition[    634546,      10532]
+NotebookOutlinePosition[    634957,      10548]
+CellTagsIndexPosition[    634914,      10545]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -10364,197 +10364,174 @@ VVVVVVVVVVXV4QBrWbdr
  CellChangeTimes->{
   3.784300652854751*^9, {3.784302715560855*^9, 3.784302728226201*^9}, 
    3.784329921709773*^9, {3.7843367012185097`*^9, 3.784336708317808*^9}, {
-   3.78433686286985*^9, 3.7843368940548487`*^9}},
+   3.78433686286985*^9, 3.7843368940548487`*^9}, {3.784380864713623*^9, 
+   3.784380864727675*^9}},
  CellID->812708116,ExpressionUUID->"320f6522-6694-49e6-bcd1-d5b2c9e250b9"],
+
+Cell["\<\
+We present a Mathematica package, so-called SpaceMath, for the search of \
+Beyond Standard Model (BSM) parameter spaces which be agree with the most \
+up-to-date experimental measurements.\
+\>", "Text",
+ CellChangeTimes->{{3.784380913482504*^9, 3.7843809179642467`*^9}},
+ CellID->1899540067,ExpressionUUID->"1762b343-14e0-4543-b60c-491b6ae369cc"],
+
+Cell[TextData[StyleBox[ButtonBox["Introduction to SpaceMath Package",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:SpaceMath/tutorial/Introduction#509267359"], "Section"]], \
+"TOCChapter",
+ CellChangeTimes->{{3.7831889707036257`*^9, 3.783188977689921*^9}, 
+   3.784381212344508*^9, {3.784381251551057*^9, 
+   3.784381252979875*^9}},ExpressionUUID->"e9676c6f-0a87-40ce-953c-\
+eab6364ebd73"],
 
 Cell[CellGroupData[{
 
-Cell[TextData[ButtonBox["Introduction to SpaceMath Package",
- BaseStyle->"Link",
- ButtonData->
-  "paclet:SpaceMath/tutorial/Introduction#509267359"]], "TOCChapter",
- CellChangeTimes->{{3.7831889707036257`*^9, 
-  3.783188977689921*^9}},ExpressionUUID->"e9676c6f-0a87-40ce-953c-\
-eab6364ebd73"],
+Cell[TextData[{
+ StyleBox[ButtonBox["First Steps",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/guide/FirstSteps"], "Subsection"],
+ "\n",
+ StyleBox[ButtonBox["Installation",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/tutorial/Installation"], "Subsection"]
+}], "Section",
+ CellChangeTimes->{{3.7843794714772453`*^9, 3.784379493557012*^9}, {
+  3.784380274329157*^9, 3.784380274329212*^9}, {3.7843812586304207`*^9, 
+  3.784381260328281*^9}},
+ CellID->134754385,ExpressionUUID->"b2e47b9c-9db7-4b82-bfba-674044656bea"],
 
-Cell[TextData[ButtonBox["First Steps",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/guide/FirstSteps"]], "TOCSection",
- CellChangeTimes->{{3.78318898919104*^9, 3.783189010134639*^9}, {
-  3.7831890470351133`*^9, 3.783189052222234*^9}, {3.783355861950511*^9, 
-  3.783355861950831*^9}, {3.783357951644124*^9, 3.7833579516445704`*^9}},
- CellID->907900479,ExpressionUUID->"d3610bfe-a2fc-4a31-8c4b-d6a105f3889b"],
-
-Cell[TextData[ButtonBox["Installation",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/Installation"]], "TOCSection",
- CellChangeTimes->{{3.78318898919104*^9, 3.783189010134639*^9}, {
-  3.7831890470351133`*^9, 3.783189052222234*^9}, {3.783355864450761*^9, 
-  3.783355870082427*^9}, {3.783357677879468*^9, 3.783357677880232*^9}},
- CellID->402174753,ExpressionUUID->"a092d142-e0b3-4e67-864e-fac99b96390a"]
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "b5eb6a3f-94ef-4487-aea4-0551d7338daa"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1237041009,ExpressionUUID->"45056506-4172-4f66-867f-e95040a4bbe5"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[TextData[ButtonBox["Higgs Boson data",
+Cell["Observables", "Section",
+ CellChangeTimes->{{3.7843794714772453`*^9, 3.784379493557012*^9}, {
+   3.784380274329157*^9, 3.784380274329212*^9}, 3.7843812586304207`*^9},
+ CellID->1341870975,ExpressionUUID->"ac3c8b2a-2490-4e89-8b1a-a0d610decff4"],
+
+Cell[TextData[StyleBox[ButtonBox["Higgs Boson data",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/guide/HiggsBosondata"]], "TOCChapter",
- CellChangeTimes->{{3.783189200742097*^9, 3.783189215674882*^9}, {
-  3.783190134850688*^9, 3.78319013493745*^9}, {3.78319097144783*^9, 
-  3.7831909996894617`*^9}, {3.7831910414425983`*^9, 
-  3.783191057479294*^9}},ExpressionUUID->"28cfa26f-bc96-4a6f-af92-\
-bb04acf2ba51"],
+ ButtonData->"paclet:SpaceMath/guide/HiggsBosondata"], "Subsection"]], "Text",\
 
-Cell["Signal Strength", "TOCSection",
- CellChangeTimes->{{3.7831892194690237`*^9, 3.783189233222054*^9}},
- CellID->1779735036,ExpressionUUID->"0d852a59-9d87-47e7-8a53-e60fc2aee7ea"],
-
-Cell["Kappa", "TOCSection",
- CellChangeTimes->{
-  3.783189240114417*^9, {3.783353335045288*^9, 3.783353337004862*^9}},
- CellID->2139862095,ExpressionUUID->"3febd326-a709-472a-b017-b4b3272e1aab"],
+ CellChangeTimes->{{3.784379623108375*^9, 3.784379628156993*^9}, 
+   3.7843796967136993`*^9},
+ CellID->1595845873,ExpressionUUID->"0486adbe-bcdc-47a2-ba64-ff58203d85c4"],
 
 Cell[TextData[ButtonBox["Signal Strength functions",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/guide/SMfunctions"]], "TOCSection",
+ ButtonData->"paclet:SpaceMath/guide/SMfunctions"]], "Text",
+ CellID->773931442,ExpressionUUID->"d9ac9d67-ab58-4b08-a3ed-91eb31fabff9"],
+
+Cell["Kappa", "Text",
+ CellChangeTimes->{3.7843797463411694`*^9},
+ CellID->442942396,ExpressionUUID->"016c412d-d21a-4545-8f05-5cdd47ec62be"],
+
+Cell[TextData[StyleBox[ButtonBox["Lepton Flavor violating",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:SpaceMath/tutorial/SpaceMath#509267359"], "Subsection"]], "Text",
+ CellChangeTimes->{{3.784379781238656*^9, 3.784379790523621*^9}},
+ CellID->768916544,ExpressionUUID->"73671b70-467c-43fc-b377-8f7741e99ff0"],
+
+Cell[TextData[StyleBox[ButtonBox["Pseudo Scalar Meson Physics",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:SpaceMath/tutorial/SpaceMath#509267359"], "Subsection"]], "Text",
  CellChangeTimes->{
-  3.783189240114417*^9, {3.783353335045288*^9, 3.783353351145701*^9}, {
-   3.783354764327498*^9, 3.783354771050811*^9}, {3.783354858765634*^9, 
-   3.783354858766082*^9}, {3.783863552109931*^9, 3.783863557472786*^9}},
- CellID->1725410647,ExpressionUUID->"890f1c6d-c12f-4bcf-9044-5b18a882a411"]
+  3.784379800458778*^9, {3.784380269994396*^9, 3.784380269994525*^9}},
+ CellID->913590500,ExpressionUUID->"6c2a8084-6a4d-4fcf-abb4-3cd15fdba4de"],
+
+Cell[TextData[StyleBox[ButtonBox["Oblique Parameters",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:SpaceMath/tutorial/SpaceMath#509267359"], "Subsection"]], "Text",
+ CellChangeTimes->{{3.78437980595373*^9, 3.784379808218639*^9}},
+ CellID->1409089023,ExpressionUUID->"de4eaacd-e5d6-454e-9c46-c062854905f9"],
+
+Cell[TextData[StyleBox[ButtonBox["Unitarity",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:SpaceMath/tutorial/SpaceMath#509267359"], "Subsection"]], "Text",
+ CellChangeTimes->{3.7843798125163794`*^9},
+ CellID->413512072,ExpressionUUID->"023aa092-475a-45a3-a712-4c3aed3ed3df"]
 }, Open  ]],
 
-Cell[TextData[ButtonBox["Lepton Flavor violating",
+Cell[TextData[StyleBox[ButtonBox["Validations",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#509267359"]], "TOCChapter",
- CellChangeTimes->{{3.7831892593405952`*^9, 3.7831892635666943`*^9}},
+ ButtonData->
+  "paclet:SpaceMath/tutorial/SpaceMath#509267359"], "Section"]], "TOCChapter",\
+
+ CellChangeTimes->{{3.7831892593405952`*^9, 3.7831892635666943`*^9}, 
+   3.784379789198565*^9, 3.7843798908140593`*^9},
  CellID->508180598,ExpressionUUID->"cab59c90-6507-4400-a83e-8a6b06e1504e"],
 
-Cell[TextData[ButtonBox["Pseudo Scalar Meson Physics",
+Cell[TextData[StyleBox[ButtonBox["CP-even and CP-odd branching ratios",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#509267359"]], "TOCChapter",
- CellChangeTimes->{{3.783189290907073*^9, 3.783189299926175*^9}},
- CellID->887618769,ExpressionUUID->"07021a21-d553-4f3b-8209-5cff790fb9a7"],
+ ButtonData->
+  "paclet:SpaceMath/tutorial/SpaceMath#509267359"], "Section"]], "TOCChapter",\
 
-Cell[TextData[ButtonBox["Oblique Parameters",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#509267359"]], "TOCChapter",
- CellChangeTimes->{{3.78318929681178*^9, 3.783189309585338*^9}},
- CellID->328446877,ExpressionUUID->"d404faa2-fdf4-4aeb-9b3e-856e7985f31d"],
-
-Cell[TextData[ButtonBox["Unitarity",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#509267359"]], "TOCChapter",
- CellChangeTimes->{{3.78318932753944*^9, 3.783189330702181*^9}, 
-   3.783189415521977*^9, 3.783190152915022*^9},
- CellID->597054094,ExpressionUUID->"d525c436-2d06-4589-b72c-1bb7cef8eca6"],
-
-Cell[TextData[ButtonBox["SpaceMath Package",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#509267359"]], "TOCChapter",
- CellChangeTimes->{3.783281130130281*^9},
+ CellChangeTimes->{
+  3.783281130130281*^9, {3.784379988215518*^9, 3.78438002034688*^9}},
  CellID->481829601,ExpressionUUID->"380bfe99-7160-4208-95cd-6abd511690e1"],
 
-Cell[CellGroupData[{
-
-Cell[TextData[ButtonBox["Appendix",
+Cell[TextData[StyleBox[ButtonBox["Appendix",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/SpaceMathOverview"]], "TOCChapter",
- CellChangeTimes->{{3.7836952198599653`*^9, 
-  3.783695219939075*^9}},ExpressionUUID->"a155c054-8fbe-4cc6-bcb4-\
+ ButtonData->
+  "paclet:SpaceMath/tutorial/SpaceMathOverview"], "Section"]], "TOCChapter",
+ CellChangeTimes->{{3.7836952198599653`*^9, 3.783695219939075*^9}, {
+  3.7843803817108803`*^9, 
+  3.784380388630068*^9}},ExpressionUUID->"a155c054-8fbe-4cc6-bcb4-\
 96a7dcec8af6"],
 
-Cell[TextData[ButtonBox["SpaceMath data",
+Cell[TextData[StyleBox[ButtonBox["SpaceMath data",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/guide/SpaceMathData"]], "Subsection",
- CellChangeTimes->{{3.783694143097021*^9, 3.7836941473413897`*^9}, {
-  3.783694199009685*^9, 3.783694199010171*^9}},
- CellID->132781664,ExpressionUUID->"551188d7-20a7-446b-b1ed-f6fc4dfd3b55"]
-}, Closed]],
+ ButtonData->
+  "paclet:SpaceMath/guide/SpaceMathData"], "Subsection"]], "TOCChapter",
+ CellChangeTimes->{{3.784380399522147*^9, 
+  3.784380400417313*^9}},ExpressionUUID->"2e02fa6e-0ae3-4208-9f61-\
+df89a8c719a1"],
 
 Cell[TextData[StyleBox[ButtonBox["References",
  BaseStyle->"Link",
  ButtonData->
   "paclet:SpaceMath/tutorial/References#509267359"], "Subsection"]], \
-"TOCChapter",ExpressionUUID->"2e02fa6e-0ae3-4208-9f61-df89a8c719a1"],
+"TOCChapter",
+ CellChangeTimes->{3.784380399522147*^9},
+ CellID->1439191964,ExpressionUUID->"0e65e8ef-47f8-46a3-be0a-918dd025172c"],
 
 Cell[CellGroupData[{
 
-Cell[TextData[ButtonBox["ReferencePages/Symbols",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/SpaceMathOverview"]], "TOCChapter",
- CellChangeTimes->{{3.783694813498645*^9, 3.783694843214979*^9}, {
-  3.783694874681198*^9, 
-  3.783694874770578*^9}},ExpressionUUID->"66998151-0738-49e0-9d54-\
-0e3ba66ac70f"],
-
-Cell[TextData[ButtonBox["RBOTone",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/RBOTone"]], "TOCSection",ExpressionUUID->\
-"ea30e30b-f605-48e3-b953-827cc22c1f5f"],
-
-Cell[TextData[ButtonBox["RGAMone",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/RGAMone"]], "TOCSection",ExpressionUUID->\
-"037ab052-0bca-4d6f-a2a5-9303cd6a24e9"],
-
-Cell[TextData[ButtonBox["RTAUone",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/RTAUone"]], "TOCSection",ExpressionUUID->\
-"81f1b5ab-49b4-4955-98b2-0b2290b6bbcc"],
-
-Cell[TextData[ButtonBox["RV",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/RV"]], "TOCSection",ExpressionUUID->\
-"ab0f5ed7-b22b-4bda-951a-9c0717eb283f"],
-
-Cell[TextData[ButtonBox["RVone",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/RVone"]], "TOCSection",ExpressionUUID->\
-"3ef05ab0-e367-437d-86c8-e5cd5bd97434"],
-
-Cell[TextData[ButtonBox["RXALL",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/RXALL"]], "TOCSection",ExpressionUUID->\
-"5a5f5f9c-f315-4ba1-94ff-bbb0084a9e69"],
-
-Cell[TextData[ButtonBox["TableRBOTone",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/TableRBOTone"]], "TOCSection",ExpressionUUI\
-D->"9d4202f1-7a3b-47af-b454-2b89f8bb44ac"],
-
-Cell[TextData[ButtonBox["TableRGAMone",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/TableRGAMone"]], "TOCSection",ExpressionUUI\
-D->"4feb05a7-376b-43ab-9fe8-53b03d195982"],
-
-Cell[TextData[ButtonBox["TableRTAUone",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/TableRTAUone"]], "TOCSection",ExpressionUUI\
-D->"27c3c0bd-2477-41de-8015-3cff9219e873"],
-
-Cell[TextData[ButtonBox["TableRVone",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/ref/TableRVone"]], "TOCSection",ExpressionUUID->\
-"47bbec36-44c8-489c-8d4b-891a3edf6de2"]
-}, Closed]],
-
-Cell[CellGroupData[{
-
-Cell[TextData[ButtonBox["Guides",
- BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/guide/SpaceMath"]], "TOCChapter",ExpressionUUID\
-->"3b3c80bb-6317-4c39-958b-ae3ed0fb9eb7"],
+Cell[TextData[{
+ ButtonBox["Guides",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/guide/SpaceMath"],
+ "\n",
+ ButtonBox["SpaceMath",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/guide/SpaceMath"]
+}], "TOCChapter",
+ CellChangeTimes->{{3.784380731636696*^9, 3.7843807406018457`*^9}, {
+  3.784380778640788*^9, 3.784380783769105*^9}, {3.784381818272297*^9, 
+  3.78438182014781*^9}},
+ CellID->525055234,ExpressionUUID->"3b3c80bb-6317-4c39-958b-ae3ed0fb9eb7"],
 
 Cell[TextData[ButtonBox["SpaceMath",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/guide/SpaceMath"]], "TOCSection",ExpressionUUID\
-->"0e677e3b-1cf4-4c2a-8beb-cec15a8c2a79"]
-}, Open  ]]
+ ButtonData->"paclet:SpaceMath/guide/SpaceMath"]], "TOCSection",
+ CellID->1648239889,ExpressionUUID->"98d31c03-669b-48d8-a402-2400253b021f"]
+}, Closed]]
 }, Open  ]]
 },
-WindowSize->{824, 971},
-WindowMargins->{{370, Automatic}, {26, Automatic}},
+WindowSize->{835, 971},
+WindowMargins->{{324, Automatic}, {19, Automatic}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
   CharacterEncoding -> "UTF-8"]
@@ -10620,57 +10597,49 @@ Cell[3637, 116, 144, 2, 28, "Input",ExpressionUUID->"08883201-aaf1-4cc9-8b42-c85
  CellID->1505790256]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3818, 123, 624565, 10244, 350, "TOCDocumentTitle",ExpressionUUID->"320f6522-6694-49e6-bcd1-d5b2c9e250b9",
+Cell[3818, 123, 624615, 10245, 350, "TOCDocumentTitle",ExpressionUUID->"320f6522-6694-49e6-bcd1-d5b2c9e250b9",
  CellID->812708116],
+Cell[628436, 10370, 356, 6, 42, "Text",ExpressionUUID->"1762b343-14e0-4543-b60c-491b6ae369cc",
+ CellID->1899540067],
+Cell[628795, 10378, 388, 8, 31, "TOCChapter",ExpressionUUID->"e9676c6f-0a87-40ce-953c-eab6364ebd73"],
 Cell[CellGroupData[{
-Cell[628408, 10371, 292, 6, 48, "TOCChapter",ExpressionUUID->"e9676c6f-0a87-40ce-953c-eab6364ebd73"],
-Cell[628703, 10379, 412, 6, 29, "TOCSection",ExpressionUUID->"d3610bfe-a2fc-4a31-8c4b-d6a105f3889b",
- CellID->907900479],
-Cell[629118, 10387, 416, 6, 23, "TOCSection",ExpressionUUID->"a092d142-e0b3-4e67-864e-fac99b96390a",
- CellID->402174753]
+Cell[629208, 10390, 531, 12, 61, "Section",ExpressionUUID->"b2e47b9c-9db7-4b82-bfba-674044656bea",
+ CellID->134754385],
+Cell[629742, 10404, 243, 5, 25, "ExampleDelimiter",ExpressionUUID->"45056506-4172-4f66-867f-e95040a4bbe5",
+ CellID->1237041009]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[629571, 10398, 405, 7, 48, "TOCChapter",ExpressionUUID->"28cfa26f-bc96-4a6f-af92-bb04acf2ba51"],
-Cell[629979, 10407, 181, 2, 29, "TOCSection",ExpressionUUID->"0d852a59-9d87-47e7-8a53-e60fc2aee7ea",
- CellID->1779735036],
-Cell[630163, 10411, 194, 3, 23, "TOCSection",ExpressionUUID->"3febd326-a709-472a-b017-b4b3272e1aab",
- CellID->2139862095],
-Cell[630360, 10416, 452, 7, 23, "TOCSection",ExpressionUUID->"890f1c6d-c12f-4bcf-9044-5b18a882a411",
- CellID->1725410647]
+Cell[630022, 10414, 248, 3, 45, "Section",ExpressionUUID->"ac3c8b2a-2490-4e89-8b1a-a0d610decff4",
+ CellID->1341870975],
+Cell[630273, 10419, 323, 6, 27, "Text",ExpressionUUID->"0486adbe-bcdc-47a2-ba64-ff58203d85c4",
+ CellID->1595845873],
+Cell[630599, 10427, 208, 3, 24, "Text",ExpressionUUID->"d9ac9d67-ab58-4b08-a3ed-91eb31fabff9",
+ CellID->773931442],
+Cell[630810, 10432, 140, 2, 24, "Text",ExpressionUUID->"016c412d-d21a-4545-8f05-5cdd47ec62be",
+ CellID->442942396],
+Cell[630953, 10436, 310, 5, 27, "Text",ExpressionUUID->"73671b70-467c-43fc-b377-8f7741e99ff0",
+ CellID->768916544],
+Cell[631266, 10443, 339, 6, 27, "Text",ExpressionUUID->"6c2a8084-6a4d-4fcf-abb4-3cd15fdba4de",
+ CellID->913590500],
+Cell[631608, 10451, 305, 5, 27, "Text",ExpressionUUID->"de4eaacd-e5d6-454e-9c46-c062854905f9",
+ CellID->1409089023],
+Cell[631916, 10458, 274, 5, 27, "Text",ExpressionUUID->"023aa092-475a-45a3-a712-4c3aed3ed3df",
+ CellID->413512072]
 }, Open  ]],
-Cell[630827, 10426, 293, 4, 48, "TOCChapter",ExpressionUUID->"cab59c90-6507-4400-a83e-8a6b06e1504e",
+Cell[632205, 10466, 357, 7, 51, "TOCChapter",ExpressionUUID->"cab59c90-6507-4400-a83e-8a6b06e1504e",
  CellID->508180598],
-Cell[631123, 10432, 293, 4, 28, "TOCChapter",ExpressionUUID->"07021a21-d553-4f3b-8209-5cff790fb9a7",
- CellID->887618769],
-Cell[631419, 10438, 283, 4, 28, "TOCChapter",ExpressionUUID->"d404faa2-fdf4-4aeb-9b3e-856e7985f31d",
- CellID->328446877],
-Cell[631705, 10444, 322, 5, 28, "TOCChapter",ExpressionUUID->"d525c436-2d06-4589-b72c-1bb7cef8eca6",
- CellID->597054094],
-Cell[632030, 10451, 259, 4, 28, "TOCChapter",ExpressionUUID->"380bfe99-7160-4208-95cd-6abd511690e1",
+Cell[632565, 10475, 351, 7, 31, "TOCChapter",ExpressionUUID->"380bfe99-7160-4208-95cd-6abd511690e1",
  CellID->481829601],
+Cell[632919, 10484, 334, 7, 31, "TOCChapter",ExpressionUUID->"a155c054-8fbe-4cc6-bcb4-96a7dcec8af6"],
+Cell[633256, 10493, 283, 6, 27, "TOCChapter",ExpressionUUID->"2e02fa6e-0ae3-4208-9f61-df89a8c719a1"],
+Cell[633542, 10501, 283, 6, 27, "TOCChapter",ExpressionUUID->"0e65e8ef-47f8-46a3-be0a-918dd025172c",
+ CellID->1439191964],
 Cell[CellGroupData[{
-Cell[632314, 10459, 259, 5, 28, "TOCChapter",ExpressionUUID->"a155c054-8fbe-4cc6-bcb4-96a7dcec8af6"],
-Cell[632576, 10466, 322, 5, 41, "Subsection",ExpressionUUID->"551188d7-20a7-446b-b1ed-f6fc4dfd3b55",
- CellID->132781664]
-}, Closed]],
-Cell[632913, 10474, 220, 4, 27, "TOCChapter",ExpressionUUID->"2e02fa6e-0ae3-4208-9f61-df89a8c719a1"],
-Cell[CellGroupData[{
-Cell[633158, 10482, 320, 6, 28, "TOCChapter",ExpressionUUID->"66998151-0738-49e0-9d54-0e3ba66ac70f"],
-Cell[633481, 10490, 172, 3, 29, "TOCSection",ExpressionUUID->"ea30e30b-f605-48e3-b953-827cc22c1f5f"],
-Cell[633656, 10495, 172, 3, 23, "TOCSection",ExpressionUUID->"037ab052-0bca-4d6f-a2a5-9303cd6a24e9"],
-Cell[633831, 10500, 172, 3, 23, "TOCSection",ExpressionUUID->"81f1b5ab-49b4-4955-98b2-0b2290b6bbcc"],
-Cell[634006, 10505, 162, 3, 23, "TOCSection",ExpressionUUID->"ab0f5ed7-b22b-4bda-951a-9c0717eb283f"],
-Cell[634171, 10510, 168, 3, 23, "TOCSection",ExpressionUUID->"3ef05ab0-e367-437d-86c8-e5cd5bd97434"],
-Cell[634342, 10515, 168, 3, 23, "TOCSection",ExpressionUUID->"5a5f5f9c-f315-4ba1-94ff-bbb0084a9e69"],
-Cell[634513, 10520, 182, 3, 23, "TOCSection",ExpressionUUID->"9d4202f1-7a3b-47af-b454-2b89f8bb44ac"],
-Cell[634698, 10525, 182, 3, 23, "TOCSection",ExpressionUUID->"4feb05a7-376b-43ab-9fe8-53b03d195982"],
-Cell[634883, 10530, 182, 3, 23, "TOCSection",ExpressionUUID->"27c3c0bd-2477-41de-8015-3cff9219e873"],
-Cell[635068, 10535, 178, 3, 23, "TOCSection",ExpressionUUID->"47bbec36-44c8-489c-8d4b-891a3edf6de2"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[635283, 10543, 175, 3, 28, "TOCChapter",ExpressionUUID->"3b3c80bb-6317-4c39-958b-ae3ed0fb9eb7"],
-Cell[635461, 10548, 178, 3, 29, "TOCSection",ExpressionUUID->"0e677e3b-1cf4-4c2a-8beb-cec15a8c2a79"]
-}, Open  ]]
+Cell[633850, 10511, 468, 12, 49, "TOCChapter",ExpressionUUID->"3b3c80bb-6317-4c39-958b-ae3ed0fb9eb7",
+ CellID->525055234],
+Cell[634321, 10525, 197, 3, 29, "TOCSection",ExpressionUUID->"98d31c03-669b-48d8-a402-2400253b021f",
+ CellID->1648239889]
+}, Closed]]
 }, Open  ]]
 }
 ]
