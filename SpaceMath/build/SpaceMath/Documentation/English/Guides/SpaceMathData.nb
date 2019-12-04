@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     44051,       1486]
+NotebookDataLength[     44050,       1486]
 NotebookOptionsPosition[     24650,       1130]
-NotebookOutlinePosition[     26126,       1168]
-CellTagsIndexPosition[     26083,       1165]
+NotebookOutlinePosition[     26125,       1168]
+CellTagsIndexPosition[     26082,       1165]
 WindowTitle->SpaceMath data
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ SpaceMathData.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$9031], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$9011], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/guide/SpaceMathData", ".html"]], None}]}]},
@@ -1142,13 +1142,13 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 4, 10, 23, 43.170899}", 
+   "built" -> "{2019, 12, 4, 10, 38, 7.238654}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Guide", "language" -> "en", "paclet" -> "SpaceMath", "status" -> 
     "None", "summary" -> "", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$8866, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$8846, "title" -> 
     "SpaceMath data", "titlemodifier" -> "", "windowtitle" -> 
     "SpaceMath data", "type" -> "Guide", "uri" -> 
     "SpaceMath/guide/SpaceMathData"}},
@@ -1167,17 +1167,17 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[586, 21, 2304, 53, 70, "AnchorBarGrid",ExpressionUUID->"e2b0da35-efb8-4b8d-9a92-b219f280eed5",
+Cell[586, 21, 2304, 53, 70, "AnchorBarGrid",ExpressionUUID->"72d6d0fd-63cc-4675-8d79-9293892d05ea",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2915, 78, 56, 1, 70, "GuideTitle",ExpressionUUID->"7c0254fa-7fd8-40c6-b9ce-733143feee1b",
  CellID->942062912],
-Cell[2974, 81, 56, 1, 70, "GuideAbstract",ExpressionUUID->"75a76d82-b7bf-45cf-967d-e34bd6e16ddd",
+Cell[2974, 81, 56, 1, 70, "GuideAbstract",ExpressionUUID->"b7c17c8b-e32d-4b99-88ac-1e6d1a3a9646",
  CellID->1]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3067, 87, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"02d12246-4387-4235-a96d-39d91913b6a0"],
-Cell[3207, 95, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"ba5d727d-e121-4183-9578-b01571008a7c"],
+Cell[3067, 87, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"12bc9c6d-828f-460f-9116-721a1831eb7a"],
+Cell[3207, 95, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"915fae0a-a5d3-45e3-9ec3-2ee1ad90c119"],
 Cell[CellGroupData[{
 Cell[3263, 99, 93, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"5c0d64ca-a240-4cfe-8cb6-91181067e4aa",
  CellID->2030737033],
@@ -1487,7 +1487,7 @@ Cell[24434, 1118, 162, 6, 70, "GuideText",ExpressionUUID->"5b71afe6-b428-4b00-b3
  CellID->2000145589]
 }, Open  ]]
 }, Open  ]],
-Cell[24623, 1128, 23, 0, 70, "FooterCell",ExpressionUUID->"52ec15ec-be12-47c3-ad1d-c0cd24df5440"]
+Cell[24623, 1128, 23, 0, 70, "FooterCell",ExpressionUUID->"a6695789-c67c-493f-a592-e8ca991c3504"]
 }
 ]
 *)
