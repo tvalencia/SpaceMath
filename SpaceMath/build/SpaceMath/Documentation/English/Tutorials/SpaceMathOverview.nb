@@ -1,0 +1,317 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11045,        308]
+NotebookOptionsPosition[      6572,        219]
+NotebookOutlinePosition[      8820,        278]
+CellTagsIndexPosition[      8777,        275]
+WindowTitle->SpaceMath Overview
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["SPACE MATH PACKAGE OVERVIEW", "PacletNameCell"], Cell[TextData[Cell[
+    BoxData[
+     ActionMenuBox[
+      FrameBox[
+       InterpretationBox[Cell[TextData[{
+         "URL",
+         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+          StripOnInput->False]
+        }]],
+        TextCell[
+         Row[{"URL", 
+           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+       StripOnInput->False], {"\<\"SpaceMath/tutorial/SpaceMathOverview\"\>":>
+      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["SpaceMath/tutorial/SpaceMathOverview"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/language/SpaceMath/tutorial/\
+SpaceMathOverview.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+            If[
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21249], 
+             "http://reference.wolfram.com/system-modeler/", 
+             "http://reference.wolfram.com/language/"], 
+            "SpaceMath/tutorial/SpaceMathOverview", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic,
+      MenuStyle->"URLMenu"]],
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell[CellGroupData[{
+
+Cell["SpaceMath Overview", "TOCDocumentTitle"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Appendix"]],"paclet:SpaceMath/tutorial/Appendix#509267359"},
+  "RefLink",
+  BaseStyle->"TOCChapter"]], "TOCChapter"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Introduction to SpaceMath package"]],
+   "paclet:SpaceMath/tutorial/Index#256419101"},
+  "RefLink",
+  BaseStyle->"TOCSection"]], "TOCSection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Firs steps"]],"paclet:SpaceMath/tutorial/Index#170836305"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Observables"]],"paclet:SpaceMath/tutorial/Index#937152397"},
+  "RefLink",
+  BaseStyle->"TOCSection"]], "TOCSection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Higgs Boson data"]],"paclet:SpaceMath/tutorial/Index#222407968"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Signal Strength"]],"paclet:SpaceMath/tutorial/Index#1976493996"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Kappa"]],"paclet:SpaceMath/tutorial/Index#382308300"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Lepton Flavor violating"]],
+   "paclet:SpaceMath/tutorial/Index#104793658"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Pseudo Scalar Meson Physics"]],
+   "paclet:SpaceMath/tutorial/Index#768234615"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Oblique Parameters"]],
+   "paclet:SpaceMath/tutorial/Index#773490071"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Unitarity"]],"paclet:SpaceMath/tutorial/Index#657122953"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"]
+}, Open  ]],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Validations"]],"paclet:SpaceMath/tutorial/Index#915214387"},
+  "RefLink",
+  BaseStyle->"TOCSection"]], "TOCSection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["CP-even and CP-odd branching ratios"]],
+   "paclet:SpaceMath/tutorial/Index#373894052"},
+  "RefLink",
+  BaseStyle->"TOCSection"]], "TOCSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Appendix"]],"paclet:SpaceMath/tutorial/Index#1315917021"},
+  "RefLink",
+  BaseStyle->"TOCSection"]], "TOCSection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["SpaceMath data"]],"paclet:SpaceMath/tutorial/Index#1379020092"},
+  
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["References"]],"paclet:SpaceMath/tutorial/Index#1484500713"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]], "TOCSubsection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Installation"]],
+   "paclet:SpaceMath/tutorial/Installation#509267359"},
+  "RefLink",
+  BaseStyle->{"TOCChapter", "Section"}]], "TOCChapter"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Introduction"]],
+   "paclet:SpaceMath/tutorial/Introduction#509267359"},
+  "RefLink",
+  BaseStyle->"TOCChapter"]], "TOCChapter"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["References"]],"paclet:SpaceMath/tutorial/References#509267359"},
+  
+  "RefLink",
+  BaseStyle->"TOCChapter"]], "TOCChapter"]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"SpaceMath Overview",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "TutorialColor", 
+  "LinkTrails" -> GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2019, 12, 4, 10, 24, 12.159883}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "SpaceMath`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Space Math Package Overview", "language" -> "en", "paclet" -> 
+    "SpaceMath Package", "status" -> "None", "summary" -> 
+    "Appendix Installation Introduction", "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$21197, "title" -> 
+    "SpaceMath Overview", "titlemodifier" -> "", "windowtitle" -> 
+    "SpaceMath Overview", "type" -> "Overview", "uri" -> 
+    "SpaceMath/tutorial/SpaceMathOverview"}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> Notebook], 
+   Cell[
+    StyleData["Output"], CellContext -> Notebook], 
+   Cell[
+    StyleData["TOCSubsubsection"], 
+    CellGroupingRules -> {"SectionGrouping", 69}], 
+   Cell[
+    StyleData["TutorialMoreAboutSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["RelatedTutorialsSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["TutorialRelatedLinksSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"43a75965-34a0-4d73-89d3-7f593d42b40e",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[2964, 79, 46, 0, 70, "TOCDocumentTitle",ExpressionUUID->"69ac176f-cf80-4a24-9bfe-bedefa8304ea"],
+Cell[CellGroupData[{
+Cell[3035, 83, 164, 4, 70, "TOCChapter",ExpressionUUID->"93e4ff7b-2724-49a6-ac87-4e9a2e71ea85"],
+Cell[CellGroupData[{
+Cell[3224, 91, 190, 5, 70, "TOCSection",ExpressionUUID->"cf18a645-ff9c-4eb2-98cc-9acb2d0362dd"],
+Cell[3417, 98, 169, 4, 70, "TOCSubsection",ExpressionUUID->"ae03456e-158c-4b90-a9de-db34400df1b7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3623, 107, 164, 4, 70, "TOCSection",ExpressionUUID->"8f26fb76-813f-4eb8-a555-2c547f54eebb"],
+Cell[3790, 113, 175, 4, 70, "TOCSubsection",ExpressionUUID->"cb9cf73e-1540-4b97-ac87-a3325676fcc6"],
+Cell[3968, 119, 175, 4, 70, "TOCSubsection",ExpressionUUID->"1a922142-268c-43ad-9958-28976cd1cdf6"],
+Cell[4146, 125, 164, 4, 70, "TOCSubsection",ExpressionUUID->"4c522929-cf68-4e3f-a6ef-c6c22edbaa1b"],
+Cell[4313, 131, 186, 5, 70, "TOCSubsection",ExpressionUUID->"c8542643-ed56-4560-b9ea-595b2760ac53"],
+Cell[4502, 138, 190, 5, 70, "TOCSubsection",ExpressionUUID->"036d14ff-e100-4348-a167-ce64c4073129"],
+Cell[4695, 145, 181, 5, 70, "TOCSubsection",ExpressionUUID->"79529cf4-4d0a-4aa2-a55a-7aaa6b474e3d"],
+Cell[4879, 152, 168, 4, 70, "TOCSubsection",ExpressionUUID->"5d54d99e-620c-4fd4-9d73-90820ed35dae"]
+}, Open  ]],
+Cell[5062, 159, 164, 4, 70, "TOCSection",ExpressionUUID->"2c6b3eb5-a39e-47fe-9643-e352bf80e806"],
+Cell[5229, 165, 192, 5, 70, "TOCSection",ExpressionUUID->"3e4a1714-f4d3-45ee-a6dc-59116a8b3ee3"],
+Cell[CellGroupData[{
+Cell[5446, 174, 162, 4, 70, "TOCSection",ExpressionUUID->"38f664aa-3c4f-44ee-a0cc-ef5b7a4cc215"],
+Cell[5611, 180, 177, 5, 70, "TOCSubsection",ExpressionUUID->"8b63c557-4c3d-44fd-8228-56da617ecc2c"],
+Cell[5791, 187, 170, 4, 70, "TOCSubsection",ExpressionUUID->"3af0c0c4-00f0-47d2-b9dd-e381582f03dc"]
+}, Open  ]]
+}, Open  ]],
+Cell[5988, 195, 189, 5, 70, "TOCChapter",ExpressionUUID->"c3e7daa1-0277-4472-bbad-298932a49dbd"],
+Cell[6180, 202, 176, 5, 70, "TOCChapter",ExpressionUUID->"532b58ca-a16e-484a-9bbf-7c0c4518e6bc"],
+Cell[6359, 209, 171, 5, 70, "TOCChapter",ExpressionUUID->"251cfb0a-7a78-4a6b-a8d8-49e471697a95"]
+}, Open  ]],
+Cell[6545, 217, 23, 0, 70, "FooterCell",ExpressionUUID->"cf017dc2-1155-4248-b934-8aa911484a92"]
+}
+]
+*)
+
+(* End of internal cache information *)
