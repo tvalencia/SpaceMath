@@ -76,7 +76,7 @@ Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
                     URL[
                     StringJoin[
                     If[
-                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19498], 
+                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19472], 
                     "http://reference.wolfram.com/system-modeler/", 
                     "http://reference.wolfram.com/language/"], 
                     "SpaceMath/tutorial/Index", ".html"]], None}]}]}, 
@@ -138,7 +138,7 @@ Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
          "References", "Subsection", CellID -> 1484500713, ExpressionUUID -> 
           "7ab6fd4e-ded3-4c32-a295-b7736022b5b4"]}, Open]]}, 
      WindowSize -> {700, 770}, 
-     WindowMargins -> {{Automatic, 115}, {Automatic, 28}}, FrontEndVersion -> 
+     WindowMargins -> {{Automatic, 115}, {Automatic, 56}}, FrontEndVersion -> 
      "12.0 for Linux x86 (64-bit) (April 8, 2019)", StyleDefinitions -> 
      FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
        CharacterEncoding -> "UTF-8"]], 
@@ -702,7 +702,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 3, 23, 29, 44.477710}", 
+   "built" -> "{2019, 12, 3, 23, 49, 58.459540}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -765,7 +765,7 @@ Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
                     URL[
                     StringJoin[
                     If[
-                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19498], 
+                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19472], 
                     "http://reference.wolfram.com/system-modeler/", 
                     "http://reference.wolfram.com/language/"], 
                     "SpaceMath/tutorial/Index", ".html"]], None}]}]}, 
@@ -831,7 +831,7 @@ Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
               "References", "Subsection", CellID -> 1484500713, 
                ExpressionUUID -> "7ab6fd4e-ded3-4c32-a295-b7736022b5b4"]}, 
              Open]]}, WindowSize -> {700, 770}, 
-          WindowMargins -> {{Automatic, 115}, {Automatic, 28}}, 
+          WindowMargins -> {{Automatic, 115}, {Automatic, 56}}, 
           FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
           StyleDefinitions -> 
           FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
@@ -1389,7 +1389,7 @@ Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
         "PrimaryExamplesSection", "ExtendedExamplesSection", "ExampleSection",
           "ExampleSubsection", "ExampleDelimiter", "Title"}]], "Tutorial", 
       "Introduction to SpaceMath package"], "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$19437, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$19411, "title" -> 
     "Introduction to SpaceMath package", "titlemodifier" -> "", "windowtitle" -> 
     "Introduction to SpaceMath package", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/Index"}},
@@ -1425,8 +1425,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[605, 21, 37793, 665, 70, "Input",ExpressionUUID->"fdf3b3b4-1b76-4da6-978d-3a051d97b7b0"],
-Cell[38401, 688, 23, 0, 70, "FooterCell",ExpressionUUID->"0a249ab6-e0cb-490b-bc4d-4802c66020ed"]
+Cell[605, 21, 37793, 665, 70, "Input",ExpressionUUID->"14f96c01-53ca-4917-8c95-54592968f8f3"],
+Cell[38401, 688, 23, 0, 70, "FooterCell",ExpressionUUID->"3e0b9b03-a63b-4812-b379-82947ea47390"]
 }
 ]
 *)

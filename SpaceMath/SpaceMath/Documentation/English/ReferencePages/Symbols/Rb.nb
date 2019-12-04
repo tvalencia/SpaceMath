@@ -59,7 +59,7 @@ Cell[BoxData[GridBox[{
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$10284], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$10256], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], "SpaceMath/ref/Rb", 
             ".html"]], None}]}]},
@@ -110,7 +110,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2019, 12, 3, 23, 29, 17.340070}", 
+   "built" -> "{2019, 12, 3, 23, 49, 32.984242}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -142,12 +142,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[574, 21, 2266, 53, 70, "AnchorBarGrid",ExpressionUUID->"64d09433-50b9-4fa5-a491-fcd3910d0aa1",
+Cell[574, 21, 2266, 53, 70, "AnchorBarGrid",ExpressionUUID->"dcefd53e-b2c8-4be4-aedd-325c8f7fc566",
  CellID->1],
-Cell[2843, 76, 159, 6, 70, "ObjectNameGrid",ExpressionUUID->"27d6021f-dc7c-4bc8-8723-0bb59b2d78e4"],
-Cell[3005, 84, 273, 9, 70, "Usage",ExpressionUUID->"e2475ab1-ebe2-497c-9b51-ab1907e9b06d",
+Cell[2843, 76, 159, 6, 70, "ObjectNameGrid",ExpressionUUID->"ce407f4f-da36-4a88-8814-668927d570e8"],
+Cell[3005, 84, 273, 9, 70, "Usage",ExpressionUUID->"b975d1a6-fbe9-44c3-b5d9-23bbe4f8e907",
  CellID->982511436],
-Cell[3281, 95, 23, 0, 70, "FooterCell",ExpressionUUID->"aabcd45a-0523-4c33-b4f3-dbd3722a9de9"]
+Cell[3281, 95, 23, 0, 70, "FooterCell",ExpressionUUID->"a4103ddb-9e5e-45d6-8cc8-317ca4955a26"]
 }
 ]
 *)

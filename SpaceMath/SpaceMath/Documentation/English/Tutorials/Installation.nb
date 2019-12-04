@@ -60,7 +60,7 @@ Installation.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19939], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19913], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/Installation", ".html"]], None}]}]},
@@ -194,7 +194,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 3, 23, 29, 45.233039}", 
+   "built" -> "{2019, 12, 3, 23, 49, 59.487077}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -206,7 +206,7 @@ or higher. Automatic Installation Run the following instructions in a \
 Mathematica session: \
 Import[https://raw.githubusercontent.com/spacemathproject/SpaceMath/master/\
 SpaceMath/Install.m\"] InstallSpaceMath[]", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$19883, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$19857, "title" -> 
     "Installation", "titlemodifier" -> "", "windowtitle" -> "Installation", 
     "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/Installation"}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
@@ -241,7 +241,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[584, 21, 2321, 54, 70, "AnchorBarGrid",ExpressionUUID->"36943692-9908-46ef-8fbc-fa45f524cf63",
+Cell[584, 21, 2321, 54, 70, "AnchorBarGrid",ExpressionUUID->"1a488d81-f90f-452b-8d2a-bd50268204be",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2930, 79, 80, 1, 70, "Title",ExpressionUUID->"39723679-3f46-4745-bb15-789a0d614427",
@@ -269,7 +269,7 @@ Cell[5487, 173, 81, 1, 70, "Text",ExpressionUUID->"93f12153-f6d8-42ff-ae01-e2f02
 Cell[5571, 176, 45, 1, 70, "Caption",ExpressionUUID->"be25fbaf-98bf-4fdd-ba8e-7ed1cc908740",
  CellID->1891092685]
 }, Open  ]],
-Cell[5631, 180, 23, 0, 70, "FooterCell",ExpressionUUID->"89f3a46c-9807-43b2-8a26-82f495459114"]
+Cell[5631, 180, 23, 0, 70, "FooterCell",ExpressionUUID->"43410884-e392-4e59-a9a3-462dd0c716a1"]
 }
 ]
 *)
