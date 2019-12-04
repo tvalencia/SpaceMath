@@ -1,6 +1,6 @@
 (* Paclet Info File *)
 
-(* created 2019/12/03*)
+(* created 2019/12/04*)
 
 Paclet[
     Name -> "SpaceMath",
