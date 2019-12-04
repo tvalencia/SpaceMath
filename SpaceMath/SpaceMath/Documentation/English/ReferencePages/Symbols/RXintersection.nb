@@ -59,7 +59,7 @@ RXintersection.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$14790], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$14817], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/ref/RXintersection", ".html"]], None}]}]},
@@ -139,7 +139,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2019, 12, 3, 22, 53, 56.200772}", 
+   "built" -> "{2019, 12, 3, 23, 18, 29.418665}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -190,12 +190,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[586, 21, 2302, 53, 70, "AnchorBarGrid",ExpressionUUID->"d9b593b8-bb38-4032-978d-2211155ced89",
+Cell[586, 21, 2302, 53, 70, "AnchorBarGrid",ExpressionUUID->"dcc169d0-88f7-4218-b84b-1d881dab48bc",
  CellID->1],
-Cell[2891, 76, 171, 6, 70, "ObjectNameGrid",ExpressionUUID->"89422dc8-1de4-4c4a-82e9-65cfd6bdd89e"],
+Cell[2891, 76, 171, 6, 70, "ObjectNameGrid",ExpressionUUID->"5f8ea7dd-1f55-472c-81f6-d9be023a2ed4"],
 Cell[3065, 84, 1986, 38, 70, "Usage",ExpressionUUID->"905414b2-d717-466f-ab0d-65bbd1e0ff31",
  CellID->982511436],
-Cell[5054, 124, 23, 0, 70, "FooterCell",ExpressionUUID->"d97e3e02-a1bc-4cb2-baaa-0215fb9a777c"]
+Cell[5054, 124, 23, 0, 70, "FooterCell",ExpressionUUID->"bed750c5-98c3-488e-a9fc-400274ac7013"]
 }
 ]
 *)
