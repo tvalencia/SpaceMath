@@ -21,14 +21,14 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[GridBox[{
    {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "43500f95-3fba-4698-abcb-6f83d7d2a8bc"], Cell[TextData[Cell[BoxData[
+     "a56c4e28-980e-48fd-90b9-02f8eaac1f2f"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"98651ab2-2970-4a59-a6a3-e10dbb1684e4"],
+        }],ExpressionUUID->"d9520432-68a3-4bcc-8602-732933a99b56"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -60,7 +60,7 @@ SpaceMath.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$20974], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21062], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/SpaceMath", ".html"]], None}]}]},
@@ -68,14 +68,14 @@ SpaceMath.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "7025aedb-4e02-43f9-9bdf-9a078347ea10"]], "AnchorBar",ExpressionUUID->
-     "b9a057be-3f3f-430e-b77d-a80c46923d2d"]}
+     "498292c4-5d82-42bf-8f04-dd653297a891"]], "AnchorBar",ExpressionUUID->
+     "db33d77f-15e4-4d93-89fc-36446d8f2db0"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"d9c33d1a-bb24-4ab9-8f51-b3fd1fbcf865"],
+ CellID->1,ExpressionUUID->"373a0529-c23a-4770-bbef-83338588b091"],
 
 Cell[CellGroupData[{
 
@@ -97,7 +97,7 @@ Cell[BoxData["XXXX"], "Output",
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"7cc0662c-052f-4698-8ddc-d4c900d14df6"]
+Cell[" ", "FooterCell",ExpressionUUID->"ca9614c2-df0c-42d0-a5e9-2e1985b5effa"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -113,13 +113,13 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 5, 10, 55, 58.206030}", 
+   "built" -> "{2019, 12, 5, 14, 20, 38.599206}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
     "status" -> "None", "summary" -> "XXXX.", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$20924, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$21013, "title" -> 
     "SpaceMath Package", "titlemodifier" -> "", "windowtitle" -> 
     "SpaceMath Package", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/SpaceMath", "WorkflowDockedCell" -> ""}, 
@@ -156,7 +156,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[589, 21, 2595, 56, 55, "AnchorBarGrid",ExpressionUUID->"d9c33d1a-bb24-4ab9-8f51-b3fd1fbcf865",
+Cell[589, 21, 2595, 56, 55, "AnchorBarGrid",ExpressionUUID->"373a0529-c23a-4770-bbef-83338588b091",
  CellID->1],
 Cell[CellGroupData[{
 Cell[3209, 81, 109, 1, 65, "Title",ExpressionUUID->"0eb39c1b-dcf7-42e8-8be8-25f73211cc44",
@@ -170,7 +170,7 @@ Cell[3578, 93, 130, 2, 38, "Output",ExpressionUUID->"a194367d-fbdc-47fb-a704-1e5
  CellID->1181321046]
 }, Open  ]]
 }, Open  ]],
-Cell[3735, 99, 78, 0, 43, "FooterCell",ExpressionUUID->"7cc0662c-052f-4698-8ddc-d4c900d14df6"]
+Cell[3735, 99, 78, 0, 43, "FooterCell",ExpressionUUID->"ca9614c2-df0c-42d0-a5e9-2e1985b5effa"]
 }
 ]
 *)
