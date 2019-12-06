@@ -117,6 +117,7 @@ Get/@listMisc;
 
 EndPackage[];
 
+
 If[ Global`$SpaceMathStartupMessages =!= False,
 	Print[	Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ",
 				"Text"],
