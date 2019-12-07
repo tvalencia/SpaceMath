@@ -3,6 +3,9 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin RV************************************************************************************)
 (******************************************************************************************************************************************************)
+(******************************************************************************************************************************************************)
+(*********************************************************Begin RV************************************************************************************)
+(******************************************************************************************************************************************************)
 RVone::usage = "\!\(\*
 StyleBox[\"RVone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -437,6 +440,10 @@ End[]
 
 Begin["`PlotsRXX`Private`"]
 
+(*********************************************************************************************
+*******************************All signal strenghts*************************************************************
+*********************************************************************************************)
+
 RXALL1sig[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RbbINF1sig <= Rbotbot[ghtt, ghbb] <= RbbSUP1sig, 
  RtautauINF1sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP1sig, 
@@ -447,7 +454,7 @@ RegionPlot[{RbbINF1sig <= Rbotbot[ghtt, ghbb] <= RbbSUP1sig,
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, PlotLegends -> 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, PlotLegends -> 
  Placed[{Style["\!\(\*SubscriptBox[\(R\), \(b\)]\)", Larger, 
     Bold], Style["\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)", 
     Larger, Bold], 
@@ -456,7 +463,7 @@ StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, PlotLegends -
    0.6}], 
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed], BoundaryStyle -> {1 -> Directive[Green, Dashed, Thickness[0.003]], 
@@ -464,7 +471,15 @@ StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, PlotLegends -
   3 -> Directive[Yellow, Dashed, Thickness[0.003]], 
   4 -> Directive[Blue, Dashed, Thickness[0.003]], 
   5 -> Directive[Orange, Dashed, Thickness[0.003]]}, PlotStyle -> {{Green, Opacity[0.3]}, {Pink, Opacity[0.3]}, {Yellow, 
-   Opacity[0.3]}, {Blue, Opacity[0.3]}, {Orange, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+   Opacity[0.3]}, {Blue, Opacity[0.3]}, {Orange, Opacity[0.3]}},PlotPoints->PP]
+
+
+RXALL1[
+ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+RXALL1sig[ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+ {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+];
 
 RXALL2sig[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RbbINF2sig <= Rbotbot[ghtt, ghbb] <= RbbSUP2sig, 
@@ -476,7 +491,7 @@ RegionPlot[{RbbINF2sig <= Rbotbot[ghtt, ghbb] <= RbbSUP2sig,
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, PlotLegends -> 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, PlotLegends -> 
  Placed[{Style["\!\(\*SubscriptBox[\(R\), \(b\)]\)", Larger, 
     Bold], Style["\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)", 
     Larger, Bold], 
@@ -485,7 +500,7 @@ StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, PlotLegends -
    0.6}], 
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed], BoundaryStyle -> {1 -> Directive[Green, Dashed, Thickness[0.003]], 
@@ -493,50 +508,72 @@ StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, PlotLegends -
   3 -> Directive[Yellow, Dashed, Thickness[0.003]], 
   4 -> Directive[Blue, Dashed, Thickness[0.003]], 
   5 -> Directive[Orange, Dashed, Thickness[0.003]]}, PlotStyle -> {{Green, Opacity[0.3]}, {Pink, Opacity[0.3]}, {Yellow, 
-   Opacity[0.3]}, {Blue, Opacity[0.3]}, {Orange, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+   Opacity[0.3]}, {Blue, Opacity[0.3]}, {Orange, Opacity[0.3]}},PlotPoints->PP]
 
-RXALL[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:={
-RXALL1sig[ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
-RXALL2sig[ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP]
+
+RXALL2[
+ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+RXALL2sig[ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+ {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+];
+
+RXALL[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:={
+RXALL1[
+ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
+RXALL2[
+ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
+
 (*RXXALL[ghtt[ArcCos[Cab]+ArcTan[tb], 1.415,Cab,tb], ghbb[ArcCos[Cab]+ArcTan[tb], 1,Cab,tb],ghZZ[Sqrt[1-Cab^2]],ghWW[Sqrt[1-Cab^2]],
 ghtautau[ArcCos[Cab]+ArcTan[tb], 1,Cab,tb],0.01,500,tb,Cab,0,10,0,1,Subscript[t, \[Beta]],Subscript[c, \[Alpha]\[Beta]]]*)
+
 Individual process;
 R Z
+
 (*************************************************************************************************************************************************************************************)
+
 (*R Z to 1\[Sigma] in the case in which there is dependence in one parameter*)
+
 RZ1sigX[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{RZZ[ghtt,ghbb,ghZZ],RzzSUP1sig,RzzINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(Z\)]\)",
-"Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(Z\)]\)"}, 
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
-Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Orange,Opacity[0.1]}
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Red],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Red]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Orange}
 ]
+
 (*RZ to 2\[Sigma] in the case in which there is dependence in one parameter*)
+
 RZ2sigX[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{RZZ[ghtt,ghbb,ghZZ],RzzSUP2sig,RzzINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(Z\)]\)",
-"Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
-FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(Z\)]\)"},
+"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(Z\)]\)"}, 
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
-Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Orange,Opacity[0.1]}
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Red],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Red]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Orange}
 ]
+
 RZone[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xlabel_]:={
 RZ1sigX[ghtt,ghbb,ghZZ,x,xmin,xmax,xlabel],
 RZ2sigX[ghtt,ghbb,ghZZ,x,xmin,xmax,xlabel]
 }
+
 (*TABLES FOR RVone*)
+
 dataRZone1sig[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RzzINF1sig<=RZZ[ghtt,ghbb,ghZZ]<=RzzSUP1sig, RZZ[ghtt,ghbb,ghZZ],0]}, {x, xmin,xmax,xstep}]
 
 dataRZone2sig[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RzzINF2sig<=RZZ[ghtt,ghbb,ghZZ]<=RzzSUP2sig, RZZ[ghtt,ghbb,ghZZ],0]}, {x, xmin,xmax,xstep}]
+
 (*EXPORTING TABLES FOR RVone*)
+
 TableRZone[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRZone_1sigma.txt"}],Re[dataRZone1sig[ghtt,ghbb,ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
@@ -547,7 +584,9 @@ FileNameJoin[{$UserDocumentsDirectory,"TableRZone_2sigma.txt"}],Re[dataRZone2sig
 "Table"
 ]
 }
+
 (*RZ to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*RZZ*)
 RZ2sig[ghtt_, ghbb_,ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RzzINF2sig <= Re[RZZ[ghtt, ghbb, ghZZ]] <= RzzSUP2sig},
@@ -559,18 +598,21 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(R\), \(Z\)]\)"}, {1,0.6}],
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, 
 PlotStyle -> {{Orange, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 RZ2sigWXYZ[
 ghtt_, ghbb_,ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
 RZ2sig[ghtt, ghbb,ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 (*RZ to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*\[Mu]ZZ*)
 RZ1sig[ghtt_, ghbb_,ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RzzINF1sig <= Re[RZZ[ghtt, ghbb, ghZZ]] <= RzzSUP1sig},
@@ -582,17 +624,19 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(R\), \(Z\)]\)"}, {1,0.6}],
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, 
 PlotStyle -> {{Orange, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 RZ1sigWXYZ[
 ghtt_, ghbb_,ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
 RZ1sig[ghtt, ghbb,ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 RZ[
 ghtt_, ghbb_,ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
@@ -601,16 +645,21 @@ ghtt, ghbb,ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,
 RZ2sigWXYZ[
 ghtt, ghbb,ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
+
 (*TABLES FOR RZ*)
+
 dataRZ1sig[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
     RzzINF1sig<=RZZ[ghtt,ghbb,ghZZ]<=RzzSUP1sig, RZZ[ghtt,ghbb,ghZZ],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 dataRZ2sig[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
     RzzINF2sig<=RZZ[ghtt,ghbb,ghZZ]<=RzzSUP2sig, RZZ[ghtt,ghbb,ghZZ],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 (*EXPORTING TABLES FOR RZ*)
+
 TableRZ[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRZ_1sigma.txt"}],
@@ -625,42 +674,53 @@ dataRZ2sig[ghtt,ghbb,ghZZ,x,xmin,xmax,xstep,y,ymin,ymax,ystep]]/. {{_,_,0} -> Se
 "Table"
 ]
 }
+
 Individual process;
 R W
+
 (*************************************************************************************************************************************************************************************)
+
 (*R W to 1\[Sigma] in the case in which there is dependence in one parameter*)
+
 RW1sigX[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xlabel_]:=Plot[{RWW[ghtt,ghbb,ghWW],RwwSUP1sig,RwwINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(W\)]\)",
-"Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(W\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Orange],Directive[AbsoluteThickness[3.3],
-Dashing[{0.03,0.03,0.003}],Orange]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Orange,Opacity[0.1]}
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple,Opacity[0.5]],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Purple,Opacity[0.5]]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Pink}
 ]
+
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
+
 RW2sigX[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xlabel_]:=Plot[{RWW[ghtt,ghbb,ghWW],RwwSUP2sig,RwwINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(W\)]\)",
-"Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(W\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Orange],Directive[AbsoluteThickness[3.3],
-Dashing[{0.03,0.03,0.003}],Orange]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Orange,Opacity[0.1]}
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple,Opacity[0.5]],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Purple,Opacity[0.5]]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Pink}
 ]
+
 RWone[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xlabel_]:={
 RW1sigX[ghtt,ghbb,ghWW,x,xmin,xmax,xlabel],
 RW2sigX[ghtt,ghbb,ghWW,x,xmin,xmax,xlabel]
 }
+
 (*TABLES FOR RWone*)
+
 dataRWone1sig[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RwwINF1sig<=RWW[ghtt,ghbb,ghWW]<=RwwSUP1sig, RWW[ghtt,ghbb,ghWW],0]}, {x, xmin,xmax,xstep}]
 
 dataRWone2sig[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RwwINF2sig<=RWW[ghtt,ghbb,ghWW]<=RwwSUP2sig, RWW[ghtt,ghbb,ghWW],0]}, {x, xmin,xmax,xstep}]
+
 (*EXPORTING TABLES FOR RVone*)
+
 TableRWone[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRWone_1sigma.txt"}],Re[dataRWone1sig[ghtt,ghbb,ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
@@ -671,7 +731,9 @@ FileNameJoin[{$UserDocumentsDirectory,"TableRWone_2sigma.txt"}],Re[dataRWone2sig
 "Table"
 ]
 }
+
 (*RW to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*\[Mu]WW*)
 RW2sig[ghtt_, ghbb_,ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RwwINF2sig <= Re[RWW[ghtt, ghbb, ghWW]] <= RwwSUP2sig},
@@ -679,22 +741,25 @@ RegionPlot[{RwwINF2sig <= Re[RWW[ghtt, ghbb, ghWW]] <= RwwSUP2sig},
   ,FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(R\), \(W\)]\)"}, {1,0.6}],
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Green, Dashed, Thickness[0.003]]}, 
-PlotStyle -> {{Green, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+     Dashed], BoundaryStyle -> {1 -> Directive[Black, Dashed, Thickness[0.003]]}, 
+PlotStyle -> {{Red, Opacity[0.8]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 RW2sigWXYZ[
 ghtt_, ghbb_,ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
 RW2sig[ghtt, ghbb,ghWW,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 (*RW to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*\[Mu]WW*)
 RW1sig[ghtt_, ghbb_,ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RwwINF1sig <= Re[RWW[ghtt, ghbb, ghWW]] <= RwwSUP1sig},
@@ -702,21 +767,23 @@ RegionPlot[{RwwINF1sig <= Re[RWW[ghtt, ghbb, ghWW]] <= RwwSUP1sig},
   ,FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(R\), \(W\)]\)"}, {1,0.6}],
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Green, Dashed, Thickness[0.003]]}, 
-PlotStyle -> {{Green, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+     Dashed], BoundaryStyle -> {1 -> Directive[Black, Dashed, Thickness[0.003]]}, 
+PlotStyle -> {{Red, Opacity[0.8]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 RW1sigWXYZ[
 ghtt_, ghbb_,ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
 RW1sig[ghtt, ghbb,ghWW,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 RW[
 ghtt_, ghbb_,ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
@@ -725,16 +792,21 @@ ghtt, ghbb,ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,
 RW2sigWXYZ[
 ghtt, ghbb,ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
+
 (*TABLES FOR RW*)
+
 dataRW1sig[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
     RwwINF1sig<=RWW[ghtt,ghbb,ghWW]<=RwwSUP1sig, RWW[ghtt,ghbb,ghWW],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 dataRW2sig[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
     RwwINF2sig<=RWW[ghtt,ghbb,ghWW]<=RwwSUP2sig, RWW[ghtt,ghbb,ghWW],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 (*EXPORTING TABLES FOR RW*)
+
 TableRW[ghtt_,ghbb_,ghWW_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRW_1sigma.txt"}],
@@ -749,36 +821,45 @@ dataRW2sig[ghtt,ghbb,ghWW,x,xmin,xmax,xstep,y,ymin,ymax,ystep]]/. {{_,_,0} -> Se
 "Table"
 ]
 }
+
 (*************************************************************************************************************************************************************************************)
+
 Individual process;
 R Gamma
+
 (*R Gamma to 1\[Sigma] in the case in which there is dependence in one parameter*)
+
 RGam1sigX[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{ Rgaga[ghtt, ghbb, ghWW, gCH, mCH],RgammagammaSUP1sig,RgammagammaINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\)",
-"Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Yellow],Directive[AbsoluteThickness[3.3],
-Dashing[{0.03,0.03,0.003}],Yellow]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Yellow,Opacity[0.1]}
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Cyan],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Cyan]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue}
 ]
+
 (*R gamma to 2\[Sigma] in the case in which there is dependence on one parameter*)
+
 RGam2sigX[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{ Rgaga[ghtt, ghbb, ghWW, gCH, mCH],RgammagammaSUP2sig,RgammagammaINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\)",
-"Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Yellow],Directive[AbsoluteThickness[3.3],
-Dashing[{0.03,0.03,0.003}],Yellow]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Yellow,Opacity[0.1]}
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Cyan],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Cyan]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue}
 ]
+
 RGAMone[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:={
 RGam1sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel],
 RGam2sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel]
 }
+
 (*TABLES FOR RGAMone*)
+
 dataRGAMone1sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RgammagammaINF1sig<=Rgaga[ghtt, ghbb, ghWW, gCH, mCH]<=RgammagammaSUP1sig, 
 Rgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, {x, xmin,xmax,xstep}]
@@ -787,7 +868,9 @@ dataRGAMone2sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RgammagammaINF2sig<=Rgaga[ghtt, ghbb, ghWW, gCH, mCH]<=RgammagammaSUP2sig, 
 Rgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, {x, xmin,xmax,xstep}]
 
+
 (*EXPORTING TABLES FOR RGAMone*)
+
 TableRGAMone[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRGAMone_1sigma.txt"}],Re[dataRGAMone1sig[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
@@ -798,7 +881,9 @@ FileNameJoin[{$UserDocumentsDirectory,"TableRGAMone_2sigma.txt"}],Re[dataRGAMone
 "Table"
 ]
 }
+
 (*R gamma to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*\[Mu]\[Gamma]\[Gamma]*)
 Rgam2sig[ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RgammagammaINF2sig<= Rgaga[ghtt, ghbb, ghWW, gCH, mCH] <=RgammagammaSUP2sig},
@@ -806,15 +891,16 @@ RegionPlot[{RgammagammaINF2sig<= Rgaga[ghtt, ghbb, ghWW, gCH, mCH] <=Rgammagamma
   ,FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\)"}, {1,0.6}],
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed], BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.003]]}, 
 PlotStyle -> {{Purple, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 RGam2sigWXYZ[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
@@ -822,7 +908,9 @@ Rgam2sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 ],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 (*R gamma to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*\[Mu]\[Gamma]\[Gamma]*)
 Rgam1sig[ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RgammagammaINF1sig<= Rgaga[ghtt, ghbb, ghWW, gCH, mCH] <=RgammagammaSUP1sig},
@@ -834,11 +922,12 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\)"}, {1,0.6}],
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed], BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.003]]}, 
-PlotStyle -> {{Purple, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+PlotStyle -> {{Purple, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 RGam1sigWXYZ[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
@@ -846,6 +935,7 @@ Rgam1sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 ],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 RGam[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
@@ -854,18 +944,23 @@ ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,
 RGam2sigWXYZ[
 ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
+
 (*TABLES FOR RW*)
+
 dataRGam1sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
     RgammagammaINF1sig<= Rgaga[ghtt, ghbb, ghWW, gCH, mCH] <=RgammagammaSUP1sig,Rgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 dataRGam2sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
     RgammagammaINF2sig<= Rgaga[ghtt, ghbb, ghWW, gCH, mCH] <=RgammagammaSUP2sig,Rgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 (*EXPORTING TABLES FOR RGam*)
+
 TableRGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRGam_1sigma.txt"}],
@@ -881,38 +976,48 @@ dataRGam2sig[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 }
+
 (*************************************************************************************************************************************************************************************)
+
 Individual process;
 R botton
+
 (*************************************************************************************************************************************************************************************)
+
 (*R bottom to 1\[Sigma] in the case in which there is dependence in one parameter*)
+
 Rb1sigX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{Rbotbot[ghtt,ghbb],RbbSUP1sig,RbbINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(b\)]\)",
-"Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(b\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
+
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
+
 Rb2sigX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{Rbotbot[ghtt,ghbb],RbbSUP2sig,RbbINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(b\)]\)",
-"Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(b\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
+
 
 RBOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:={
 Rb1sigX[ghtt,ghbb,x,xmin,xmax,xlabel],
 Rb2sigX[ghtt,ghbb,x,xmin,xmax,xlabel]
 }
+
 (*TABLES FOR RBOTone*)
+
 dataRBOTone1sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RbbINF1sig<=Rbotbot[ghtt,ghbb]<=RbbSUP1sig, 
 Rbotbot[ghtt,ghbb],0]}, {x, xmin,xmax,xstep}]
@@ -921,7 +1026,9 @@ dataRBOTone2sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RbbINF2sig<=Rbotbot[ghtt,ghbb]<=RbbSUP2sig,
  Rbotbot[ghtt,ghbb],0]}, {x, xmin,xmax,xstep}]
 
+
 (*EXPORTING TABLES FOR RBOTone*)
+
 TableRBOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRBOTone_1sigma.txt"}],Re[dataRBOTone1sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
@@ -932,8 +1039,11 @@ FileNameJoin[{$UserDocumentsDirectory,"TableRBOTone_2sigma.txt"}],Re[dataRBOTone
 "Table"
 ]
 }
+
 (*************************************************************************************************************************************************************************************)
+
 (*Rb to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*\[Mu]bb*)
 Rb2sig[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RbbINF2sig <= Rbotbot[ghtt, ghbb] <= RbbSUP2sig},
@@ -941,21 +1051,24 @@ RegionPlot[{RbbINF2sig <= Rbotbot[ghtt, ghbb] <= RbbSUP2sig},
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> {"\!\(\*SubscriptBox[\(R\), \(b\)]\)"},
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed],BoundaryStyle -> {1 -> Directive[Yellow, Dashed, Thickness[0.003]]}, PlotStyle -> {{Yellow, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 Rb2sigWXYZ[
 ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
 Rb2sig[ghtt,ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 (*Rb to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*Rb*)
 Rb1sig[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RbbINF1sig <= Rbotbot[ghtt, ghbb] <= RbbSUP1sig},
@@ -963,20 +1076,22 @@ RegionPlot[{RbbINF1sig <= Rbotbot[ghtt, ghbb] <= RbbSUP1sig},
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> {"\!\(\*SubscriptBox[\(R\), \(b\)]\)"},
  AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
-  GridLines -> Automatic, GridLinesStyle -> 
-   Directive[Black, 
-     Dashed],BoundaryStyle -> {1 -> Directive[Yellow, Dashed, Thickness[0.003]]}, PlotStyle -> {{Yellow, Opacity[0.3]}}, AspectRatio -> 0.6,PlotPoints->PP]
+ Style["y", Larger, Bold]}, AspectRatio -> 1, 
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
+ GridLines -> Automatic, GridLinesStyle -> 
+ Directive[Black, 
+ Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 Rb1sigWXYZ[
 ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
 Rb1sig[ghtt,ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 Rb[
 ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
@@ -985,18 +1100,23 @@ ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xfors
 Rb2sigWXYZ[
 ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
+
 (*TABLES FOR Rb*)
+
 dataRb1sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
     RbbINF1sig <= Rbotbot[ghtt, ghbb] <= RbbSUP1sig, Rbotbot[ghtt, ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 dataRb2sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
     RbbINF2sig <= Rbotbot[ghtt, ghbb] <= RbbSUP2sig, Rbotbot[ghtt, ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 (*EXPORTING TABLES FOR Rb*)
+
 TableRBOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRBOTone_1sigma.txt"}],
@@ -1008,6 +1128,7 @@ FileNameJoin[{$UserDocumentsDirectory,"TableRBOTone_2sigma.txt"}],Re[dataRBOTone
 "Table"
 ]
 }
+
 TableRb[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRb_1sigma.txt"}],
@@ -1025,6 +1146,7 @@ dataRb2sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 "Table"
 ]
 }
+
 (*ghtautau[tb_, cab_] := 
  Sin[ArcCos[cab] + ArcTan[tb]]*(
   mtau*Sqrt[1 - Sin[ArcCos[cab] + ArcTan[tb]]^2])/(
@@ -1038,36 +1160,44 @@ ghbb[tb_, cab_] :=
  Sin[ArcCos[cab] + ArcTan[tb]]*(
   mb*Sqrt[1 - Sin[ArcCos[cab] + ArcTan[tb]]^2])/(
   vev*(cab - (Sin[ArcCos[cab] + ArcTan[tb]]*Sin[ArcTan[tb]])))*)
+
 Individual process;
 R tau
+
 (*R tau to 1\[Sigma] in the case in which there is dependence in one parameter*)
+
 Rtau1sigX[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xlabel_]:=Plot[{Rtata[ghtt,ghbb,ghtautau],RtautauSUP1sig,RtautauINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)",
-"Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Green],Directive[AbsoluteThickness[3.3],
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Green],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Green]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Green,Opacity[0.1]}
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Yellow}
 ]
+
 (*R tau to 2\[Sigma] in the case in which there is dependence on one parameter*)
+
 Rtau2sigX[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xlabel_]:=Plot[{Rtata[ghtt,ghbb,ghtautau],RtautauSUP2sig,RtautauINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)",
-"Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
-Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Green],Directive[AbsoluteThickness[3.3],
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Green],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Green]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Green,Opacity[0.1]}
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Yellow}
 ]
+
 RTAUone[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xlabel_]:={
 Rtau1sigX[ghtt,ghbb,ghtautau,x,xmin,xmax,xlabel],
 Rtau2sigX[ghtt,ghbb,ghtautau,x,xmin,xmax,xlabel]
 }
 
+
 (*TABLES FOR RTAUone*)
+
 dataRTAUone1sig[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RtautauINF1sig<=Rtata[ghtt,ghbb,ghtautau]<=RtautauSUP1sig, 
 Rtata[ghtt,ghbb,ghtautau],0]}, {x, xmin,xmax,xstep}]
@@ -1075,7 +1205,9 @@ Rtata[ghtt,ghbb,ghtautau],0]}, {x, xmin,xmax,xstep}]
 dataRTAUone2sig[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     RtautauINF2sig<=Rtata[ghtt,ghbb,ghtautau]<=RtautauSUP2sig, 
 Rtata[ghtt,ghbb,ghtautau],0]}, {x, xmin,xmax,xstep}]
+
 (*EXPORTING TABLES FOR RTAUone*)
+
 TableRTAUone[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRTAUone_1sigma.txt"}],Re[dataRTAUone1sig[ghtt,ghbb,ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
@@ -1086,7 +1218,9 @@ FileNameJoin[{$UserDocumentsDirectory,"TableRTAUone_2sigma.txt"}],Re[dataRTAUone
 "Table"
 ]
 }
+
 (*Rtau to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*Rtau*)
 Rtau2sig[ghtt_, ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RtautauINF2sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP2sig},
@@ -1094,21 +1228,24 @@ RegionPlot[{RtautauINF2sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP2sig},
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> {"\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)"}, 
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed],PlotPoints->PP]
+     Dashed],BoundaryStyle -> {1 -> Directive[Magenta, Dashed, Thickness[0.003]]}, PlotStyle -> {{Black, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 Rtau2sigWXYZ[
 ghtt_,ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
 Rtau2sig[ghtt,ghbb,ghtautau,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 (*Rtau to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
+
 (*Rtau*)
 Rtau1sig[ghtt_, ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{RtautauINF1sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP1sig},
@@ -1116,20 +1253,24 @@ RegionPlot[{RtautauINF1sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP1sig},
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> {"\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)"}, 
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed],PlotPoints->PP]
+     Dashed],
+BoundaryStyle -> {1 -> Directive[Magenta, Dashed, Thickness[0.003]]},
+ PlotStyle -> {{Black, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
 Rtau1sigWXYZ[
 ghtt_,ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
 Rtau1sig[ghtt,ghbb,ghtautau,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
 Rtau[
 ghtt_, ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
@@ -1138,18 +1279,23 @@ ghtt, ghbb,ghtautau,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xfor
 Rtau2sigWXYZ[
 ghtt, ghbb,ghtautau,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
+
 (*TABLES FOR Rtau*)
+
 dataRtau1sig[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
     RtautauINF1sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP1sig, Rtata[ghtt, ghbb,ghtautau],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 dataRtau2sig[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
     RtautauINF1sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP1sig, Rtata[ghtt, ghbb,ghtautau],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
 (*EXPORTING TABLES FOR Rtau*)
+
 TableRtau[ghtt_,ghbb_,ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableRtau_1sigma.txt"}],
@@ -1167,7 +1313,11 @@ dataRtau1sig[ghtt,ghbb,ghtautau,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
  "Table"
 ]
 }
-(*R\[Tau]\[Tau][ghtt,ghbb,gh\[Tau]\[Tau],Ztt,Zbb,0,1,0,1,Subscript[Z, tt],Subscript[Z, bb]]*)
+
+(*********************************************************************************************************************)
+(*********************************************INTERSECTION*********************************************************)
+(*********************************************************************************************************************)
+
 Intersection2sigRXX[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=RegionPlot[
 {RbbINF2sig <= Rbotbot[ghtt, ghbb] <= RbbSUP2sig&& 
     RtautauINF2sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP2sig&& 
@@ -1178,16 +1328,25 @@ Intersection2sigRXX[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xma
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Larger, Bold]}, PlotLegends -> 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, PlotLegends -> 
  Placed[{Style["Intersection", Larger, 
     Bold]}, {0.8, 0.6}], 
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800(*,PlotPoints->100000*),
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600(*,PlotPoints->100000*),
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP
+     Dashed],BoundaryStyle -> {1 -> Directive[Black, Dashed, Thickness[0.003]]}, 
+PlotStyle -> {{Blue, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP
 ]
+
+Inter2sigma[
+ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+Intersection2sigRXX[ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+ {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+];
+
 Intersection1sigRXX[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=RegionPlot[
 {RbbINF1sig <= Rbotbot[ghtt, ghbb] <= RbbSUP1sig&& 
     RtautauINF1sig <= Rtata[ghtt, ghbb,ghtautau] <= RtautauSUP1sig&& 
@@ -1198,15 +1357,32 @@ Intersection1sigRXX[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xma
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
-StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)", Larger, Bold]}, PlotLegends -> 
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, PlotLegends -> 
  Placed[{Style["Intersection", Larger, 
     Bold]}, {0.8, 0.6}], 
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800(*,PlotPoints->100*),
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600(*,PlotPoints->100000*),
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP
+     Dashed],BoundaryStyle -> {1 -> Directive[Black, Dashed, Thickness[0.003]]}, 
+PlotStyle -> {{Blue, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP
 ]
+
+Inter1sigma[
+ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+Intersection1sigRXX[ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+ {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+];
+
+RXintersection[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+{
+Inter1sigma[
+ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
+,
+Inter2sigma[
+ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
+}
 
 End[]
