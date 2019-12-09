@@ -1,0 +1,293 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9808,        284]
+NotebookOptionsPosition[      6672,        197]
+NotebookOutlinePosition[      9144,        258]
+CellTagsIndexPosition[      9101,        255]
+WindowTitle->Installation
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["SPACE MATH TUTORIAL", "PacletNameCell"], Cell[TextData[Cell[BoxData[
+    
+     ActionMenuBox[
+      FrameBox[
+       InterpretationBox[Cell[TextData[{
+         "URL",
+         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+          StripOnInput->False]
+        }]],
+        TextCell[
+         Row[{"URL", 
+           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+       StripOnInput->False], {"\<\"SpaceMath/tutorial/Installation\"\>":>
+      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["SpaceMath/tutorial/Installation"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/language/SpaceMath/tutorial/\
+Installation.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+            If[
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$14931], 
+             "http://reference.wolfram.com/system-modeler/", 
+             "http://reference.wolfram.com/language/"], 
+            "SpaceMath/tutorial/Installation", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic,
+      MenuStyle->"URLMenu"]],
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Installation", "Section"]], "Title",
+ CellID->509267359,
+ $CellContext`ExpressionUUID -> "39723679-3f46-4745-bb15-789a0d614427"],
+
+Cell["\<\
+SpaceMath can be installed on any computer that runs Mathematica 8.0 or \
+higher. However, future releases of SpaceMath will require Mathematica 10.1 \
+or higher.\
+\>", "Text",
+ CellID->1534169418,
+ $CellContext`ExpressionUUID -> "bb09ba71-c2b7-439a-b521-63b90f0c9bd8"],
+
+Cell[TextData[StyleBox["Automatic Installation", "Section"]], "Text",
+ CellID->1335388957,
+ $CellContext`ExpressionUUID -> "7fdbdf94-3d43-48bd-aa19-e7a9d52d3d06"],
+
+Cell[TextData[{
+ "Run the following instructions in a Mathematica session: ",
+ StyleBox[Cell[BoxData[
+  RowBox[{
+   ButtonBox["Import",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/Import"], "[", 
+   RowBox[{
+    RowBox[{
+     StyleBox[
+      RowBox[{"h", 
+       StyleBox["ttps", "TI"]}]], 
+     StyleBox[":", "TI"]}], 
+    StyleBox["//", "TI"], 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           StyleBox["raw", "TI"], ".", "githubusercontent", ".", "com"}], "/",
+           "spacemathproject"}], "/", "SpaceMath"}], "/", "master"}], "/", 
+       "SpaceMath"}], "/", 
+      RowBox[{"Install", ".", "m"}]}], "\"\<\>"}]}]}]], "TI",
+  $CellContext`ExpressionUUID -> "9d557140-9cfe-45a5-a9c9-777afef0adc3"], 
+  "TI"],
+ StyleBox["]", "TI"],
+ "\n",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{
+    ButtonBox["InstallSpaceMath",
+     BaseStyle->"Link",
+     ButtonData->"paclet:SpaceMath/ref/InstallSpaceMath"], "[", "]"}], "TI"]],
+   "TI",
+  $CellContext`ExpressionUUID -> "21946f0c-a799-452c-ba9b-1d5e78f89c6f"]
+}], "Text",
+ CellID->1759321443,
+ $CellContext`ExpressionUUID -> "4cdff573-7ccd-434e-8a33-b170de8fd311"],
+
+Cell[TextData[StyleBox["Manual installation", "Section"]], "Text",
+ CellID->1555914184,
+ $CellContext`ExpressionUUID -> "16b23d0e-8309-409d-be9c-e4c50a04248c"],
+
+Cell[TextData[{
+ "The latest version of the program, including expansion packs, is hosted at \
+the page ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{"https", ":"}], "//", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"github", ".", "com"}], "/", "spacemathproject"}], "/", 
+      ButtonBox["SpaceMath",
+       BaseStyle->"Link",
+       ButtonData->"paclet:ref/SpaceMath"]}], "/", "archive"}], "/", 
+    RowBox[{"master", ".", "zip"}]}]}]], "TI",
+  $CellContext`ExpressionUUID -> "855e7114-178b-448f-96ad-9281f70f1304"]
+}], "Text",
+ CellID->181369405,
+ $CellContext`ExpressionUUID -> "da0bc10b-e5b9-4f0d-8f8b-0e43756bd275"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "After downloading and uncompressing the zip file, place the folder \
+SpaceMath and all its contents within the directory ",
+ StyleBox["$UserBaseDirectory/Applications/", "TI"],
+ ". Here, $UserBaseDirectory can be found by running $UserBaseDirectory \
+within a Mathematica session:"
+}], "Text",
+ CellID->862494424,
+ $CellContext`ExpressionUUID -> "d9fedf53-c219-40b1-ab4b-58a673b975d8"],
+
+Cell[BoxData["$UserBaseDirectory"], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2058623809,
+ $CellContext`ExpressionUUID -> "a8afa79b-65cf-4a01-8f67-6d54aa7b1ec7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"/", "home"}], "/", "xxxx"}], "/.", "Mathematica"}]], "Input",
+ CellLabel->"Out[1]=",
+ CellID->1908691420,
+ $CellContext`ExpressionUUID -> "9dd7ad94-2baf-4f27-8532-5d28099269d8"]
+}, Open  ]],
+
+Cell["This should install SpaceMath on your system.", "Text",
+ CellID->362652525,
+ $CellContext`ExpressionUUID -> "93f12153-f6d8-42ff-ae01-e2f0298e9033"],
+
+Cell["XXXX.", "Caption",
+ CellID->1891092685,
+ $CellContext`ExpressionUUID -> "be25fbaf-98bf-4fdd-ba8e-7ed1cc908740"]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Installation",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "TutorialColor", 
+  "LinkTrails" -> GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2019, 12, 7, 17, 47, 20.162594}", 
+    "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
+    "status" -> "None", "summary" -> 
+    "SpaceMath can be installed on any computer that runs Mathematica 8.0 or \
+higher. However, future releases of SpaceMath will require Mathematica 10.1 \
+or higher. Automatic Installation Run the following instructions in a \
+Mathematica session: \
+Import[https://raw.githubusercontent.com/spacemathproject/SpaceMath/master/\
+SpaceMath/Install.m\"] InstallSpaceMath[]", "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$14875, "title" -> 
+    "Installation", "titlemodifier" -> "", "windowtitle" -> "Installation", 
+    "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/Installation"}, 
+  "SearchTextTranslated" -> ""},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> Notebook], 
+   Cell[
+    StyleData["Output"], CellContext -> Notebook], 
+   Cell[
+    StyleData["TutorialMoreAboutSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["RelatedTutorialsSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["TutorialRelatedLinksSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
+  FrontEndVersion -> "10.0 for Linux x86 (64-bit) (June 27, 2014)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[584, 21, 2321, 54, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[2930, 79, 152, 2, 70, "Title",
+ CellID->509267359],
+Cell[3085, 83, 279, 6, 70, "Text",
+ CellID->1534169418],
+Cell[3367, 91, 162, 2, 70, "Text",
+ CellID->1335388957],
+Cell[3532, 95, 1186, 39, 70, "Text",
+ CellID->1759321443],
+Cell[4721, 136, 159, 2, 70, "Text",
+ CellID->1555914184],
+Cell[4883, 140, 641, 18, 70, "Text",
+ CellID->181369405],
+Cell[CellGroupData[{
+Cell[5549, 162, 403, 8, 70, "Text",
+ CellID->862494424],
+Cell[5955, 172, 160, 3, 70, "Input",
+ CellID->2058623809],
+Cell[6118, 177, 224, 6, 70, "Input",
+ CellID->1908691420]
+}, Open  ]],
+Cell[6357, 186, 153, 2, 70, "Text",
+ CellID->362652525],
+Cell[6513, 190, 117, 2, 70, "Caption",
+ CellID->1891092685]
+}, Open  ]],
+Cell[6645, 195, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
