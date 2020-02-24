@@ -55,7 +55,7 @@ StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table o
 couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax."
+to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
 
 RV::usage="RV[ghtt_,ghbb_,ghVV_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(V\)]\) with V=W, \
 Z when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghVV are the htt, hbb, hVV \
@@ -68,7 +68,7 @@ TableRV::usage="TableRV[ghtt_,ghbb_,ghVV_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,y
 hbb and hVV couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax). "
+to indicates the steps from xmin to xmax (ymin to ymax). The output file will be saved in $UserDocumentsDirectory."
 (******************************************************************************************************************************************************)
 (*********************************************************END OF RV************************************************************************************)
 (******************************************************************************************************************************************************)
@@ -131,7 +131,7 @@ StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table o
 , hbb, hWW, \!\(\*SuperscriptBox[\(hH\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings, while mCH is the charged scalar boson mass that could to contributes to the process. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax."
+to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
 
 RGam::usage="RGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\) \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghWW and gCH are the htt, hbb, hWW and h\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\)\
@@ -144,7 +144,7 @@ TableRGam::usage="TableRGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_
 hbb, hWW and h-\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax)."
+to indicates the steps from xmin to xmax (ymin to ymax). The output file will be saved in $UserDocumentsDirectory."
 (******************************************************************************************************************************************************)
 (*********************************************************END OF RGamma************************************************************************************)
 (******************************************************************************************************************************************************)
@@ -199,7 +199,7 @@ StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table o
 hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks and tau stands for tau-lepton. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax. "
+to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
 
 Rtau::usage="Rtau[ghtt_, ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\), \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb and ghtautau are the htt, hbb \
@@ -212,7 +212,7 @@ TableRtau::usage="TableRtau[ghtt_, ghbb_,ghtautau_, x_, xmin_, xmax_, xstep_, y_
 hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t, b and tau are the top and bottom quarks and the tau-lepton. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax)."
+to indicates the steps from xmin to xmax (ymin to ymax). The output file will be saved in $UserDocumentsDirectory."
 (******************************************************************************************************************************************************)
 (*********************************************************End OF RTau************************************************************************************)
 (******************************************************************************************************************************************************)
@@ -264,7 +264,7 @@ StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table o
 and hbb couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax. "
+to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
 
 Rb::usage="Rb[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(b\)]\), \
 when there is dependence on two or more parameters. The arguments ghtt and ghbb are the htt, hbb \
@@ -277,7 +277,7 @@ TableRb::usage="TableRb[ghtt_, ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_
 hbb couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax)."
+to indicates the steps from xmin to xmax (ymin to ymax). The output file will be saved in $UserDocumentsDirectory."
 (******************************************************************************************************************************************************)
 (*********************************************************End OF RBottom************************************************************************************)
 (******************************************************************************************************************************************************)
@@ -1232,7 +1232,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  PlotLegends -> {"\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)"}, 
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed],BoundaryStyle -> {1 -> Directive[Magenta, Dashed, Thickness[0.003]]}, PlotStyle -> {{Black, Opacity[0.5]}}, AspectRatio -> 0.6,PlotPoints->PP]
@@ -1257,7 +1257,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  PlotLegends -> {"\!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\)"}, 
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed],
