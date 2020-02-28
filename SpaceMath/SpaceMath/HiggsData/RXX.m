@@ -132,8 +132,8 @@ Abs[AHgg[ghtt,ghbb,mS]]^2
 
 (*Main fermion contribution come from top and bottom quark*)
 
-Aht[ghtt_,mS_]:=6 (mW/mt) ghtt Qt^2 ghtt Ft[mS]
-Ahb[ghbb_,mS_]:=6 (mW/mb) ghbb Qb^2 ghbb Fb[mS]
+Aht[ghtt_,mS_]:=6 (mW/mt) ghtt Qt^2 Ft[mS]
+Ahb[ghbb_,mS_]:=6 (mW/mb) ghbb Qb^2 Fb[mS]
 Af[ghtt_,ghbb_,mS_]:=Aht[ghtt,mS]+Ahb[ghbb,mS]
 (**)
 
