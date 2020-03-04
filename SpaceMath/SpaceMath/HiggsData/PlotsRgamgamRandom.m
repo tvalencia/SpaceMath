@@ -108,7 +108,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
   ImageSize -> 800,
     GridLines -> Automatic, 
   GridLinesStyle ->    Directive[Black, Dashed],
-  PlotMarkers->{{\[FilledUpTriangle],3}}, 
+  (*PlotMarkers->{{\[FilledUpTriangle],3}}, *)
   PlotRange -> Full(*,
 PlotLegends -> 
  Placed[{Style["\!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\)", Larger, 
@@ -128,7 +128,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
   ImageSize -> 800,
     GridLines -> Automatic, 
   GridLinesStyle ->    Directive[Black, Dashed],
-  PlotMarkers->{{\[FilledCircle],3}}, 
+  (*PlotMarkers->{{\[FilledCircle],3}}, *)
   PlotRange -> Full(*,
 PlotLegends -> 
  Placed[{Style["\!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\)", Larger, 
