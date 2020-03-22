@@ -234,30 +234,30 @@ RgammagammaSUP1sig=1.19504;
 
 (*kappa-parametrization*)
 (*central values*)
-kappaZ=0.99;
-kappaW=1.10;
-kappaTop=1.11;
-kappaTau1=1.01;
-kappaBot=-1.10;
-kappaGluon=1.18;
-kappaGamma=1.07;
+kappaZ=1;
+kappaW=1;
+kappaTop=1.05;
+kappaTau1=0.95;
+kappaBot=0.85;
+kappaGluon=0.97;
+kappaGamma=0.98;
 
 (*kappaX to 2\[Sigma]*)
 (*Reference: ARXIV:1809.10733*)
-kappaZSUP2sig=1.22;
-kappaZINF2sig=0.78;
-kappaWSUP2sig=\!\(TraditionalForm\`1.45\);
-kappaWINF2sig=0.81;
-kappaTopSUP2sig=1.26;
-kappaTopINF2sig=0.7;
-kappaTauSUP2sig=1.36;
-kappaTauINF2sig=0.68;
-kappaBotSUP2sig=1.75046;
-kappaBotINF2sig=0.58954;
-kappaGluonSUP2sig=1.48022;
-kappaGluonINF2sig=0.879778;
-kappaGammaSUP2sig=1.36006;
-kappaGammaINF2sig=0.779943;
+kappaZSUP2sig=1.2;
+kappaZINF2sig=0.8;
+kappaWSUP2sig=1.22;
+kappaWINF2sig=0.78;
+kappaTopSUP2sig=1.32006;
+kappaTopINF2sig=0.779938;
+kappaTauSUP2sig=1.21;
+kappaTauINF2sig=0.69;
+kappaBotSUP2sig=1.12006;
+kappaBotINF2sig=0.579938;
+kappaGluonSUP2sig=1.16009;
+kappaGluonINF2sig=0.779912;
+kappaGammaSUP2sig=1.11115;
+kappaGammaINF2sig=0.848851;
 
 (*{
 kappaZSUP2sig=1.22007,
@@ -278,20 +278,21 @@ kappaGammaINF2sig=0.78
 
 (*kappaX to 1\[Sigma]*)
 (*Reference: ARXIV:1809.10733*)
-kappaZSUP1sig=1.00+0.11;
-kappaZINF1sig=1.00-0.11;
-kappaWSUP1sig=1.13+0.16;
-kappaWINF1sig=1.13-0.16;
-kappaTopSUP1sig=0.98+0.14;
-kappaTopINF1sig=0.98-0.14;
-kappaTauSUP1sig=1.02+0.17;
-kappaTauINF1sig=1.02-0.17;
-kappaBotSUP1sig=1.17+0.27;
-kappaBotINF1sig=1.17-0.31;
-kappaGluonSUP1sig=1.18+0.16;
-kappaGluonINF1sig=1.18-0.14;
-kappaGammaSUP1sig=1.07+0.14;
-kappaGammaINF1sig=1.07-0.15;
+
+kappaZSUP1sig=kappaZ+0.10;
+kappaZINF1sig=kappaZ-0.10;
+kappaWSUP1sig=kappaW+0.11;
+kappaWINF1sig=kappaW-0.11;
+kappaTopSUP1sig=kappaTop+0.14;
+kappaTopINF1sig=kappaTop-0.13;
+kappaTauSUP1sig=kappaTau1+0.13;
+kappaTauINF1sig=kappaTau1-0.13;
+kappaBotSUP1sig=kappaBot+0.13;
+kappaBotINF1sig=kappaBot-0.14;
+kappaGluonSUP1sig=kappaGluon+0.10;
+kappaGluonINF1sig=kappaGluon-0.09;
+kappaGammaSUP1sig=kappaGamma+0.05;
+kappaGammaINF1sig=kappaGamma-0.08;
 
 (* LFV processes *)
 (*Reference: M. Tanabashi et al. (Particle Data Group), Phys. Rev. D 98, 030001 (2018)*)
