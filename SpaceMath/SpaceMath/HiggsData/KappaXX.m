@@ -4,7 +4,7 @@ https://arxiv.org/abs/1809.10733*)
 
 (* Scalar boson decays into fermion pair; *)
 
-(* Definitions; *)
+(* Definitions *)
 
 \[Tau]fi::usage ="See later"
 \[Tau]fj::usage ="See later"
