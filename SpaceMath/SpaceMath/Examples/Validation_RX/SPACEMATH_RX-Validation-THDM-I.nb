@@ -1,0 +1,1016 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     44794,       1006]
+NotebookOptionsPosition[     42373,        959]
+NotebookOutlinePosition[     42708,        974]
+CellTagsIndexPosition[     42665,        971]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "SpaceMath-Signal Strengths ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["R", "X"], TraditionalForm]],ExpressionUUID->
+  "6504902c-18c1-4190-8c90-e1943f3ba897"],
+ "."
+}], "Title",
+ CellChangeTimes->{{3.757019413541121*^9, 3.75701941707338*^9}, {
+  3.780233969709393*^9, 3.7802339777122107`*^9}, {3.780917407742959*^9, 
+  3.78091741137006*^9}, {3.7809174503702517`*^9, 3.7809174731752453`*^9}, {
+  3.781272277129593*^9, 
+  3.781272278586439*^9}},ExpressionUUID->"c830e450-a671-4022-b048-\
+55d0316a33f8"],
+
+Cell[CellGroupData[{
+
+Cell["Load SpaceMath", "Section",
+ CellChangeTimes->{{3.757019699463291*^9, 3.757019737024069*^9}, {
+  3.757019773175634*^9, 3.757019808707851*^9}, {3.7802330934312973`*^9, 
+  3.7802330942953863`*^9}},ExpressionUUID->"f81bc166-2deb-48b2-8385-\
+109496ca249a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"<<", "SpaceMath`"}]], "Input",
+ CellChangeTimes->{{3.74165152247796*^9, 3.741651522492325*^9}, {
+   3.74165269025229*^9, 3.741652691516431*^9}, {3.741703576705319*^9, 
+   3.741703578220228*^9}, {3.7417037314155893`*^9, 3.741703763190839*^9}, {
+   3.741703871530251*^9, 3.741703904984749*^9}, {3.7417220037451773`*^9, 
+   3.7417220142080307`*^9}, {3.741738581306151*^9, 3.7417385838329563`*^9}, {
+   3.74173866252901*^9, 3.7417386643767757`*^9}, {3.741883508557496*^9, 
+   3.7418835122750883`*^9}, {3.741887957262638*^9, 3.741887975535616*^9}, 
+   3.7418880261160603`*^9, {3.7418893130960913`*^9, 3.741889318918934*^9}, 
+   3.74205939328537*^9, {3.742060736420517*^9, 3.742060763072344*^9}, {
+   3.742061242675707*^9, 3.742061244196949*^9}, {3.7420613038946323`*^9, 
+   3.742061306606453*^9}, 3.742063544829707*^9, {3.742390886993239*^9, 
+   3.7423908889276047`*^9}, {3.742564011121533*^9, 3.742564046680201*^9}, {
+   3.742566911702092*^9, 3.7425669839347153`*^9}, {3.742595031013484*^9, 
+   3.742595048806233*^9}, {3.742595167990799*^9, 3.742595172540986*^9}, {
+   3.742649530999979*^9, 3.742649533921197*^9}, {3.742649568898616*^9, 
+   3.74264957096768*^9}, {3.742649640334301*^9, 3.742649641654131*^9}, {
+   3.744300813544324*^9, 3.744300816853753*^9}, {3.7443023971622057`*^9, 
+   3.7443024038018723`*^9}, 3.7443030547824287`*^9, {3.7443725723809633`*^9, 
+   3.744372582341476*^9}, {3.744374786485467*^9, 3.74437479040313*^9}, {
+   3.744388193463311*^9, 3.7443881980054197`*^9}, {3.744388305375839*^9, 
+   3.744388311346561*^9}, {3.744459002533751*^9, 3.7444590073299017`*^9}, {
+   3.7445875469273977`*^9, 3.7445875577416897`*^9}, {3.744759817478438*^9, 
+   3.744759820598507*^9}, {3.7455159298197603`*^9, 3.745515958336976*^9}, {
+   3.746197433066855*^9, 3.746197438842005*^9}, {3.746452031091935*^9, 
+   3.746452033612187*^9}, {3.746721577950041*^9, 3.7467215918281393`*^9}, {
+   3.748006017742002*^9, 3.748006047429748*^9}, {3.7481811994590683`*^9, 
+   3.748181205095743*^9}, {3.7504256403185368`*^9, 3.750425645368525*^9}, {
+   3.756815091821601*^9, 3.756815131282997*^9}, {3.756815519069467*^9, 
+   3.756815539641803*^9}, {3.75682349234072*^9, 3.756823494863577*^9}, 
+   3.757019440946122*^9, {3.757019548635229*^9, 3.7570195497622223`*^9}, {
+   3.757019661413342*^9, 3.7570196644960403`*^9}, {3.780233106897822*^9, 
+   3.780233120935051*^9}, {3.7802352204063463`*^9, 3.780235223331525*^9}, {
+   3.780235360691496*^9, 3.780235361563479*^9}, {3.780235542103795*^9, 
+   3.7802355626180677`*^9}, {3.7802356195562067`*^9, 3.780235619893237*^9}, {
+   3.78155633462521*^9, 3.781556344616946*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"e028bf2b-ff4e-4d37-839d-ccc6e6b11852"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"SpaceMath \"\>", "Text",
+    StripOnInput->False,
+    FontWeight->Bold], "\[InvisibleSpace]", 
+   StyleBox["\<\"1.0. For help, use the \"\>", "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox[
+    TagBox[
+     ButtonBox[
+      RowBox[{"documentation", " ", "center"}],
+      BaseStyle->"Link",
+      ButtonData:>"paclet:SpaceMath/tutorial/SpaceMathOverview",
+      ButtonNote->"paclet:SpaceMath/tutorial/SpaceMathOverview"],
+     DisplayForm], "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox["\<\", check out the \"\>", "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox[
+    TagBox[
+     ButtonBox["wiki",
+      BaseStyle->"Hyperlink",
+      ButtonData:>{
+        URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], 
+        None},
+      ButtonNote->
+       "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],
+     DisplayForm], "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox["\<\" or write to the \"\>", "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox[
+    TagBox[
+     ButtonBox[
+      RowBox[{"mailing", " ", 
+       RowBox[{"list", "."}]}],
+      BaseStyle->"Hyperlink",
+      ButtonData:>{
+        URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], 
+        None},
+      ButtonNote->
+       "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],
+     DisplayForm], "Text",
+    StripOnInput->False]}],
+  SequenceForm[
+   Style["SpaceMath ", "Text", Bold], 
+   Style["1.0. For help, use the ", "Text"], 
+   Style[
+    DisplayForm[
+     ButtonBox[
+     "documentation center", BaseStyle -> "Link", ButtonData :> 
+      "paclet:SpaceMath/tutorial/SpaceMathOverview", ButtonNote -> 
+      "paclet:SpaceMath/tutorial/SpaceMathOverview"]], "Text"], 
+   Style[", check out the ", "Text"], 
+   Style[
+    DisplayForm[
+     ButtonBox["wiki", ButtonData :> {
+        URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], 
+        None}, BaseStyle -> "Hyperlink", ButtonNote -> 
+      "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"]], 
+    "Text"], 
+   Style[" or write to the ", "Text"], 
+   Style[
+    DisplayForm[
+     ButtonBox["mailing list.", ButtonData :> {
+        URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], 
+        None}, BaseStyle -> "Hyperlink", ButtonNote -> 
+      "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"]], 
+    "Text"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7939045629795628`*^9, 3.793904866851275*^9, 
+  3.803986303298937*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"6cf7e8d0-dfb1-4d5a-a8b4-6fc6935f0d57"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"See also the supplied \"\>", "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox[
+    TagBox[
+     ButtonBox[
+      RowBox[{"Examples", "."}],
+      BaseStyle->"Hyperlink",
+      ButtonFunction:>SystemOpen[
+        FileNameJoin[{SpaceMath`$SpaceMathDirectory, "Examples"}]],
+      Evaluator->Automatic,
+      Method->"Preemptive"],
+     DisplayForm], "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox["\<\" If you use SpaceMath in your research, please cite\"\>", 
+    "Text",
+    StripOnInput->False]}],
+  SequenceForm[
+   Style["See also the supplied ", "Text"], 
+   Style[
+    DisplayForm[
+     ButtonBox[
+     "Examples.", BaseStyle -> "Hyperlink", ButtonFunction :> SystemOpen[
+        FileNameJoin[{SpaceMath`$SpaceMathDirectory, "Examples"}]], Evaluator -> 
+      Automatic, Method -> "Preemptive"]], "Text"], 
+   Style[" If you use SpaceMath in your research, please cite", "Text"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7939045629795628`*^9, 3.793904866851275*^9, 
+  3.803986303332312*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"33d3d286-b9b5-4622-961e-b10724f6e85d"],
+
+Cell[BoxData[
+ StyleBox["\<\"\[Bullet] SpaceMath Version 1.0\"\>", "Text",
+  StripOnInput->False]], "Print",
+ CellChangeTimes->{3.7939045629795628`*^9, 3.793904866851275*^9, 
+  3.803986303334949*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"24fcb387-6151-4a5b-9501-e9ea7ecf84a3"],
+
+Cell[BoxData[
+ StyleBox["\<\"\[Bullet] Authors:  \"\>", "Text",
+  StripOnInput->False]], "Print",
+ CellChangeTimes->{3.7939045629795628`*^9, 3.793904866851275*^9, 
+  3.803986303337031*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"9b672ff3-393b-47aa-87c9-df6215bc50f0"],
+
+Cell[BoxData[
+ StyleBox["\<\"M. A. Arroyo-Ure\[NTilde]a\"\>", "Text",
+  StripOnInput->False]], "Print",
+ CellChangeTimes->{3.7939045629795628`*^9, 3.793904866851275*^9, 
+  3.803986303339047*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"b5625294-6538-4b07-99ac-e1fd07d1446e"],
+
+Cell[BoxData[
+ StyleBox["\<\"Facultad de Estudios Superiores-Cuautitl\[AAcute]n, \
+Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico\"\>", "Text",
+  StripOnInput->False]], "Print",
+ CellChangeTimes->{3.7939045629795628`*^9, 3.793904866851275*^9, 
+  3.8039863033409777`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"313ef664-5643-4d82-b156-f118cd69b689"],
+
+Cell[BoxData[
+ StyleBox["\<\"T. A. Valencia-P\[EAcute]rez\"\>", "Text",
+  StripOnInput->False]], "Print",
+ CellChangeTimes->{3.7939045629795628`*^9, 3.793904866851275*^9, 
+  3.803986303343213*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"8b404cf6-4cc3-4c31-94e5-a0bc7a4f65e7"],
+
+Cell[BoxData[
+ StyleBox["\<\"Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\
+\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\"\>", "Text",
+  StripOnInput->False]], "Print",
+ CellChangeTimes->{3.7939045629795628`*^9, 3.793904866851275*^9, 
+  3.803986303345015*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"0ce0c929-d8f9-4080-ac95-eabe103edec3"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter couplings ", "Section",
+ CellChangeTimes->{{3.757019699463291*^9, 3.757019737024069*^9}, {
+  3.757019773175634*^9, 3.757019808707851*^9}, {3.7794729468956757`*^9, 
+  3.779472959513482*^9}, {3.780233096338339*^9, 3.7802331003550158`*^9}, {
+  3.7809293007881813`*^9, 
+  3.780929348875038*^9}},ExpressionUUID->"3cb288fd-abad-4f1d-a2ad-\
+ad9da43e4652"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"THDM", "-", 
+    RowBox[{"I", " ", "couplings", " ", "taken", " ", "from", " ", 
+     RowBox[{"arXiv", ":", 
+      RowBox[{"1809.10733", "v1"}]}]}]}], ",", " ", 
+   RowBox[{"Table", " ", "13"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.780233474061781*^9, 3.7802334893705*^9}, {
+   3.791566498621114*^9, 3.79156651357876*^9}, 3.79156655113455*^9, {
+   3.791771123475438*^9, 3.791771123785845*^9}, {3.791771236929564*^9, 
+   3.791771258260601*^9}, {3.791772347817327*^9, 3.791772350697578*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"8237e936-6f80-49ff-915c-725e76805752"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ghtt", "[", 
+   RowBox[{"a_", ",", "tb_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"g", "/", "2"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"mt", "/", "mW"}], ")"}], 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"Cos", "[", "a", "]"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"tb", "*", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"ArcTan", "[", "tb", "]"}], "]"}]}], ")"}]}], 
+    ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ghbb", "[", 
+   RowBox[{"a_", ",", "tb_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"g", "/", "2"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"mb", "/", "mW"}], ")"}], 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"Cos", "[", "a", "]"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"tb", "*", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"ArcTan", "[", "tb", "]"}], "]"}]}], ")"}]}], 
+    ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ghtautau", "[", 
+   RowBox[{"a_", ",", "tb_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"g", "/", "2"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"mtau", "/", "mW"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"Cos", "[", "a", "]"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"tb", "*", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"ArcTan", "[", "tb", "]"}], "]"}]}], ")"}]}], 
+    ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ghWW", "[", "sab_", "]"}], ":=", 
+  RowBox[{"gw", "*", "mW", "*", "sab"}]}], "\n", 
+ RowBox[{
+  RowBox[{"ghZZ", "[", "sab_", "]"}], ":=", 
+  RowBox[{"gz", "*", "mZ", "*", "sab"}]}]}], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQPUG8IG2h0RvHC8oQetuTR8+u2b9xzHP8AaZr/q/I
+uA6k54k6ZYLoOcaMLsYObxxNTswG0227mCJBNE/EmwQQXeAyLxVEM3EFZ4Do
+HpGbuSBa42toAYh+zB1YAqJ/eNwuBdF6Wt8qQXTcrMc1IFpi08JmED3l6ZIW
+EP0gZUsviDbNq+sD0eIM0VNA9AEOpWkg+oZr2CIQfeHSocUgOrvAbBWIFkq9
+vwZEu6hGcZoA6QjdXDBtJvRqpSmQ9tiZtgpEJ9kVRJuB1C9oTADRPyQXtJoD
+6VjV7e0g+pnwVm5LkL8efOIB0XJ8R/ZaAWmfj9/B9JkDpinWQLqvtTwVRAMA
+p7OZDA==
+  "],
+ CellLabel->"In[2]:=",ExpressionUUID->"c8326320-cea9-48b5-b477-6a3c9c95146c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+]}]], "Input",
+ CellChangeTimes->{{3.784641921697613*^9, 3.784641921699247*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"c5042224-44d9-45c7-8eee-ef0ea4b01d3a"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"Signal", " ", "strengths", " ", "intersection", " ", 
+   SubscriptBox["R", "X"]}], 
+  TraditionalForm]],ExpressionUUID->"ecab16a6-f2e8-43b5-8153-242a5b2a7ec9"]], \
+"Subsubsection",
+ CellChangeTimes->{{3.780233932617189*^9, 3.780233939204166*^9}, {
+  3.7809200377696877`*^9, 3.780920052350809*^9}, {3.780920917824934*^9, 
+  3.780920919116384*^9}, {3.7813556405535517`*^9, 3.781355659445651*^9}, {
+  3.784641950815123*^9, 3.784641958061777*^9}},
+ FontColor->RGBColor[
+  0.5, 0, 0.5],ExpressionUUID->"9a83b59c-68d6-47f2-a9b8-62a7d4358fbf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "RXintersection"}]], "Input",
+ CellChangeTimes->{{3.784641983417098*^9, 3.784641984325202*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"ff8207e5-ee9b-46de-b36d-e6885b481780"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   StyleBox[
+    FrameBox[
+     DynamicModuleBox[{System`InformationDump`open$$ = False, 
+      System`InformationDump`mouseOver$$ = False}, 
+      PaneSelectorBox[{True->
+       TagBox[GridBox[{
+          {
+           ItemBox[
+            PaneBox[
+             StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+              StripOnInput->False,
+              BaseStyle -> None],
+             FrameMargins->{{4, 0}, {-1, 1}}],
+            BaseStyle->"InformationTitleBackground",
+            StripOnInput->False], 
+           ItemBox["\<\"\"\>",
+            BaseStyle->"InformationTitleBackground",
+            StripOnInput->False]},
+          {
+           ItemBox[
+            PaneBox[
+             
+             StyleBox["\<\"RXintersection[ghtt_, \
+ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,\
+ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,\
+PP_]\[Rule] This command evaluates the intersection of all signal strengths, \
+when there is dependence on two or more parameters. The arguments ghtt, ghbb, \
+ghZZ, ghWW, ghtautau and gCH are the htt, hbb, hZZ, hWW, htautau and \
+\\!\\(\\*SuperscriptBox[\\(hH\\), \\(-\\)]\\)\\!\\(\\*SuperscriptBox[\\(H\\), \
+\\(+\\)]\\) couplings. Here, h represents to SM-like Higgs boson while t and \
+b are the top and bottom quarks; V=Z, W are the gauge bosons, tau is the tau \
+lepton and \\!\\(\\*SuperscriptBox[\\(H\\), \\(-\\)]\\) is a charged scalar \
+boson. Labels x and y indicate the parameters to constraint, while xmin \
+(ymin) and xmax (ymax) are the initial and final values defined by users. \
+Argument xlabel (ylabel) is used for indicates the X axis label (Y axis \
+label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) \
+represent an additional parameter to constraint, namely: initial value, final \
+value and the steps from xformin (yformin) to xformax (yformax), \
+respectively; mCH stands for the charged scalar boson. Label [[i]] stands for \
+confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an \
+option for plotting functions that specifies how many initial sample points \
+to use.\"\>", "InformationUsageText",
+              StripOnInput->False,
+              LineSpacing->{1.5, 1.5, 3.}],
+             FrameMargins->{{10, 10}, {8, 10}}],
+            BaseStyle->"InformationUsageSubtitleBackground",
+            StripOnInput->False], 
+           ItemBox["\<\"\"\>",
+            BaseStyle->"InformationUsageSubtitleBackground",
+            StripOnInput->False]},
+          {
+           PaneBox[GridBox[{
+              {
+               
+               DynamicModuleBox[{System`InformationDump`open$$ = {
+                False, False, False, False, False, False, False, False, False,
+                  False, False, False}}, 
+                StyleBox[GridBox[{
+                   {
+                    TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Definitions\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Definitions\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Definitions", "Tooltip"]& ], GridBox[{
+                    {
+                    RowBox[{
+                    RowBox[{"RXintersection", "[", 
+                    RowBox[{
+                    "SpaceMath`PlotsRXX`Private`ghtt_", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghbb_", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghZZ_", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghWW_", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghtautau_", ",", 
+                    "SpaceMath`PlotsRXX`Private`gCH_", ",", 
+                    "SpaceMath`PlotsRXX`Private`mCH_", ",", 
+                    "SpaceMath`PlotsRXX`Private`x_", ",", 
+                    "SpaceMath`PlotsRXX`Private`y_", ",", 
+                    "SpaceMath`PlotsRXX`Private`xmin_", ",", 
+                    "SpaceMath`PlotsRXX`Private`xmax_", ",", 
+                    "SpaceMath`PlotsRXX`Private`ymin_", ",", 
+                    "SpaceMath`PlotsRXX`Private`ymax_", ",", 
+                    "SpaceMath`PlotsRXX`Private`xlabel_", ",", 
+                    "SpaceMath`PlotsRXX`Private`ylabel_", ",", 
+                    "SpaceMath`PlotsRXX`Private`xfor_", ",", 
+                    "SpaceMath`PlotsRXX`Private`yfor_", ",", 
+                    "SpaceMath`PlotsRXX`Private`xformin_", ",", 
+                    "SpaceMath`PlotsRXX`Private`xformax_", ",", 
+                    "SpaceMath`PlotsRXX`Private`xforstep_", ",", 
+                    "SpaceMath`PlotsRXX`Private`yformin_", ",", 
+                    "SpaceMath`PlotsRXX`Private`yformax_", ",", 
+                    "SpaceMath`PlotsRXX`Private`yforstep_", ",", 
+                    "SpaceMath`PlotsRXX`Private`PP_"}], "]"}], ":=", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"SpaceMath`PlotsRXX`Private`Inter1sigma", "[", 
+                    RowBox[{
+                    "SpaceMath`PlotsRXX`Private`ghtt", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghbb", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghZZ", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghWW", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghtautau", ",", 
+                    "SpaceMath`PlotsRXX`Private`gCH", ",", 
+                    "SpaceMath`PlotsRXX`Private`mCH", ",", 
+                    "SpaceMath`PlotsRXX`Private`x", ",", 
+                    "SpaceMath`PlotsRXX`Private`y", ",", 
+                    "SpaceMath`PlotsRXX`Private`xmin", ",", 
+                    "SpaceMath`PlotsRXX`Private`xmax", ",", 
+                    "SpaceMath`PlotsRXX`Private`ymin", ",", 
+                    "SpaceMath`PlotsRXX`Private`ymax", ",", 
+                    "SpaceMath`PlotsRXX`Private`xlabel", ",", 
+                    "SpaceMath`PlotsRXX`Private`ylabel", ",", 
+                    "SpaceMath`PlotsRXX`Private`xfor", ",", 
+                    "SpaceMath`PlotsRXX`Private`yfor", ",", 
+                    "SpaceMath`PlotsRXX`Private`xformin", ",", 
+                    "SpaceMath`PlotsRXX`Private`xformax", ",", 
+                    "SpaceMath`PlotsRXX`Private`xforstep", ",", 
+                    "SpaceMath`PlotsRXX`Private`yformin", ",", 
+                    "SpaceMath`PlotsRXX`Private`yformax", ",", 
+                    "SpaceMath`PlotsRXX`Private`yforstep", ",", 
+                    "SpaceMath`PlotsRXX`Private`PP"}], "]"}], ",", 
+                    RowBox[{"SpaceMath`PlotsRXX`Private`Inter2sigma", "[", 
+                    RowBox[{
+                    "SpaceMath`PlotsRXX`Private`ghtt", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghbb", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghZZ", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghWW", ",", 
+                    "SpaceMath`PlotsRXX`Private`ghtautau", ",", 
+                    "SpaceMath`PlotsRXX`Private`gCH", ",", 
+                    "SpaceMath`PlotsRXX`Private`mCH", ",", 
+                    "SpaceMath`PlotsRXX`Private`x", ",", 
+                    "SpaceMath`PlotsRXX`Private`y", ",", 
+                    "SpaceMath`PlotsRXX`Private`xmin", ",", 
+                    "SpaceMath`PlotsRXX`Private`xmax", ",", 
+                    "SpaceMath`PlotsRXX`Private`ymin", ",", 
+                    "SpaceMath`PlotsRXX`Private`ymax", ",", 
+                    "SpaceMath`PlotsRXX`Private`xlabel", ",", 
+                    "SpaceMath`PlotsRXX`Private`ylabel", ",", 
+                    "SpaceMath`PlotsRXX`Private`xfor", ",", 
+                    "SpaceMath`PlotsRXX`Private`yfor", ",", 
+                    "SpaceMath`PlotsRXX`Private`xformin", ",", 
+                    "SpaceMath`PlotsRXX`Private`xformax", ",", 
+                    "SpaceMath`PlotsRXX`Private`xforstep", ",", 
+                    "SpaceMath`PlotsRXX`Private`yformin", ",", 
+                    "SpaceMath`PlotsRXX`Private`yformax", ",", 
+                    "SpaceMath`PlotsRXX`Private`yforstep", ",", 
+                    "SpaceMath`PlotsRXX`Private`PP"}], "]"}]}], "}"}]}]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+                   {
+                    TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"SpaceMath`RXintersection\"\>"}
+                  },
+                  AutoDelete->False,
+                  GridBoxAlignment->{"Columns" -> {Right, Left}},
+                  GridBoxDividers->None,
+                  GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                  GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                 StripOnInput->False],
+                DynamicModuleValues:>{}]}
+             },
+             DefaultBaseStyle->"Column",
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+             GridBoxSpacings->{"Columns" -> {
+                 Offset[0.27999999999999997`], {
+                  Offset[0.5599999999999999]}, 
+                 Offset[0.27999999999999997`]}, "Rows" -> {
+                 Offset[0.2], {
+                  Offset[3.6]}, 
+                 Offset[0.2]}}],
+            FrameMargins->6], ""},
+          {
+           ItemBox[
+            TagBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "UpPointerOpener"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+               System`InformationDump`mouseOver$$]],
+              Alignment->Left,
+              Appearance->{"Default" -> None},
+              
+              ButtonFunction:>FEPrivate`Set[
+               System`InformationDump`open$$, False],
+              Evaluator->Automatic,
+              FrameMargins->{{9, 0}, {0, 0}},
+              ImageMargins->0,
+              ImageSize->Full,
+              Method->"Preemptive"],
+             
+             EventHandlerTag[{
+              "MouseEntered" :> 
+               FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+               "MouseExited" :> 
+               FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+               Method -> "Preemptive", PassEventsDown -> Automatic, 
+               PassEventsUp -> True}]],
+            BaseStyle->"InformationTitleBackground",
+            StripOnInput->False], "\[SpanFromLeft]"}
+         },
+         AutoDelete->False,
+         FrameStyle->Directive[
+           GrayLevel[0.8], 
+           Thickness[Tiny]],
+         GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+         
+         GridBoxDividers->{
+          "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+        "Grid"], False->
+       TagBox[GridBox[{
+          {
+           ItemBox[
+            PaneBox[
+             StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+              StripOnInput->False],
+             FrameMargins->{{4, 0}, {-1, 1}}],
+            BaseStyle->"InformationTitleBackground",
+            StripOnInput->False], 
+           ItemBox["\<\"\"\>",
+            BaseStyle->"InformationTitleBackground",
+            StripOnInput->False]},
+          {
+           ItemBox[
+            PaneBox[
+             
+             StyleBox["\<\"RXintersection[ghtt_, \
+ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,\
+ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,\
+PP_]\[Rule] This command evaluates the intersection of all signal strengths, \
+when there is dependence on two or more parameters. The arguments ghtt, ghbb, \
+ghZZ, ghWW, ghtautau and gCH are the htt, hbb, hZZ, hWW, htautau and \
+\\!\\(\\*SuperscriptBox[\\(hH\\), \\(-\\)]\\)\\!\\(\\*SuperscriptBox[\\(H\\), \
+\\(+\\)]\\) couplings. Here, h represents to SM-like Higgs boson while t and \
+b are the top and bottom quarks; V=Z, W are the gauge bosons, tau is the tau \
+lepton and \\!\\(\\*SuperscriptBox[\\(H\\), \\(-\\)]\\) is a charged scalar \
+boson. Labels x and y indicate the parameters to constraint, while xmin \
+(ymin) and xmax (ymax) are the initial and final values defined by users. \
+Argument xlabel (ylabel) is used for indicates the X axis label (Y axis \
+label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) \
+represent an additional parameter to constraint, namely: initial value, final \
+value and the steps from xformin (yformin) to xformax (yformax), \
+respectively; mCH stands for the charged scalar boson. Label [[i]] stands for \
+confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an \
+option for plotting functions that specifies how many initial sample points \
+to use.\"\>", "InformationUsageText",
+              StripOnInput->False,
+              LineSpacing->{1.5, 1.5, 3.}],
+             FrameMargins->{{10, 10}, {8, 10}}],
+            BaseStyle->"InformationUsageSubtitleBackground",
+            StripOnInput->False], 
+           ItemBox["\<\"\"\>",
+            BaseStyle->"InformationUsageSubtitleBackground",
+            StripOnInput->False]},
+          {
+           ItemBox[
+            TagBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "DownPointerOpener"],
+                ImageSizeCache->{10., {2., 8.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "DownPointerOpenerHot"],
+                ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
+               System`InformationDump`mouseOver$$]],
+              Alignment->Left,
+              Appearance->{"Default" -> None},
+              
+              ButtonFunction:>FEPrivate`Set[
+               System`InformationDump`open$$, True],
+              Evaluator->Automatic,
+              FrameMargins->{{9, 0}, {0, 0}},
+              ImageMargins->0,
+              ImageSize->Full,
+              Method->"Preemptive"],
+             
+             EventHandlerTag[{
+              "MouseEntered" :> 
+               FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+               "MouseExited" :> 
+               FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+               Method -> "Preemptive", PassEventsDown -> Automatic, 
+               PassEventsUp -> True}]],
+            BaseStyle->"InformationTitleBackground",
+            StripOnInput->False], "\[SpanFromLeft]"}
+         },
+         AutoDelete->False,
+         FrameStyle->Directive[
+           GrayLevel[0.8], 
+           Thickness[Tiny]],
+         GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+         
+         GridBoxDividers->{
+          "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+        "Grid"]}, Dynamic[System`InformationDump`open$$],
+       BaselinePosition->Baseline,
+       FrameMargins->0,
+       ImageSize->Automatic],
+      DynamicModuleValues:>{}],
+     BaseStyle->"InformationGridFrame",
+     StripOnInput->False], "InformationGridPlain",
+    StripOnInput->False],
+   InformationData[
+    Association[
+    "ObjectType" -> "Symbol", "Usage" -> 
+     "RXintersection[ghtt_, \
+ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,\
+ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,\
+PP_]\[Rule] This command evaluates the intersection of all signal strengths, \
+when there is dependence on two or more parameters. The arguments ghtt, ghbb, \
+ghZZ, ghWW, ghtautau and gCH are the htt, hbb, hZZ, hWW, htautau and \
+\!\(\*SuperscriptBox[\(hH\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) \
+couplings. Here, h represents to SM-like Higgs boson while t and b are the \
+top and bottom quarks; V=Z, W are the gauge bosons, tau is the tau lepton and \
+\!\(\*SuperscriptBox[\(H\), \(-\)]\) is a charged scalar boson. Labels x and \
+y indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) \
+are the initial and final values defined by users. Argument xlabel (ylabel) \
+is used for indicates the X axis label (Y axis label). The arguments xfor \
+(yfor), xformin (yformin), xforstep (yforstep) represent an additional \
+parameter to constraint, namely: initial value, final value and the steps \
+from xformin (yformin) to xformax (yformax), respectively; mCH stands for the \
+charged scalar boson. Label [[i]] stands for confidence level, i=1 (2) \
+indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting \
+functions that specifies how many initial sample points to use.", 
+     "Documentation" -> None, "OwnValues" -> None, "UpValues" -> None, 
+     "DownValues" -> 
+     Information`InformationValueForm[
+      DownValues, SpaceMath`RXintersection, {SpaceMath`RXintersection[
+          Pattern[SpaceMath`PlotsRXX`Private`ghtt, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`ghbb, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`ghZZ, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`ghWW, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`ghtautau, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`gCH, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`mCH, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`x, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`y, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`xmin, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`xmax, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`ymin, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`ymax, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`xlabel, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`ylabel, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`xfor, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`yfor, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`xformin, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`xformax, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`xforstep, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`yformin, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`yformax, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`yforstep, 
+           Blank[]], 
+          Pattern[SpaceMath`PlotsRXX`Private`PP, 
+           Blank[]]] :> {
+          SpaceMath`PlotsRXX`Private`Inter1sigma[
+          SpaceMath`PlotsRXX`Private`ghtt, SpaceMath`PlotsRXX`Private`ghbb, 
+           SpaceMath`PlotsRXX`Private`ghZZ, SpaceMath`PlotsRXX`Private`ghWW, 
+           SpaceMath`PlotsRXX`Private`ghtautau, 
+           SpaceMath`PlotsRXX`Private`gCH, SpaceMath`PlotsRXX`Private`mCH, 
+           SpaceMath`PlotsRXX`Private`x, SpaceMath`PlotsRXX`Private`y, 
+           SpaceMath`PlotsRXX`Private`xmin, SpaceMath`PlotsRXX`Private`xmax, 
+           SpaceMath`PlotsRXX`Private`ymin, SpaceMath`PlotsRXX`Private`ymax, 
+           SpaceMath`PlotsRXX`Private`xlabel, 
+           SpaceMath`PlotsRXX`Private`ylabel, SpaceMath`PlotsRXX`Private`xfor,
+            SpaceMath`PlotsRXX`Private`yfor, 
+           SpaceMath`PlotsRXX`Private`xformin, 
+           SpaceMath`PlotsRXX`Private`xformax, 
+           SpaceMath`PlotsRXX`Private`xforstep, 
+           SpaceMath`PlotsRXX`Private`yformin, 
+           SpaceMath`PlotsRXX`Private`yformax, 
+           SpaceMath`PlotsRXX`Private`yforstep, 
+           SpaceMath`PlotsRXX`Private`PP], 
+          SpaceMath`PlotsRXX`Private`Inter2sigma[
+          SpaceMath`PlotsRXX`Private`ghtt, SpaceMath`PlotsRXX`Private`ghbb, 
+           SpaceMath`PlotsRXX`Private`ghZZ, SpaceMath`PlotsRXX`Private`ghWW, 
+           SpaceMath`PlotsRXX`Private`ghtautau, 
+           SpaceMath`PlotsRXX`Private`gCH, SpaceMath`PlotsRXX`Private`mCH, 
+           SpaceMath`PlotsRXX`Private`x, SpaceMath`PlotsRXX`Private`y, 
+           SpaceMath`PlotsRXX`Private`xmin, SpaceMath`PlotsRXX`Private`xmax, 
+           SpaceMath`PlotsRXX`Private`ymin, SpaceMath`PlotsRXX`Private`ymax, 
+           SpaceMath`PlotsRXX`Private`xlabel, 
+           SpaceMath`PlotsRXX`Private`ylabel, SpaceMath`PlotsRXX`Private`xfor,
+            SpaceMath`PlotsRXX`Private`yfor, 
+           SpaceMath`PlotsRXX`Private`xformin, 
+           SpaceMath`PlotsRXX`Private`xformax, 
+           SpaceMath`PlotsRXX`Private`xforstep, 
+           SpaceMath`PlotsRXX`Private`yformin, 
+           SpaceMath`PlotsRXX`Private`yformax, 
+           SpaceMath`PlotsRXX`Private`yforstep, 
+           SpaceMath`PlotsRXX`Private`PP]}}], "SubValues" -> None, 
+     "DefaultValues" -> None, "NValues" -> None, "FormatValues" -> None, 
+     "Options" -> None, "Attributes" -> {}, "FullName" -> 
+     "SpaceMath`RXintersection"], False]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.793904565642454*^9, 3.793904868207931*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"6f93b4c2-11b4-4117-bf80-c1a504d45a89"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Dont", " ", "worry", " ", "if", " ", "$Aborted", " ", "is", " ", 
+    "launched"}], ",", " ", 
+   RowBox[{"be", " ", "patient"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.791772500566687*^9, 3.7917725333301764`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"097e281f-ef63-45d9-af58-0f19aa720587"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RXintersection", "[", 
+   RowBox[{
+    RowBox[{"ghtt", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"ArcCos", "[", "Cab", "]"}]}], "+", 
+       RowBox[{"ArcTan", "[", "tb", "]"}]}], ",", "tb"}], "]"}], ",", 
+    RowBox[{"ghbb", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"ArcCos", "[", "Cab", "]"}]}], "+", 
+       RowBox[{"ArcTan", "[", "tb", "]"}]}], ",", "tb"}], "]"}], ",", 
+    RowBox[{"ghZZ", "[", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"1", "-", 
+       RowBox[{"Cab", "^", "2"}]}], "]"}], "]"}], ",", 
+    RowBox[{"ghWW", "[", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"1", "-", 
+       RowBox[{"Cab", "^", "2"}]}], "]"}], "]"}], ",", 
+    RowBox[{"ghtautau", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"ArcCos", "[", "Cab", "]"}]}], "+", 
+       RowBox[{"ArcTan", "[", "tb", "]"}]}], ",", "tb"}], "]"}], ",", "0", 
+    ",", "mCH", ",", "Cab", ",", "tb", ",", 
+    RowBox[{"-", "0.4"}], ",", "0.4", ",", "1", ",", "50", ",", 
+    "\"\<cos(\[Beta]-\[Alpha])\>\"", ",", "\"\<tan\[Beta]\>\"", ",", "xfor", 
+    ",", "yfor", ",", "xformin", ",", "xformax", ",", "xforstep", ",", 
+    "yformin", ",", "yformax", ",", "yforstep", ",", "30"}], "]"}], "[", 
+  RowBox[{"[", "2", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.791759993158997*^9, 3.791759993682794*^9}, {
+  3.7917603590862494`*^9, 3.7917603658827353`*^9}, {3.791762972678166*^9, 
+  3.791762973989283*^9}, {3.791763514465396*^9, 3.791763516473057*^9}, {
+  3.791764125071682*^9, 3.791764151315249*^9}, {3.791764351324625*^9, 
+  3.7917643515214376`*^9}, {3.791765182053132*^9, 3.791765182247905*^9}, {
+  3.791765212299143*^9, 3.791765213648158*^9}, {3.791766045665653*^9, 
+  3.7917660504552927`*^9}, {3.79176619916081*^9, 3.791766249680414*^9}, {
+  3.791766288137065*^9, 3.791766293030995*^9}, {3.791767722108512*^9, 
+  3.791767722209215*^9}, {3.791769580286716*^9, 3.7917695804223557`*^9}, {
+  3.791771047038053*^9, 3.791771047184218*^9}, {3.791772629772488*^9, 
+  3.791772690085148*^9}, {3.791772978865745*^9, 3.791772980824593*^9}, {
+  3.793904700246022*^9, 3.793904701873151*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"424c82d9-1de9-4984-825a-bf2e876681c3"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`xfor$$ = $CellContext`xformin, \
+$CellContext`yfor$$ = $CellContext`yformin, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`xfor$$], $CellContext`xformin, $CellContext`xformax, \
+$CellContext`xforstep}, {
+      Hold[$CellContext`yfor$$], $CellContext`yformin, $CellContext`yformax, \
+$CellContext`yforstep}}, Typeset`size$$ = {600., {304., 310.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`xfor$$ = $CellContext`xformin, \
+$CellContext`yfor$$ = $CellContext`yformin}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      SpaceMath`Intersection2sigRXX[((
+          0.7041056910569107/$CellContext`tb) (1 + $CellContext`tb^2)^
+          Rational[1, 2]) 
+        Cos[ArcCos[$CellContext`Cab] - ArcTan[$CellContext`tb]], ((
+          0.01699186991869919/$CellContext`tb) (1 + $CellContext`tb^2)^
+          Rational[1, 2]) 
+        Cos[ArcCos[$CellContext`Cab] - ArcTan[$CellContext`tb]], 
+        66.34501723864332 (1 - $CellContext`Cab^2)^Rational[1, 2], 
+        51.549200959892424` (1 - $CellContext`Cab^2)^
+         Rational[1, 2], ((
+          0.007223008130081302/$CellContext`tb) (1 + $CellContext`tb^2)^
+          Rational[1, 2]) 
+        Cos[ArcCos[$CellContext`Cab] - ArcTan[$CellContext`tb]], 
+        0, $CellContext`mCH, $CellContext`Cab, $CellContext`tb, -0.4, 0.4, 1, 
+        50, "cos(\[Beta]-\[Alpha])", "tan\[Beta]", 30], 
+      "Specifications" :> {{$CellContext`xfor$$, $CellContext`xformin, \
+$CellContext`xformax, $CellContext`xforstep}, {$CellContext`yfor$$, \
+$CellContext`yformin, $CellContext`yformax, $CellContext`yforstep}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{647., {348., 355.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{{3.803986358261037*^9, 
+  3.803986371723934*^9}},ExpressionUUID->"b9180450-4f35-47f4-a761-\
+e38f766ab1a7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 873},
+WindowMargins->{{278, Automatic}, {Automatic, 89}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 519, 13, 99, "Title",ExpressionUUID->"c830e450-a671-4022-b048-55d0316a33f8"],
+Cell[CellGroupData[{
+Cell[1124, 39, 258, 4, 68, "Section",ExpressionUUID->"f81bc166-2deb-48b2-8385-109496ca249a"],
+Cell[CellGroupData[{
+Cell[1407, 47, 2700, 37, 31, "Input",ExpressionUUID->"e028bf2b-ff4e-4d37-839d-ccc6e6b11852"],
+Cell[CellGroupData[{
+Cell[4132, 88, 2763, 75, 52, "Print",ExpressionUUID->"6cf7e8d0-dfb1-4d5a-a8b4-6fc6935f0d57"],
+Cell[6898, 165, 1224, 33, 31, "Print",ExpressionUUID->"33d3d286-b9b5-4622-961e-b10724f6e85d"],
+Cell[8125, 200, 315, 7, 29, "Print",ExpressionUUID->"24fcb387-6151-4a5b-9501-e9ea7ecf84a3"],
+Cell[8443, 209, 304, 7, 29, "Print",ExpressionUUID->"9b672ff3-393b-47aa-87c9-df6215bc50f0"],
+Cell[8750, 218, 310, 7, 29, "Print",ExpressionUUID->"b5625294-6538-4b07-99ac-e1fd07d1446e"],
+Cell[9063, 227, 395, 8, 29, "Print",ExpressionUUID->"313ef664-5643-4d82-b156-f118cd69b689"],
+Cell[9461, 237, 312, 7, 29, "Print",ExpressionUUID->"8b404cf6-4cc3-4c31-94e5-a0bc7a4f65e7"],
+Cell[9776, 246, 400, 8, 29, "Print",ExpressionUUID->"0ce0c929-d8f9-4080-ac95-eabe103edec3"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10237, 261, 360, 6, 68, "Section",ExpressionUUID->"3cb288fd-abad-4f1d-a2ad-ad9da43e4652"],
+Cell[10600, 269, 625, 12, 31, "Input",ExpressionUUID->"8237e936-6f80-49ff-915c-725e76805752"],
+Cell[11228, 283, 2094, 64, 124, "Input",ExpressionUUID->"c8326320-cea9-48b5-b477-6a3c9c95146c"],
+Cell[13325, 349, 511, 12, 147, "Input",ExpressionUUID->"c5042224-44d9-45c7-8eee-ef0ea4b01d3a"],
+Cell[CellGroupData[{
+Cell[13861, 365, 585, 11, 46, "Subsubsection",ExpressionUUID->"9a83b59c-68d6-47f2-a9b8-62a7d4358fbf"],
+Cell[CellGroupData[{
+Cell[14471, 380, 201, 3, 31, "Input",ExpressionUUID->"ff8207e5-ee9b-46de-b36d-e6885b481780"],
+Cell[14675, 385, 22219, 451, 478, "Output",ExpressionUUID->"6f93b4c2-11b4-4117-bf80-c1a504d45a89"]
+}, Open  ]],
+Cell[36909, 839, 353, 8, 31, "Input",ExpressionUUID->"097e281f-ef63-45d9-af58-0f19aa720587"],
+Cell[37265, 849, 2246, 48, 124, "Input",ExpressionUUID->"424c82d9-1de9-4984-825a-bf2e876681c3"],
+Cell[39514, 899, 2819, 55, 718, "Input",ExpressionUUID->"b9180450-4f35-47f4-a761-e38f766ab1a7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
