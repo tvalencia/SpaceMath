@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     58423,       1264]
-NotebookOptionsPosition[     55288,       1203]
-NotebookOutlinePosition[     55622,       1218]
-CellTagsIndexPosition[     55579,       1215]
+NotebookDataLength[     51250,       1078]
+NotebookOptionsPosition[     48940,       1029]
+NotebookOutlinePosition[     49274,       1044]
+CellTagsIndexPosition[     49231,       1041]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -42,8 +42,6 @@ Cell["Load SpaceMath", "Section",
   3.757019773175634*^9, 3.757019808707851*^9}, {3.7802330934312973`*^9, 
   3.7802330942953863`*^9}},ExpressionUUID->"6d729008-8ed8-4d9a-8b2a-\
 0b40894881db"],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"<<", "SpaceMath`"}]], "Input",
@@ -82,179 +80,7 @@ Cell[BoxData[
    3.780235360691496*^9, 3.780235361563479*^9}, {3.780235542103795*^9, 
    3.7802355626180677`*^9}, {3.7802356195562067`*^9, 3.780235619893237*^9}, {
    3.78155633462521*^9, 3.781556344616946*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"b69c974c-a0b8-4748-93e3-ae66ff74c6ff"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{
-   StyleBox["\<\"SpaceMath \"\>", "Text",
-    StripOnInput->False,
-    FontWeight->Bold], "\[InvisibleSpace]", 
-   StyleBox["\<\"1.0. For help, use the \"\>", "Text",
-    StripOnInput->False], "\[InvisibleSpace]", 
-   StyleBox[
-    TagBox[
-     ButtonBox[
-      RowBox[{"documentation", " ", "center"}],
-      BaseStyle->"Link",
-      ButtonData:>"paclet:SpaceMath/tutorial/SpaceMathOverview",
-      ButtonNote->"paclet:SpaceMath/tutorial/SpaceMathOverview"],
-     DisplayForm], "Text",
-    StripOnInput->False], "\[InvisibleSpace]", 
-   StyleBox["\<\", check out the \"\>", "Text",
-    StripOnInput->False], "\[InvisibleSpace]", 
-   StyleBox[
-    TagBox[
-     ButtonBox["wiki",
-      BaseStyle->"Hyperlink",
-      ButtonData:>{
-        URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], 
-        None},
-      ButtonNote->
-       "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],
-     DisplayForm], "Text",
-    StripOnInput->False], "\[InvisibleSpace]", 
-   StyleBox["\<\" or write to the \"\>", "Text",
-    StripOnInput->False], "\[InvisibleSpace]", 
-   StyleBox[
-    TagBox[
-     ButtonBox[
-      RowBox[{"mailing", " ", 
-       RowBox[{"list", "."}]}],
-      BaseStyle->"Hyperlink",
-      ButtonData:>{
-        URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], 
-        None},
-      ButtonNote->
-       "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],
-     DisplayForm], "Text",
-    StripOnInput->False]}],
-  SequenceForm[
-   Style["SpaceMath ", "Text", Bold], 
-   Style["1.0. For help, use the ", "Text"], 
-   Style[
-    DisplayForm[
-     ButtonBox[
-     "documentation center", BaseStyle -> "Link", ButtonData :> 
-      "paclet:SpaceMath/tutorial/SpaceMathOverview", ButtonNote -> 
-      "paclet:SpaceMath/tutorial/SpaceMathOverview"]], "Text"], 
-   Style[", check out the ", "Text"], 
-   Style[
-    DisplayForm[
-     ButtonBox["wiki", ButtonData :> {
-        URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], 
-        None}, BaseStyle -> "Hyperlink", ButtonNote -> 
-      "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"]], 
-    "Text"], 
-   Style[" or write to the ", "Text"], 
-   Style[
-    DisplayForm[
-     ButtonBox["mailing list.", ButtonData :> {
-        URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], 
-        None}, BaseStyle -> "Hyperlink", ButtonNote -> 
-      "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"]], 
-    "Text"]],
-  Editable->False]], "Print",
- CellChangeTimes->{3.803985656656899*^9, 3.803986031576559*^9, 
-  3.803989134168754*^9, 3.803989714345158*^9, 3.803997878513077*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"a7994017-df2f-411b-8a58-86c1f08bc7a1"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{
-   StyleBox["\<\"See also the supplied \"\>", "Text",
-    StripOnInput->False], "\[InvisibleSpace]", 
-   StyleBox[
-    TagBox[
-     ButtonBox[
-      RowBox[{"Examples", "."}],
-      BaseStyle->"Hyperlink",
-      ButtonFunction:>SystemOpen[
-        FileNameJoin[{SpaceMath`$SpaceMathDirectory, "Examples"}]],
-      Evaluator->Automatic,
-      Method->"Preemptive"],
-     DisplayForm], "Text",
-    StripOnInput->False], "\[InvisibleSpace]", 
-   StyleBox["\<\" If you use SpaceMath in your research, please cite\"\>", 
-    "Text",
-    StripOnInput->False]}],
-  SequenceForm[
-   Style["See also the supplied ", "Text"], 
-   Style[
-    DisplayForm[
-     ButtonBox[
-     "Examples.", BaseStyle -> "Hyperlink", ButtonFunction :> SystemOpen[
-        FileNameJoin[{SpaceMath`$SpaceMathDirectory, "Examples"}]], Evaluator -> 
-      Automatic, Method -> "Preemptive"]], "Text"], 
-   Style[" If you use SpaceMath in your research, please cite", "Text"]],
-  Editable->False]], "Print",
- CellChangeTimes->{3.803985656656899*^9, 3.803986031576559*^9, 
-  3.803989134168754*^9, 3.803989714345158*^9, 3.803997878517027*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"cdbef0ed-3528-4a4d-8172-418100bba0e2"],
-
-Cell[BoxData[
- StyleBox["\<\"\[Bullet] SpaceMath Version 1.0\"\>", "Text",
-  StripOnInput->False]], "Print",
- CellChangeTimes->{3.803985656656899*^9, 3.803986031576559*^9, 
-  3.803989134168754*^9, 3.803989714345158*^9, 3.803997878518043*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"8e51bd15-3841-4e11-8ef6-3cd3bab4e430"],
-
-Cell[BoxData[
- StyleBox["\<\"\[Bullet] Authors:  \"\>", "Text",
-  StripOnInput->False]], "Print",
- CellChangeTimes->{3.803985656656899*^9, 3.803986031576559*^9, 
-  3.803989134168754*^9, 3.803989714345158*^9, 3.803997878518938*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"ed34b0fd-ad44-4e44-b42d-ba16146b392e"],
-
-Cell[BoxData[
- StyleBox["\<\"M. A. Arroyo-Ure\[NTilde]a\"\>", "Text",
-  StripOnInput->False]], "Print",
- CellChangeTimes->{3.803985656656899*^9, 3.803986031576559*^9, 
-  3.803989134168754*^9, 3.803989714345158*^9, 3.8039978785198107`*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"15ee19a0-cc98-45c5-a38a-d43e2327f1d0"],
-
-Cell[BoxData[
- StyleBox["\<\"Facultad de Estudios Superiores-Cuautitl\[AAcute]n, \
-Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico\"\>", "Text",
-  StripOnInput->False]], "Print",
- CellChangeTimes->{3.803985656656899*^9, 3.803986031576559*^9, 
-  3.803989134168754*^9, 3.803989714345158*^9, 3.803997878520688*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"2b5caba2-8fe0-4e9d-8dfd-ae3dbcb3ccf7"],
-
-Cell[BoxData[
- StyleBox["\<\"T. A. Valencia-P\[EAcute]rez\"\>", "Text",
-  StripOnInput->False]], "Print",
- CellChangeTimes->{3.803985656656899*^9, 3.803986031576559*^9, 
-  3.803989134168754*^9, 3.803989714345158*^9, 3.803997878521576*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"a1dba857-e619-442d-87bd-01fdc0ee505b"],
-
-Cell[BoxData[
- StyleBox["\<\"Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\
-\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\"\>", "Text",
-  StripOnInput->False]], "Print",
- CellChangeTimes->{3.803985656656899*^9, 3.803986031576559*^9, 
-  3.803989134168754*^9, 3.803989714345158*^9, 3.803997878522472*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"1633b343-626b-4269-bed6-e16bf2d9e946"]
-}, Open  ]]
-}, Open  ]]
+ CellLabel->"In[8]:=",ExpressionUUID->"b69c974c-a0b8-4748-93e3-ae66ff74c6ff"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -926,16 +752,17 @@ $CellContext`yfor$$ = $CellContext`yformin}, "ControllerVariables" :> {
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
-      SpaceMath`Intersection2sigRXX[
-       0.7041056910569107 $CellContext`tb^(-1) (1 + $CellContext`tb^2)^
-         Rational[1, 2] 
-        Cos[ArcCos[$CellContext`Cab] - ArcTan[$CellContext`tb]], 
-        0.01699186991869919 (1 + $CellContext`tb^2)^Rational[1, 2] 
+      SpaceMath`Intersection2sigRXX[((
+          0.7041056910569107/$CellContext`tb) (1 + $CellContext`tb^2)^
+          Rational[1, 2]) 
+        Cos[ArcCos[$CellContext`Cab] - ArcTan[$CellContext`tb]], (
+         0.01699186991869919 (1 + $CellContext`tb^2)^Rational[1, 2]) 
         Sin[ArcCos[$CellContext`Cab] - ArcTan[$CellContext`tb]], 
         66.34501723864332 (1 - $CellContext`Cab^2)^Rational[1, 2], 
-        51.549200959892424` (1 - $CellContext`Cab^2)^Rational[1, 2], 
-        0.007223008130081302 $CellContext`tb^(-1) (1 + $CellContext`tb^2)^
-         Rational[1, 2] 
+        51.549200959892424` (1 - $CellContext`Cab^2)^
+         Rational[1, 2], ((
+          0.007223008130081302/$CellContext`tb) (1 + $CellContext`tb^2)^
+          Rational[1, 2]) 
         Cos[ArcCos[$CellContext`Cab] - ArcTan[$CellContext`tb]], 
         0, $CellContext`mCH, $CellContext`Cab, $CellContext`tb, -0.4, 0.4, 1, 
         50, "cos(\[Beta]-\[Alpha])", "tan\[Beta]", 200], 
@@ -971,9 +798,8 @@ $CellContext`yfor$$ = $CellContext`yformin, Typeset`show$$ = True,
       Hold[$CellContext`xfor$$], $CellContext`xformin, $CellContext`xformax, \
 $CellContext`xforstep}, {
       Hold[$CellContext`yfor$$], $CellContext`yformin, $CellContext`yformax, \
-$CellContext`yforstep}}, Typeset`size$$ = {600., {304., 310.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
-    
+$CellContext`yforstep}}, Typeset`size$$ = {67., {2., 10.}}, Typeset`update$$ =
+     0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`xfor$$ = $CellContext`xformin, \
@@ -1001,7 +827,7 @@ $CellContext`yfor$$ = $CellContext`yformin}, "ControllerVariables" :> {},
 $CellContext`xformax, $CellContext`xforstep}, {$CellContext`yfor$$, \
 $CellContext`yformin, $CellContext`yformax, $CellContext`yforstep}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{647., {348., 355.}},
+     ImageSizeCache->{371., {50., 57.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1221,47 +1047,35 @@ Cell[CellGroupData[{
 Cell[580, 22, 519, 13, 99, "Title",ExpressionUUID->"4230209c-b53c-4d56-8655-fedc3167e29d"],
 Cell[CellGroupData[{
 Cell[1124, 39, 258, 4, 68, "Section",ExpressionUUID->"6d729008-8ed8-4d9a-8b2a-0b40894881db"],
-Cell[CellGroupData[{
-Cell[1407, 47, 2700, 37, 31, "Input",ExpressionUUID->"b69c974c-a0b8-4748-93e3-ae66ff74c6ff"],
-Cell[CellGroupData[{
-Cell[4132, 88, 2793, 75, 31, "Print",ExpressionUUID->"a7994017-df2f-411b-8a58-86c1f08bc7a1"],
-Cell[6928, 165, 1254, 33, 31, "Print",ExpressionUUID->"cdbef0ed-3528-4a4d-8172-418100bba0e2"],
-Cell[8185, 200, 345, 7, 29, "Print",ExpressionUUID->"8e51bd15-3841-4e11-8ef6-3cd3bab4e430"],
-Cell[8533, 209, 334, 7, 29, "Print",ExpressionUUID->"ed34b0fd-ad44-4e44-b42d-ba16146b392e"],
-Cell[8870, 218, 342, 7, 29, "Print",ExpressionUUID->"15ee19a0-cc98-45c5-a38a-d43e2327f1d0"],
-Cell[9215, 227, 423, 8, 29, "Print",ExpressionUUID->"2b5caba2-8fe0-4e9d-8dfd-ae3dbcb3ccf7"],
-Cell[9641, 237, 342, 7, 29, "Print",ExpressionUUID->"a1dba857-e619-442d-87bd-01fdc0ee505b"],
-Cell[9986, 246, 430, 8, 29, "Print",ExpressionUUID->"1633b343-626b-4269-bed6-e16bf2d9e946"]
-}, Open  ]]
-}, Open  ]]
+Cell[1385, 45, 2700, 37, 31, "Input",ExpressionUUID->"b69c974c-a0b8-4748-93e3-ae66ff74c6ff"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10477, 261, 360, 6, 68, "Section",ExpressionUUID->"7226d687-c2ba-4029-a64d-11c6f529692f"],
-Cell[10840, 269, 582, 12, 31, "Input",ExpressionUUID->"6913d35e-d9db-46ca-9a4a-d6f5cde5376d"],
-Cell[11425, 283, 2856, 73, 124, "Input",ExpressionUUID->"235c2ee9-375f-4b72-8f72-496f14993d8e"],
-Cell[14284, 358, 512, 12, 55, "Input",ExpressionUUID->"61fde719-f28c-49ab-b08a-57994675047a"],
+Cell[4122, 87, 360, 6, 68, "Section",ExpressionUUID->"7226d687-c2ba-4029-a64d-11c6f529692f"],
+Cell[4485, 95, 582, 12, 31, "Input",ExpressionUUID->"6913d35e-d9db-46ca-9a4a-d6f5cde5376d"],
+Cell[5070, 109, 2856, 73, 124, "Input",ExpressionUUID->"235c2ee9-375f-4b72-8f72-496f14993d8e"],
+Cell[7929, 184, 512, 12, 55, "Input",ExpressionUUID->"61fde719-f28c-49ab-b08a-57994675047a"],
 Cell[CellGroupData[{
-Cell[14821, 374, 585, 11, 46, "Subsubsection",ExpressionUUID->"95dcd84d-6779-4b43-b1e9-59c4a49fe4bb"],
+Cell[8466, 200, 585, 11, 46, "Subsubsection",ExpressionUUID->"95dcd84d-6779-4b43-b1e9-59c4a49fe4bb"],
 Cell[CellGroupData[{
-Cell[15431, 389, 202, 3, 31, "Input",ExpressionUUID->"cbfcf748-3669-4cb3-b306-3e3e3244a848"],
-Cell[15636, 394, 21835, 443, 206, "Output",ExpressionUUID->"d408ff92-f7e5-4e63-9e97-6f6178361b71"]
+Cell[9076, 215, 202, 3, 31, "Input",ExpressionUUID->"cbfcf748-3669-4cb3-b306-3e3e3244a848"],
+Cell[9281, 220, 21835, 443, 206, "Output",ExpressionUUID->"d408ff92-f7e5-4e63-9e97-6f6178361b71"]
 }, Open  ]],
-Cell[37486, 840, 353, 8, 31, "Input",ExpressionUUID->"9e81ce01-7a02-4932-93ad-3235f909d376"],
+Cell[31131, 666, 353, 8, 31, "Input",ExpressionUUID->"9e81ce01-7a02-4932-93ad-3235f909d376"],
 Cell[CellGroupData[{
-Cell[37864, 852, 2370, 49, 55, "Input",ExpressionUUID->"09d4b8aa-bc5f-4633-9d21-14d23e5baea8"],
-Cell[40237, 903, 2940, 54, 126, "Output",ExpressionUUID->"9f19db17-1d37-4b64-9d5b-84d4571a6c19"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[43214, 962, 2811, 53, 718, "Input",ExpressionUUID->"91bed462-36a5-4c3a-b14c-9151335b5b37"],
-Cell[46028, 1017, 2960, 55, 126, "Output",ExpressionUUID->"3f70186e-60f3-4eaf-aec9-eee28512f179"]
+Cell[31509, 678, 2370, 49, 55, "Input",ExpressionUUID->"09d4b8aa-bc5f-4633-9d21-14d23e5baea8"],
+Cell[33882, 729, 2958, 55, 126, "Output",ExpressionUUID->"9f19db17-1d37-4b64-9d5b-84d4571a6c19"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[49025, 1077, 2792, 51, 122, "Input",ExpressionUUID->"f7109852-0778-4adc-a66a-de20b5b96fb5"],
-Cell[51820, 1130, 2948, 54, 126, "Output",ExpressionUUID->"c1f1ff77-93d5-46c4-bb2e-fd3be8404500"]
+Cell[36877, 789, 2800, 52, 122, "Input",ExpressionUUID->"91bed462-36a5-4c3a-b14c-9151335b5b37"],
+Cell[39680, 843, 2960, 55, 126, "Output",ExpressionUUID->"3f70186e-60f3-4eaf-aec9-eee28512f179"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54805, 1189, 202, 3, 31, "Input",ExpressionUUID->"3392bc10-62f6-4264-94f3-7f75e5416354"],
-Cell[55010, 1194, 226, 3, 35, "Output",ExpressionUUID->"883b400d-5f12-41d9-9cb9-c5935d37ef6a"]
+Cell[42677, 903, 2792, 51, 122, "Input",ExpressionUUID->"f7109852-0778-4adc-a66a-de20b5b96fb5"],
+Cell[45472, 956, 2948, 54, 126, "Output",ExpressionUUID->"c1f1ff77-93d5-46c4-bb2e-fd3be8404500"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48457, 1015, 202, 3, 31, "Input",ExpressionUUID->"3392bc10-62f6-4264-94f3-7f75e5416354"],
+Cell[48662, 1020, 226, 3, 35, "Output",ExpressionUUID->"883b400d-5f12-41d9-9cb9-c5935d37ef6a"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1269,6 +1083,4 @@ Cell[55010, 1194, 226, 3, 35, "Output",ExpressionUUID->"883b400d-5f12-41d9-9cb9-
 }
 ]
 *)
-
-(* End of internal cache information *)
 
