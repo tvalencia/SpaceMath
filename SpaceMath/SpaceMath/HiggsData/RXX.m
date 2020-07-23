@@ -5,80 +5,81 @@
 
 (*Scalar boson decays into fermion pair;*)
 (*Definitions;*)
-\[Tau]fi::usage ="See later"
-\[Tau]fj::usage ="See later"
+\[Tau]fi::usage ="Scalar boson decays into fermion pair: \[Tau]fi"
+\[Tau]fj::usage ="Scalar boson decays into fermion pair: \[Tau]fj"
 
 (*Decay width of the Scalar boson into fermion pair*)
-WidthHff::usage ="See later"
+WidthHff::usage ="Decay width of the Scalar boson into fermion pair: WidthHff"
 
 (*Scalar boson decay into gluon pair at one-loop level*)
 (*Definitions*)
-ft::usage ="See later"
-fb::usage ="See later"
-gt::usage ="See later"
-gb::usage ="See later"
+ft::usage ="Scalar boson decay into gluon pair at one-loop level: ft"
+fb::usage ="Scalar boson decay into gluon pair at one-loop level: fb"
+gt::usage ="Scalar boson decay into gluon pair at one-loop level: gt"
+gb::usage ="Scalar boson decay into gluon pair at one-loop level: gb"
 
-At::usage ="See later"
-Ab::usage ="See later"
+At::usage ="Scalar boson decay into gluon pair at one-loop level: At"
+Ab::usage ="Scalar boson decay into gluon pair at one-loop level: Ab"
 
-Ft::usage ="See later"
-Fb::usage ="See later"
+Ft::usage ="Scalar boson decay into gluon pair at one-loop level: Ft"
+Fb::usage ="Scalar boson decay into gluon pair at one-loop level: Fb"
 AHgg::usage ="We consider the contribution of bottom and top quarks inside the loop"
 
 (*Decay width of the Scalar boson into gluon pair*)
-WidthHgg::usage ="See later"
+WidthHgg::usage ="Decay width of the Scalar boson into gluon pair: WidthHgg"
 
 (*Higgs boson decay into photon pair*)
 Qt::usage ="2/3"
 Qb::usage ="-1/3"
 
 (*Main fermion contribution come from top and bottom quark*)
-Aht::usage ="See later"
-Ahb::usage ="See later"
-Af::usage ="See later"
+Aht::usage ="Main fermion contribution come from top and bottom quark: Aht"
+Ahb::usage ="Main fermion contribution come from top and bottom quark: Ahb"
+Af::usage ="Main fermion contribution come from top and bottom quark: Af"
 
 (*W contribution*)
-fW::usage ="See later"
-gW::usage ="See later"
-AW::usage ="See later"
-FW::usage ="See later"
-AhW::usage ="See later"
+fW::usage ="W contribution: fW"
+gW::usage ="W contribution: gW"
+AW::usage ="W contribution: AW"
+FW::usage ="W contribution: FW"
+AhW::usage ="W contribution: AhW"
 
 (*Charged scalar contribution*)
-fH::usage ="See later"
-gH::usage ="See later"
-AH::usage ="See later"
-FH::usage ="See later"
-AHc::usage ="See later"
-Ahgaga::usage ="See later"
+fH::usage ="Charged scalar contribution: fH"
+gH::usage ="Charged scalar contribution: gH"
+AH::usage ="Charged scalar contribution: AH"
+FH::usage ="Charged scalar contribution: FH"
+AHc::usage ="Charged scalar contribution: AHc"
+Ahgaga::usage ="Charged scalar contribution: Ahgaga"
 
 (*Decay width of Scalar boson into photon-photon*)
-WidthHgaga::usage ="See later"
+WidthHgaga::usage ="Decay width of Scalar boson into photon-photon: WidthHgaga"
 
 (*Scalar boson decay into vector pair*)
 (*Definitions*)
-RTW::usage ="See later"
-RTZ::usage ="See later"
-\[Delta]Z::usage ="See later"
+RTW::usage ="Scalar boson decay into vector pair: RTW"
+RTZ::usage ="Scalar boson decay into vector pair: RTZ"
+\[Delta]Z::usage ="Scalar boson decay into vector pair: \[Delta]Z"
 
 (*Decay width of Higgs boson into WW pair*)
-WidthHWW::usage ="See later"
+WidthHWW::usage ="Decay width of Higgs boson into WW pair: WidthHWW"
 
 (* Decay width of Scalar boson into ZZ pair *)
-WidthHZZ::usage ="See later"
-BRhfifj::usage ="See later"
-BRhgaga::usage ="See later"
-BRhWW::usage ="See later"
-BRhZZ::usage ="See later"
-BRhgg::usage ="See later"
+WidthHZZ::usage ="Decay width of Scalar boson into ZZ pair: WidthHZZ"
+BRhfifj::usage ="Decay width of Scalar boson into ZZ pair: BRhfifj"
+BRhgaga::usage ="Decay width of Scalar boson into ZZ pair: BRhgaga"
+BRhWW::usage ="Decay width of Scalar boson into ZZ pair: BRhWW"
+BRhZZ::usage ="Decay width of Scalar boson into ZZ pair: BRhZZ"
+BRhgg::usage ="Decay width of Scalar boson into ZZ pair: BRhgg"
 
 (*Signal strengths*)
-Rbotbot::usage ="See later"
-Rtata::usage ="See later"
-RWW::usage ="See later"
-RZZ::usage ="See later"
-Rgaga::usage ="See later"
-Rgg::usage ="See later"
+Rbotbot::usage ="Signal strengths: Rbotbot"
+Rtata::usage ="Signal strengths: Rtata"
+RWW::usage ="Signal strengths: RWW"
+RZZ::usage ="Signal strengths: RZZ"
+Rgaga::usage ="Signal strengths: Rgaga"
+Rgg::usage ="Signal strengths: Rgg"
+
 
 (* ------------------------------------------------------------------------ *)
 
