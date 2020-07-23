@@ -2,13 +2,13 @@ Automatic Installation
 
 Run the following instructions in a Notebook of Mathematica
 
-Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/MarcoDeveloper/SpaceMath/Install.m"]
+Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/stable/SpaceMath/Install.m"]
 
 InstallSpaceMath[]
 
 Manual installation
 
-Download (https://github.com/spacemathproject/SpaceMath/archive/MarcoDeveloper.zip)
+Download (https://github.com/spacemathproject/SpaceMath/archive/stable.zip)
 
 Unzip the folder inside $UserBaseDirectory/Applications
 
