@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 12.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21429,        633]
-NotebookOptionsPosition[     17733,        543]
-NotebookOutlinePosition[     20890,        613]
-CellTagsIndexPosition[     20847,        610]
+NotebookDataLength[     18900,        589]
+NotebookOptionsPosition[     14620,        500]
+NotebookOutlinePosition[     17761,        569]
+CellTagsIndexPosition[     17718,        566]
 WindowTitle->Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] 
 WindowFrame->Normal*)
 
@@ -60,7 +60,7 @@ Signalstrength.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$16036], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21423], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/Signalstrength", ".html"]], None}]}]},
@@ -86,12 +86,10 @@ Cell[TextData[{
     RowBox[{
      StyleBox["x", "TI"], 
      OverscriptBox[
-      StyleBox["x", "TI"], "_"]}]], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "7e46b24c-eb7d-4a7a-9f19-f22907969b3d"],
+      StyleBox["x", "TI"], "_"]}]], TraditionalForm]], "InlineFormula"],
  " "
 }], "Title",
- CellID->509267359,
- $CellContext`ExpressionUUID -> "7f5e844f-2878-4e3c-bbdc-e2fc813b163f"],
+ CellID->509267359],
 
 Cell[TextData[{
  "For a production process ",
@@ -103,8 +101,7 @@ Cell[TextData[{
      StyleBox["p", "TI"], "\[Rule]", 
      SubscriptBox[
       StyleBox["H", "TI"], 
-      StyleBox["i", "TI"]]}], ")"}], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "3722c52d-d6f2-4bac-b14d-bdea855ddaac"],
+      StyleBox["i", "TI"]]}], ")"}], TraditionalForm]], "InlineFormula"],
  " and a decay ",
  Cell[BoxData[
   FormBox[
@@ -114,12 +111,10 @@ Cell[TextData[{
      StyleBox["i", "TI"]], "\[Rule]", 
     StyleBox["x", "TI"], 
     OverscriptBox[
-     StyleBox["x", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "664a5b2d-779e-4d40-a805-a395a5b5e161"],
+     StyleBox["x", "TI"], "_"]}], TraditionalForm]], "InlineFormula"],
  ", the signal strength is defined as follows: "
 }], "Text",
- CellID->1534169418,
- $CellContext`ExpressionUUID -> "57d8259a-65df-4bb4-a409-f348bfa2e434"],
+ CellID->1534169418],
 
 Cell[TextData[Cell[BoxData[
  FormBox[
@@ -159,11 +154,8 @@ Cell[TextData[Cell[BoxData[
        StyleBox["x", "TI"], 
        OverscriptBox[
         StyleBox["x", "TI"], "_"]}], ")"}]}]], ","}], 
-  TraditionalForm]], "NumberedEquation",
- $CellContext`ExpressionUUID -> 
- "6f21081e-1a38-4847-8433-9e07a0220550"]], "Text",
- CellID->1438509970,
- $CellContext`ExpressionUUID -> "ad508e61-4f58-42fd-9487-53a27e92ae34"],
+  TraditionalForm]], "NumberedEquation"]], "Text",
+ CellID->1438509970],
 
 Cell[TextData[{
  "where ",
@@ -175,15 +167,13 @@ Cell[TextData[{
      StyleBox["p", "TI"], "\[Rule]", 
      SubscriptBox[
       StyleBox["H", "TI"], 
-      StyleBox["i", "TI"]]}], ")"}], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "6c1745fa-8ce9-4964-9920-5fc57d507122"],
+      StyleBox["i", "TI"]]}], ")"}], TraditionalForm]], "InlineFormula"],
  " is the production cross section of ",
  Cell[BoxData[
   FormBox[
    SubscriptBox[
     StyleBox["H", "TI"], 
-    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "a2e608e5-1a3c-402b-84f3-40d213ea5f34"],
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula"],
  ", with ",
  Cell[BoxData[
   FormBox[
@@ -194,19 +184,16 @@ Cell[TextData[{
       StyleBox["i", "TI"]], "\[LongEqual]", 
      StyleBox["h", "TI"]}], ",", " ", 
     SuperscriptBox[
-     StyleBox["h", "TI"], "SM"]}], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "cd7799f3-8b8c-45a6-a4a9-083b609ad1b6"],
+     StyleBox["h", "TI"], "SM"]}], TraditionalForm]], "InlineFormula"],
  ", here ",
  Cell[BoxData[
   FormBox[
-   StyleBox["h", "TI"], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "f344b450-b0b0-4337-a6a5-f1d1e876e432"],
+   StyleBox["h", "TI"], TraditionalForm]], "InlineFormula"],
  " is the SM\[Hyphen]like Higgs boson coming from an extension of the SM and ",
  Cell[BoxData[
   FormBox[
    SuperscriptBox[
-    StyleBox["h", "TI"], "SM"], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "c81a0a08-c95c-4382-b649-6c7c57385c3b"],
+    StyleBox["h", "TI"], "SM"], TraditionalForm]], "InlineFormula"],
  " is the SM Higgs boson; ",
  Cell[BoxData[
   FormBox[
@@ -218,23 +205,21 @@ Cell[TextData[{
       StyleBox["i", "TI"]], "\[Rule]", 
      StyleBox["x", "TI"], 
      OverscriptBox[
-      StyleBox["x", "TI"], "_"]}], ")"}], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "fdbe1317-c809-479c-82ce-07aaff380953"],
+      StyleBox["x", "TI"], "_"]}], ")"}], TraditionalForm]], 
+  "InlineFormula"],
  " is the branching ratio of ",
  Cell[BoxData[
   FormBox[
    SubscriptBox[
     StyleBox["H", "TI"], 
-    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "97832f19-0a70-4d4d-afbe-dad84dda87ad"],
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula"],
  " decaying into a ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     StyleBox["x", "TI"], 
     OverscriptBox[
-     StyleBox["x", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "65364578-9c55-42a4-b198-20bf05f80ff8"],
+     StyleBox["x", "TI"], "_"]}], TraditionalForm]], "InlineFormula"],
  " where ",
  Cell[BoxData[
   FormBox[
@@ -262,31 +247,26 @@ Cell[TextData[{
      StyleBox["Z", "TI"], 
      SuperscriptBox[
       StyleBox["Z", "TI"], "*"]}], ",", " ", "\[Gamma]\[Gamma]"}], 
-   TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "5e3bfe88-ed1b-412b-9d30-ec59edd0585c"],
+   TraditionalForm]], "InlineFormula"],
  ". In addition, we consider the production of ",
  Cell[BoxData[
   FormBox[
    SubscriptBox[
     StyleBox["H", "TI"], 
-    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "31bddbec-ab1d-47fc-b2dc-571847d3d77e"],
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula"],
  " via gluon fusion and we use the narrow width approximation: "
 }], "Text",
- CellID->648002154,
- $CellContext`ExpressionUUID -> "1d1a8056-6730-46cc-9d47-be1d5c3f83ab"],
+ CellID->648002154],
 
 Cell[TextData[{
  "In this version of ",
  Cell[BoxData[
   FormBox[
-   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "e6f98adb-fdad-4d4e-9b4e-036ec371a869"],
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula"],
  " we only consider the Higgs boson production cross section via gluon fusion \
 and we use the narrow width approximation: "
 }], "Text",
- CellID->1219722,
- $CellContext`ExpressionUUID -> "714e0b7a-6f47-471c-8d38-a2007ed3a0e0"],
+ CellID->1219722],
 
 Cell[TextData[Cell[BoxData[
  FormBox[
@@ -326,22 +306,17 @@ Cell[TextData[Cell[BoxData[
        StyleBox["x", "TI"], 
        OverscriptBox[
         StyleBox["x", "TI"], "_"]}], ")"}]}]], "."}], 
-  TraditionalForm]], "NumberedEquation",
- $CellContext`ExpressionUUID -> 
- "7b7b23f5-c4ae-41c6-9eb7-1f1a4e270d43"]], "Text",
- CellID->777615139,
- $CellContext`ExpressionUUID -> "77739cfc-9881-4610-9de0-aa06e31b67cc"],
+  TraditionalForm]], "NumberedEquation"]], "Text",
+ CellID->777615139],
 
 Cell[TextData[{
  "In the Table signalvalues we show the best fit, at ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"1", "\[Sigma]"}], TraditionalForm]], "InlineFormula",
-  $CellContext`ExpressionUUID -> "6b482b1f-8a26-45b1-a02b-d48efe56fe5f"],
+   RowBox[{"1", "\[Sigma]"}], TraditionalForm]], "InlineFormula"],
  ", on the signal strength. "
 }], "Text",
- CellID->460060784,
- $CellContext`ExpressionUUID -> "9f39ebe8-3629-4ad7-bc49-f7616364ffad"],
+ CellID->460060784],
 
 Cell[BoxData[GridBox[{
    {
@@ -353,12 +328,10 @@ Cell[BoxData[GridBox[{
       TraditionalForm]}], "    ", Cell["\<\
 
 \
-\>", "TableText",
-     $CellContext`ExpressionUUID -> "3d560a6f-a9df-4dce-a88e-cf8c93972898"]},
+\>", "TableText"]},
    {"ggh", 
     RowBox[{"Best", " ", "fit", " ", "value"}], Cell[
-    "Uncertainty stat.      Uncertainty syst", "TableText",
-     $CellContext`ExpressionUUID -> "d1a1c5dd-ee13-44bf-b603-423f0ad32ec7"]},
+    "Uncertainty stat.      Uncertainty syst", "TableText"]},
    {
     RowBox[{
      FormBox[
@@ -438,105 +411,89 @@ Cell[BoxData[GridBox[{
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "1.92"}], 
-        RowBox[{"+", "1.96"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "e646094a-56ba-41f4-95c3-f45e242f4354"],
+        RowBox[{"+", "1.96"}]], TraditionalForm]], "InlineFormula"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.59"}], 
-        RowBox[{"+", "1.44"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "a109039a-77c1-40b6-a78d-da2090c3f85e"],
+        RowBox[{"+", "1.44"}]], TraditionalForm]], "InlineFormula"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.25"}], 
-        RowBox[{"+", "0.25"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "528d00f5-b94d-4bc8-a0ba-82cbf62b642b"],
+        RowBox[{"+", "0.25"}]], TraditionalForm]], "InlineFormula"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.40"}], 
-        RowBox[{"+", "0.46"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "6634c8af-6384-49a5-bb79-760e2f7132e9"],
+        RowBox[{"+", "0.46"}]], TraditionalForm]], "InlineFormula"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.12"}], 
-        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "125b2f96-7023-4a89-a05b-7887036cfb37"],
+        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.15"}], 
-        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "b9631402-6fb3-44ba-9fd6-b422cbf598d3"],
+        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.19"}], 
-        RowBox[{"+", "0.20"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "41ae666f-368b-47e6-ac57-a46dbcc58914"],
+        RowBox[{"+", "0.20"}]], TraditionalForm]], "InlineFormula"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.10"}], 
-        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "842fe46a-d828-4120-9a3a-e9e9a8cd5854"],
+        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.15"}], 
-        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "4d5a0b00-e3a6-4e38-a5fa-cbfdde49bc66"],
+        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.10"}], 
-        RowBox[{"+", "0.13"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "e714a117-58b6-47c3-ba18-0be66a240440"],
+        RowBox[{"+", "0.13"}]], TraditionalForm]], "InlineFormula"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "1.78"}], 
-        RowBox[{"+", "1.79"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "75368649-01e2-44c8-84df-24627b40a173"],
+        RowBox[{"+", "1.79"}]], TraditionalForm]], "InlineFormula"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.19"}], 
-        RowBox[{"+", "0.19"}]], TraditionalForm]], "InlineFormula",
-      $CellContext`ExpressionUUID -> "c3029f77-cf51-4163-bb20-8fa3ce0c65f5"],
+        RowBox[{"+", "0.19"}]], TraditionalForm]], "InlineFormula"],
      " "
-    }], "TableText",
-     $CellContext`ExpressionUUID -> "b437331b-8664-46ec-9155-4af471b8a384"]}
+    }], "TableText"]}
   }]], "DefinitionBox3Col",
  CellFrame->{{0, 0}, {0, 2}},
- CellID->1255467794,
- $CellContext`ExpressionUUID -> "7cbb1263-5615-4fe2-9cbc-10cf5f74127e"],
+ CellID->1255467794],
 
 Cell[TextData[{
  "Best fit value and ",
  Cell[BoxData[
   FormBox[
    RowBox[{"\[PlusMinus]", "1", "\[Sigma]"}], TraditionalForm]], 
-  "InlineFormula",
-  $CellContext`ExpressionUUID -> "f25e1319-e3ea-4b4e-b8b8-8be9fa3c745e"],
+  "InlineFormula"],
  " uncertainties for the Higgs boson production via gluon fusion and decay \
 modes. "
 }], "Caption",
- CellID->407841573,
- $CellContext`ExpressionUUID -> "7cce8ebb-596c-4642-8d91-8629d4386b8f"]
+ CellID->407841573]
 }, Open  ]],
 
 Cell[" ", "FooterCell"]
@@ -555,7 +512,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 7, 17, 47, 29.814899}", 
+   "built" -> "{2020, 7, 22, 22, 45, 31.1769891}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -574,13 +531,12 @@ _]\[LongEqual]bOverscriptBox[StyleBox[b, TI], _], \[Tau]^-\[Tau]^+, \[Mu]^-\
 \[Mu]^+, WW^*, ZZ^*, \[Gamma]\[Gamma]. In addition, we consider the \
 production of H_i via gluon fusion and we use the narrow width approximation: \
 ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$15988, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$21375, "title" -> 
     "Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] ", 
     "titlemodifier" -> "", "windowtitle" -> 
     "Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] ", "type" -> 
-    "Tutorial", "uri" -> "SpaceMath/tutorial/Signalstrength"}, 
-  "SearchTextTranslated" -> ""},
-FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+    "Tutorial", "uri" -> "SpaceMath/tutorial/Signalstrength"}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -598,7 +554,7 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["TutorialRelatedLinksSection"], 
     CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
-  FrontEndVersion -> "10.0 for Linux x86 (64-bit) (June 27, 2014)", 
+  FrontEndVersion -> "12.0 for Microsoft Windows (64-bit) (April 8, 2019)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -612,29 +568,29 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[635, 21, 2329, 54, 70, "AnchorBarGrid",
+Cell[635, 21, 2329, 54, 70, "AnchorBarGrid",ExpressionUUID->"55246c32-521f-4dd1-9366-29d2be8ef0de",
  CellID->1],
 Cell[CellGroupData[{
-Cell[2989, 79, 431, 14, 70, "Title",
+Cell[2989, 79, 286, 12, 70, "Title",ExpressionUUID->"7f5e844f-2878-4e3c-bbdc-e2fc813b163f",
  CellID->509267359],
-Cell[3423, 95, 855, 26, 70, "Text",
+Cell[3278, 93, 637, 23, 70, "Text",ExpressionUUID->"57d8259a-65df-4bb4-a409-f348bfa2e434",
  CellID->1534169418],
-Cell[4281, 123, 1270, 42, 70, "Text",
+Cell[3918, 118, 1124, 39, 70, "Text",ExpressionUUID->"ad508e61-4f58-42fd-9487-53a27e92ae34",
  CellID->1438509970],
-Cell[5554, 167, 3540, 109, 70, "Text",
+Cell[5045, 159, 2741, 99, 70, "Text",ExpressionUUID->"1d1a8056-6730-46cc-9d47-be1d5c3f83ab",
  CellID->648002154],
-Cell[9097, 278, 434, 10, 70, "Text",
+Cell[7789, 260, 289, 8, 70, "Text",ExpressionUUID->"714e0b7a-6f47-471c-8d38-a2007ed3a0e0",
  CellID->1219722],
-Cell[9534, 290, 1284, 42, 70, "Text",
+Cell[8081, 270, 1138, 39, 70, "Text",ExpressionUUID->"77739cfc-9881-4610-9de0-aa06e31b67cc",
  CellID->777615139],
-Cell[10821, 334, 371, 9, 70, "Text",
+Cell[9222, 311, 226, 7, 70, "Text",ExpressionUUID->"9f39ebe8-3629-4ad7-bc49-f7616364ffad",
  CellID->460060784],
-Cell[11195, 345, 6076, 180, 70, "DefinitionBox3Col",
+Cell[9451, 320, 4852, 164, 70, "DefinitionBox3Col",ExpressionUUID->"7cbb1263-5615-4fe2-9cbc-10cf5f74127e",
  CellID->1255467794],
-Cell[17274, 527, 417, 11, 70, "Caption",
+Cell[14306, 486, 272, 9, 70, "Caption",ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f",
  CellID->407841573]
 }, Open  ]],
-Cell[17706, 541, 23, 0, 70, "FooterCell"]
+Cell[14593, 498, 23, 0, 70, "FooterCell",ExpressionUUID->"675a3854-02b2-4575-9f94-be2927cef0fd"]
 }
 ]
 *)

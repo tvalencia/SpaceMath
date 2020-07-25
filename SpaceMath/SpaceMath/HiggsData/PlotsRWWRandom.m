@@ -110,7 +110,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
   PlotRange -> Full(*,
  PlotLegends -> 
  Placed[{Style["\!\(\*SubscriptBox[\(R\), \(W\)]\)", Larger, 
-    Bold]}, {1, 0.6}]*)
+    Bold]}, {1, 0.6}]*),AspectRatio->1
   ]
 ,
 ListPlot[Import[FileNameJoin[{$UserDocumentsDirectory, "RW_random2sigma.txt"}], "CSV"][[All, {ci, cj}]],
@@ -130,7 +130,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
   PlotRange -> Full(*,
 PlotLegends -> 
  Placed[{Style["\!\(\*SubscriptBox[\(R\), \(W\)]\)", Larger, 
-    Bold]}, {1, 0.6}]*)
+    Bold]}, {1, 0.6}]*),AspectRatio->1
   ]
 }
 

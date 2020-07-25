@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 12.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12773,        370]
-NotebookOptionsPosition[     10518,        309]
-NotebookOutlinePosition[     12209,        350]
-CellTagsIndexPosition[     12166,        347]
+NotebookDataLength[     11354,        339]
+NotebookOptionsPosition[      8576,        278]
+NotebookOutlinePosition[     10246,        319]
+CellTagsIndexPosition[     10203,        316]
 WindowTitle->Higgs Boson data
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ HiggsBosondata.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$2734], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$6785], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/guide/HiggsBosondata", ".html"]], None}]}]},
@@ -77,33 +77,28 @@ HiggsBosondata.html"], StandardForm]], "Input", TextClipboardType ->
 Cell[CellGroupData[{
 
 Cell["Higgs Boson data", "GuideTitle",
- CellID->942062912,
- $CellContext`ExpressionUUID -> "1cf58ebc-fd8f-44bf-946e-5568fe607611"],
+ CellID->942062912],
 
 Cell["\<\
 The implementation of the Higgs boson data within the SpaceMath code , was \
 closely following the reference : arXiv:1809.10733v2[hep-ex], \
 10.1140/epjc/s10052-019-6909-y.   \
 \>", "GuideAbstract",
- CellID->2001916300,
- $CellContext`ExpressionUUID -> "b1bafb2d-096b-49b3-bf06-9aae5e77c91d"],
+ CellID->2001916300],
 
 Cell[TextData[StyleBox["Signal strength modifiers \[Mu]", "Subsection"]], \
 "GuideAbstract",
- CellID->1322507612,
- $CellContext`ExpressionUUID -> "228c9d26-6897-4abf-9333-b66de22e1011"],
+ CellID->1322507612],
 
 Cell[TextData[{
  "For a production process ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "1ece5382-6d69-48d4-a7eb-5e7214393e20"],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]]],
  " and a decay ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "j"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "d2c1b0e9-5fa8-474a-b4d5-dc196765add9"],
+   SubscriptBox["\[Mu]", "j"], TraditionalForm]]],
  " , the signal strength is defined as\n",
  Cell[BoxData[
   FormBox[
@@ -115,8 +110,7 @@ Cell[TextData[{
      RowBox[{"\[Sigma]", "(", 
       RowBox[{"i", "\[Rule]", " ", 
        SuperscriptBox["h", "SM"]}], ")"}]]}], TraditionalForm]],
-  FontWeight->"Bold",
-  $CellContext`ExpressionUUID -> "b5465cc7-fe43-4505-bbb9-eb777bde7ece"],
+  FontWeight->"Bold"],
  StyleBox[" and ",
   FontWeight->"Bold"],
  Cell[BoxData[
@@ -130,8 +124,7 @@ Cell[TextData[{
       RowBox[{
        SuperscriptBox["h", "SM"], "\[Rule]", "j"}], ")"}]]}], 
    TraditionalForm]],
-  FontWeight->"Bold",
-  $CellContext`ExpressionUUID -> "b1760cc2-1b43-4903-b92e-404f71924146"],
+  FontWeight->"Bold"],
  ".\nrespectively, where \[Sigma](i\[Rule] h)  and BR(h\[Rule]j) are the \
 Higgs boson production cross section and the\nbranching ratio of the Higgs \
 boson decaying into j-channel, here i=ggh, VBF, Wh,\nZh, tth and j =bb\:0304, \
@@ -140,55 +133,46 @@ boson decaying into j-channel, here i=ggh, VBF, Wh,\nZh, tth and j =bb\:0304, \
   FormBox[
    RowBox[{
     RowBox[{"SuperMinus", "[", "\[Tau]", "]"}], 
-    SuperscriptBox["\[Tau]", "+"]}], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "5820bd73-121f-4371-8812-dfd88a04d77f"],
+    SuperscriptBox["\[Tau]", "+"]}], TraditionalForm]]],
  " , ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["WW", "*"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "0e2e92ea-dc87-4064-a4c6-532f55df8169"],
+   SuperscriptBox["WW", "*"], TraditionalForm]]],
  " , ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["ZZ", "*"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "5f0aefc1-e7e7-404e-a222-efbbeabcbc0e"],
+   SuperscriptBox["ZZ", "*"], TraditionalForm]]],
  " , \[Gamma]\[Gamma], gg, ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SuperscriptBox["\[Mu]", "-"], 
-    SuperscriptBox["\[Mu]", "+"]}], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "5eb5a2a1-cd78-4414-afe3-e51e40d1dbbe"],
+    SuperscriptBox["\[Mu]", "+"]}], TraditionalForm]]],
  "\[NonBreakingSpace]",
  StyleBox["\[FilledVerySmallSquare]", "InlineSeparator"],
  " ",
  "In the special case when\n",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "d009bee2-9a11-41f4-9aa6-91fceba9f193"],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]]],
  " ",
  Cell[BoxData[
   FormBox[
    RowBox[{"=", 
-    SubscriptBox["\[Mu]", "j"]}], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "7d4b7705-a914-428a-8ec5-3f42f3347a99"],
+    SubscriptBox["\[Mu]", "j"]}], TraditionalForm]]],
  " =1, the SM is recovered. Because \[Sigma] and BR cannot be independently \
 mea-\nsured without additional assumptions and only the product ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "45b629bc-78dd-42ae-a90b-8d1a9698a8a0"],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]]],
  " \[CenterDot] ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "j"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "2c5ba440-d168-4194-b087-b70caa617424"],
+   SubscriptBox["\[Mu]", "j"], TraditionalForm]]],
  " can be extracted\nexperimentally, the signal strength ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "ij"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "6a79eb82-5b58-4b1e-8381-4ebf39c087b1"],
+   SubscriptBox["\[Mu]", "ij"], TraditionalForm]]],
  " can be denied as follows:\n",
  Cell[BoxData[
   FormBox[
@@ -208,8 +192,7 @@ mea-\nsured without additional assumptions and only the product ",
        RowBox[{
         SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]}]]}], 
    TraditionalForm]],
-  FontWeight->"Bold",
-  $CellContext`ExpressionUUID -> "9ce504f0-d851-4978-840b-8a879a1f8b79"],
+  FontWeight->"Bold"],
  ".\nIn this version of ",
  StyleBox["SpaceMath",
   FontWeight->"Bold",
@@ -235,36 +218,29 @@ fusion and we use the narrow width approximation\n",
         RowBox[{
          SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]}]]}], ",", 
     "\[IndentingNewLine]"}], TraditionalForm]],
-  FontWeight->"Bold",
-  $CellContext`ExpressionUUID -> "4b134be0-101b-40c8-9c97-2d4f396ebe93"]
+  FontWeight->"Bold"]
 }], "GuideText",
- CellID->1567743671,
- $CellContext`ExpressionUUID -> "90a914d3-b217-40ea-b0a7-3dd1066db436"],
+ CellID->1567743671],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  StyleBox["H", "Subsection"],
  StyleBox["iggs boson coupling modifiers ", "Subsection"],
- StyleBox[Cell[BoxData["\[Kappa]"], "Subsection",
-  $CellContext`ExpressionUUID -> "90584387-4060-4b0d-9134-d687cf6c39f3"], 
-  "Subsection"]
+ StyleBox[Cell[BoxData["\[Kappa]"], "Subsection"], "Subsection"]
 }], "GuideFunctionsSubsection",
- CellID->2082881751,
- $CellContext`ExpressionUUID -> "3d9b6046-1fe8-43b1-95c1-4ff76630f2b3"],
+ CellID->2082881751],
 
 Cell[TextData[{
  "The coupling modifiers ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Kappa]", "i"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "7d7a9960-4092-4467-9b65-83d6ef4b1e94"],
+   SubscriptBox["\[Kappa]", "i"], TraditionalForm]]],
  ", are introduced to quantify the deviations of the SM - like\nHiggs boson \
 to other particles.The coupling modifiers ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Kappa]", "i"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "9837b997-1bfc-45c1-aba0-bfba0d5902fe"],
+   SubscriptBox["\[Kappa]", "i"], TraditionalForm]]],
  ", for a production or a\ndecay mode, are defined as follows :\n",
  Cell[BoxData[
   FormBox[
@@ -278,12 +254,10 @@ to other particles.The coupling modifiers ",
        RowBox[{"\[CapitalGamma]", "(", 
         RowBox[{
          SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]], "."}]}],
-    FontWeight->"Bold"], TraditionalForm]],
-  $CellContext`ExpressionUUID -> "863d8a11-dd79-4070-854f-e4141907e728"]
+    FontWeight->"Bold"], TraditionalForm]]]
 }], "Text",
  TextAlignment->Center,
- CellID->1422965881,
- $CellContext`ExpressionUUID -> "346953d6-a187-4753-8920-92d3e7b1380f"]
+ CellID->1422965881]
 }, Open  ]]
 }, Open  ]],
 
@@ -291,13 +265,8 @@ Cell[CellGroupData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  InterpretationBox[
-   StyleBox[
-    GraphicsBox[{},
-     BaselinePosition->Baseline,
-     ImageSize->{6, 0}],
-    CacheGraphics->False],
-   Spacer[6]]]],
+  TemplateBox[{6},
+   "Spacer1"]]],
  "Reference"
 }], "GuideReferenceSection",
  WholeCellGroupOpener->True],
@@ -321,7 +290,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 7, 17, 45, 41.155000}", 
+   "built" -> "{2020, 7, 22, 22, 44, 12.1330240}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -330,11 +299,11 @@ TaggingRules->{
     "The implementation of the Higgs boson data within the SpaceMath code , \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], \
 10.1140/epjc/s10052-019-6909-y. ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$2668, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$6719, "title" -> 
     "Higgs Boson data", "titlemodifier" -> "", "windowtitle" -> 
     "Higgs Boson data", "type" -> "Guide", "uri" -> 
-    "SpaceMath/guide/HiggsBosondata"}, "SearchTextTranslated" -> ""},
-FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+    "SpaceMath/guide/HiggsBosondata"}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
   CharacterEncoding -> "UTF-8"]
 ]
@@ -349,29 +318,29 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[588, 21, 2308, 53, 70, "AnchorBarGrid",
+Cell[588, 21, 2308, 53, 70, "AnchorBarGrid",ExpressionUUID->"abb6bbce-4a5f-4e93-90a0-2562235e13bb",
  CellID->1],
 Cell[CellGroupData[{
-Cell[2921, 78, 130, 2, 70, "GuideTitle",
+Cell[2921, 78, 58, 1, 70, "GuideTitle",ExpressionUUID->"1cf58ebc-fd8f-44bf-946e-5568fe607611",
  CellID->942062912],
-Cell[3054, 82, 301, 6, 70, "GuideAbstract",
+Cell[2982, 81, 229, 5, 70, "GuideAbstract",ExpressionUUID->"b1bafb2d-096b-49b3-bf06-9aae5e77c91d",
  CellID->2001916300],
-Cell[3358, 90, 185, 3, 70, "GuideAbstract",
+Cell[3214, 88, 113, 2, 70, "GuideAbstract",ExpressionUUID->"228c9d26-6897-4abf-9333-b66de22e1011",
  CellID->1322507612],
-Cell[3546, 95, 5044, 146, 70, "GuideText",
+Cell[3330, 92, 3877, 130, 70, "GuideText",ExpressionUUID->"90a914d3-b217-40ea-b0a7-3dd1066db436",
  CellID->1567743671],
 Cell[CellGroupData[{
-Cell[8615, 245, 370, 8, 70, "GuideFunctionsSubsection",
+Cell[7232, 226, 222, 5, 70, "GuideFunctionsSubsection",ExpressionUUID->"3d9b6046-1fe8-43b1-95c1-4ff76630f2b3",
  CellID->2082881751],
-Cell[8988, 255, 1148, 30, 70, "Text",
+Cell[7457, 233, 857, 26, 70, "Text",ExpressionUUID->"346953d6-a187-4753-8920-92d3e7b1380f",
  CellID->1422965881]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10185, 291, 257, 11, 70, "GuideReferenceSection"],
-Cell[10445, 304, 31, 0, 70, "SectionHeaderSpacer"]
+Cell[8363, 265, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"fa849846-83ce-4db3-abbd-aa5ca1a7d6f1"],
+Cell[8503, 273, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"c328c099-8852-4328-9431-f60b85c60038"]
 }, Open  ]],
-Cell[10491, 307, 23, 0, 70, "FooterCell"]
+Cell[8549, 276, 23, 0, 70, "FooterCell",ExpressionUUID->"45393691-b7ad-4231-b5ab-69853218ee42"]
 }
 ]
 *)
