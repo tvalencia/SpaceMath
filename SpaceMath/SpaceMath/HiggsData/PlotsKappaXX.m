@@ -373,8 +373,8 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
 "\!\(\*SubscriptBox[\(\[Kappa]\), \(t\)]\)",*)"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)",
 "\!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\)","\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)",
 "\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)","\!\(\*SubscriptBox[\(\[Kappa]\), \(g\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*)
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35,PlotPoints->PP, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -416,8 +416,8 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
 "\!\(\*SubscriptBox[\(\[Kappa]\), \(t\)]\)",*)"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)",
 "\!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\)","\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)",
 "\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)","\!\(\*SubscriptBox[\(\[Kappa]\), \(g\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35,PlotPoints->PP, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -545,8 +545,8 @@ RegionPlot[{kappaBotINF2sig <= Abs[kb[ghbb]] <=kappaBotSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\)"}, {1,0.8}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, AspectRatio -> 1, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) AspectRatio -> 1, 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -570,8 +570,8 @@ RegionPlot[{kappaBotINF1sig <= Abs[kb[ghbb]] <=kappaBotSUP1sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> {"\!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\)"},
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, AspectRatio -> 1, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]}, *)AspectRatio -> 1, 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -638,8 +638,8 @@ Kt2sigX[ghtt_,x_,xmin_,xmax_,xlabel_]:=Plot[{ktop[ghtt],kappaTopSUP2sig,kappaTop
 "Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(t\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -712,8 +712,8 @@ RegionPlot[{kappaTopINF2sig<=ktop[ghtt]<=kappaTopSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(t\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -738,8 +738,8 @@ RegionPlot[{kappaTopINF1sig<=ktop[ghtt]<=kappaTopSUP1sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(t\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -767,8 +767,8 @@ Ktau1sigX[ghtautau_,x_,xmin_,xmax_,xlabel_]:=Plot[{ktau[ghtautau],kappaTauSUP1si
 "Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -781,8 +781,8 @@ Ktau2sigX[ghtautau_,x_,xmin_,xmax_,xlabel_]:=Plot[{ktau[ghtautau],kappaTauSUP2si
 "Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -859,8 +859,8 @@ RegionPlot[{kappaTauINF2sig<= Abs[ktau[ghtautau]] <= kappaTauSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)"}, {1,0.7}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+(* AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]}, *)
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -885,8 +885,8 @@ RegionPlot[{kappaTauINF1sig<= Abs[ktau[ghtautau]] <= kappaTauSUP1sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+(* AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -927,8 +927,8 @@ KW2sigX[ghWW_,x_,xmin_,xmax_,xlabel_]:=Plot[{kW[ghWW],kappaWSUP2sig,kappaWINF2si
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\)",
 "Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\)","SpaceMath"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -1007,8 +1007,8 @@ RegionPlot[{kappaWINF2sig<= kW[ghWW] <= kappaWSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1033,8 +1033,8 @@ RegionPlot[{kappaWINF2sig<= kW[ghWW] <= kappaWSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1061,8 +1061,8 @@ KZ1sigX[ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{kZ[ghZZ],kappaZSUP1sig,kappaZINF1si
 "Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -1075,8 +1075,8 @@ KZ2sigX[ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{kZ[ghZZ],kappaZSUP2sig,kappaZINF2si
 "Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -1153,8 +1153,8 @@ RegionPlot[{kappaZINF2sig<= kZ[ghZZ] <= kappaZSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1179,8 +1179,8 @@ RegionPlot[{kappaZINF2sig<= kZ[ghZZ] <= kappaZSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1206,8 +1206,8 @@ KGam1sigX[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgaga[ghtt,
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)",
 "Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)","SpaceMath"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -1219,8 +1219,8 @@ KGam2sigX[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgaga[ghtt,
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)",
 "Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)","SpaceMath"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -1237,8 +1237,8 @@ RegionPlot[{  kappaGammaINF1sig <= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= kappaGam
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1264,8 +1264,8 @@ RegionPlot[{  kappaGammaINF2sig <= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= kappaGam
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1294,8 +1294,8 @@ KGlu1sigX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgluglu[ghtt, ghbb],kappaGl
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(g\)]\)",
 "Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(g\)]\)","SpaceMath"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -1307,8 +1307,8 @@ KGlu2sigX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgluglu[ghtt, ghbb],kappaGl
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(g\)]\)",
 "Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(g\)]\)","SpaceMath"},
-FrameStyle->Thickness[0.003],AxesLabel->{Style["x",Large,Bold,Bold],
-Style["y",Large,Bold,Bold]},LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
@@ -1324,8 +1324,8 @@ RegionPlot[{kappaGluonINF1sig<=kgluglu[ghtt,ghbb]<=kappaGluonSUP1sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(g\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1350,8 +1350,8 @@ RegionPlot[{kappaGluonINF2sig<=kgluglu[ghtt,ghbb]<=kappaGluonSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
  PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(g\)]\)"}, {1,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1389,8 +1389,8 @@ kappaGluonINF1sig<=kgluglu[ghtt,ghbb]<=kappaGluonSUP1sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Larger, Bold]}, 
  PlotLegends -> Placed[{"Intersection"}, {0.8,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*) 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,(*PlotPoints->500,*)
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
@@ -1416,8 +1416,8 @@ kappaGluonINF2sig<=kgluglu[ghtt,ghbb]<=kappaGluonSUP2sig},
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Larger, Bold]}, 
  PlotLegends -> Placed[{"Intersection"}, {0.8,0.6}],
- AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, 
+ (*AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]},*)
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
