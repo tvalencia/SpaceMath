@@ -403,7 +403,6 @@ to indicates the steps from xmin to xmax (ymin to ymax)."
 (*********************************************************End OF Kappa-Z************************************************************************************)
 (******************************************************************************************************************************************************)
 
-
 (*ghtt[\[Alpha]_, Att_,Cab_,tb_]:=g/2 (mt/mW)((-Cos[\[Alpha]]/tb*Cos[ArcTan[tb]]) +(Sqrt[2] Cab/(g*tb*Cos[ArcTan[tb]]) (mW/mt)*(mt/vev)*Att))
 ghbb[\[Alpha]_, Abb_,Cab_,tb_]:= g/2 (mb/mW)((-Sin[\[Alpha]]*tb/Sin[ArcTan[tb]]) +(Sqrt[2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mb)*(mb/vev)*Abb))
 ghmumu[\[Alpha]_, Amumu_,Cab_,tb_]:= g/2 (mmu/mW)((-Sin[\[Alpha]]*tb/Sin[ArcTan[tb]]) +(Sqrt[2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mmu)*(mmu/vev)*Amumu))
@@ -1194,6 +1193,17 @@ dataZZ2sigXYZ[ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
 ]}], {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]*)
 
  (*With this commands a table is generated and saved inside the folder TABLE*)
+
+TableKZone[ghZZ_,x_,xmin_,xmax_,xstep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKZone_1sigma.txt"}],Re[dataZZ1sigXYZ[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+],
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKZone_2sigma.txt"}],Re[dataZZ2sigXYZ[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+]
+}
 
 (*************************************************************************************************************************************************************************************)
 
