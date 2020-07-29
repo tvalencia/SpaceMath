@@ -435,7 +435,7 @@ Intersection1sigKXX::usage ="See later"
 Begin["`Package`"]
 End[]
 
-Begin["`PlotsKXX`Private`"]
+Begin["`PlotsKappaXX`Private`"]
 
 (*********************************************************************************************
 *******************************All signal strenghts*************************************************************
@@ -445,7 +445,7 @@ KXALL1sig[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,y
 RegionPlot[{KbbINF1sig <= KBOTbot[ghtt, ghbb] <= KbbSUP1sig, 
  KTAUtauINF1sig <= Ktata[ghtt, ghbb,ghtautau] <= KTAUtauSUP1sig, 
    KWwINF1sig <= KWW[ghtt, ghbb, ghWW] <= KWwSUP1sig, 
-     KZzINF1sig <= KZZ[ghtt, ghbb, ghZZ] <= KZzSUP1sig, 
+     KZzINF1sig <= KZZ[ghZZ] <= KZzSUP1sig, 
        KGAMmagammaINF1sig <= Kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= KGAMmagammaSUP1sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
@@ -482,7 +482,7 @@ KXALL2sig[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,y
 RegionPlot[{KbbINF2sig <= KBOTbot[ghtt, ghbb] <= KbbSUP2sig, 
  KTAUtauINF2sig <= Ktata[ghtt, ghbb,ghtautau] <= KTAUtauSUP2sig, 
    KWwINF2sig <= KWW[ghtt, ghbb, ghWW] <= KWwSUP2sig, 
-     KZzINF2sig <= KZZ[ghtt, ghbb, ghZZ] <= KZzSUP2sig, 
+     KZzINF2sig <= KZZ[ghZZ] <= KZzSUP2sig, 
        KGAMmagammaINF2sig <= Kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= KGAMmagammaSUP2sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
@@ -532,7 +532,8 @@ K Z
 
 (*R Z to 1\[Sigma] in the case in which there is dependence in one parameter*)
 
-KZ1sigX[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{KZZ[ghtt,ghbb,ghZZ],KZzSUP1sig,KZzINF1sig},{x,xmin,xmax}
+(*KZ1sigX[ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{KZZ[ghZZ],KZzSUP1sig,KZzINF1sig},{x,xmin,xmax}*)
+KZ1sigX[ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{kZ[ghZZ],kappaZSUP1sig,kappaZINF1sig},{x,xmin,xmax}	
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(Z\)]\)",
 "U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(Z\)]\)"}, 
@@ -543,9 +544,23 @@ Dashing[{0.03,0.03,0.003}],Red]},GridLinesStyle->Directive[Black,Dashed],GridLin
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Orange}
 ]
 
+(*
+KZ1sigX[ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{kZ[ghZZ],kappaZSUP1sig,kappaZINF1sig},{x,xmin,xmax}
+,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)",
+"Upper Limit [1\[Sigma]]","Lower Limit [1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
+FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)","\!\(\*
+StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
+]
+*)
+
 (*KZ to 2\[Sigma] in the case in which there is dependence in one parameter*)
 
-KZ2sigX[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{KZZ[ghtt,ghbb,ghZZ],KZzSUP2sig,KZzINF2sig},{x,xmin,xmax}
+KZ2sigX[ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{KZZ[ghZZ],KZzSUP2sig,KZzINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(Z\)]\)",
 "U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(Z\)]\)"}, 
@@ -556,9 +571,16 @@ Dashing[{0.03,0.03,0.003}],Red]},GridLinesStyle->Directive[Black,Dashed],GridLin
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Orange}
 ]
 
+(*
 KZone[ghtt_,ghbb_,ghZZ_,x_,xmin_,xmax_,xlabel_]:={
 KZ1sigX[ghtt,ghbb,ghZZ,x,xmin,xmax,xlabel],
 KZ2sigX[ghtt,ghbb,ghZZ,x,xmin,xmax,xlabel]
+}
+*)
+
+KZone[ghZZ_,x_,xmin_,xmax_,xlabel_]:={
+KZ1sigX[ghZZ,x,xmin,xmax,xlabel],
+KZ2sigX[ghZZ,x,xmin,xmax,xlabel]
 }
 
 (*TABLES FOR KVone*)
@@ -1348,7 +1370,7 @@ Intersection1sigKXX[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xma
 {KbbINF1sig <= KBOTbot[ghtt, ghbb] <= KbbSUP1sig&& 
     KTAUtauINF1sig <= Ktata[ghtt, ghbb,ghtautau] <= KTAUtauSUP1sig&& 
    KWwINF1sig <= KWW[ghtt, ghbb, ghWW] <= KWwSUP1sig&& 
-    KZzINF1sig <= KZZ[ghtt, ghbb, ghZZ] <= KZzSUP1sig&& 
+    KZzINF1sig <= KZZ[ghZZ] <= KZzSUP1sig&& 
   KGAMmagammaINF1sig <= Kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= KGAMmagammaSUP1sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
