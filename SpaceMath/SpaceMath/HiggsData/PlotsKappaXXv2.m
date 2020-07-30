@@ -70,85 +70,17 @@ to indicates the steps from xmin to xmax (ymin to ymax). The output file will be
 (*********************************************************END OF KV************************************************************************************)
 (******************************************************************************************************************************************************)
 
-(******************************************************************************************************************************************************)
-(*********************************************************Begin OF RGamma************************************************************************************)
-(******************************************************************************************************************************************************)
-RGAMone::usage = "\!\(\*
-StyleBox[\"RGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghbb_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghWW_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"gCH_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"mCH_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xmin_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xlabel_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\) when there is dependence only on one parameter. The arguments ghtt, ghbb, ghWW and gCH are the htt, hbb, hWW and h\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) \
-couplings. Here, h represents to SM-like Higgs boson, t and b the top and bottom quarks, \!\(\*SuperscriptBox[\(H\), \(-\)]\) the charged scalar boson. Labels mCH and x \
-indicate the charged scalar mass and the parameter to constraint, while xmin and xmax are the \
-initial and final values defined by users and xlabel is used \
-for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
-
-TableRGAMone::usage="\!\(\*
-StyleBox[\"TableRGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghbb_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghWW_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"gCH_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"mCH_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xmin_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW, gCH and mCH are the htt \
-, hbb, hWW, \!\(\*SuperscriptBox[\(hH\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings, while mCH is the charged scalar boson mass that could to contributes to the process. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. The label x \
-indicates the parameter to constraint, while xmin and xmax are the \
-initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax."
-
-RGam::usage="RGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\) \
-when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghWW and gCH are the htt, hbb, hWW and h\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\)\
-couplings while mCH stands for the charged scalar boson mass. Here, h represents to SM-like Higgs boson while t and b the top and bottom querkas. Labels x and y \
-indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
-initial and final values defined by users. Argument xlabel (ylabel) is used \
-for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
-
-TableRGam::usage="TableRGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW and gCH are the htt, \
-hbb, hWW and h-\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
-indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
-initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax)."
-(******************************************************************************************************************************************************)
-(*********************************************************END OF RGamma************************************************************************************)
-(******************************************************************************************************************************************************)
 
 (******************************************************************************************************************************************************)
-(*********************************************************Begin OF KGamma************************************************************************************)
+(*********************************************************Begin OF KGamma******************************************************************************)
 (******************************************************************************************************************************************************)
+KGam1sigX::usage = "See later"
+KGam2sigX::usage = "See later"
+Kappagaga1sig::usage = "See later"
+KGam1sigWXYZ::usage = "See later"
+Kappagaga2sig::usage = "See later"
+KGam2sigWXYZ::usage = "See later"
+
 KGAMone::usage = "\!\(\*
 StyleBox[\"KGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -223,9 +155,24 @@ to indicates the steps from xmin to xmax (ymin to ymax)."
 (******************************************************************************************************************************************************)
 
 (******************************************************************************************************************************************************)
-(*********************************************************Begin OF RTau************************************************************************************)
+(*********************************************************Begin OF KTau************************************************************************************)
 (******************************************************************************************************************************************************)
-RTAUone::usage = "\!\(\*
+Ktau1sigX::usage = "See later"
+Ktau2sigX::usage = "See later"
+datatautau1sigXY::usage = "See later"
+datatautau2sigXY::usage = "See later"
+datatautau1sigXYZ::usage = "See later"
+datatautau2sigXYZ::usage = "See later"
+tableTau1sigXY::usage = "See later"
+tableTau2sigXY::usage = "See later"
+tableTau1sigXYZ::usage = "See later"
+tableTau2sigXYZ::usage = "See later"
+kappaTau2sig::usage = "See later"
+Ktau2sigWXYZ::usage = "See later"
+kappaTau1sig::usage = "See later"
+Ktau1sigWXYZ::usage = "See later"
+
+KTAUone::usage = "\!\(\*
 StyleBox[\"RTAUone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -252,7 +199,7 @@ indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableRTAUone::usage="\!\(\*
+TableKTAUone::usage="\!\(\*
 StyleBox[\"TableRTAUone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -274,25 +221,25 @@ indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-Rtau::usage="Rtau[ghtt_, ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\), \
+Ktau::usage="Rtau[ghtt_, ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\), \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb and ghtautau are the htt, hbb \
 and htautau couplings. Here, h represents to SM-like Higgs boson while t, b and tau are the top and bottom quarks and the tau-lepton. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableRtau::usage="TableRtau[ghtt_, ghbb_,ghtautau_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
+TableKtau::usage="TableRtau[ghtt_, ghbb_,ghtautau_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
 hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t, b and tau are the top and bottom quarks and the tau-lepton. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
 to indicates the steps from xmin to xmax (ymin to ymax)."
 (******************************************************************************************************************************************************)
-(*********************************************************End OF RTau************************************************************************************)
+(*********************************************************End OF KTau**********************************************************************************)
 (******************************************************************************************************************************************************)
 
 
 (******************************************************************************************************************************************************)
-(*********************************************************Begin OF RXALL************************************************************************************)
+(*********************************************************Begin OF KXALL************************************************************************************)
 (*****************************************************************************************************************************************************)
 
 KappaALL::usage="KappaALL[ghtt_, ghbb_, ghZZ_, ghWW_, ghtautau_, gCH_, mCH_, x_, y_, xmin_, xmax_, ymin_, ymax_, xlabel_, ylabel_, xfor_, yfor_, xformin_, xformax_, xforstep_, yformin_, yformax_, yforstep_, PP_][[i]]\[Rule] This command evaluates all \[Kappa]'s, \
@@ -302,18 +249,36 @@ indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively; mCH stands for the charged scalar boson. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-(******************************************************************************************************************************************************)
-(*********************************************************End OF Kappa-ALL************************************************************************************)
 (*****************************************************************************************************************************************************)
+(*********************************************************End OF Kappa-ALL****************************************************************************)
+(*****************************************************************************************************************************************************)
+
 (******************************************************************************************************************************************************)
-(*********************************************************Begin OF Kappa-Bottom************************************************************************************)
+(*********************************************************Begin OF Kappa-Bottom************************************************************************)
 (******************************************************************************************************************************************************)
+Kb1sigX::usage = "See later"
+Kb2sigX::usage = "See later"
+Kb1sigX::usage = "See later"
+Kb2sigX::usage = "See later"
+dataKbOTone1sig::usage = "See later"
+dataKbOTone2sig::usage = "See later"
+TableKbOTone::usage = "See later"
+Kb2sig::usage = "See later"
+Kb2sigWXYZ::usage = "See later"
+Kb1sig::usage = "See later"
+Kb1sigWXYZ::usage = "See later"
+Kb::usage = "See later"
+dataKb1sig::usage = "See later"
+dataKb2sig::usage = "See later"
+
+KbOTone::usage = "See later"
 Kbone::usage = "Kbone[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
+TableKbOTone::usage = "See later"
 TableKbone::usage="TableKbone[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
 hbb coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
@@ -327,6 +292,7 @@ indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
+TableKb::usage = "See later"
 TableKb::usage="TableKb[ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the hbb, \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
@@ -339,6 +305,21 @@ to indicates the steps from xmin to xmax (ymin to ymax)."
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF Kappa-Z************************************************************************************)
 (******************************************************************************************************************************************************)
+KZ1sigX::usage = "See later"
+KZ2sigX::usage = "See later"
+dataZZ1sigXY::usage = "See later"
+dataZZ2sigXY::usage = "See later"
+dataZZ1sigXYZ::usage = "See later"
+dataZZ2sigXYZ::usage = "See later"
+tableZ1sigXY::usage = "See later"
+tableZ2sigXY::usage = "See later"
+tableZ1sigXYZ::usage = "See later"
+tableZ2sigXYZ::usage = "See later"
+kappaz2sig::usage = "See later"
+KZ2sigWXYZ::usage = "See later"
+kappaz1sig::usage = "See later"
+KZ1sigWXYZ::usage = "See later"
+
 KZone::usage = "KZone[ghzz_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\) when there is dependence only on one parameter. The argument ghzz is the hZZ \
 coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
@@ -364,12 +345,27 @@ indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the
 initial and final values defined by users and xstep (ystep) is used \
 to indicates the steps from xmin to xmax (ymin to ymax)."
 (******************************************************************************************************************************************************)
-(*********************************************************End OF Kappa-Z************************************************************************************)
+(*********************************************************End OF Kappa-Z*******************************************************************************)
 (******************************************************************************************************************************************************)
 
 (******************************************************************************************************************************************************)
-(*********************************************************Begin OF Kappa-W************************************************************************************)
+(*********************************************************Begin OF Kappa-W*****************************************************************************)
 (******************************************************************************************************************************************************)
+KW1sigX::usage = "See later"
+KW2sigX::usage = "See later"
+dataWW1sigXY::usage = "See later"
+dataWW2sigXY::usage = "See later"
+dataWW1sigXYZ::usage = "See later"
+dataWW2sigXYZ::usage = "See later"
+tableW1sigXY::usage = "See later"
+tableW2sigXY::usage = "See later"
+tableW1sigXYZ::usage = "See later"
+tableW2sigXYZ::usage = "See later"
+kappaw2sig::usage = "See later"
+KW2sigWXYZ::usage = "See later"
+kappaw1sig::usage = "See later"
+KW1sigWXYZ::usage = "See later"
+
 KWone::usage = "KWone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
@@ -398,20 +394,90 @@ to indicates the steps from xmin to xmax (ymin to ymax)."
 (*********************************************************End OF Kappa-W************************************************************************************)
 (******************************************************************************************************************************************************)
 
-(*ghtt[\[Alpha]_, Att_,Cab_,tb_]:=g/2 (mt/mW)((-Cos[\[Alpha]]/tb*Cos[ArcTan[tb]]) +(Sqrt[2] Cab/(g*tb*Cos[ArcTan[tb]]) (mW/mt)*(mt/vev)*Att))
-ghbb[\[Alpha]_, Abb_,Cab_,tb_]:= g/2 (mb/mW)((-Sin[\[Alpha]]*tb/Sin[ArcTan[tb]]) +(Sqrt[2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mb)*(mb/vev)*Abb))
-ghmumu[\[Alpha]_, Amumu_,Cab_,tb_]:= g/2 (mmu/mW)((-Sin[\[Alpha]]*tb/Sin[ArcTan[tb]]) +(Sqrt[2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mmu)*(mmu/vev)*Amumu))
-ghtautau[\[Alpha]_, Atautau_,Cab_,tb_]:= g/2 (mtau/mW)((-Sin[\[Alpha]]*tb/Sin[ArcTan[tb]]) +(Sqrt[2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mmu)*(mtau/vev)*Atautau))
-ghtaumu[Ataumu_,Cab_,tb_]:=((Cab*tb)/(Sqrt[2]*Sin[ArcTan[tb]]))*((Sqrt[mmu*mtau]/vev)*Ataumu)
-ghtautau[\[Alpha]_, Atata_,Cab_,tb_] := g/2 (mtau/mW)((-Sin[\[Alpha]]*tb/Sin[ArcTan[tb]]) +(Sqrt[2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mtau)*(mtau/vev)*Atata))
-ghWW[sab_]:= g*mW*sab
-ghZZ[sab_] := g*mZ*sab*)
-(*THDM-I couplings
-ghtt[a_,tb_]:=(g/2) (mt/mW) (Cos[a]/(tb*Cos[ArcTan[tb]]))
-ghbb[a_,tb_]:=(g/2) (mb/mW) (Cos[a]/(tb*Cos[ArcTan[tb]]))
-ghtautau[a_,tb_]:=(g/2) (mtau/mW) (Cos[a]/(tb*Cos[ArcTan[tb]]))
-ghWW[cab_]:=gw*mW*Sqrt[1-cab^2]
-ghZZ[cab_]:=gz*mZ*Sqrt[1-cab^2]*)
+(******************************************************************************************************************************************************)
+(*********************************************************Begin K top************************************************************************************)
+(******************************************************************************************************************************************************)
+Kt2sigX::usage = "See later"
+datatt1sigXY::usage = "See later"
+datatt2sigXY::usage = "See later"
+datatt1sigXYZ::usage = "See later"
+datatt1sigXYZ::usage = "See later"
+datatt2sigXYZ::usage = "See later"
+tableTop1sigXY::usage = "See later"
+tableTop2sigXY::usage = "See later"
+tableTop1sigXYZ::usage = "See later"
+tableTop2sigXYZ::usage = "See later"
+kappaT2sig::usage = "See later"
+Kt2sigWXYZ::usage = "See later"
+kappaT1sig::usage = "See later"
+Kt1sigWXYZ::usage = "See later"
+
+Ktone::usage = "KWone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
+coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
+indicates the parameter to constraint, while xmin and xmax are the \
+initial and final values defined by users and xlabel is used \
+for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+
+TableKtone::usage="TableKWone[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the \
+hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
+indicates the parameter to constraint, while xmin and xmax are the \
+initial and final values defined by users and xstep is used \
+to indicates the steps from xmin to xmax. "
+
+Kt::usage="KW[ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\), \
+when there is dependence on two or more parameters. The arguments ghWW is the hWW \
+coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
+indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
+initial and final values defined by users. Argument xlabel (ylabel) is used \
+for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
+
+TableKt::usage="TableKW[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the hWW, \
+coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
+indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
+initial and final values defined by users and xstep (ystep) is used \
+to indicates the steps from xmin to xmax (ymin to ymax)."
+(******************************************************************************************************************************************************)
+(*********************************************************End K top***********************************************************************************)
+(******************************************************************************************************************************************************)
+
+(***************************************************************************************************************************************************)
+(**********************************************************Begin kappa gluon************************************************************************)
+(***************************************************************************************************************************************************)
+KGlu1sigX::usage = "See later"
+KGlu2sigX::usage = "See later"
+KappaGluGlu1sig::usage = "See later"
+KGlu1sigWXYZ::usage = "See later"
+KappaGluGlu2sig::usage = "See later"
+KGlu2sigWXYZ::usage = "See later"
+
+KGluone::usage = "KWone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
+coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
+indicates the parameter to constraint, while xmin and xmax are the \
+initial and final values defined by users and xlabel is used \
+for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+
+TableKGluone::usage="TableKWone[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the \
+hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
+indicates the parameter to constraint, while xmin and xmax are the \
+initial and final values defined by users and xstep is used \
+to indicates the steps from xmin to xmax. "
+
+KGlu::usage="KW[ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\), \
+when there is dependence on two or more parameters. The arguments ghWW is the hWW \
+coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
+indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
+initial and final values defined by users. Argument xlabel (ylabel) is used \
+for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
+
+TableKGlu::usage="TableKW[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the hWW, \
+coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
+indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
+initial and final values defined by users and xstep (ystep) is used \
+to indicates the steps from xmin to xmax (ymin to ymax)."
+
+(***************************************************************************************************************************************************)
+(**********************************************************End kappa gluon**************************************************************************)
+(***************************************************************************************************************************************************)
 
 Begin["`Package`"]
 End[]
@@ -420,9 +486,9 @@ Begin["`PlotsKappaXXv2`Private`"]
 
 All processes;
 
-(*********************************************************************************************
-*******************************All kappa's*************************************************************
-*********************************************************************************************)
+(***************************************************************************************************************************************************)
+(****************************************Begin All kappa's******************************************************************************************)
+(***************************************************************************************************************************************************)
 
 (*To 2\[Sigma]*)
 
@@ -531,20 +597,28 @@ ghtt[c\[Alpha],Ztt,u], ghbb[c\[Alpha],Zbb,u],ghZZ[c\[Alpha]],ghWW[c\[Alpha]],ght
 c\[Alpha],500,2000,100,0.9,0.99,0.01
 ]*)
 
+(***************************************************************************************************************************************************)
+(****************************************End All kappa's******************************************************************************************)
+(***************************************************************************************************************************************************)
+
+
+(******************************************************************************************************************************************************)
+(*********************************************************Begin Kb*************************************************************************************)
+(******************************************************************************************************************************************************)
+
 (*************************************************************************************************************************************************************************************)
 
 Individual process;
-kappa botton
+K botton
 
 (*************************************************************************************************************************************************************************************)
 
-(*kappa bottom to 1\[Sigma] in the case in which there is dependence in one parameter*)
+(*K bottom to 1\[Sigma] in the case in which there is dependence in one parameter*)
 
-Kb1sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP1sig,kappaBotINF1sig},{x,xmin,xmax}
-,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\)",
+Kb1sigX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{Kbotbot[ghtt,ghbb],KbbSUP1sig,KbbINF1sig},{x,xmin,xmax}
+,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
 "U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
-FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\)","\!\(\*
-StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)"},
+FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
@@ -554,11 +628,10 @@ AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
 
-Kb2sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP2sig,kappaBotINF2sig},{x,xmin,xmax}
-,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\)",
+Kb2sigX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{Kbotbot[ghtt,ghbb],KbbSUP2sig,KbbINF2sig},{x,xmin,xmax}
+,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
 "U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
-FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\)","\!\(\*
-StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)"},
+FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
@@ -566,136 +639,151 @@ Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],Grid
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
-Kbone[ghbb_,x_,xmin_,xmax_,xlabel_]:={
-Kb1sigX[ghbb,x,xmin,xmax,xlabel],
-Kb2sigX[ghbb,x,xmin,xmax,xlabel]
+
+KbOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:={
+Kb1sigX[ghtt,ghbb,x,xmin,xmax,xlabel],
+Kb2sigX[ghtt,ghbb,x,xmin,xmax,xlabel]
 }
 
-(*************************************************************************************************************************************************************************************)
+(*TABLES FOR KbOTone*)
 
- (*With this commands a table is created*)
+dataKbOTone1sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    KbbINF1sig<=Kbotbot[ghtt,ghbb]<=KbbSUP1sig, 
+Kbotbot[ghtt,ghbb],0]}, {x, xmin,xmax,xstep}]
 
-(*Create a table of two columns to 1 \[Sigma] \[Rule] {x,kappa-bottom}*)
+dataKbOTone2sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    KbbINF2sig<=Kbotbot[ghtt,ghbb]<=KbbSUP2sig,
+ Kbotbot[ghtt,ghbb],0]}, {x, xmin,xmax,xstep}]
 
-dataKBOT1sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
-    kappaBotINF1sig<=kb[ghbb]<=kappaBotSUP1sig, kb[ghbb],0]}, {x, xmin,xmax,xstep}]
 
-(*Create a table of two columns to 2 \[Sigma] \[Rule] {x,kappa-bottom}*)
+(*EXPORTING TABLES FOR KbOTone*)
 
-dataKBOT2sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
-    kappaBotINF2sig<=kb[ghbb]<=kappaBotSUP2sig, kb[ghbb],0]}, {x, xmin,xmax,xstep}]
-
-(*EXPORTING TABLES FOR RBOTone*)
-
-TableKbone[ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKbOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKappaBOTone_1sigma.txt"}],Re[dataKBOT1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],Re[dataKbOTone1sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKappaBOTone_2sigma.txt"}],Re[dataKBOT2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
 
 (*************************************************************************************************************************************************************************************)
 
-(*************************************************************************************************************************************************************************************)
+(*Kb to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
 
-(*Kappa_b to 2\[Sigma] in the case in which there is dependence on more than two parameters*)
-
-(*To 2\[Sigma]*)
-
-kappaBOTTOM2sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{kappaBotINF2sig <= Abs[kb[ghbb]] <=kappaBotSUP2sig},
+(*\[Mu]bb*)
+Kb2sig[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{KbbINF2sig <= Kbotbot[ghtt, ghbb] <= KbbSUP2sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
- PlotLegends -> Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\)"}, {1,0.8}],
- (*AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]},*) AspectRatio -> 1, 
+ PlotLegends -> {"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
+ AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]}, AspectRatio -> 1, 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
 
 Kb2sigWXYZ[
-ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-kappaBOTTOM2sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
-],
+Kb2sig[ghtt,ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-(*To 1\[Sigma]*)
+(*Kb to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
 
-kappaBOTTOM1sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{kappaBotINF1sig <= Abs[kb[ghbb]] <=kappaBotSUP1sig},
+(*Kb*)
+Kb1sig[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{KbbINF1sig <= Kbotbot[ghtt, ghbb] <= KbbSUP1sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
- PlotLegends -> {"\!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\)"},
- (*AxesLabel -> {Style["x", Larger, Bold], 
-   Style["y", Larger, Bold]}, *)AspectRatio -> 1, 
+ PlotLegends -> {"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
+ AxesLabel -> {Style["x", Larger, Bold], 
+ Style["y", Larger, Bold]}, AspectRatio -> 1, 
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
-  GridLines -> Automatic, GridLinesStyle -> 
-   Directive[Black, 
-     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
+ GridLines -> Automatic, GridLinesStyle -> 
+ Directive[Black, 
+ Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
 
 Kb1sigWXYZ[
-ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-kappaBOTTOM1sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
-],
+Kb1sig[ghtt,ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-Kb[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:={
+Kb[
+ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+{
 Kb1sigWXYZ[
-ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
+ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
 Kb2sigWXYZ[
-ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
+ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
 
-(*Kb[ghbb[-ArcCos[cba]+ArcTan[tb],tb],cba,tb,-1,1,0.1,50,c\[Beta]\[Alpha],t\[Beta],xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,50][[2]]*)
+(*TABLES FOR Kb*)
 
-(*TABLES FOR \[Kappa]b*)
-
-dataKb1sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKb1sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaBotINF1sig <= Abs[kb[ghbb]] <=kappaBotSUP1sig, Abs[kb[ghbb]],0]}, 
+    KbbINF1sig <= Kbotbot[ghtt, ghbb] <= KbbSUP1sig, Kbotbot[ghtt, ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
-dataKb2sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKb2sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaBotINF2sig <= Abs[kb[ghbb]] <=kappaBotSUP2sig, Abs[kb[ghbb]],0]}, 
+    KbbINF2sig <= Kbotbot[ghtt, ghbb] <= KbbSUP2sig, Kbotbot[ghtt, ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
-(*EXPORTING TABLES FOR Rb*)
+(*EXPORTING TABLES FOR Kb*)
 
-TableKb[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+TableKbOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKappaBOT_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],
+Re[dataKbOTone1sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+],
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+]
+}
+
+TableKb[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigma.txt"}],
 Re[
-dataKb1sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKb1sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
 "Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKappaBOT_2sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigma.txt"}],
 Re[
-dataKb2sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKb2sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
 "Table"
 ]
 }
+
+(******************************************************************************************************************************************************)
+(*********************************************************End Kb***************************************************************************************)
+(******************************************************************************************************************************************************)
+
+
+(******************************************************************************************************************************************************)
+(*********************************************************Begin Kappa top******************************************************************************)
+(******************************************************************************************************************************************************)
 
 Individual process;
 kappa top
@@ -825,6 +913,14 @@ kappaT1sig[ghtt,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 (*KappaTOP1sig[ghtt[c\[Alpha],Ztt,u],u,Ztt,500,2000,0,20,u[GeV],Subscript[
 Overscript[Z, ~], tt],c\[Alpha],yfor,0.95,0.99,0.01,yformin,yformax,yforstep
 ]*)
+(******************************************************************************************************************************************************)
+(*********************************************************End Kappa top******************************************************************************)
+(******************************************************************************************************************************************************)
+
+
+(******************************************************************************************************************************************************)
+(*********************************************************Begin Kappa tau******************************************************************************)
+(******************************************************************************************************************************************************)
 
 Individual process;
 kappa tau
@@ -973,6 +1069,10 @@ kappaTau1sig[ghtautau,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 
 (*KappaTAU2sig[ghtautau[c\[Alpha],Ztautau,u],u,Ztautau,500,2000,0,1
 ,u[GeV],Ztautau,c\[Alpha],yfor,0.9,0.99,0.01,yformin,yformax,yforstep]*)
+
+(******************************************************************************************************************************************************)
+(*********************************************************End Kappa tau******************************************************************************)
+(******************************************************************************************************************************************************)
 
 (******************************************************************************************************************************************************)
 (*********************************************************Begin KW*************************************************************************************)
@@ -1389,7 +1489,9 @@ Subscript[Overscript[Z, ~], bb],u,yfor,xformin,xformax,xforstep,yformin,yformax,
 (***************************************************************************************************************************************************)
 
 
-
+(***************************************************************************************************************************************************)
+(**********************************************************Begin kappa gluon**************************************************************************)
+(***************************************************************************************************************************************************)
 Individual process;
 kappa gluon
 
@@ -1472,6 +1574,15 @@ KappaGluGlu2sig[ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 (*KappaGluon2sig[
 ghtt[c\[Alpha],Ztt,u], ghbb[c\[Alpha],Zbb,u],Ztt,u,0,1,500,2000,Ztt,u,c\[Alpha],Zbb,0.9,1,0.005,0,1,0.2]*)
 
+(***************************************************************************************************************************************************)
+(**********************************************************End kappa gluon**************************************************************************)
+(***************************************************************************************************************************************************)
+
+
+(***************************************************************************************************************************************************)
+(*****************************************************BEGIN COMAND FOR CALL FOR ALL KAPPAS**********************************************************)
+(***************************************************************************************************************************************************)
+
 (*COMAND FOR CALL FOR ALL KAPPAS *)
 
 Intersection;
@@ -1530,5 +1641,10 @@ InterKappa2sig[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ym
 Manipulate[
 Intersectionkappa2sig[ghtt, ghbb,ghZZ,ghWW,ghtautau,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}]
+ 
+ 
+(***************************************************************************************************************************************************)
+(**********************************************************END COMAND FOR CALL FOR ALL KAPPAS*******************************************************)
+(***************************************************************************************************************************************************)
  
  End[]
