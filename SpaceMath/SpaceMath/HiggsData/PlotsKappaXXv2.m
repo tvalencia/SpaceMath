@@ -1425,6 +1425,7 @@ AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 KGAMone[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:={KGam1sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel],KGam2sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel]}
 
+(*Kappa gamma in the case in which there is dependence in more than two parameters*)
 (*To 1\[Sigma]*)
 
 (*kappa \[Gamma]*)
@@ -1478,11 +1479,52 @@ Kappagaga2sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
+KGam[
+ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+{
+KGam1sigWXYZ[
+ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
+KGam2sigWXYZ[
+ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
+}
+
 (*KGam1sigWXYZ[ghtt[-ArcCos[cba]+ArcTan[tb],tb],ghbb[-ArcCos[cba]+ArcTan[tb],tb],ghWW[cba],0,mCH,cba,tb,-1,1,0.1,50,c\[Beta]\[Alpha],t\[Beta],xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,50]*)
 
 (*KappaGaGa1sig[
 ghtt[0.99,Ztt,u], ghbb[0.99,0,u],ghWW[0.99],0,mCH,Ztt,u,0,1,500,2000,Subscript[Overscript[Z, ~], tt],
 Subscript[Overscript[Z, ~], bb],u,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep]*)
+
+(*TABLES FOR RW*)
+
+dataKGam1sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+Table[
+{x,y,If[
+    KgammagammaINF1sig<= Kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=KgammagammaSUP1sig,Kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+{x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
+dataKGam2sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+Table[
+{x,y,If[
+    KgammagammaINF2sig<= Kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=KgammagammaSUP2sig,Kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+{x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
+(*EXPORTING TABLES FOR RGam*)
+
+TableKGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKGam_1sigma.txt"}],
+Re[
+dataKGam1sig[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+]/. {{_,_,0} -> Sequence[]},"Table"
+]
+,
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigma.txt"}],
+Re[
+dataKGam2sig[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+]/. {{_,_,0} -> Sequence[]},"Table"
+]
+}
 
 (***************************************************************************************************************************************************)
 (**********************************************************End kappa gamma**************************************************************************)
