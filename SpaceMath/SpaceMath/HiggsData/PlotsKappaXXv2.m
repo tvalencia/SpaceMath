@@ -415,26 +415,26 @@ Kt2sigWXYZ::usage = "See later"
 kappaT1sig::usage = "See later"
 Kt1sigWXYZ::usage = "See later"
 
-Ktone::usage = "KWone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
+KTOPone::usage = "Ktone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKtone::usage="TableKWone[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the \
+TableKTOPone::usage="TableKtone[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the \
 hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-Kt::usage="KW[ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\), \
+Kt::usage="Kt[ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\), \
 when there is dependence on two or more parameters. The arguments ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKt::usage="TableKW[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the hWW, \
+TableKt::usage="TableKt[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the hWW, \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -453,13 +453,13 @@ KGlu1sigWXYZ::usage = "See later"
 KappaGluGlu2sig::usage = "See later"
 KGlu2sigWXYZ::usage = "See later"
 
-KGluone::usage = "KGluone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
+KGLUone::usage = "KGluone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKGluone::usage="TableKGluone[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the \
+TableKGLUone::usage="TableKGluone[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the \
 hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
@@ -791,6 +791,18 @@ dataKb2sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 Individual process;
 kappa top
 
+Kt1sigX[ghtt_,x_,xmin_,xmax_,xlabel_]:=Plot[{ktop[ghtt],kappaTopSUP1sig,kappaTopINF1sig},{x,xmin,xmax}
+,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(t\)]\)",
+"Upper Limit [2\[Sigma]]","Lower Limit [2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
+FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(t\)]\)","\!\(\*
+StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
+FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
+]
+
 (*kappa top to 2\[Sigma] in the case in which there is dependence in one parameter*)
 
 Kt2sigX[ghtt_,x_,xmin_,xmax_,xlabel_]:=Plot[{ktop[ghtt],kappaTopSUP2sig,kappaTopINF2sig},{x,xmin,xmax}
@@ -804,6 +816,11 @@ Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[Abs
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
+
+KTOPone[ghtt_,x_,xmin_,xmax_,xlabel_]:={
+Kt1sigX[ghtt,x,xmin,xmax,xlabel],
+Kt2sigX[ghtt,x,xmin,xmax,xlabel]
+}
 
 (*KappatopX1sig[ghtt[0.9,10,u],u,500,2000,u[GeV]]
 KappatopX2sig[ghtt[0.9,10,u],u,500,2000,u[GeV]]*)
@@ -912,6 +929,16 @@ kappaT1sig[ghtt,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 ],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
+
+
+Kt[
+ghtt_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+{
+Kt1sigWXYZ[
+ghtt,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
+Kt2sigWXYZ[
+ghtt,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
+}
 
 (*KappaTOP1sig[ghtt[c\[Alpha],Ztt,u],u,Ztt,500,2000,0,20,u[GeV],Subscript[
 Overscript[Z, ~], tt],c\[Alpha],yfor,0.95,0.99,0.01,yformin,yformax,yforstep
@@ -1272,6 +1299,15 @@ kappaw1sig[ghWW,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
+KW[
+ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+{
+KW1sigWXYZ[
+ghWW,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
+KW2sigWXYZ[
+ghWW,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
+}
+
 (*KappaW2sig[
 ghWW[c\[Alpha],u],c\[Alpha],u,0.8,1,1,2,calpha,U,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep]*)
 
@@ -1623,6 +1659,11 @@ Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[Abs
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
+
+KGLUone[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:={
+KGlu1sigX[ghtt,ghbb,x,xmin,xmax,xlabel],
+KGlu2sigX[ghtt,ghbb,x,xmin,xmax,xlabel]
+}
 
 (*To 1\[Sigma]*)
 
