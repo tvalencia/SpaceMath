@@ -1400,20 +1400,20 @@ FileNameJoin[{$UserDocumentsDirectory,"TableKZone_2sigma.txt"}],Re[dataZZ2sigXYZ
 (*This are the commands used in the shell of mathematica*)
 
 tableZ1sigXY[ghZZ_,x_,xmin_,xmax_,xstep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableZ1sigXY.txt",Re[dataZZ1sigXY[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
+FileNameJoin[{$UserDocumentsDirectory,"tableZ1sigXY.txt"}],Re[dataZZ1sigXY[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
 ]
 
 tableZ2sigXY[ghZZ_,x_,xmin_,xmax_,xstep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableZ2sigXY.txt",Re[dataZZ2sigXY[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
+FileNameJoin[{$UserDocumentsDirectory,"tableZ2sigXY.txt"}],Re[dataZZ2sigXY[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
 ,"Table"
 ]
 
 tableZ1sigXYZ[ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableZ1sigXYZ.txt",Re[dataZZ1sigXYZ[ghZZ,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
+FileNameJoin[{$UserDocumentsDirectory,"tableZ1sigXYZ.txt"}],Re[dataZZ1sigXYZ[ghZZ,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
 ]
 
 tableZ2sigXYZ[ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableZ2sigXYZ.txt",Re[dataZZ2sigXYZ[ghZZ,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
+FileNameJoin[{$UserDocumentsDirectory,"tableZ2sigXYZ.txt"}],Re[dataZZ2sigXYZ[ghZZ,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
 ,"Table"
 ]
 
@@ -1726,6 +1726,40 @@ ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xfors
 
 (*KappaGluon2sig[
 ghtt[c\[Alpha],Ztt,u], ghbb[c\[Alpha],Zbb,u],Ztt,u,0,1,500,2000,Ztt,u,c\[Alpha],Zbb,0.9,1,0.005,0,1,0.2]*)
+
+(*TABLES FOR KGlu*)
+
+dataKGlu1sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+Table[
+{x,y,If[
+    KGluINF1sig<= kgluglu[ghtt, ghbb] <=KGluSUP1sig,kgluglu[ghtt, ghbb],0]}, 
+{x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
+dataKGlu2sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+Table[
+{x,y,If[
+    KGluINF2sig<= kgluglu[ghtt, ghbb] <=KGluSUP2sig,kgluglu[ghtt, ghbb],0]}, 
+{x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
+(*EXPORTING TABLES FOR KGlu*)
+
+TableKGlu[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_1sigma.txt"}],
+Re[
+dataKGlu1sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+]/. {{_,_,0} -> Sequence[]},"Table"
+]
+,
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_2sigma.txt"}],
+Re[
+dataKGlu2sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+]/. {{_,_,0} -> Sequence[]},"Table"
+]
+}
+
+
 
 (***************************************************************************************************************************************************)
 (**********************************************************End kappa gluon**************************************************************************)
