@@ -618,7 +618,7 @@ K botton
 
 (*K bottom to 1\[Sigma] in the case in which there is dependence in one parameter*)
 
-Kb1sigX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{Kbotbot[ghtt,ghbb],KbbSUP1sig,KbbINF1sig},{x,xmin,xmax}
+Kb1sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],KbbSUP1sig,KbbINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
 "U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
@@ -631,7 +631,7 @@ AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
 
-Kb2sigX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{Kbotbot[ghtt,ghbb],KbbSUP2sig,KbbINF2sig},{x,xmin,xmax}
+Kb2sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],KbbSUP2sig,KbbINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
 "U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
@@ -643,31 +643,31 @@ AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
 
-KbOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:={
-Kb1sigX[ghtt,ghbb,x,xmin,xmax,xlabel],
-Kb2sigX[ghtt,ghbb,x,xmin,xmax,xlabel]
+KbOTone[ghbb_,x_,xmin_,xmax_,xlabel_]:={
+Kb1sigX[ghbb,x,xmin,xmax,xlabel],
+Kb2sigX[ghbb,x,xmin,xmax,xlabel]
 }
 
 (*TABLES FOR KbOTone*)
 
-dataKbOTone1sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
-    KbbINF1sig<=Kbotbot[ghtt,ghbb]<=KbbSUP1sig, 
-Kbotbot[ghtt,ghbb],0]}, {x, xmin,xmax,xstep}]
+dataKbOTone1sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    KbbINF1sig<=kb[ghbb]<=KbbSUP1sig, 
+kb[ghbb],0]}, {x, xmin,xmax,xstep}]
 
-dataKbOTone2sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
-    KbbINF2sig<=Kbotbot[ghtt,ghbb]<=KbbSUP2sig,
- Kbotbot[ghtt,ghbb],0]}, {x, xmin,xmax,xstep}]
+dataKbOTone2sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    KbbINF2sig<=kbt[ghbb]<=KbbSUP2sig,
+ kb[ghbb],0]}, {x, xmin,xmax,xstep}]
 
 
 (*EXPORTING TABLES FOR KbOTone*)
 
-TableKbOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKbOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],Re[dataKbOTone1sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -677,8 +677,8 @@ FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone
 (*Kb to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
 
 (*\[Mu]bb*)
-Kb2sig[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{KbbINF2sig <= Kbotbot[ghtt, ghbb] <= KbbSUP2sig},
+Kb2sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{KbbINF2sig <= kb[ghbb] <= KbbSUP2sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
@@ -693,17 +693,17 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
      Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
 
 Kb2sigWXYZ[
-ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-Kb2sig[ghtt,ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+Kb2sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
 (*Kb to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
 
 (*Kb*)
-Kb1sig[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{KbbINF1sig <= Kbotbot[ghtt, ghbb] <= KbbSUP1sig},
+Kb1sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{KbbINF1sig <= kb[ghbb] <= KbbSUP1sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
@@ -718,54 +718,54 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
 
 Kb1sigWXYZ[
-ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-Kb1sig[ghtt,ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+Kb1sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
 Kb[
-ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
 Kb1sigWXYZ[
-ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
+ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
 Kb2sigWXYZ[
-ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
+ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
 
 (*TABLES FOR Kb*)
 
-dataKb1sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKb1sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF1sig <= Kbotbot[ghtt, ghbb] <= KbbSUP1sig, Kbotbot[ghtt, ghbb],0]}, 
+    KbbINF1sig <= kb[ghbb] <= KbbSUP1sig, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
-dataKb2sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKb2sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF2sig <= Kbotbot[ghtt, ghbb] <= KbbSUP2sig, Kbotbot[ghtt, ghbb],0]}, 
+    KbbINF2sig <= kb[ghbb] <= KbbSUP2sig, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Kb*)
 
-TableKbOTone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKbOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],
-Re[dataKbOTone1sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
 
-TableKb[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+TableKb[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigma.txt"}],
 Re[
-dataKb1sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKb1sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
 "Table"
 ]
@@ -773,7 +773,7 @@ dataKb1sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigma.txt"}],
 Re[
-dataKb2sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKb2sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
 "Table"
 ]
