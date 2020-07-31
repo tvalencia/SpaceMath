@@ -945,7 +945,7 @@ RGam2sigWXYZ[
 ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
 
-(*TABLES FOR RW*)
+(*TABLES FOR RGam*)
 
 dataRGam1sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
