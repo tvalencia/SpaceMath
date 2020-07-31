@@ -853,6 +853,19 @@ datatt2sigXYZ[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
     kappaBotINF2sig<=kb[ghbb]<=kappaBotSUP2sig, kb[ghbb],0
 ]}], {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]*)
 
+(*EXPORTING TABLES FOR KTOPone*)
+
+TableKTOPone[ghtt_,x_,xmin_,xmax_,xstep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKTOPone_1sigma.txt"}],Re[datatt1sigXYZ[ghtt,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+],
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKTOPone_2sigma.txt"}],Re[datatt2sigXYZ[ghtt,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+]
+}
+
  (*With this commands a table is generated and saved inside the folder TABLE*)
 
 (*************************************************************************************************************************************************************************************)
@@ -939,6 +952,41 @@ ghtt,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yf
 Kt2sigWXYZ[
 ghtt,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
+
+(*TABLES FOR Kt*)
+
+dataKt1sig[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+Table[
+{x,y,If[
+    KttINF1sig <= Kt[ghtt] <= KttSUP1sig, Kt[ghtt],0]}, 
+{x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
+dataKt2sig[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+Table[
+{x,y,If[
+    KttINF1sig <= Kt[ghtt] <= KttSUP1sig, Kt[ghtt],0]}, 
+{x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
+(*EXPORTING TABLES FOR Ktau*)
+
+TableKt[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKt_1sigma.txt"}],
+Re[
+dataKt1sig[ghtt,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+]/. {{_,_,0} -> Sequence[]},
+"Table"
+]
+,
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKt_2sigma.txt"}],
+Re[
+dataKt1sig[ghtt,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+]/. {{_,_,0} -> Sequence[]},
+ "Table"
+]
+}
+
 
 (*KappaTOP1sig[ghtt[c\[Alpha],Ztt,u],u,Ztt,500,2000,0,20,u[GeV],Subscript[
 Overscript[Z, ~], tt],c\[Alpha],yfor,0.95,0.99,0.01,yformin,yformax,yforstep
