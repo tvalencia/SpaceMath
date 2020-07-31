@@ -953,6 +953,10 @@ Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],Grid
 AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
+KTAUone[ghtautau_,x_,xmin_,xmax_,xlabel_]:={
+Ktau1sigX[ghtautau,x,xmin,xmax,xlabel],
+Ktau2sigX[ghtautau,x,xmin,xmax,xlabel]
+}
 (*KappatauX1sig[ghtautau[0.9,0.1,u],u,500,2000,u[GeV]]
 KappatauX2sig[ghtautau[0.9,0.1,u],u,500,2000,u[GeV]]*)
 
@@ -969,6 +973,7 @@ datatautau1sigXY[ghtautau_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
 
 datatautau2sigXY[ghtautau_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
     kappaTauINF2sig<=ktau[ghtautau]<=kappaTauSUP2sig, ktau[ghtautau],0]}, {x, xmin,xmax,xstep}]
+
 
 (*Create a table of three columns to 1 \[Sigma] \[Rule] {x,y,kappa-tau}*)
 
@@ -991,20 +996,20 @@ datatautau2sigXYZ[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[
 (*This are the commands used in the shell of mathematica*)
 
 tableTau1sigXY[ghtautau_,x_,xmin_,xmax_,xstep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableTau1sigXY.txt",Re[datatautau1sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
+FileNameJoin[{$UserDocumentsDirectory,"tableTau1sigXY.txt"}],Re[datatautau1sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
 ]
 
 tableTau2sigXY[ghtautau_,x_,xmin_,xmax_,xstep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableTau2sigXY.txt",Re[datatautau2sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
+FileNameJoin[{$UserDocumentsDirectory,"tableTau2sigXY.txt"}],Re[datatautau2sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
 ,"Table"
 ]
 
 tableTau1sigXYZ[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableTau1sigXYZ.txt",Re[datatautau1sigXYZ[ghtautau,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
+FileNameJoin[{$UserDocumentsDirectory,"tableTau1sigXYZ.txt"}],Re[datatautau1sigXYZ[ghtautau,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
 ]
 
 tableTau2sigXYZ[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableTau2sigXYZ.txt",Re[datatautau2sigXYZ[ghtautau,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
+FileNameJoin[{$UserDocumentsDirectory,"tableTau2sigXYZ.txt"}],Re[datatautau2sigXYZ[ghtautau,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
 ,"Table"
 ]
 
@@ -1012,6 +1017,7 @@ tableTau2sigXYZ[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
 tableTau1sigXY[ghtautau[c\[Alpha],0.05,1000],c\[Alpha],0,1,0.1]*)
 
 (*************************************************************************************************************************************************************************************)
+(*kappa tau in the case in which there are dependence in two or more parameters*)
 
 (*To 2\[Sigma]*)
 
