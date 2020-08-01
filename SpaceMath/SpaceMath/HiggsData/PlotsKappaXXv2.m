@@ -618,7 +618,7 @@ K botton
 
 (*K bottom to 1\[Sigma] in the case in which there is dependence in one parameter*)
 
-Kb1sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],KbbSUP1sig,KbbINF1sig},{x,xmin,xmax}
+Kb1sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP1sig,kappaBotINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
 "U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
@@ -631,7 +631,7 @@ AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
 
-Kb2sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],KbbSUP2sig,KbbINF2sig},{x,xmin,xmax}
+Kb2sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP2sig,kappaBotINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
 "U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
@@ -678,7 +678,7 @@ FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone
 
 (*\[Mu]bb*)
 Kb2sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{KbbINF2sig <= kb[ghbb] <= KbbSUP2sig},
+RegionPlot[{kappaBotINF2sig <= kb[ghbb] <= kappaBotSUP2sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
@@ -703,7 +703,7 @@ Kb2sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
 
 (*Kb*)
 Kb1sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{KbbINF1sig <= kb[ghbb] <= KbbSUP1sig},
+RegionPlot[{kappaBotINF1sig <= kb[ghbb] <= kappaBotSUP1sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
