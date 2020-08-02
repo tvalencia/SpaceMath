@@ -234,7 +234,7 @@ dataKZ2sig[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        kappaZINF1sig <= kZ[ghZZ] <= KappaZSUP1sig, kZ[ghZZ], 
+        kappaZINF2sig <= kZ[ghZZ] <= KappaZSUP2sig, kZ[ghZZ], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
@@ -253,7 +253,7 @@ TableKZ[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   Export[
    FileNameJoin[{$UserDocumentsDirectory, "TableKZ_2sigma.txt"}],
    Re[
-     dataKZ1sig[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
+     dataKZ2sig[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},
     "Table"
    ]

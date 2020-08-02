@@ -225,7 +225,7 @@ dataKW1sig[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        kappaWINF1sig <= KW[ghWW] <= kappaWSUP1sig, KW[ghWW], 
+        kappaWINF1sig <= kW[ghWW] <= kappaWSUP1sig, KW[ghWW], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
@@ -233,7 +233,7 @@ dataKW2sig[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        KappaWINF1sig <= KW[ghWW] <= KappaWSUP1sig, KW[ghWW], 
+        KappaWINF2sig <= kW[ghWW] <= KappaWSUP2sig, KW[ghWW], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
@@ -252,7 +252,7 @@ TableKW[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   Export[
    FileNameJoin[{$UserDocumentsDirectory, "TableKW_2sigma.txt"}],
    Re[
-     dataKW1sig[ghWW, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
+     dataKW2sig[ghWW, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},
     "Table"
    ]

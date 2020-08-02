@@ -231,7 +231,7 @@ Table[
 dataKt2sig[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaTopINF1sig <= Kt[ghtt] <= kappaTopSUP1sig, Kt[ghtt],0]}, 
+    kappaTopINF2sig <= Kt[ghtt] <= kappaTopSUP2sig, Kt[ghtt],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Ktau*)
@@ -248,7 +248,7 @@ dataKt1sig[ghtt,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKt_2sigma.txt"}],
 Re[
-dataKt1sig[ghtt,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKt2sig[ghtt,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
  "Table"
 ]

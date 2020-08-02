@@ -198,7 +198,7 @@ Table[
 
 TableKbOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKBOTone_1sigma.txt"}],
 Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
