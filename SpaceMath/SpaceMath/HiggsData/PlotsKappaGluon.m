@@ -3,12 +3,12 @@
 (***************************************************************************************************************************************************)
 (**********************************************************Begin kappa gluon************************************************************************)
 (***************************************************************************************************************************************************)
-KGlu1sigX::usage = "See later"
-KGlu2sigX::usage = "See later"
-KappaGluGlu1sig::usage = "See later"
-KGlu1sigWXYZ::usage = "See later"
-KappaGluGlu2sig::usage = "See later"
-KGlu2sigWXYZ::usage = "See later"
+KGlu1sigX::usage = "KGlu1sigX"
+KGlu2sigX::usage = "KGlu2sigX"
+KappaGluGlu1sig::usage = "KappaGluGlu1sig"
+KGlu1sigWXYZ::usage = "KGlu1sigWXYZ"
+KappaGluGlu2sig::usage = "KappaGluGlu2sig"
+KGlu2sigWXYZ::usage = "KGlu2sigWXYZ"
 
 KGLUone::usage = "KGluone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \

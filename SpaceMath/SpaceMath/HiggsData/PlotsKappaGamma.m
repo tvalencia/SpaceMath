@@ -3,12 +3,12 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF KGamma******************************************************************************)
 (******************************************************************************************************************************************************)
-KGam1sigX::usage = "See later"
-KGam2sigX::usage = "See later"
-Kappagaga1sig::usage = "See later"
-KGam1sigWXYZ::usage = "See later"
-Kappagaga2sig::usage = "See later"
-KGam2sigWXYZ::usage = "See later"
+KGam1sigX::usage = "KGam1sigX"
+KGam2sigX::usage = "KGam2sigX"
+Kappagaga1sig::usage = "Kappagaga1sig"
+KGam1sigWXYZ::usage = "KGam1sigWXYZ"
+Kappagaga2sig::usage = "Kappagaga2sig"
+KGam2sigWXYZ::usage = "KGam2sigWXYZ"
 
 KGAMone::usage = "\!\(\*
 StyleBox[\"KGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*

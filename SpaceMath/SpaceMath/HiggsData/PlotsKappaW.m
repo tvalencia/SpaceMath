@@ -2,20 +2,20 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF Kappa-W*****************************************************************************)
 (******************************************************************************************************************************************************)
-KW1sigX::usage = "See later"
-KW2sigX::usage = "See later"
-dataWW1sigXY::usage = "See later"
-dataWW2sigXY::usage = "See later"
-dataWW1sigXYZ::usage = "See later"
-dataWW2sigXYZ::usage = "See later"
-tableW1sigXY::usage = "See later"
-tableW2sigXY::usage = "See later"
-tableW1sigXYZ::usage = "See later"
-tableW2sigXYZ::usage = "See later"
-kappaw2sig::usage = "See later"
-KW2sigWXYZ::usage = "See later"
-kappaw1sig::usage = "See later"
-KW1sigWXYZ::usage = "See later"
+KW1sigX::usage = "KW1sigX"
+KW2sigX::usage = "KW2sigX"
+dataWW1sigXY::usage = "dataWW1sigXY"
+dataWW2sigXY::usage = "dataWW2sigXY"
+dataWW1sigXYZ::usage = "dataWW1sigXYZ"
+dataWW2sigXYZ::usage = "dataWW2sigXYZ"
+tableW1sigXY::usage = "tableW1sigXY"
+tableW2sigXY::usage = "tableW2sigXY"
+tableW1sigXYZ::usage = "tableW1sigXYZ"
+tableW2sigXYZ::usage = "tableW2sigXYZ"
+kappaw2sig::usage = "kappaw2sig"
+KW2sigWXYZ::usage = "KW2sigWXYZ"
+kappaw1sig::usage = "kappaw1sig"
+KW1sigWXYZ::usage = "KW1sigWXYZ"
 
 KWone::usage = "KWone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \

@@ -3,20 +3,18 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF Kappa-Bottom************************************************************************)
 (******************************************************************************************************************************************************)
-Kb1sigX::usage = "See later"
-Kb2sigX::usage = "See later"
-Kb1sigX::usage = "See later"
-Kb2sigX::usage = "See later"
-dataKbOTone1sig::usage = "See later"
-dataKbOTone2sig::usage = "See later"
-TableKbOTone::usage = "See later"
-Kb2sig::usage = "See later"
-Kb2sigWXYZ::usage = "See later"
-Kb1sig::usage = "See later"
-Kb1sigWXYZ::usage = "See later"
-Kb::usage = "See later"
-dataKb1sig::usage = "See later"
-dataKb2sig::usage = "See later"
+Kb1sigX::usage = "Kb1sigX"
+Kb2sigX::usage = "Kb2sigX"
+dataKbOTone1sig::usage = "dataKbOTone1sig"
+dataKbOTone2sig::usage = "dataKbOTone2sig"
+TableKbOTone::usage = "TableKbOTone"
+Kb2sig::usage = "Kb2sig"
+Kb2sigWXYZ::usage = "Kb2sigWXYZ"
+Kb1sig::usage = "Kb1sig"
+Kb1sigWXYZ::usage = "Kb1sigWXYZ"
+Kb::usage = "Kb"
+dataKb1sig::usage = "dataKb1sig"
+dataKb2sig::usage = "dataKb2sig"
 
 KBOTone::usage = "KBOTone[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \

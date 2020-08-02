@@ -3,20 +3,20 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF Kappa-Z************************************************************************************)
 (******************************************************************************************************************************************************)
-KZ1sigX::usage = "See later"
-KZ2sigX::usage = "See later"
-dataZZ1sigXY::usage = "See later"
-dataZZ2sigXY::usage = "See later"
-dataZZ1sigXYZ::usage = "See later"
-dataZZ2sigXYZ::usage = "See later"
-tableZ1sigXY::usage = "See later"
-tableZ2sigXY::usage = "See later"
-tableZ1sigXYZ::usage = "See later"
-tableZ2sigXYZ::usage = "See later"
-kappaz2sig::usage = "See later"
-KZ2sigWXYZ::usage = "See later"
-kappaz1sig::usage = "See later"
-KZ1sigWXYZ::usage = "See later"
+KZ1sigX::usage = "KZ1sigX"
+KZ2sigX::usage = "KZ2sigX"
+dataZZ1sigXY::usage = "dataZZ1sigXY"
+dataZZ2sigXY::usage = "dataZZ2sigXY"
+dataZZ1sigXYZ::usage = "dataZZ1sigXYZ"
+dataZZ2sigXYZ::usage = "dataZZ2sigXYZ"
+tableZ1sigXY::usage = "tableZ1sigXY"
+tableZ2sigXY::usage = "tableZ2sigXY"
+tableZ1sigXYZ::usage = "tableZ1sigXYZ"
+tableZ2sigXYZ::usage = "tableZ2sigXYZ"
+kappaz2sig::usage = "kappaz2sig"
+KZ2sigWXYZ::usage = "KZ2sigWXYZ"
+kappaz1sig::usage = "kappaz1sig"
+KZ1sigWXYZ::usage = "KZ1sigWXYZ"
 
 KZone::usage = "KZone[ghzz_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\) when there is dependence only on one parameter. The argument ghzz is the hZZ \
 coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. The label x \

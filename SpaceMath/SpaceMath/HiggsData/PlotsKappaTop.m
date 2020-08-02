@@ -3,20 +3,19 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin K top************************************************************************************)
 (******************************************************************************************************************************************************)
-Kt2sigX::usage = "See later"
-datatt1sigXY::usage = "See later"
-datatt2sigXY::usage = "See later"
-datatt1sigXYZ::usage = "See later"
-datatt1sigXYZ::usage = "See later"
-datatt2sigXYZ::usage = "See later"
-tableTop1sigXY::usage = "See later"
-tableTop2sigXY::usage = "See later"
-tableTop1sigXYZ::usage = "See later"
-tableTop2sigXYZ::usage = "See later"
-kappaT2sig::usage = "See later"
-Kt2sigWXYZ::usage = "See later"
-kappaT1sig::usage = "See later"
-Kt1sigWXYZ::usage = "See later"
+Kt2sigX::usage = "Kt2sigX"
+datatt1sigXY::usage = "datatt1sigXY"
+datatt2sigXY::usage = "datatt2sigXY"
+datatt1sigXYZ::usage = "datatt1sigXYZ"
+datatt2sigXYZ::usage = "datatt2sigXYZ"
+tableTop1sigXY::usage = "tableTop1sigXY"
+tableTop2sigXY::usage = "tableTop2sigXY"
+tableTop1sigXYZ::usage = "tableTop1sigXYZ"
+tableTop2sigXYZ::usage = "tableTop2sigXYZ"
+kappaT2sig::usage = "kappaT2sig"
+Kt2sigWXYZ::usage = "Kt2sigWXYZ"
+kappaT1sig::usage = "kappaT1sig"
+Kt1sigWXYZ::usage = "Kt1sigWXYZ"
 
 KTOPone::usage = "Ktone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \

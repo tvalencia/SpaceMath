@@ -3,23 +3,23 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF KTau************************************************************************************)
 (******************************************************************************************************************************************************)
-Ktau1sigX::usage = "See later"
-Ktau2sigX::usage = "See later"
-datatautau1sigXY::usage = "See later"
-datatautau2sigXY::usage = "See later"
-datatautau1sigXYZ::usage = "See later"
-datatautau2sigXYZ::usage = "See later"
-tableTau1sigXY::usage = "See later"
-tableTau2sigXY::usage = "See later"
-tableTau1sigXYZ::usage = "See later"
-tableTau2sigXYZ::usage = "See later"
-kappaTau2sig::usage = "See later"
-Ktau2sigWXYZ::usage = "See later"
-kappaTau1sig::usage = "See later"
-Ktau1sigWXYZ::usage = "See later"
+Ktau1sigX::usage = "Ktau1sigX"
+Ktau2sigX::usage = "Ktau2sigX"
+datatautau1sigXY::usage = "datatautau1sigXY"
+datatautau2sigXY::usage = "datatautau2sigXY"
+datatautau1sigXYZ::usage = "datatautau1sigXYZ"
+datatautau2sigXYZ::usage = "datatautau2sigXYZ"
+tableTau1sigXY::usage = "tableTau1sigXY"
+tableTau2sigXY::usage = "tableTau2sigXY"
+tableTau1sigXYZ::usage = "tableTau1sigXYZ"
+tableTau2sigXYZ::usage = "tableTau2sigXYZ"
+kappaTau2sig::usage = "kappaTau2sig"
+Ktau2sigWXYZ::usage = "Ktau2sigWXYZ"
+kappaTau1sig::usage = "kappaTau1sig"
+Ktau1sigWXYZ::usage = "Ktau1sigWXYZ"
 
-dataKtau1sig::usage = "See later"
-dataKtau2sig::usage = "See later"
+dataKtau1sig::usage = "dataKtau1sig"
+dataKtau2sig::usage = "dataKtau2sig"
 
 KTAUone::usage = "\!\(\*
 StyleBox[\"KTAUone\",\nFontWeight->\"Bold\"]\)\!\(\*
