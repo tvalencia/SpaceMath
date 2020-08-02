@@ -1,0 +1,234 @@
+(* Wolfram Language Package *)
+
+(******************************************************************************************************************************************************)
+(*********************************************************Begin OF Kappa-Bottom************************************************************************)
+(******************************************************************************************************************************************************)
+Kb1sigX::usage = "See later"
+Kb2sigX::usage = "See later"
+Kb1sigX::usage = "See later"
+Kb2sigX::usage = "See later"
+dataKbOTone1sig::usage = "See later"
+dataKbOTone2sig::usage = "See later"
+TableKbOTone::usage = "See later"
+Kb2sig::usage = "See later"
+Kb2sigWXYZ::usage = "See later"
+Kb1sig::usage = "See later"
+Kb1sigWXYZ::usage = "See later"
+Kb::usage = "See later"
+dataKb1sig::usage = "See later"
+dataKb2sig::usage = "See later"
+
+KbOTone::usage = "See later"
+Kbone::usage = "Kbone[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
+coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
+indicates the parameter to constraint, while xmin and xmax are the \
+initial and final values defined by users and xlabel is used \
+for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+
+TableKbOTone::usage = "See later"
+TableKbone::usage="TableKbone[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
+hbb coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
+indicates the parameter to constraint, while xmin and xmax are the \
+initial and final values defined by users and xstep is used \
+to indicates the steps from xmin to xmax. "
+
+Kb::usage="Kb[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\), \
+when there is dependence on two or more parameters. The arguments ghbb is the hbb \
+coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
+indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
+initial and final values defined by users. Argument xlabel (ylabel) is used \
+for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
+
+TableKb::usage = "See later"
+TableKb::usage="TableKb[ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the hbb, \
+coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
+indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
+initial and final values defined by users and xstep (ystep) is used \
+to indicates the steps from xmin to xmax (ymin to ymax)."
+(******************************************************************************************************************************************************)
+(*********************************************************End OF Kappa-Bottom************************************************************************************)
+(******************************************************************************************************************************************************)
+
+Begin["`Package`"]
+End[]
+
+Begin["`PlotsKappaBottom`Private`"]
+
+(******************************************************************************************************************************************************)
+(*********************************************************Begin Kb*************************************************************************************)
+(******************************************************************************************************************************************************)
+
+(*************************************************************************************************************************************************************************************)
+
+Individual process;
+K botton
+
+(*************************************************************************************************************************************************************************************)
+
+(*K bottom to 1\[Sigma] in the case in which there is dependence in one parameter*)
+
+Kb1sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP1sig,kappaBotINF1sig},{x,xmin,xmax}
+,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
+"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
+FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
+]
+
+(*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
+
+Kb2sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP2sig,kappaBotINF2sig},{x,xmin,xmax}
+,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
+"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
+FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
+Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
+Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
+Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
+AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
+]
+
+
+KbOTone[ghbb_,x_,xmin_,xmax_,xlabel_]:={
+Kb1sigX[ghbb,x,xmin,xmax,xlabel],
+Kb2sigX[ghbb,x,xmin,xmax,xlabel]
+}
+
+(*TABLES FOR KbOTone*)
+
+dataKbOTone1sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    KbbINF1sig<=kb[ghbb]<=KbbSUP1sig, 
+kb[ghbb],0]}, {x, xmin,xmax,xstep}]
+
+dataKbOTone2sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    KbbINF2sig<=kbt[ghbb]<=KbbSUP2sig,
+ kb[ghbb],0]}, {x, xmin,xmax,xstep}]
+
+
+(*EXPORTING TABLES FOR KbOTone*)
+
+TableKbOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+],
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+]
+}
+
+(*************************************************************************************************************************************************************************************)
+
+(*Kb to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
+
+(*\[Mu]bb*)
+Kb2sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{kappaBotINF2sig <= kb[ghbb] <= kappaBotSUP2sig},
+ {x, xmin, xmax}, {y, ymin, ymax}
+ , FrameLabel -> {Style[xlabel, Larger, Bold], 
+   Style[ylabel, Larger, Bold], 
+   Style["\!\(\*
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
+ PlotLegends -> {"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
+ AxesLabel -> {Style["x", Larger, Bold], 
+   Style["y", Larger, Bold]}, AspectRatio -> 1, 
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
+  GridLines -> Automatic, GridLinesStyle -> 
+   Directive[Black, 
+     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
+Kb2sigWXYZ[
+ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+Kb2sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+ {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+];
+
+(*Kb to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
+
+(*Kb*)
+Kb1sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{kappaBotINF1sig <= kb[ghbb] <= kappaBotSUP1sig},
+ {x, xmin, xmax}, {y, ymin, ymax}
+ , FrameLabel -> {Style[xlabel, Larger, Bold], 
+   Style[ylabel, Larger, Bold], 
+   Style["\!\(\*
+StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
+ PlotLegends -> {"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
+ AxesLabel -> {Style["x", Larger, Bold], 
+ Style["y", Larger, Bold]}, AspectRatio -> 1, 
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
+ GridLines -> Automatic, GridLinesStyle -> 
+ Directive[Black, 
+ Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
+
+Kb1sigWXYZ[
+ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+Kb1sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+ {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+];
+
+Kb[
+ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
+{
+Kb1sigWXYZ[
+ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
+Kb2sigWXYZ[
+ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
+}
+
+(*TABLES FOR Kb*)
+
+dataKb1sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+Table[
+{x,y,If[
+    KbbINF1sig <= kb[ghbb] <= KbbSUP1sig, kb[ghbb],0]}, 
+{x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
+dataKb2sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+Table[
+{x,y,If[
+    KbbINF2sig <= kb[ghbb] <= KbbSUP2sig, kb[ghbb],0]}, 
+{x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
+
+(*EXPORTING TABLES FOR Kb*)
+
+TableKbOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],
+Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+],
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+]
+}
+
+TableKb[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigma.txt"}],
+Re[
+dataKb1sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+]/. {{_,_,0} -> Sequence[]},
+"Table"
+]
+,
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigma.txt"}],
+Re[
+dataKb2sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+]/. {{_,_,0} -> Sequence[]},
+"Table"
+]
+}
+
+(******************************************************************************************************************************************************)
+(*********************************************************End Kb***************************************************************************************)
+(******************************************************************************************************************************************************)
+End[] 
