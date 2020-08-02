@@ -134,20 +134,20 @@ FileNameJoin[{$UserDocumentsDirectory,"TableKWone_2sigma.txt"}],Re[dataWW2sigXYZ
 (*This are the commands used in the shell of mathematica*)
 
 tableW1sigXY[ghWW_,x_,xmin_,xmax_,xstep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableW1sigXY.txt",Re[dataWW1sigXY[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
+FileNameJoin[{$UserDocumentsDirectory,"tableW1sigXY.txt"}],Re[dataWW1sigXY[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
 ]
 
 tableW2sigXY[ghWW_,x_,xmin_,xmax_,xstep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableW2sigXY.txt",Re[dataWW2sigXY[ghWW,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
+FileNameJoin[{$UserDocumentsDirectory,"tableW2sigXY.txt"}],Re[dataWW2sigXY[ghWW,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
 ,"Table"
 ]
 
 tableW1sigXYZ[ghWW_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableW1sigXYZ.txt",Re[dataWW1sigXYZ[ghWW,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
+FileNameJoin[{$UserDocumentsDirectory,"tableW1sigXYZ.txt"}],Re[dataWW1sigXYZ[ghWW,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
 ]
 
 tableW2sigXYZ[ghWW_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableW2sigXYZ.txt",Re[dataWW2sigXYZ[ghWW,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
+FileNameJoin[{$UserDocumentsDirectory,"tableW2sigXYZ.txt"}],Re[dataWW2sigXYZ[ghWW,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
 ,"Table"
 ]
 

@@ -81,6 +81,19 @@ KGlu1sigX[ghtt,ghbb,x,xmin,xmax,xlabel],
 KGlu2sigX[ghtt,ghbb,x,xmin,xmax,xlabel]
 }
 
+(*EXPORTING TABLES FOR KGLUone*)
+
+TableKGLUone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_1sigma.txt"}],Re[datagg1sigXYZ[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+],
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_2sigma.txt"}],Re[datagg2sigXYZ[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+]
+}
+
 (*To 1\[Sigma]*)
 
 KappaGluGlu1sig[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=

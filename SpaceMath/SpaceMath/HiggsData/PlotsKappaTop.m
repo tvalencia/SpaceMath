@@ -140,20 +140,20 @@ FileNameJoin[{$UserDocumentsDirectory,"TableKTOPone_2sigma.txt"}],Re[datatt2sigX
 (*This are the commands used in the shell of mathematica*)
 
 tableTop1sigXY[ghtt_,x_,xmin_,xmax_,xstep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableTop1sigXY.txt",Re[datatt1sigXY[ghtt,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
+FileNameJoin[{$UserDocumentsDirectory,"tableTop1sigXY.txt"}],Re[datatt1sigXY[ghtt,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
 ]
 
 tableTop2sigXY[ghtt_,x_,xmin_,xmax_,xstep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableTop2sigXY.txt",Re[datatt2sigXY[ghtt,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
+FileNameJoin[{$UserDocumentsDirectory,"tableTop2sigXY.txt"}],Re[datatt2sigXY[ghtt,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
 ,"Table"
 ]
 
 tableTop1sigXYZ[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableTop1sigXYZ.txt",Re[datatt1sigXYZ[ghtt,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
+FileNameJoin[{$UserDocumentsDirectory,"tableTop1sigXYZ.txt"}],Re[datatt1sigXYZ[ghtt,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
 ]
 
 tableTop2sigXYZ[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-"/home/maau/Dropbox/SPACEMATH/Higgs_Data/Tables/tableTop2sigXYZ.txt",Re[datatt2sigXYZ[ghtt,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
+FileNameJoin[{$UserDocumentsDirectory,"tableTop2sigXYZ.txt"}],Re[datatt2sigXYZ[ghtt,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
 ,"Table"
 ]
 
@@ -225,13 +225,13 @@ ghtt,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yf
 dataKt1sig[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KttINF1sig <= Kt[ghtt] <= KttSUP1sig, Kt[ghtt],0]}, 
+    kappaTopINF1sig <= Kt[ghtt] <= kappaTopSUP1sig, Kt[ghtt],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 dataKt2sig[ghtt_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KttINF1sig <= Kt[ghtt] <= KttSUP1sig, Kt[ghtt],0]}, 
+    kappaTopINF1sig <= Kt[ghtt] <= kappaTopSUP1sig, Kt[ghtt],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Ktau*)

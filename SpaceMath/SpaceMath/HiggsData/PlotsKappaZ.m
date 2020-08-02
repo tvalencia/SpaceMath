@@ -184,7 +184,7 @@ kappaz2sig[ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 
 (*To 1\[Sigma]*)
 
-(*kappa W in the case in which there are dependence in two or more parameters*)
+(*kappa Z in the case in which there are dependence in two or more parameters*)
 kappaz1sig[ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{kappaZINF2sig<= kZ[ghZZ] <= kappaZSUP2sig},
  {x, xmin, xmax}, {y, ymin, ymax}
@@ -226,7 +226,7 @@ dataKZ1sig[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        kappaZINF1sig <= KZ[ghZZ] <= kappaZSUP1sig, KZ[ghZZ], 
+        kappaZINF1sig <= kZ[ghZZ] <= kappaZSUP1sig, kZ[ghZZ], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
@@ -234,7 +234,7 @@ dataKZ2sig[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        kappaZINF1sig <= KZ[ghZZ] <= KappaZSUP1sig, KZ[ghZZ], 
+        kappaZINF1sig <= kZ[ghZZ] <= KappaZSUP1sig, kZ[ghZZ], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
