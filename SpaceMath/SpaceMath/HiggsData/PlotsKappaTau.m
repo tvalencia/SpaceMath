@@ -162,6 +162,17 @@ datatautau2sigXYZ[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[
     kappaBotINF2sig<=kb[ghbb]<=kappaBotSUP2sig, kb[ghbb],0
 ]}], {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]*)
 
+TableKTAUone[ghtautau_,x_,xmin_,xmax_,xstep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_1sigma.txt"}],Re[datatautau1sigXYZ[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+],
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_2sigma.txt"}],Re[datatautau2sigXYZ[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+]
+}
+
  (*With this commands a table is generated and saved inside the folder TABLE*)
 
 (*************************************************************************************************************************************************************************************)
@@ -263,13 +274,13 @@ ghtautau,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforste
 dataKtau1sig[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KtautauINF1sig <= Ktau[ghtautau] <= KtautauSUP1sig, Ktau[ghtautau],0]}, 
+    kappaTauINF1sig <= Ktau[ghtautau] <= kappaTauSUP1sig, Ktau[ghtautau],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 dataKtau2sig[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KtautauINF1sig <= Ktau[ghtautau] <= KtautauSUP1sig, Ktau[ghtautau],0]}, 
+    kappaTauINF1sig <= Ktau[ghtautau] <= kappaTauSUP1sig, Ktau[ghtautau],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Ktau*)

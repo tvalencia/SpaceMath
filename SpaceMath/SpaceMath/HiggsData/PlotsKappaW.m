@@ -116,6 +116,17 @@ dataWW2sigXYZ[ghWW_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
     kappaBotINF2sig<=kb[ghbb]<=kappaBotSUP2sig, kb[ghbb],0
 ]}], {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]*)
 
+TableKWone[ghWW_,x_,xmin_,xmax_,xstep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKWone_1sigma.txt"}],Re[dataWW1sigXYZ[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+],
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKWone_2sigma.txt"}],Re[dataWW2sigXYZ[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+"Table"
+]
+}
+
  (*With this commands a table is generated and saved inside the folder TABLE*)
 
 (*************************************************************************************************************************************************************************************)
@@ -207,6 +218,45 @@ ghWW,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yf
 
 (*KappaW2sig[
 ghWW[c\[Alpha],u],c\[Alpha],u,0.8,1,1,2,calpha,U,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep]*)
+
+(*TABLES FOR KW*)
+
+dataKW1sig[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
+  ystep_] :=
+ Table[
+  {x, y, If[
+        kappaWINF1sig <= KW[ghWW] <= kappaWSUP1sig, KW[ghWW], 
+    0]}, 
+  {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
+
+dataKW2sig[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
+  ystep_] :=
+ Table[
+  {x, y, If[
+        KappaWINF1sig <= KW[ghWW] <= KappaWSUP1sig, KW[ghWW], 
+    0]}, 
+  {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
+
+(*EXPORTING TABLES FOR KW*)
+
+TableKW[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
+  ystep_] := {
+  Export[
+   FileNameJoin[{$UserDocumentsDirectory, "TableKW_1sigma.txt"}],
+   Re[
+     dataKW1sig[ghWW, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
+     ] /. {{_, _, 0} -> Sequence[]},
+   "Table"
+   ]
+  ,
+  Export[
+   FileNameJoin[{$UserDocumentsDirectory, "TableKW_2sigma.txt"}],
+   Re[
+     dataKW1sig[ghWW, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
+     ] /. {{_, _, 0} -> Sequence[]},
+    "Table"
+   ]
+  }
 
 (******************************************************************************************************************************************************)
 (*********************************************************End KW***************************************************************************************)

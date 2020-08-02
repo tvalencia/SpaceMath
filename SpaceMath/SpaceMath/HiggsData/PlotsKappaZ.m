@@ -220,6 +220,46 @@ ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yf
 (*KappaZ1sig[
 ghZZ[c\[Alpha],u],c\[Alpha],u,0.8,1,1,2,calpha,U,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep]*)
 
+(*TABLES FOR KZ*)
+
+dataKZ1sig[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
+  ystep_] :=
+ Table[
+  {x, y, If[
+        kappaZINF1sig <= KZ[ghZZ] <= kappaZSUP1sig, KZ[ghZZ], 
+    0]}, 
+  {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
+
+dataKZ2sig[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
+  ystep_] :=
+ Table[
+  {x, y, If[
+        kappaZINF1sig <= KZ[ghZZ] <= KappaZSUP1sig, KZ[ghZZ], 
+    0]}, 
+  {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
+
+(*EXPORTING TABLES FOR KZ*)
+
+TableKZ[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
+  ystep_] := {
+  Export[
+   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_1sigma.txt"}],
+   Re[
+     dataKZ1sig[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
+     ] /. {{_, _, 0} -> Sequence[]},
+   "Table"
+   ]
+  ,
+  Export[
+   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_2sigma.txt"}],
+   Re[
+     dataKZ1sig[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
+     ] /. {{_, _, 0} -> Sequence[]},
+    "Table"
+   ]
+  }
+
+
 (***************************************************************************************************************************************************)
 (**********************************************************End kappa Z******************************************************************************)
 (***************************************************************************************************************************************************)
