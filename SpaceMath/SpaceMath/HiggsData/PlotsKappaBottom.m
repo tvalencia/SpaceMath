@@ -18,15 +18,13 @@ Kb::usage = "See later"
 dataKb1sig::usage = "See later"
 dataKb2sig::usage = "See later"
 
-KbOTone::usage = "See later"
-Kbone::usage = "Kbone[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
+KBOTone::usage = "KBOTone[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKbOTone::usage = "See later"
-TableKbone::usage="TableKbone[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
+TableKBOTone::usage="TableKBOTone[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
 hbb coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
@@ -92,7 +90,7 @@ AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
 
-KbOTone[ghbb_,x_,xmin_,xmax_,xlabel_]:={
+KBOTone[ghbb_,x_,xmin_,xmax_,xlabel_]:={
 Kb1sigX[ghbb,x,xmin,xmax,xlabel],
 Kb2sigX[ghbb,x,xmin,xmax,xlabel]
 }
@@ -110,7 +108,7 @@ dataKbOTone2sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
 
 (*EXPORTING TABLES FOR KbOTone*)
 
-TableKbOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKBOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
