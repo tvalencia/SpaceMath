@@ -71,7 +71,7 @@ FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
+AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
@@ -84,7 +84,7 @@ FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Black],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->0.6,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
+AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
 
@@ -129,13 +129,13 @@ RegionPlot[{kappaBotINF2sig <= kb[ghbb] <= kappaBotSUP2sig},
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
- PlotLegends -> {"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
+ PlotLegends -> Placed[{Style["\!\(\*SubscriptBox[\(K\), \(b\)]\)", Larger, Bold]}, {1, 0.5}],
  AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
+     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, PlotPoints->PP]
 
 Kb2sigWXYZ[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
@@ -146,7 +146,7 @@ Kb2sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
 
 (*Kb to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
 
-(*Kb*)
+(*Kb*) 
 Kb1sig[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{kappaBotINF1sig <= kb[ghbb] <= kappaBotSUP1sig},
  {x, xmin, xmax}, {y, ymin, ymax}
@@ -154,13 +154,13 @@ RegionPlot[{kappaBotINF1sig <= kb[ghbb] <= kappaBotSUP1sig},
    Style[ylabel, Larger, Bold], 
    Style["\!\(\*
 StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Medium, Bold]}, 
- PlotLegends -> {"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
+ PlotLegends -> Placed[{Style["\!\(\*SubscriptBox[\(K\), \(b\)]\)", Larger, Bold]}, {1, 0.5}],
  AxesLabel -> {Style["x", Larger, Bold], 
  Style["y", Larger, Bold]}, AspectRatio -> 1, 
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
  GridLines -> Automatic, GridLinesStyle -> 
  Directive[Black, 
- Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, AspectRatio -> 0.6,PlotPoints->PP]
+ Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}},PlotPoints->PP]
 
 Kb1sigWXYZ[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=

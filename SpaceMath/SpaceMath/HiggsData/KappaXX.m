@@ -77,48 +77,42 @@ End[]
 
 Begin["`KappaXX`Private`"]
 
-Scalar boson decays into fermion pair;
+(*Scalar boson decays into fermion pair;*)
 
-Definitions;
+(*Definitions;*)
 
 \[Tau]fi[mi_,mS_] := (2 mi/mS)^2
 \[Tau]fj[mj_,mS_] := (2 mj/mS)^2
 
-Decay width of the Scalar boson into fermion pair;
+(*Decay width of the Scalar boson into fermion pair*)
 
-
-
-WidthHff[ghfifj_, Nc_, mi_, mj_,mS_] := (((ghfifj^2) Nc mS)/(128 \[Pi]))*((4-(Sqrt[\[Tau]fi[mi,mS]]+Sqrt[\[Tau]fj[mj,mS]])^2)^(3/2)) (Sqrt[(4-(Sqrt[\[Tau]fi[mi,mS]]-Sqrt[\[Tau]fj[mj,mS]])^2)])
+WidthHff[ghfifj_, Nc_, mi_, mj_,mS_] := (((ghfifj^2) Nc mS)/(128 \[Pi]))*
+((4-(Sqrt[\[Tau]fi[mi,mS]]+Sqrt[\[Tau]fj[mj,mS]])^2)^(3/2))*(Sqrt[(4-(Sqrt[\[Tau]fi[mi,mS]]-Sqrt[\[Tau]fj[mj,mS]])^2)])
 
 (************************************************************************************************************************************************************************************************************************************************************************************************************************)
 
-Scalar boson decay into gluon pair at one - loop level;
+(*Scalar boson decay into gluon pair at one-loop level*)
 
-Definitions;
+(*Definitions*)
 
+ft[mS_]:=-(1/4) (Log[(1+Sqrt[1-((4*mt^2)/(mS^2))])/(1-Sqrt[1-((4*mt^2)/(mS^2))])]-I \[Pi])^2;
+fb[mS_]:=-(1/4) (Log[(1+Sqrt[1-((4*mb^2)/(mS^2))])/(1-Sqrt[1-((4*mb^2)/(mS^2))])]-I \[Pi])^2;
+gt[mS_]:=(ArcSin[1/Sqrt[(4*mt^2)/(mS^2)]])^2
+gb[mS_]:=(ArcSin[1/Sqrt[(4*mb^2)/(mS^2)]])^2
 
+At[mS_]:=If[((4*mt^2)/mS^2)>=1,gt[mS],ft[mS]]
+Ab[mS_]:=If[((4*mb^2)/mS^2)>=1,gb[mS],fb[mS]]
 
-ft[mS_]:=-(1/4) (Log[(1+Sqrt[1-(((mS^2)/(4mt^2))^-1)])/(1-Sqrt[1-(((mS^2)/(4mt^2))^-1)])]-I \[Pi])^2;
-fb[mS_]:=-(1/4) (Log[(1+Sqrt[1-(((mS^2)/(4mb^2))^-1)])/(1-Sqrt[1-(((mS^2)/(4mb^2))^-1)])]-I \[Pi])^2;
-gt[mS_]:=ArcSin[Sqrt[(mS^2)/(4mt^2)]]^2
-gb[mS_]:=ArcSin[Sqrt[(mS^2)/(4mb^2)]]^2
+Ft[mS_]:=-2*(4*mt^2/(mS^2))*(1+(1-(4*mt^2/(mS^2)))*At[mS]); 
+Fb[mS_]:=-2*(4*mb^2/(mS^2))*(1+(1-(4*mb^2/(mS^2)))*Ab[mS]);
 
+(*We consider the contribution of bottom and top quarks inside the loop*)
+AHgg[ghtt_,ghbb_,mS_]:=(2*mW)*((ghtt/mt)*Ft[mS])+((ghbb/mb)*Fb[mS])
 
+(*Decay width of the Scalar boson into gluon pair*)
 
-At[mS_]:=If[((mS^2)/4mt^2)<=1,gt[mS],ft[mS]]
-Ab[mS_]:=If[((mS^2)/4mb^2)<=1,gb[mS],fb[mS]]
-
-
-
-Ft[mS_]:=2*((mS^2/(4mt^2))+(((mS^2/(4mt^2))-1)*At[mS]))*((mS^2/(4mt^2))^-2); 
-Fb[mS_]:=2*((mS^2/(4mb^2))+(((mS^2/(4mb^2))-1)*At[mS]))*((mS^2/(4mb^2))^-2);
-
-
-
-AHgg[ghtt_,ghbb_,mS_]:=2*mW ((ghtt/(ghtt*mt) Ft[mS])+(ghbb/(ghbb*mb) Fb[mS]))(*We consider the contribution of bottom and top quarks inside the loop*)
-
-WidthHgg[ghtt_,ghbb_,mS_]:=((GF*\[Alpha]s^2*mS^3)/(36 Sqrt[2] \[Pi]^3 ))*
-Abs[3/4 AHgg[ghtt,ghbb,mS]]^2
+WidthHgg[ghtt_,ghbb_,mS_]:=((\[Alpha]s^2*mS^3)/(512 mW^2 \[Pi]^3 ))*
+Abs[AHgg[ghtt,ghbb,mS]]^2
 
 (************************************************************************************************************************************************************************************************************************************************************************************************************************)
 
@@ -128,26 +122,26 @@ Abs[3/4 AHgg[ghtt,ghbb,mS]]^2
 
 (*Main fermion contribution come from top and bottom quark*)
 
-Aht[ghtt_,mS_]:=3 Qt^2 ghtt Ft[mS]
-Ahb[ghbb_,mS_]:=3 Qb^2 ghbb Fb[mS]
+Aht[ghtt_,mS_]:=6 (mW/mt) ghtt Qt^2 Ft[mS]
+Ahb[ghbb_,mS_]:=6 (mW/mb) ghbb Qb^2 Fb[mS]
 Af[ghtt_,ghbb_,mS_]:=Aht[ghtt,mS]+Ahb[ghbb,mS]
 (**)
 
 (*W contribution*)
 
-fW[mS_]:=-(1/4) (Log[(1+Sqrt[1-(((mS^2)/(4mW^2))^-1)])/(1-Sqrt[1-(((mS^2)/(4mW^2))^-1)])]-I \[Pi])^2;
-gW[mS_]:=ArcSin[Sqrt[mS^2/(4mW^2)]]^2;
-AW[mS_]:=If[(mS^2/(4mW^2))<=1,gW[mS],fW[mS]];
-FW[mS_]:=-((2*(mS^2/(4mW^2))^2)+(3*(mS^2/(4mW^2)))+((3*(2(mS^2/(4mW^2))-1))*AW[mS]))*(mS^2/(4mW^2))^(-2);
-AhW[ghWW_,mS_]:=(ghWW) FW[mS] 
+fW[mS_]:=-(1/4)*(Log[(1+Sqrt[1-((4*mW^2)/(mS^2))])/(1-Sqrt[1-((4*mW^2)/(mS^2))])]-I \[Pi])^2;
+gW[mS_]:=(ArcSin[1/Sqrt[4*mW^2/(mS^2)]])^2; 
+AW[mS_]:=If[(4*mW^2/(mS^2))>=1,gW[mS],fW[mS]];
+FW[mS_]:=2+(3*(4*mW^2/(mS^2)))+((3*(4*mW^2/(mS^2))*(2-(4*mW^2/(mS^2)))*AW[mS]));
+AhW[ghWW_,mS_]:=(ghWW/mW) FW[mS] 
 
 (*Charged scalar contribution*)
 
-fH[mCH_,mS_]:=-(1/4) (Log[(1+Sqrt[1-(((mS^2)/(4mCH^2))^-1)])/(1-Sqrt[1-(((mS^2)/(4mCH^2))^-1)])]- I \[Pi])^2 ;
-gH[mCH_,mS_]:=ArcSin[Sqrt[mS^2/(4mCH^2)]]^2 ;
-AH[mCH_,mS_]:=If[(mS^2/(4mCH^2))<=1,gH[mCH,mS],fH[mCH,mS]];
-FH[mCH_,mS_]:=-((mS^2/(4mCH^2))-AH[mCH,mS])*(mS^2/(4mCH^2))^-2
-AHc[gCH_,mCH_,mS_]:=(mW^2 gCH)/(2CW^2 mCH^2) FH[mCH,mS]
+fH[mCH_,mS_]:=-(1/4)*(Log[(1+Sqrt[1-((4*mCH^2)/(mS^2))])/(1-Sqrt[1-((4*mCH^2)/(mS^2))])]-I \[Pi])^2; ;
+gH[mCH_,mS_]:=(ArcSin[1/Sqrt[4*mCH^2/(mS^2)]])^2; 
+AH[mCH_,mS_]:=If[(4*mCH^2/(mS^2))>=1,gH[mCH,mS],fH[mCH,mS]];
+FH[mCH_,mS_]:=(4*mCH^2/(mS^2))*(1-((4*mCH^2/(mS^2))*AH[mCH,mS]))
+AHc[gCH_,mCH_,mS_]:=((mW*gCH)/(mCH^2)) FH[mCH,mS]
 
 
 
@@ -156,17 +150,21 @@ Ahgaga[ghtt_,ghbb_,ghWW_,mS_,gCH_,mCH_]:=Af[ghtt,ghbb,mS]+AhW[ghWW,mS]+AHc[gCH,m
 (*Decay width of Scalar boson into photon-photon*)
 
 WidthHgaga[ghtt_,ghbb_,ghWW_,gCH_,mCH_,mS_]:=
-((GF)*(\[Alpha]em^2)*(mS^3))/(128 Sqrt[2] \[Pi]^3 )*Abs[Ahgaga[ghtt,ghbb,ghWW,mS,gCH,mCH]]^2
+((\[Alpha]em^2)*(mS^3))/(1024*(\[Pi]^3)*mW^2)*Abs[Ahgaga[ghtt,ghbb,ghWW,mS,gCH,mCH]]^2
 
 
 
 
 (************************************************************************************************************************************************************************************************************************************************************************************************************************)
 
-(*Scalar boson decay into vector pair*)(*Definitions*)
+(*Scalar boson decay into vector pair*)
 
-RTW[mS_]:=-(((1-mW^2/mS^2) (47 (mW^4/mS^4)-(13 mW^2/mS^2)+2))/(2 mW^2/mS^2))-3/2 (4 (mW^4/mS^4)-6 (mW^2/mS^2)+1)*(Log[mW^2/mS^2])+
-(3 (20 (mW^4/mS^4)- 8 (mW^2/mS^2)+1))/Sqrt[4 (mW^2/mS^2)-1]*ArcCos[(3 (mW^2/mS^2)-1)/(2 (mW^3/mS^3))];
+(*Definitions*)
+
+RTW[mS_]:=-(((1-(mW^2/mS^2)) (47 (mW^4/mS^4)-(13 mW^2/mS^2)+2))/(2 mW^2/mS^2))-(3/2 (4 (mW^4/mS^4)-6 (mW^2/mS^2)+1)*(Log[mW^2/mS^2]))+
+((3 (20 (mW^4/mS^4)- 8 (mW^2/mS^2)+1))/Sqrt[4 (mW^2/mS^2)-1])*ArcCos[(3 (mW^2/mS^2)-1)/(2 (mW^3/mS^3))];
+
+
 
 RTZ[mS_]:=RTW[mS]/.mW-> mZ;
 
@@ -175,11 +173,11 @@ RTZ[mS_]:=RTW[mS]/.mW-> mZ;
 (*Decay width of Higgs boson into WW pair*)
 
 WidthHWW[ghWW_,mS_]:=((ghWW^2) mS)/(512 (\[Pi]^3) (mW^4)) RTW[mS]
-(**)
 
 (*Decay width of Scalar boson into ZZ pair*)
 
 WidthHZZ[ghZZ_,mS_]:=((ghZZ^2) mS)/(2048 (\[Pi]^3) mZ^4) \[Delta]Z RTZ[mS]
+
 
 (************************************************************************************************************************************************************************************************************************************************************************************************************************)
 

@@ -260,7 +260,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large
  PlotLegends -> Placed[{"Intersection"}, {0.8,0.6}],
  (*AxesLabel -> {Style["x", Larger, Bold], 
    Style["y", Larger, Bold]},*)
- FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
+ FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 600,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
      Dashed], BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.003]]}, PlotStyle -> {{Purple, Opacity[0.3]}}, AspectRatio -> 1]
