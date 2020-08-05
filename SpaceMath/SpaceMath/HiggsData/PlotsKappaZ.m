@@ -61,7 +61,7 @@ kappa Z
 
 KZ1sigX[ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{kZ[ghZZ],kappaZSUP1sig,kappaZINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)",
-"U.L.[1\[Sigma]]", "L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
+"U.L.[1\[Sigma]]", "L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
 FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
@@ -75,7 +75,7 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 KZ2sigX[ghZZ_,x_,xmin_,xmax_,xlabel_]:=Plot[{kZ[ghZZ],kappaZSUP2sig,kappaZINF2sig},{x,xmin,xmax} 
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)",
-"U.L.[2\[Sigma]]", "L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
+"U.L.[2\[Sigma]]", "L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
 FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
@@ -106,13 +106,13 @@ dataZZ2sigXY[ghZZ_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
 
 (*Create a table of three columns to 1 \[Sigma] \[Rule] {x,y,kappa-W}*)
 
-dataZZ1sigXYZ[ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
-    kappaZINF1sig<=kZ[ghZZ]<=kappaZSUP1sig, kZ[ghZZ],0]}, {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]
+dataZZ1sigXYZ[ghZZ_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    kappaZINF1sig<=kZ[ghZZ]<=kappaZSUP1sig, kZ[ghZZ],0]}, {x, xmin,xmax,xstep}]
 
 (*Create a table of three columns to 2 \[Sigma] \[Rule] {x,y,kappa-top}*)
 
-dataZZ2sigXYZ[ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
-    kappaZINF2sig<=kZ[ghZZ]<=kappaZSUP2sig, kZ[ghZZ],0]}, {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]
+dataZZ2sigXYZ[ghZZ_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    kappaZINF2sig<=kZ[ghZZ]<=kappaZSUP2sig, kZ[ghZZ],0]}, {x, xmin,xmax,xstep}]
 
 (*databb2sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Do[list=Append[list={x,y,If[
     kappaBotINF2sig<=kb[ghbb]<=kappaBotSUP2sig, kb[ghbb],0

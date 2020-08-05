@@ -119,8 +119,8 @@ EndPackage[];
 
 
 If[ Global`$SpaceMathStartupMessages =!= False,
-	Print[	Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ",
-				"Text"],
+	Print[	Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, see arXiv:2008.00564 [hep-ph]",
+				"Text"](*,
 			Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
 				ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"], "Text"],
 			Style[", check out the ", "Text"],
@@ -128,13 +128,13 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],"Text"],
 			Style[" or write to the ", "Text"],
 			Style[DisplayForm@ButtonBox["mailing list.",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
-				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],"Text"]];
+				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],"Text"]*)];
 	Print[ Style["See also the supplied ","Text"],
 
 	Style[DisplayForm@ButtonBox["Examples.", BaseStyle -> "Hyperlink",	ButtonFunction :>
 							SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]],
 							Evaluator -> Automatic, Method -> "Preemptive"], "Text"],
-	Style[" If you use SpaceMath in your research, please cite","Text"]];
+	Style[" If you use SpaceMath in your research, please cite arXiv:2008.00564 [hep-ph]","Text"]];
 	Print [Style["\[Bullet] SpaceMath Version 1.0","Text"]];
 	Print [Style["\[Bullet] Authors:  ","Text"]];
 	Print [Style["M. A. Arroyo-Ure\[NTilde]a","Text"]];
