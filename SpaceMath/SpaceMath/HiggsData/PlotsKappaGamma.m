@@ -98,7 +98,7 @@ kappa gamma
 
 KGam1sigX[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgaga[ghtt, ghbb, ghWW, gCH, mCH],kappaGammaSUP1sig,kappaGammaINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)",
-"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
+"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)","SpaceMath"},
 FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
@@ -111,7 +111,7 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 KGam2sigX[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgaga[ghtt, ghbb, ghWW, gCH, mCH],kappaGammaSUP2sig,kappaGammaINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)",
-"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
+"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)","SpaceMath"},
 FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
@@ -191,34 +191,69 @@ ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,
 ghtt[0.99,Ztt,u], ghbb[0.99,0,u],ghWW[0.99],0,mCH,Ztt,u,0,1,500,2000,Subscript[Overscript[Z, ~], tt],
 Subscript[Overscript[Z, ~], bb],u,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep]*)
 
-(*TABLES FOR RW*)
+(*TABLES FOR RGAMone*)
 
-dataKGam1sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKGam1sigXY[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:=
+Table[
+{x,If[
+    kappaGammaINF1sig<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP1sig,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+{x, xmin,xmax,xstep}]
+
+dataKGam2sigXY[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:=
+Table[
+{x,If[
+    kappaGammaINF2sig<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP2sig,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+{x, xmin,xmax,xstep}]
+
+
+(*TABLES FOR RGAM*)
+
+dataKGam1sigXYZ[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KgammagammaINF1sig<= Kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=KgammagammaSUP1sig,Kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+    kappaGammaINF1sig<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP1sig,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
-dataKGam2sig[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKGam2sigXYZ[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KgammagammaINF2sig<= Kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=KgammagammaSUP2sig,Kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+    kappaGammaINF2sig<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP2sig,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
-(*EXPORTING TABLES FOR RGam*)
+(*EXPORTING TABLES FOR RGAMone*)
+
+TableKGAMone[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:={
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_1sigma.txt"}],
+Re[
+dataKGam1sigXY[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
+]/. {{_,0} -> Sequence[]},"Table"
+]
+,
+Export[
+FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_2sigma.txt"}],
+Re[
+dataKGam2sigXY[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
+]/. {{_,0} -> Sequence[]},"Table"
+]
+}
+
+
+(*EXPORTING TABLES FOR RGAM*)
 
 TableKGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKGam_1sigma.txt"}],
 Re[
-dataKGam1sig[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKGam1sigXYZ[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigma.txt"}],
 Re[
-dataKGam2sig[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKGam2sigXYZ3
+	[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 }
