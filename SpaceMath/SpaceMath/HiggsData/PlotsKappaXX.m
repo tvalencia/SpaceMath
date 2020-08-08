@@ -6,10 +6,6 @@
 KVone::usage = "\!\(\*
 StyleBox[\"KVone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghbb_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghVV_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -28,7 +24,7 @@ StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule]  \
 This command evaluates \!\(\*SubscriptBox[\(K\), \(V\)]\) with V=W, \
 Z when there is dependence only on one parameter. The arguments ghtt, ghbb and ghVV are the htt, hbb, hVV \
 couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. The label x \
-indicates the parameter to constraint, while xmin and xmax are the \
+indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 

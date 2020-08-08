@@ -65,7 +65,7 @@ K botton
 
 Kb1sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP1sig,kappaBotINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
-"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
@@ -78,7 +78,7 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 Kb2sigX[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP2sig,kappaBotINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
-"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1000,Frame->True,
+"U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
 FrameStyle->Thickness[0.003](*,AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]}*),LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
@@ -96,12 +96,10 @@ Kb2sigX[ghbb,x,xmin,xmax,xlabel]
 (*TABLES FOR KbOTone*)
 
 dataKbOTone1sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
-    KbbINF1sig<=kb[ghbb]<=KbbSUP1sig, 
-kb[ghbb],0]}, {x, xmin,xmax,xstep}]
+    kappaBotINF1sig<=kb[ghbb]<=kappaBotSUP1sig, kb[ghbb],0]}, {x, xmin,xmax,xstep}]
 
 dataKbOTone2sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
-    KbbINF2sig<=kbt[ghbb]<=KbbSUP2sig,
- kb[ghbb],0]}, {x, xmin,xmax,xstep}]
+    kappaBotINF1sig<=kb[ghbb]<=kappaBotSUP1sig, kb[ghbb],0]}, {x, xmin,xmax,xstep}]
 
 
 (*EXPORTING TABLES FOR KbOTone*)

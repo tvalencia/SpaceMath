@@ -24,10 +24,6 @@ dataKtau2sig::usage = "dataKtau2sig"
 KTAUone::usage = "\!\(\*
 StyleBox[\"KTAUone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghbb_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtautau_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -43,18 +39,15 @@ StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule]  \
-This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Tau]\)]\)\ when there is dependence only on one parameter. The arguments ghtt, ghbb and ghtautau are the htt,\ hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks and tau stands for tau-lepton. The label x \
-indicates the parameter to constraint, while xmin and xmax are the \
+This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Tau]\)]\)\ when there is dependence only on one parameter. The argument ghtautau is htautau\ 
+coupling. Here, h represents to SM-like Higgs boson while tau stands for tau-lepton. The label x \
+indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
 TableKTAUone::usage="\!\(\*
 StyleBox[\"TableKTAUone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghbb_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtautau_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -102,7 +95,7 @@ kappa tau
 
 Ktau1sigX[ghtautau_,x_,xmin_,xmax_,xlabel_]:=Plot[{ktau[ghtautau],kappaTauSUP1sig,kappaTauINF1sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)",
-"U.L.[1\[Sigma]]", "L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
+"U.L.[1\[Sigma]]", "L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
 FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
@@ -116,7 +109,7 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 Ktau2sigX[ghtautau_,x_,xmin_,xmax_,xlabel_]:=Plot[{ktau[ghtautau],kappaTauSUP2sig,kappaTauINF2sig},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)",
-"U.L.[2\[Sigma]]", "L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->1300,Frame->True,
+"U.L.[2\[Sigma]]", "L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\)","\!\(\*
 StyleBox[\"SpaceMath\",\nFontSlant->\"Italic\"]\)"},
 FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
@@ -164,11 +157,11 @@ datatautau2sigXYZ[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[
 
 TableKTAUone[ghtautau_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_1sigma.txt"}],Re[datatautau1sigXYZ[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_1sigma.txt"}],Re[datatautau1sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_2sigma.txt"}],Re[datatautau2sigXYZ[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_2sigma.txt"}],Re[datatautau2sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }

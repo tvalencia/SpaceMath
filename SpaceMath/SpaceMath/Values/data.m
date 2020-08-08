@@ -149,6 +149,21 @@ dmuSUP::usage="upper limit of the muon alectric dipole moment"
 bsgammaINF3sigma::usage="See later."
 bsgammaSUP3sigma::usage="See later."
 
+kappaZSUP2sigHLLHC::usage="See later."
+kappaZINF2sigHLLHC::usage="See later."
+kappaWSUP2sigHLLHC::usage="See later."
+kappaWINF2sigHLLHC::usage="See later."
+kappaTopSUP2sigHLLHC::usage="See later."
+kappaTopINF2sigHLLHC::usage="See later."
+kappaTauSUP2sigHLLHC::usage="See later."
+kappaTauINF2sigHLLHC::usage="See later."
+kappaBotSUP2sigHLLHC::usage="See later."
+kappaBotINF2sigHLLHC::usage="See later."
+kappaGluonSUP2sigHLLHC::usage="See later."
+kappaGluonINF2sigHLLHC::usage="See later."
+kappaGammaSUP2sigHLLHC::usage="See later."
+kappaGammaINF2sigHLLHC::usage="See later."
+
 (* ------------------------------------------------------------------------ *)
 
 Begin["`Package`"]
@@ -258,6 +273,23 @@ kappaGluonSUP2sig=1.16009;
 kappaGluonINF2sig=0.779912;
 kappaGammaSUP2sig=1.11115;
 kappaGammaINF2sig=0.848851;
+
+(*kappaX to 2\[Sigma]*)
+(*Reference: ARXIV:1902.00134 HL-LHC*)
+kappaZSUP2sigHLLHC=1.032;
+kappaZINF2sigHLLHC=0.988;
+kappaWSUP2sigHLLHC=1.0.32;
+kappaWINF2sigHLLHC=0.988;
+kappaTopSUP2sigHLLHC=1.09;
+kappaTopINF2sigHLLHC=0.99;
+kappaTauSUP2sigHLLHC=1.034;
+kappaTauINF2sigHLLHC=0.966;
+kappaBotSUP2sigHLLHC=0.996;
+kappaBotINF2sigHLLHC=0.884;
+kappaGluonSUP2sigHLLHC=1.056;
+kappaGluonINF2sigHLLHC=0.984;
+kappaGammaSUP2sigHLLHC=1.002;
+kappaGammaINF2sigHLLHC=0.938;
 
 (*{
 kappaZSUP2sig=1.22007,
