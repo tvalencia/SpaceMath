@@ -91,8 +91,8 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 
 KBOToneHL[ghbb_,x_,xmin_,xmax_,xlabel_]:={
-Kb1sigX[ghbb,x,xmin,xmax,xlabel],
-Kb2sigX[ghbb,x,xmin,xmax,xlabel]
+Kb1sigXHL[ghbb,x,xmin,xmax,xlabel],
+Kb2sigXHL[ghbb,x,xmin,xmax,xlabel]
 }
 
 (*TABLES FOR KbOTone*)
