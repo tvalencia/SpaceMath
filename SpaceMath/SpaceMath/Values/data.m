@@ -164,6 +164,79 @@ kappaGluonINF2sigHLLHC::usage="See later."
 kappaGammaSUP2sigHLLHC::usage="See later."
 kappaGammaINF2sigHLLHC::usage="See later."
 
+kappaZSUP1sigHL::usage="See later."
+kappaZINF1sigHL::usage="See later."
+kappaWSUP1sigHL::usage="See later."
+kappaWINF1sigHL::usage="See later."
+kappaTopSUP1sigHL::usage="See later."
+kappaTopINF1sigHL::usage="See later."
+kappaTauSUP1sigHL::usage="See later."
+kappaTauINF1sigHL::usage="See later."
+kappaBotSUP1sigHL::usage="See later."
+kappaBotINF1sigHL::usage="See later."
+kappaGluonSUP1sigHL::usage="See later."
+kappaGluonINF1sigHL::usage="See later."
+kappaGammaSUP1sigHL::usage="See later."
+kappaGammaINF1sigHL::usage="See later."
+
+
+(*kappaX to 2\[Sigma]*)
+(*Projection for kappa top at HL-LHC to 2 sigma, taken from arXiv:1902.00134v2[hep-ph]*)
+kappaZSUP2sigHL::usage="See later."
+kappaZINF2sigHL::usage="See later."
+kappaWSUP2sigHL::usage="See later."
+kappaWINF2sigHL::usage="See later."
+kappaTopSUP2sigHL::usage="See later."
+kappaTopINF2sigHL::usage="See later."
+kappaTauSUP2sigHL::usage="See later."
+kappaTauINF2sigHL::usage="See later."
+kappaBotSUP2sigHL::usage="See later."
+kappaBotINF2sigHL::usage="See later."
+kappaGluonSUP2sigHL::usage="See later."
+kappaGluonINF2sigHL::usage="See later."
+kappaGammaSUP2sigHL::usage="See later."
+kappaGammaINF2sigHL::usage="See later."
+
+
+(********************************************************************************************************)
+(********************************************************************************************************)
+(********************************************************************************************************)
+(*kappaX to 1\[Sigma]*)
+(*Projection for kappa at HE-LHC to 1 sigma, taken from arXiv:1902.00134v2[hep-ph]*)
+kappaZSUP1sigHE::usage="See later."
+kappaZINF1sigHE::usage="See later."
+kappaWSUP1sigHE::usage="See later."
+kappaWINF1sigHE::usage="See later."
+kappaTopSUP1sigHE::usage="See later."
+kappaTopINF1sigHE::usage="See later."
+kappaTauSUP1sigHE::usage="See later."
+kappaTauINF1sigHE::usage="See later."
+kappaBotSUP1sigHE::usage="See later."
+kappaBotINF1sigHE::usage="See later."
+kappaGluonSUP1sigHE::usage="See later."
+kappaGluonINF1sigHE::usage="See later."
+kappaGammaSUP1sigHE::usage="See later."
+kappaGammaINF1sigHE::usage="See later."
+
+
+(*kappaX to 2\[Sigma]*)
+(*Projection for kappa at HE-LHC to 2 sigma, taken from arXiv:1902.00134v2[hep-ph]*)
+kappaZSUP2sigHE::usage="See later."
+kappaZINF2sigHE::usage="See later."
+kappaWSUP2sigHE::usage="See later."
+kappaWINF2sigHE::usage="See later."
+kappaTopSUP2sigHE::usage="See later."
+kappaTopINF2sigHE::usage="See later."
+kappaTauSUP2sigHE::usage="See later."
+kappaTauINF2sigHE::usage="See later."
+kappaBotSUP2sigHE::usage="See later."
+kappaBotINF2sigHE::usage="See later."
+kappaGluonSUP2sigHE::usage="See later."
+kappaGluonINF2sigHE::usage="See later."
+kappaGammaSUP2sigHE::usage="See later."
+kappaGammaINF2sigHE::usage="See later."
+
+
 (* ------------------------------------------------------------------------ *)
 
 Begin["`Package`"]
