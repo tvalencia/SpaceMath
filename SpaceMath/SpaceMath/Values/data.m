@@ -262,35 +262,17 @@ kappaGamma=0.97;
 kappaZSUP2sig=1.13;
 kappaZINF2sig=0.89;
 kappaWSUP2sig=1.13;
-kappaWINF2sig=0.0.89;
+kappaWINF2sig=0.89;
 kappaTopSUP2sig=1.23009;
 kappaTopINF2sig=0.849912;
 kappaTauSUP2sig=1.2;
-kappaTauINF2sig=0.8;<-----------
-kappaBotSUP2sig=1.12006;
-kappaBotINF2sig=0.579938;
-kappaGluonSUP2sig=1.16009;
-kappaGluonINF2sig=0.779912;
-kappaGammaSUP2sig=1.11115;
-kappaGammaINF2sig=0.848851;
-
-<<<<<<< HEAD
-(*kappaX to 2\[Sigma]*)
-(*Reference: ARXIV:1902.00134 HL-LHC*)
-kappaZSUP2sigHLLHC=1.032;
-kappaZINF2sigHLLHC=0.988;
-kappaWSUP2sigHLLHC=1.0.32;
-kappaWINF2sigHLLHC=0.988;
-kappaTopSUP2sigHLLHC=1.09;
-kappaTopINF2sigHLLHC=0.99;
-kappaTauSUP2sigHLLHC=1.034;
-kappaTauINF2sigHLLHC=0.966;
-kappaBotSUP2sigHLLHC=0.996;
-kappaBotINF2sigHLLHC=0.884;
-kappaGluonSUP2sigHLLHC=1.056;
-kappaGluonINF2sigHLLHC=0.984;
-kappaGammaSUP2sigHLLHC=1.002;
-kappaGammaINF2sigHLLHC=0.938;
+kappaTauINF2sig=0.8;
+kappaBotSUP2sig=1.2;
+kappaBotINF2sig=0.68;
+kappaGluonSUP2sig=1.17011;
+kappaGluonINF2sig=0.869889;
+kappaGammaSUP2sig=1.11;
+kappaGammaINF2sig=0.83;
 
 (*{
 kappaZSUP2sig=1.22007,
@@ -319,32 +301,32 @@ kappaWINF1sig=0.95;
 kappaTopSUP1sig=1.13504;
 kappaTopINF1sig=0.944956;
 kappaTauSUP1sig=1.1;
-kappaTauINF1sig=0.9;<-----------------
-kappaBotSUP1sig=kappaBot+0.13;
-kappaBotINF1sig=kappaBot-0.14;
-kappaGluonSUP1sig=kappaGluon+0.10;
-kappaGluonINF1sig=kappaGluon-0.09;
-kappaGammaSUP1sig=kappaGamma+0.05;
-kappaGammaINF1sig=kappaGamma-0.08;
+kappaTauINF1sig=0.9; 
+kappaBotSUP1sig=1.07;
+kappaBotINF1sig=0.81;
+kappaGluonSUP1sig=1.09506;
+kappaGluonINF1sig=0.944944;
+kappaGammaSUP1sig=1.04;
+kappaGammaINF1sig=0.9;
 (********************************************************************************************************)
 (********************************************************************************************************)
 (********************************************************************************************************)
-(*kappaX to 1\[Sigma]*)
+(*kappaX to 1\[Sigma] HL*)
 (*Projection for kappa top at HL-LHC to 1 sigma, taken from arXiv:1902.00134v2[hep-ph]*)
 kappaZSUP1sigHL=1.027;
 kappaZINF1sigHL=0.993;
 kappaWSUP1sigHL=1.027;
 kappaWINF1sigHL=0.993;
 kappaTopSUP1sigHL=1.08;
-kappaTopINF1sigHL=1;<-----------
-kappaTauSUP1sigHL=kappaTau1+0.13;
-kappaTauINF1sigHL=kappaTau1-0.13;
-kappaBotSUP1sigHL=kappaBot+0.13;
-kappaBotINF1sigHL=kappaBot-0.14;
-kappaGluonSUP1sigHL=kappaGluon+0.10;
-kappaGluonINF1sigHL=kappaGluon-0.09;
-kappaGammaSUP1sigHL=kappaGamma+0.05;
-kappaGammaINF1sigHL=kappaGamma-0.08;
+kappaTopINF1sigHL=1;
+kappaTauSUP1sigHL=1.023;
+kappaTauINF1sigHL=0.977;
+kappaBotSUP1sigHL=0.982;
+kappaBotINF1sigHL=0.898;
+kappaGluonSUP1sigHL=1.047;
+kappaGluonINF1sigHL=0.993;
+kappaGammaSUP1sigHL=0.993;
+kappaGammaINF1sigHL=0.947;
 
 
 (*kappaX to 2\[Sigma]*)
@@ -354,15 +336,15 @@ kappaZINF2sigHL=0.976;
 kappaWSUP2sigHL=1.044;
 kappaWINF2sigHL=0.976;
 kappaTopSUP2sigHL=1.12;
-kappaTopINF2sigHL=0.96;<-----------
-kappaTauSUP2sigHL=kappaTau1+0.13;
-kappaTauINF2sigHL=kappaTau1-0.13;
-kappaBotSUP2sigHL=kappaBot+0.13;
-kappaBotINF2sigHL=kappaBot-0.14;
-kappaGluonSUP2sigHL=kappaGluon+0.10;
-kappaGluonINF2sigHL=kappaGluon-0.09;
-kappaGammaSUP2sigHL=kappaGamma+0.05;
-kappaGammaINF2sigHL=kappaGamma-0.08;
+kappaTopINF2sigHL=0.96;
+kappaTauSUP2sigHL=1.046;
+kappaTauINF2sigHL=0.954;
+kappaBotSUP2sigHL=1.024;
+kappaBotINF2sigHL=0.856;
+kappaGluonSUP2sigHL=1.074;
+kappaGluonINF2sigHL=0.966;
+kappaGammaSUP2sigHL=1.016;
+kappaGammaINF2sigHL=0.924;
 
 
 (********************************************************************************************************)
@@ -374,16 +356,16 @@ kappaZSUP1sigHE=1.019;
 kappaZINF1sigHE=1.001;
 kappaWSUP1sigHE=1.019;
 kappaWINF1sigHE=1.001;
-kappaTopSUP1sigHE=1.065;
-kappaTopINF1sigHE=1.015;<-----------
-kappaTauSUP1sigHE=kappaTau1+0.13;
-kappaTauINF1sigHE=kappaTau1-0.13;
-kappaBotSUP1sigHE=kappaBot+0.13;
-kappaBotINF1sigHE=kappaBot-0.14;
-kappaGluonSUP1sigHE=kappaGluon+0.10;
-kappaGluonINF1sigHE=kappaGluon-0.09;
-kappaGammaSUP1sigHE=kappaGamma+0.05;
-kappaGammaINF1sigHE=kappaGamma-0.08;
+kappaTopSUP1sigHE=1.06;
+kappaTopINF1sigHE=1.02;
+kappaTauSUP1sigHE=1.012;
+kappaTauINF1sigHE=0.988;
+kappaBotSUP1sigHE=0.963;
+kappaBotINF1sigHE=0.917;
+kappaGluonSUP1sigHE=1.035;
+kappaGluonINF1sigHE=1.005;
+kappaGammaSUP1sigHE=0.982;
+kappaGammaINF1sigHE=0.958;
 
 
 (*kappaX to 2\[Sigma]*)
@@ -392,16 +374,16 @@ kappaZSUP2sigHE=1.028;
 kappaZINF2sigHE=0.992;
 kappaWSUP2sigHE=1.028;
 kappaWINF2sigHE=0.992;
-kappaTopSUP2sigHE=1.09;
-kappaTopINF2sigHE=0.99;<-----------
-kappaTauSUP2sigHE=kappaTau1+0.13;
-kappaTauINF2sigHE=kappaTau1-0.13;
-kappaBotSUP2sigHE=kappaBot+0.13;
-kappaBotINF2sigHE=kappaBot-0.14;
-kappaGluonSUP2sigHE=kappaGluon+0.10;
-kappaGluonINF2sigHE=kappaGluon-0.09;
-kappaGammaSUP2sigHE=kappaGamma+0.05;
-kappaGammaINF2sigHE=kappaGamma-0.08;
+kappaTopSUP2sigHE=1.08;
+kappaTopINF2sigHE=1;
+kappaTauSUP2sigHE=1.024;
+kappaTauINF2sigHE=0.976;
+kappaBotSUP2sigHE=0.986;
+kappaBotINF2sigHE=0.894;
+kappaGluonSUP2sigHE=1.05;
+kappaGluonINF2sigHE=0.99;
+kappaGammaSUP2sigHE=0.994;
+kappaGammaINF2sigHE=0.946;
 
 
 (********************************************************************************************************)
