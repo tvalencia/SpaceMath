@@ -234,24 +234,24 @@ RgammagammaSUP1sig=1.19504;
 
 (*kappa-parametrization*)
 (*central values*)
-kappaZ=1;
-kappaW=1;
-kappaTop=1.05;
-kappaTau1=0.95;
-kappaBot=0.85;
-kappaGluon=0.97;
-kappaGamma=0.98;
+kappaZ=1.01;
+kappaW=1.01;
+kappaTop=1.04;
+kappaTau=1.0;
+kappaBot=0.94;
+kappaGluon=1.02;
+kappaGamma=0.97;
 
 (*kappaX to 2\[Sigma]*)
-(*Reference: ARXIV:1809.10733*)
-kappaZSUP2sig=1.2;
-kappaZINF2sig=0.8;
-kappaWSUP2sig=1.22;
-kappaWINF2sig=0.78;
-kappaTopSUP2sig=1.32006;
-kappaTopINF2sig=0.779938;
+(*Reference: arXiv:1902.00134v2[hep-ph], Table 42*)
+kappaZSUP2sig=1.13;
+kappaZINF2sig=0.89;
+kappaWSUP2sig=1.13;
+kappaWINF2sig=0.0.89;
+kappaTopSUP2sig=1.23009;
+kappaTopINF2sig=0.849912;
 kappaTauSUP2sig=1.21;
-kappaTauINF2sig=0.69;
+kappaTauINF2sig=0.69;<-----------
 kappaBotSUP2sig=1.12006;
 kappaBotINF2sig=0.579938;
 kappaGluonSUP2sig=1.16009;
@@ -259,32 +259,16 @@ kappaGluonINF2sig=0.779912;
 kappaGammaSUP2sig=1.11115;
 kappaGammaINF2sig=0.848851;
 
-(*{
-kappaZSUP2sig=1.22007,
-kappaZINF2sig=0.759928,
-kappaWSUP2sig=1.391433239925259,
-kappaWINF2sig=0.808567,
-kappaTopSUP2sig=1.3303,
-kappaTopINF2sig=0.889697,
-kappaTauSUP2sig=1.37074,
-kappaTauINF2sig=0.64926,
-kappaBotSUP2sig=1.66297,
-kappaBotINF2sig=0.537032,
-kappaGluonSUP2sig=1.47134,
-kappaGluonINF2sig=0.848659,
-kappaGammaSUP2sig=1.14,
-kappaGammaINF2sig=0.78
-};*)
 
 (*kappaX to 1\[Sigma]*)
-(*Reference: ARXIV:1809.10733*)
+(*Reference: arXiv:1902.00134v2[hep-ph], Table 42*)
 
-kappaZSUP1sig=kappaZ+0.10;
-kappaZINF1sig=kappaZ-0.10;
-kappaWSUP1sig=kappaW+0.11;
-kappaWINF1sig=kappaW-0.11;
-kappaTopSUP1sig=kappaTop+0.14;
-kappaTopINF1sig=kappaTop-0.13;
+kappaZSUP1sig=1.07;
+kappaZINF1sig=0.95;
+kappaWSUP1sig=1.07;
+kappaWINF1sig=0.95;
+kappaTopSUP1sig=1.13504;
+kappaTopINF1sig=0.944956;<-----------------
 kappaTauSUP1sig=kappaTau1+0.13;
 kappaTauINF1sig=kappaTau1-0.13;
 kappaBotSUP1sig=kappaBot+0.13;
@@ -293,6 +277,87 @@ kappaGluonSUP1sig=kappaGluon+0.10;
 kappaGluonINF1sig=kappaGluon-0.09;
 kappaGammaSUP1sig=kappaGamma+0.05;
 kappaGammaINF1sig=kappaGamma-0.08;
+(********************************************************************************************************)
+(********************************************************************************************************)
+(********************************************************************************************************)
+(*kappaX to 1\[Sigma]*)
+(*Projection for kappa top at HL-LHC to 1 sigma, taken from arXiv:1902.00134v2[hep-ph]*)
+kappaZSUP1sigHL=1.027;
+kappaZINF1sigHL=0.993;
+kappaWSUP1sigHL=1.027;
+kappaWINF1sigHL=0.993;
+kappaTopSUP1sigHL=1.08;
+kappaTopINF1sigHL=1;<-----------
+kappaTauSUP1sigHL=kappaTau1+0.13;
+kappaTauINF1sigHL=kappaTau1-0.13;
+kappaBotSUP1sigHL=kappaBot+0.13;
+kappaBotINF1sigHL=kappaBot-0.14;
+kappaGluonSUP1sigHL=kappaGluon+0.10;
+kappaGluonINF1sigHL=kappaGluon-0.09;
+kappaGammaSUP1sigHL=kappaGamma+0.05;
+kappaGammaINF1sigHL=kappaGamma-0.08;
+
+
+(*kappaX to 2\[Sigma]*)
+(*Projection for kappa top at HL-LHC to 2 sigma, taken from arXiv:1902.00134v2[hep-ph]*)
+kappaZSUP2sigHL=1.044;
+kappaZINF2sigHL=0.976;
+kappaWSUP2sigHL=1.044;
+kappaWINF2sigHL=0.976;
+kappaTopSUP2sigHL=1.12;
+kappaTopINF2sigHL=0.96;<-----------
+kappaTauSUP2sigHL=kappaTau1+0.13;
+kappaTauINF2sigHL=kappaTau1-0.13;
+kappaBotSUP2sigHL=kappaBot+0.13;
+kappaBotINF2sigHL=kappaBot-0.14;
+kappaGluonSUP2sigHL=kappaGluon+0.10;
+kappaGluonINF2sigHL=kappaGluon-0.09;
+kappaGammaSUP2sigHL=kappaGamma+0.05;
+kappaGammaINF2sigHL=kappaGamma-0.08;
+
+
+(********************************************************************************************************)
+(********************************************************************************************************)
+(********************************************************************************************************)
+(*kappaX to 1\[Sigma]*)
+(*Projection for kappa at HE-LHC to 1 sigma, taken from arXiv:1902.00134v2[hep-ph]*)
+kappaZSUP1sigHE=1.019;
+kappaZINF1sigHE=1.001;
+kappaWSUP1sigHE=1.019;
+kappaWINF1sigHE=1.001;
+kappaTopSUP1sigHE=1.065;
+kappaTopINF1sigHE=1.015;<-----------
+kappaTauSUP1sigHE=kappaTau1+0.13;
+kappaTauINF1sigHE=kappaTau1-0.13;
+kappaBotSUP1sigHE=kappaBot+0.13;
+kappaBotINF1sigHE=kappaBot-0.14;
+kappaGluonSUP1sigHE=kappaGluon+0.10;
+kappaGluonINF1sigHE=kappaGluon-0.09;
+kappaGammaSUP1sigHE=kappaGamma+0.05;
+kappaGammaINF1sigHE=kappaGamma-0.08;
+
+
+(*kappaX to 2\[Sigma]*)
+(*Projection for kappa at HE-LHC to 2 sigma, taken from arXiv:1902.00134v2[hep-ph]*)
+kappaZSUP2sigHE=1.028;
+kappaZINF2sigHE=0.992;
+kappaWSUP2sigHE=1.028;
+kappaWINF2sigHE=0.992;
+kappaTopSUP2sigHE=1.09;
+kappaTopINF2sigHE=0.99;<-----------
+kappaTauSUP2sigHE=kappaTau1+0.13;
+kappaTauINF2sigHE=kappaTau1-0.13;
+kappaBotSUP2sigHE=kappaBot+0.13;
+kappaBotINF2sigHE=kappaBot-0.14;
+kappaGluonSUP2sigHE=kappaGluon+0.10;
+kappaGluonINF2sigHE=kappaGluon-0.09;
+kappaGammaSUP2sigHE=kappaGamma+0.05;
+kappaGammaINF2sigHE=kappaGamma-0.08;
+
+
+(********************************************************************************************************)
+(********************************************************************************************************)
+(********************************************************************************************************)
 
 (* LFV processes *)
 (*Reference: M. Tanabashi et al. (Particle Data Group), Phys. Rev. D 98, 030001 (2018)*)
