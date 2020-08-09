@@ -5,40 +5,40 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF Kappa-Bottom************************************************************************)
 (******************************************************************************************************************************************************)
-Kb1sigXHL::usage = "Kb1sigX"
-Kb2sigXHL::usage = "Kb2sigX"
-dataKbOTone1sigHL::usage = "dataKbOTone1sig"
-dataKbOTone2sigHL::usage = "dataKbOTone2sig"
-TableKbOToneHL::usage = "TableKbOTone"
-Kb2sigHL::usage = "Kb2sig"
-Kb2sigWXYZHL::usage = "Kb2sigWXYZ"
-Kb1sigHL::usage = "Kb1sig"
-Kb1sigWXYZHL::usage = "Kb1sigWXYZ"
-KbHL::usage = "Kb"
-dataKb1sigHL::usage = "dataKb1sig"
-dataKb2sigHL::usage = "dataKb2sig"
+Kb1sigXHE::usage = "Kb1sigX"
+Kb2sigXHE::usage = "Kb2sigX"
+dataKbOTone1sigHE::usage = "dataKbOTone1sig"
+dataKbOTone2sigHE::usage = "dataKbOTone2sig"
+TableKbOToneHE::usage = "TableKbOTone"
+Kb2sigHE::usage = "Kb2sig"
+Kb2sigWXYZHE::usage = "Kb2sigWXYZ"
+Kb1sigHE::usage = "Kb1sig"
+Kb1sigWXYZHE::usage = "Kb1sigWXYZ"
+KbHE::usage = "Kb"
+dataKb1sigHE::usage = "dataKb1sig"
+dataKb2sigHE::usage = "dataKb2sig"
 
-KBOToneHL::usage = "KBOToneHL[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
+KBOToneHE::usage = "KBOToneHL[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKBOToneHL::usage="TableKBOToneHL[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
+TableKBOToneHE::usage="TableKBOToneHL[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
 hbb coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-KbHL::usage="KbHL[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\), \
+KbHE::usage="KbHL[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\), \
 when there is dependence on two or more parameters. The arguments ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKbHL::usage = "See later"
-TableKbHL::usage="TableKbHL[ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the hbb, \
+TableKbHE::usage = "See later"
+TableKbHE::usage="TableKbHL[ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the hbb, \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -65,7 +65,7 @@ K botton
 
 (*K bottom to 1\[Sigma] in the case in which there is dependence in one parameter*)
 
-Kb1sigXHL[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP1sigHL,kappaBotINF1sigHL},{x,xmin,xmax}
+Kb1sigXHE[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP1sigHE,kappaBotINF1sigHE},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
 "U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
@@ -78,7 +78,7 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
 
-Kb2sigXHL[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP2sigHL,kappaBotINF2sigHL},{x,xmin,xmax}
+Kb2sigXHE[ghbb_,x_,xmin_,xmax_,xlabel_]:=Plot[{kb[ghbb],kappaBotSUP2sigHE,kappaBotINF2sigHE},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(K\), \(b\)]\)",
 "U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(K\), \(b\)]\)"},
@@ -90,29 +90,29 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
 
-KBOToneHL[ghbb_,x_,xmin_,xmax_,xlabel_]:={
-Kb1sigXHL[ghbb,x,xmin,xmax,xlabel],
-Kb2sigXHL[ghbb,x,xmin,xmax,xlabel]
+KBOToneHE[ghbb_,x_,xmin_,xmax_,xlabel_]:={
+Kb1sigXHE[ghbb,x,xmin,xmax,xlabel],
+Kb2sigXHE[ghbb,x,xmin,xmax,xlabel]
 }
 
 (*TABLES FOR KbOTone*)
 
-dataKbOTone1sigHL[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
-    kappaBotINF1sigHL<=kb[ghbb]<=kappaBotSUP1sigHL, kb[ghbb],0]}, {x, xmin,xmax,xstep}]
+dataKbOTone1sigHE[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    kappaBotINF1sigHE<=kb[ghbb]<=kappaBotSUP1sigHE, kb[ghbb],0]}, {x, xmin,xmax,xstep}]
 
-dataKbOTone2sigHL[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
-    kappaBotINF1sigHL<=kb[ghbb]<=kappaBotSUP1sigHL, kb[ghbb],0]}, {x, xmin,xmax,xstep}]
+dataKbOTone2sigHE[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
+    kappaBotINF1sigHE<=kb[ghbb]<=kappaBotSUP1sigHE, kb[ghbb],0]}, {x, xmin,xmax,xstep}]
 
 
 (*EXPORTING TABLES FOR KbOTone*)
 
-TableKBOToneHL[ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKBOToneHE[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigmaHL.txt"}],Re[dataKbOTone1sigHL[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigmaHE.txt"}],Re[dataKbOTone1sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigmaHL.txt"}],Re[dataKbOTone2sigHL[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigmaHE.txt"}],Re[dataKbOTone2sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -122,8 +122,8 @@ FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigmaHL.txt"}],Re[dataKbOTo
 (*Kb to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
 
 (*\[Mu]bb*)
-Kb2sigHL[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{kappaBotINF2sigHL <= kb[ghbb] <= kappaBotSUP2sigHL},
+Kb2sigHE[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{kappaBotINF2sigHE<= kb[ghbb] <= kappaBotSUP2sigHE},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
@@ -137,18 +137,18 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
    Directive[Black, 
      Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, PlotPoints->PP]
 
-Kb2sigWXYZHL[
+Kb2sigWXYZHE[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-Kb2sigHL[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+Kb2sigHE[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
 (*Kb to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
 
 (*Kb*) 
-Kb1sigHL[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{kappaBotINF1sigHL <= kb[ghbb] <= kappaBotSUP1sigHL},
+Kb1sigHE[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{kappaBotINF1sigHE <= kb[ghbb] <= kappaBotSUP1sigHE},
  {x, xmin, xmax}, {y, ymin, ymax}
  , FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
@@ -162,14 +162,14 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  Directive[Black, 
  Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}},PlotPoints->PP]
 
-Kb1sigWXYZHL[
+Kb1sigWXYZHE[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-Kb1sigHL[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
+Kb1sigHE[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-KbHL[
+KbHE[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
 Kb1sigWXYZHE[
@@ -180,45 +180,45 @@ ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yf
 
 (*TABLES FOR Kb*)
 
-dataKb1sigHL[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKb1sigHE[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF1sigHL <= kb[ghbb] <= KbbSUP1sigHL, kb[ghbb],0]}, 
+    KbbINF1sigHE <= kb[ghbb] <= KbbSUP1sigHE, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
-dataKb2sigHL[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKb2sigHE[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF2sigHL <= kb[ghbb] <= KbbSUP2sigHL, kb[ghbb],0]}, 
+    KbbINF2sigHE <= kb[ghbb] <= KbbSUP2sigHE, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Kb*)
 
-TableKbOToneHL[ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKbOToneHE[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKBOTone_1sigmaHL.txt"}],
-Re[dataKbOTone1sigHL[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKBOTone_1sigmaHE.txt"}],
+Re[dataKbOTone1sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigmaHL.txt"}],Re[dataKbOTone2sigHL[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigmaHE.txt"}],Re[dataKbOTone2sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
 
-TableKbHL[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+TableKbHE[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigmaHE.txt"}],
 Re[
-dataKb1sigHL[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKb1sigHE[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
 "Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigmaHE.txt"}],
 Re[
-dataKb2sigHL[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKb2sigHE[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
 "Table"
 ]
