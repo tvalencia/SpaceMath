@@ -308,8 +308,6 @@ kappaGluonINF2sig=0.848659,
 kappaGammaSUP2sig=1.14,
 kappaGammaINF2sig=0.78
 };*)
-=======
->>>>>>> branch 'stable' of https://github.com/spacemathproject/SpaceMath.git
 
 (*kappaX to 1\[Sigma]*)
 (*Reference: arXiv:1902.00134v2[hep-ph], Table 42*)
