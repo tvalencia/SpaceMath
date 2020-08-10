@@ -186,7 +186,7 @@ kappaz2sig[ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 
 (*kappa Z in the case in which there are dependence in two or more parameters*)
 kappaz1sig[ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{kappaZINF2sig<= kZ[ghZZ] <= kappaZSUP2sig},
+RegionPlot[{kappaZINF1sig<= kZ[ghZZ] <= kappaZSUP1sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  ,PlotPoints->PP,FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
