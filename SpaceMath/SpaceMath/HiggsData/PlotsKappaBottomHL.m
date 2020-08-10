@@ -172,9 +172,9 @@ Kb1sigHL[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
 KbHL[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
-Kb1sigWXYZHE[
+Kb1sigWXYZHL[
 ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
-Kb2sigWXYZHE[
+Kb2sigWXYZHL[
 ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
 
