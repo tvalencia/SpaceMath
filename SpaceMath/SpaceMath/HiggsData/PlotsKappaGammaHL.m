@@ -3,14 +3,14 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF KGamma******************************************************************************)
 (******************************************************************************************************************************************************)
-KGam1sigX::usage = "KGam1sigX"
-KGam2sigX::usage = "KGam2sigX"
-Kappagaga1sig::usage = "Kappagaga1sig"
-KGam1sigWXYZ::usage = "KGam1sigWXYZ"
-Kappagaga2sig::usage = "Kappagaga2sig"
-KGam2sigWXYZ::usage = "KGam2sigWXYZ"
+KGam1sigXHL::usage = "KGam1sigXHL"
+KGam2sigXHL::usage = "KGam2sigXHL"
+Kappagaga1sigHL::usage = "Kappagaga1sigHL"
+KGam1sigWXYZHL::usage = "KGam1sigWXYZHL"
+Kappagaga2sigHL::usage = "Kappagaga2sigHL"
+KGam2sigWXYZHL::usage = "KGam2sigWXYZHL"
 
-KGAMone::usage = "\!\(\*
+KGAMoneHL::usage = "\!\(\*
 StyleBox[\"KGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -41,7 +41,7 @@ indicate the charged scalar mass and the parameter to constrain, while xmin and 
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKGAMone::usage="\!\(\*
+TableKGAMoneHL::usage="\!\(\*
 StyleBox[\"TableKGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -67,14 +67,14 @@ indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax."
 
-KGam::usage="KGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\) \
+KGamHL::usage="KGamHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\) \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghWW and gCH are the htt, hbb, hWW and h\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\)\
 couplings while mCH stands for the charged scalar boson mass. Here, h represents to SM-like Higgs boson while t and b the top and bottom querkas. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKGam::usage="TableKGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW and gCH are the htt, \
+TableKGamHL::usage="TableKGamHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW and gCH are the htt, \
 hbb, hWW and h-\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -86,7 +86,7 @@ to indicates the steps from xmin to xmax (ymin to ymax)."
 Begin["`Package`"]
 End[]
 
-Begin["`PlotsKappaGamma`Private`"]
+Begin["`PlotsKappaGammaHL`Private`"]
 
 (***************************************************************************************************************************************************)
 (**********************************************************Begin kappa gamma************************************************************************)
@@ -96,7 +96,7 @@ kappa gamma
 
 (*kappa \[Gamma] to 1\[Sigma] in the case in which there is dependence in one parameter*)
 
-KGam1sigX[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgaga[ghtt, ghbb, ghWW, gCH, mCH],kappaGammaSUP1sig,kappaGammaINF1sig},{x,xmin,xmax}
+KGam1sigXHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgaga[ghtt, ghbb, ghWW, gCH, mCH],kappaGammaSUP1sigHL,kappaGammaINF1sigHL},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)",
 "U.L.[1\[Sigma]]","L.L.[1\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)","SpaceMath"},
@@ -109,7 +109,7 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 
 (*kappa \[Gamma] to 2\[Sigma] in the case in which there is dependence in one parameter*)
 
-KGam2sigX[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgaga[ghtt, ghbb, ghWW, gCH, mCH],kappaGammaSUP2sig,kappaGammaINF2sig},{x,xmin,xmax}
+KGam2sigXHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:=Plot[{kgaga[ghtt, ghbb, ghWW, gCH, mCH],kappaGammaSUP2sigHL,kappaGammaINF2sigHL},{x,xmin,xmax}
 ,PlotLegends->Placed[{"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)",
 "U.L.[2\[Sigma]]","L.L.[2\[Sigma]]"},{1,0.5}],ImageSize->800,Frame->True,
 FrameLabel->{xlabel,"\!\(\*SubscriptBox[\(\[Kappa]\), \(\[Gamma]\)]\)","SpaceMath"},
@@ -120,14 +120,14 @@ Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],Grid
 AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
-KGAMone[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:={KGam1sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel],KGam2sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel]}
+KGAMoneHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:={KGam1sigXHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel],KGam2sigXHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel]}
 
 (*Kappa gamma in the case in which there is dependence in more than two parameters*)
 (*To 1\[Sigma]*)
 
 (*kappa \[Gamma]*)
-Kappagaga1sig[ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{  kappaGammaINF1sig <= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= kappaGammaSUP1sig},
+Kappagaga1sigHL[ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{  kappaGammaINF1sigHL <= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= kappaGammaSUP1sigHL},
  {x, xmin, xmax}, {y, ymin, ymax}
 ,PlotPoints->PP ,FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
@@ -142,10 +142,10 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
      Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, 
 PlotStyle -> {{Orange, Opacity[0.3]}}, AspectRatio -> 1]
 
-KGam1sigWXYZ[
+KGam1sigWXYZHL[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-Kappagaga1sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
+Kappagaga1sigHL[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 ],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
@@ -153,8 +153,8 @@ Kappagaga1sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 (*To 2\[Sigma]*)
 
 (*kappa \[Gamma]*)
-Kappagaga2sig[ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
-RegionPlot[{  kappaGammaINF2sig <= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= kappaGammaSUP2sig},
+Kappagaga2sigHL[ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+RegionPlot[{  kappaGammaINF2sigHL <= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <= kappaGammaSUP2sigHL},
  {x, xmin, xmax}, {y, ymin, ymax}
  ,FrameLabel -> {Style[xlabel, Larger, Bold], 
    Style[ylabel, Larger, Bold], 
@@ -168,20 +168,20 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
    Directive[Black, 
      Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[0.3]}}, AspectRatio -> 1,PlotPoints->PP]
 
-KGam2sigWXYZ[
+KGam2sigWXYZHL[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-Kappagaga2sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
+Kappagaga2sigHL[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 ],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-KGam[
+KGamHL[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
-KGam1sigWXYZ[
+KGam1sigWXYZHL[
 ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP],
-KGam2sigWXYZ[
+KGam2sigWXYZHL[
 ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
 
@@ -193,47 +193,47 @@ Subscript[Overscript[Z, ~], bb],u,yfor,xformin,xformax,xforstep,yformin,yformax,
 
 (*TABLES FOR RGAMone*)
 
-dataKGam1sigXY[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:=
+dataKGam1sigXYHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:=
 Table[
 {x,If[
-    kappaGammaINF1sig<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP1sig,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+    kappaGammaINF1sigHL<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP1sigHL,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
 {x, xmin,xmax,xstep}]
 
-dataKGam2sigXY[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:=
+dataKGam2sigXYHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:=
 Table[
 {x,If[
-    kappaGammaINF2sig<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP2sig,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+    kappaGammaINF2sigHL<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP2sigHL,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
 {x, xmin,xmax,xstep}]
 
 
 (*TABLES FOR RGAM*)
 
-dataKGam1sigXYZ[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKGam1sigXYZHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaGammaINF1sig<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP1sig,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+    kappaGammaINF1sigHL<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP1sigHL,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
-dataKGam2sigXYZ[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
+dataKGam2sigXYZHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaGammaINF2sig<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP2sig,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
+    kappaGammaINF2sigHL<= kgaga[ghtt, ghbb, ghWW, gCH, mCH] <=kappaGammaSUP2sigHL,kgaga[ghtt, ghbb, ghWW, gCH, mCH],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR RGAMone*)
 
-TableKGAMone[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:={
+TableKGAMoneHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_1sigmaHL.txt"}],
 Re[
-dataKGam1sigXY[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
+dataKGam1sigXYHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 ]/. {{_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_2sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_2sigmaHL.txt"}],
 Re[
-dataKGam2sigXY[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
+dataKGam2sigXYHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 ]/. {{_,0} -> Sequence[]},"Table"
 ]
 }
@@ -241,18 +241,18 @@ dataKGam2sigXY[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 
 (*EXPORTING TABLES FOR RGAM*)
 
-TableKGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+TableKGamHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGam_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGam_1sigmaHL.txt"}],
 Re[
-dataKGam1sigXYZ[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKGam1sigXYZHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigmaHL.txt"}],
 Re[
-dataKGam2sigXYZ3
+dataKGam2sigXYZHL
 	[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
