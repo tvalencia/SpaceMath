@@ -1,4 +1,18 @@
 (* Automatic install *)
+
+(*This file was adapted from the 2018 version of the automatic installer of FeynCalc: https://github.com/FeynCalc/feyncalc/blob/master/install.m*)
+
+(*This installer is covered by the GNU General Public License 3.*)
+
+(*Copyright (C) 1990-2018 Rolf Mertig*)
+(*Copyright (C) 1997-2018 Frederik Orellana*)
+(*Copyright (C) 2014-2018 Vladyslav Shtabovenko*)
+
+(*Copyright (C) 2018-2020 Joydeep Chakrabortty*)
+(*Copyright (C) 2018-2020 Sunando Kr Patra*)
+(*Copyright (C) 2018-2020 Supratim Das Bakshi*)
+
+
 (* -- *)
 
 InstallSpaceMath[]:=
