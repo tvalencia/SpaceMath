@@ -58,6 +58,14 @@ InstallSpaceMath[]:=
 
 			CopyDirectory[PathPackage,PackageLocation];
 			Quiet@DeleteDirectory[DecompressTempFolder, DeleteContents -> True];
+(*   *)
+		(* Activate the documentation	*)
+		WriteString["stdout", "Setting up the help system ... "];
+		RenameDirectory[FileNameJoin[{PackageLocation,"DocOutput"}],FileNameJoin[{PackageLocation,"Documentation"}]];
+		Quiet@DeleteDirectory[FileNameJoin[{PackageLocation,"DocSource"}], DeleteContents -> True];
+(*   *)
+			
+			
 
 			WriteString["stdout", "\n Installation complete! Loading SpaceMath package ... \n"];
 			Get["SpaceMath`"];
