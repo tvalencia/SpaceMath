@@ -1,0 +1,15 @@
+<pre name='i_5_in' id='i_5_in' class='IFT'>ghtt[\[Alpha]_, Att_, Cab_, tb_] := 
+ g/2 (mt/mW) ((-Cos[\[Alpha]]/tb*
+      Cos[ArcTan[tb]]) + (Sqrt[2] Cab/(g*tb*Cos[ArcTan[tb]]) (mW/mt)*
+      mt/vev*Att))
+ghbb[\[Alpha]_, Abb_, Cab_, tb_] := 
+ g/2 (mb/mW) ((-Sin[\[Alpha]]*
+      tb/Sin[ArcTan[tb]]) + (Sqrt[
+       2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mb)*mb/vev*Abb))
+ghtautau[\[Alpha]_, Atata_, Cab_, tb_] := 
+ g/2 (mtau/
+    mW) ((-Sin[\[Alpha]]*
+      tb/Sin[ArcTan[tb]]) + (Sqrt[
+       2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mtau)*mtau/vev*Atata))
+ghWW[sab_] := g*mW*sab
+ghZZ[sab_] := g*mZ*sab</pre><div class='IFU'><a name='1195038949'></a>http://wolfram.com/xid/0bhvhy6ae7wa9w8khn-t1r38n</div>
