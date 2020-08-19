@@ -120,7 +120,7 @@ EndPackage[];
 
 If[ Global`$SpaceMathStartupMessages =!= False,
 	Print[	Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, see arXiv:2008.00564 [hep-ph]",
-				"Text"],Style[", Please see	 ", "Text"],
+				"Text"],Style[", Please see  ", "Text"],
 			Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
 				ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"], "Text"](*,
 			Style[", check out the ", "Text"],
