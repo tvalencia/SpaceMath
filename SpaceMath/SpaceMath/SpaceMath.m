@@ -150,8 +150,7 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 
 
 If[Global`$SpaceMathStartupMessages =!= False, 
- Print[Grid[{{Style["SpaceMath v.1.0", "Title", FontSize -> 30, 
-      FontColor -> Black, FontWeight -> Normal], 
+ Print[Grid[{{Style["SpaceMath v.1.0", "Title", FontSize -> 30, FontColor -> Black, FontWeight -> Normal], 
      SpanFromLeft}, {Grid[{{Button[
          Style["Documentation Center", FontSize -> 14, 
           FontColor -> Black, FontWeight -> Normal], 
