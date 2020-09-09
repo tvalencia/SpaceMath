@@ -107,6 +107,8 @@ kappaGluonSUP2sig::usage="See later."
 kappaGluonINF2sig::usage="See later."
 kappaGammaSUP2sig::usage="See later."
 kappaGammaINF2sig::usage="See later."
+kappaMuINF2sig::usage="See later."
+kappaMuSUP2sig::usage="See later."
 
 (*kappaX to 1\[Sigma]*)
 (*Reference: ARXIV:1809.10733*)
@@ -124,7 +126,8 @@ kappaGluonSUP1sig::usage="See later."
 kappaGluonINF1sig::usage="See later."
 kappaGammaSUP1sig::usage="See later."
 kappaGammaINF1sig::usage="See later."
-
+kappaMuINF1sig::usage="See later."
+kappaMuSUP1sig::usage="See later."
 (* LFV processes *)
 (*Reference: M. Tanabashi et al. (Particle Data Group), Phys. Rev. D 98, 030001 (2018)*)
 BRMUtoEgamma::usage="Upper bound of the mu\[Rule] e gamma decay"
@@ -307,6 +310,7 @@ RgammagammaSUP1sig=1.19504;
 
 (*kappa-parametrization*)
 (*central values*)
+(* Reference: arXiv:1902.00134v2[hep-ph], Table 42 *)
 kappaZ=1.01;
 kappaW=1.01;
 kappaTop=1.04;
@@ -314,8 +318,9 @@ kappaTau=1.0;
 kappaBot=0.94;
 kappaGluon=1.02;
 kappaGamma=0.97;
+kappaMu=1.13; (*kappaMu taken from CMS PAS HIG-19-006, CMS Physics Analysis Summary-pag 29*)
 
-(*kappaX to 2\[Sigma]*)
+(*kappaX to 2\[Sigma]  LHC*)
 (*Reference: arXiv:1902.00134v2[hep-ph], Table 42*)
 kappaZSUP2sig=1.13;
 kappaZINF2sig=0.89;
@@ -331,6 +336,8 @@ kappaGluonSUP2sig=1.17011;
 kappaGluonINF2sig=0.869889;
 kappaGammaSUP2sig=1.11;
 kappaGammaINF2sig=0.83;
+kappaMuINF2sig=0.699961; 
+kappaMuSUP2sig=1.56004;
 
 (*{
 kappaZSUP2sig=1.22007,
@@ -349,7 +356,7 @@ kappaGammaSUP2sig=1.14,
 kappaGammaINF2sig=0.78
 };*)
 
-(*kappaX to 1\[Sigma]*)
+(*kappaX to 1\[Sigma] LHC*)
 (*Reference: arXiv:1902.00134v2[hep-ph], Table 42*)
 
 kappaZSUP1sig=1.07;
@@ -366,6 +373,8 @@ kappaGluonSUP1sig=1.09506;
 kappaGluonINF1sig=0.944944;
 kappaGammaSUP1sig=1.04;
 kappaGammaINF1sig=0.9;
+kappaMuINF1sig=0.914981; 
+kappaMuSUP1sig=1.34502;
 (********************************************************************************************************)
 (********************************************************************************************************)
 (********************************************************************************************************)
