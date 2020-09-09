@@ -122,11 +122,11 @@ dataZZ2sigXYZHL[ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,If[
 
 TableKZoneHL[ghZZ_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKZone_1sigmaHL.txt"}],Re[dataZZ1sigXYHL[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKZone_1sigma_HL.txt"}],Re[dataZZ1sigXYHL[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKZone_2sigmaHL.txt"}],Re[dataZZ2sigXYHL[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKZone_2sigma_HL.txt"}],Re[dataZZ2sigXYHL[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -243,7 +243,7 @@ dataKZ2sigHL[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
 TableKZHL[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
   ystep_] := {
   Export[
-   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_1sigmaHL.txt"}],
+   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_1sigma_HL.txt"}],
    Re[
      dataKZ1sigHL[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},
@@ -251,7 +251,7 @@ TableKZHL[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
    ]
   ,
   Export[
-   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_2sigmaHL.txt"}],
+   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_2sigma_HL.txt"}],
    Re[
      dataKZ2sigHL[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},

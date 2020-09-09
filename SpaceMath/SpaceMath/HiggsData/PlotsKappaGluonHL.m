@@ -85,11 +85,11 @@ KGlu2sigXHL[ghtt,ghbb,x,xmin,xmax,xlabel]
 
 TableKGLUoneHL[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_1sigmaHL.txt"}],Re[datagg1sigXYZHL[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_1sigma_HL.txt"}],Re[datagg1sigXYZHL[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_2sigmaHL.txt"}],Re[datagg2sigXYZHL[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_2sigma_HL.txt"}],Re[datagg2sigXYZHL[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -174,14 +174,14 @@ Table[
 
 TableKGluHL[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_1sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_1sigma_HL.txt"}],
 Re[
 dataKGlu1sigHL[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_2sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_2sigma_HL.txt"}],
 Re[
 dataKGlu2sigHL[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"

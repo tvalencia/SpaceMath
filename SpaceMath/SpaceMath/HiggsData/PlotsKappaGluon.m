@@ -10,26 +10,35 @@ KGlu1sigWXYZ::usage = "KGlu1sigWXYZ"
 KappaGluGlu2sig::usage = "KappaGluGlu2sig"
 KGlu2sigWXYZ::usage = "KGlu2sigWXYZ"
 
-KGLUone::usage = "KGluone[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
+KGLUoneX::usage = "KGluoneX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The arguments ghtt and ghbb are the htt and hbb couplings, respectively. Here, h represents to SM-like Higgs boson, t and b are the top and bottom quarks. \
+The label x indicates the parameter to constrain, while xmin and xmax are the \
+initial and final values defined by users and xlabel is used \
+for indicates the X axis label. X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \
+Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+
+TableKGLUoneX::usage="TableKGluoneX[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table with two columns: KGLUone-x. The output file will be saved as TableKGLUone_1sigma_X.txt and TableKGLUone_2sigma_X.txt
+in $UserDocumentsDirectory."
+
+KGLUoneLHC::usage = "KGluoneLHC[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKGLUone::usage="TableKGluone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the \
+TableKGLUoneLHC::usage="TableKGluoneLHC[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the \
 hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-KGlu::usage="KGlu[ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\), \
+KGluLHC::usage="KGluLHC[ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\), \
 when there is dependence on two or more parameters. The arguments ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKGlu::usage="TableKGlu[ghtt_,ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the hWW, \
+TableKGluLHC::usage="TableKGluLHC[ghtt_,ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the hWW, \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -76,20 +85,20 @@ Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],Grid
 AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
-KGLUone[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:={
+KGLUoneLHC[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_]:={
 KGlu1sigX[ghtt,ghbb,x,xmin,xmax,xlabel],
 KGlu2sigX[ghtt,ghbb,x,xmin,xmax,xlabel]
 }
 
 (*EXPORTING TABLES FOR KGLUone*)
 
-TableKGLUone[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKGLUoneLHC[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_1sigma.txt"}],Re[datagg1sigXYZ[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_1sigma_LHC.txt"}],Re[datagg1sigXYZ[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_2sigma.txt"}],Re[datagg2sigXYZ[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKGLUone_2sigma_LHC.txt"}],Re[datagg2sigXYZ[ghtt,ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -144,7 +153,7 @@ KappaGluGlu2sig[ghtt, ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-KGlu[
+KGluLHC[
 ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
 KGlu1sigWXYZ[
@@ -172,16 +181,16 @@ Table[
 
 (*EXPORTING TABLES FOR KGlu*)
 
-TableKGlu[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+TableKGluLHC[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_1sigma_LHC.txt"}],
 Re[
 dataKGlu1sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_2sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGlu_2sigma_LHC.txt"}],
 Re[
 dataKGlu2sig[ghtt,ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"

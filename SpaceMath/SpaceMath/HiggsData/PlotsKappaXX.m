@@ -3,7 +3,7 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin KV************************************************************************************)
 (******************************************************************************************************************************************************)
-KVone::usage = "\!\(\*
+KVoneX::usage = "\!\(\*
 StyleBox[\"KVone\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghVV_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -26,15 +26,12 @@ Z when there is dependence only on one parameter. The arguments ghtt, ghbb and g
 couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. The label x \
 indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
-for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+for indicates the X axis label. X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \ 
+Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKVone::usage="\!\(\*
-StyleBox[\"TableKVone\",\nFontWeight->\"Bold\"]\)\!\(\*
+TableKVoneX::usage="\!\(\*
+StyleBox[\"TableKVoneX\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghbb_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghVV_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -44,11 +41,12 @@ StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(V\)]\), with V= W, Z. The arguments ghtt, ghbb and ghVV are the htt, hbb, hVV \
-couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. The label x \
-indicates the parameter to constraint, while xmin and xmax are the \
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of \!\(\*SubscriptBox[\(K\), \(V\)]\), with V= W, Z. The argument ghVV is the hVV \
+coupling. Here, h represents to SM-like Higgs boson while V=W, Z is a gauge boson. The label x \
+indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
+to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory.\
+ X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC)."
 
 KV::usage="KV[ghtt_,ghbb_,ghVV_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(K\), \(V\)]\) with V=W, \
 Z when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghVV are the htt, hbb, hVV \

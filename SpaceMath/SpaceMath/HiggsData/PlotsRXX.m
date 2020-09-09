@@ -57,14 +57,16 @@ indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
 
-RV::usage="RV[ghtt_,ghbb_,ghVV_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(V\)]\) with V=W, \
+RV::usage="RV[ghtt_,ghbb_,ghVV_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] 
+This command evaluates \!\(\*SubscriptBox[\(R\), \(V\)]\) with V=W, \
 Z when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghVV are the htt, hbb, hVV \
 couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableRV::usage="TableRV[ghtt_,ghbb_,ghVV_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(V\)]\), with V= W, Z gauge bosons. The arguments ghtt, ghbb and ghVV are the htt, \
+TableRV::usage="TableRV[ghtt_,ghbb_,ghVV_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] 
+This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(V\)]\), with V= W, Z gauge bosons. The arguments ghtt, ghbb and ghVV are the htt, \
 hbb and hVV couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -133,14 +135,16 @@ indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
 
-RGam::usage="RGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\) \
+RGam::usage="RGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] 
+This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\) \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghWW and gCH are the htt, hbb, hWW and h\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\)\
 couplings while mCH stands for the charged scalar boson mass. Here, h represents to SM-like Higgs boson while t and b the top and bottom querkas. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableRGam::usage="TableRGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW and gCH are the htt, \
+TableRGam::usage="TableRGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] 
+This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW and gCH are the htt, \
 hbb, hWW and h-\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -201,14 +205,16 @@ indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
 
-Rtau::usage="Rtau[ghtt_, ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\), \
+Rtau::usage="Rtau[ghtt_, ghbb_,ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] 
+This command evaluates \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\), \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb and ghtautau are the htt, hbb \
 and htautau couplings. Here, h represents to SM-like Higgs boson while t, b and tau are the top and bottom quarks and the tau-lepton. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableRtau::usage="TableRtau[ghtt_, ghbb_,ghtautau_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
+TableRtau::usage="TableRtau[ghtt_, ghbb_,ghtautau_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] 
+This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
 hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t, b and tau are the top and bottom quarks and the tau-lepton. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -260,20 +266,22 @@ StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(b\)]\). The arguments ghtt are ghbb are the htt \
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(b\)]\). The arguments ghtt and ghbb are the htt \
 and hbb couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. The output file will be saved in $UserDocumentsDirectory."
 
-Rb::usage="Rb[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(R\), \(b\)]\), \
+Rb::usage="Rb[ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] 
+This command evaluates \!\(\*SubscriptBox[\(R\), \(b\)]\), \
 when there is dependence on two or more parameters. The arguments ghtt and ghbb are the htt, hbb \
 couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableRb::usage="TableRb[ghtt_, ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(b\)]\). The arguments ghtt, ghbb are the htt, \
+TableRb::usage="TableRb[ghtt_, ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] 
+This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(b\)]\). The arguments ghtt, ghbb are the htt, \
 hbb couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -286,7 +294,8 @@ to indicates the steps from xmin to xmax (ymin to ymax). The output file will be
 (*********************************************************Begin OF RXALL************************************************************************************)
 (*****************************************************************************************************************************************************)
 
-RXALL::usage="RXALL[ghtt_, ghbb_, ghZZ_, ghWW_, ghtautau_, gCH_, mCH_, x_, y_, xmin_, xmax_, ymin_, ymax_, xlabel_, ylabel_, xfor_, yfor_, xformin_, xformax_, xforstep_, yformin_, yformax_, yforstep_, PP_][[i]]\[Rule] This command evaluates all signal strengths, \
+RXALL::usage="RXALL[ghtt_, ghbb_, ghZZ_, ghWW_, ghtautau_, gCH_, mCH_, x_, y_, xmin_, xmax_, ymin_, ymax_, xlabel_, ylabel_, xfor_, yfor_, xformin_, xformax_, xforstep_, yformin_, yformax_, yforstep_, PP_][[i]]\[Rule] 
+This command evaluates all signal strengths, \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghZZ, ghWW, ghtautau and gCH are the htt, hbb, \
 hZZ, hWW, htautau and \!\(\*SuperscriptBox[\(hH\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks; V=Z, W are the gauge bosons, tau is the tau lepton and \!\(\*SuperscriptBox[\(H\), \(-\)]\) is a charged scalar boson. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
@@ -300,7 +309,8 @@ for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformi
 (******************************************************************************************************************************************************)
 (*********************************************************End OF RXIntersection************************************************************************************)
 (*****************************************************************************************************************************************************)
-RXintersection::usage="RXintersection[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates the intersection of all signal strengths, \
+RXintersection::usage="RXintersection[ghtt_, ghbb_,ghZZ_,ghWW_,ghtautau_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] 
+This command evaluates the intersection of all signal strengths, \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghZZ, ghWW, ghtautau and gCH are the htt, hbb, \
 hZZ, hWW, htautau and \!\(\*SuperscriptBox[\(hH\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks; V=Z, W are the gauge bosons, tau is the tau lepton and \!\(\*SuperscriptBox[\(H\), \(-\)]\) is a charged scalar boson. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \

@@ -18,26 +18,26 @@ KZ2sigWXYZ::usage = "KZ2sigWXYZ"
 kappaz1sig::usage = "kappaz1sig"
 KZ1sigWXYZ::usage = "KZ1sigWXYZ"
 
-KZone::usage = "KZone[ghzz_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\) when there is dependence only on one parameter. The argument ghzz is the hZZ \
+KZoneLHC::usage = "KZoneLHC[ghzz_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\) when there is dependence only on one parameter. The argument ghzz is the hZZ \
 coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKZone::usage="TableKZone[ghzz_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\). The argument ghzz is the \
+TableKZoneLHC::usage="TableKZoneLHC[ghzz_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\). The argument ghzz is the \
 hZZ coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-KZ::usage="KZ[ghzz_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\), \
+KZLHC::usage="KZLHC[ghzz_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\), \
 when there is dependence on two or more parameters. The arguments ghzz is the hZZ \
 coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKZ::usage="TableKZ[ghzz_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\). The argument ghzz is the hZZ, \
+TableKZLHC::usage="TableKZLHC[ghzz_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\). The argument ghzz is the hZZ, \
 coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -55,7 +55,7 @@ Begin["`PlotsKappaZ`Private`"]
 (**********************************************************Begin kappa Z****************************************************************************)
 (***************************************************************************************************************************************************)
 Individual process;
-kappa Z
+kappa Z for LHC
 
 (*kappa Z to 1\[Sigma] in the case in which there is dependence in one parameter*)
 
@@ -85,7 +85,7 @@ Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],Grid
 AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
-KZone[ghZZ_,x_,xmin_,xmax_,xlabel_]:={KZ1sigX[ghZZ,x,xmin,xmax,xlabel],KZ2sigX[ghZZ,x,xmin,xmax,xlabel]}
+KZoneLHC[ghZZ_,x_,xmin_,xmax_,xlabel_]:={KZ1sigX[ghZZ,x,xmin,xmax,xlabel],KZ2sigX[ghZZ,x,xmin,xmax,xlabel]}
 
 (*KappaZX1sig[ghZZ[c\[Alpha],1],c\[Alpha],0,1,Subscript[c, \[Alpha]]]
 KappaZX2sig[ghZZ[c\[Alpha],1],c\[Alpha],0,1,Subscript[c, \[Alpha]]]*)
@@ -120,13 +120,13 @@ dataZZ2sigXYZ[ghZZ_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,If[
 
  (*With this commands a table is generated and saved inside the folder TABLE*)
 
-TableKZone[ghZZ_,x_,xmin_,xmax_,xstep_]:={
+TableKZoneLHC[ghZZ_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKZone_1sigma.txt"}],Re[dataZZ1sigXY[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKZone_1sigma_LHC.txt"}],Re[dataZZ1sigXY[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKZone_2sigma.txt"}],Re[dataZZ2sigXY[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKZone_2sigma_LHC.txt"}],Re[dataZZ2sigXY[ghZZ,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -208,7 +208,7 @@ kappaz1sig[ghZZ,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-KZ[
+KZLHC[
 ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
 KZ1sigWXYZ[
@@ -240,10 +240,10 @@ dataKZ2sig[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
 
 (*EXPORTING TABLES FOR KZ*)
 
-TableKZ[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
+TableKZLHC[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
   ystep_] := {
   Export[
-   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_1sigma.txt"}],
+   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_1sigma_LHC.txt"}],
    Re[
      dataKZ1sig[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},
@@ -251,7 +251,7 @@ TableKZ[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
    ]
   ,
   Export[
-   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_2sigma.txt"}],
+   FileNameJoin[{$UserDocumentsDirectory, "TableKZ_2sigma_LHC.txt"}],
    Re[
      dataKZ2sig[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},

@@ -16,27 +16,36 @@ Kb::usage = "Kb"
 dataKb1sig::usage = "dataKb1sig"
 dataKb2sig::usage = "dataKb2sig"
 
-KBOTone::usage = "KBOTone[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
+
+KBOToneX::usage = "KBOToneX[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
+coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
+indicates the parameter to constrain, while xmin and xmax are the initial and final values defined by users and xlabel is used \
+for indicates the X axis label. X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \
+Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+
+KBOToneLHC::usage = "KBOToneLHC[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKBOTone::usage="TableKBOTone[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
+TableKBOToneX::usage="TableKBOToneX[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table with two columns: KBOTone-x. The output file will be saved as TableKBOTone_1sigma_X.txt and TableKBOTone_2sigma_X.txt
+in $UserDocumentsDirectory."
+
+TableKBOToneLHC::usage="TableKBOToneLHC[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
 hbb coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-Kb::usage="Kb[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\), \
+KbLHC::usage="KbLHC[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\), \
 when there is dependence on two or more parameters. The arguments ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKb::usage = "See later"
-TableKb::usage="TableKb[ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the hbb, \
+TableKbLHC::usage="TableKbLHC[ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the hbb, \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -88,7 +97,7 @@ AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
 
-KBOTone[ghbb_,x_,xmin_,xmax_,xlabel_]:={
+KBOToneLHC[ghbb_,x_,xmin_,xmax_,xlabel_]:={
 Kb1sigX[ghbb,x,xmin,xmax,xlabel],
 Kb2sigX[ghbb,x,xmin,xmax,xlabel]
 }
@@ -104,13 +113,13 @@ dataKbOTone2sig[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
 
 (*EXPORTING TABLES FOR KbOTone*)
 
-TableKBOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKBOToneLHC[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma.txt"}],Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma_LHC.txt"}],Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma_LHC.txt"}],Re[dataKbOTone2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -167,7 +176,7 @@ Kb1sig[ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-Kb[
+KbLHC[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
 Kb1sigWXYZ[
@@ -194,19 +203,19 @@ Table[
 
 TableKbOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKBOTone_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKBOTone_1sigma_LHC.txt"}],
 Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma.txt"}],Re[dataKbOTone2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma_LHC.txt"}],Re[dataKbOTone2sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
 
 TableKb[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigma_LHC.txt"}],
 Re[
 dataKb1sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
@@ -214,7 +223,7 @@ dataKb1sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigma_LHC.txt"}],
 Re[
 dataKb2sig[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},

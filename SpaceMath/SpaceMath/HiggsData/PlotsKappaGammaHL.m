@@ -11,7 +11,7 @@ Kappagaga2sigHL::usage = "Kappagaga2sigHL"
 KGam2sigWXYZHL::usage = "KGam2sigWXYZHL"
 
 KGAMoneHL::usage = "\!\(\*
-StyleBox[\"KGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"KGAMoneHL\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -42,7 +42,7 @@ initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
 TableKGAMoneHL::usage="\!\(\*
-StyleBox[\"TableKGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"TableKGAMoneHL\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -224,14 +224,14 @@ Table[
 
 TableKGAMoneHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_1sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_1sigma_HL.txt"}],
 Re[
 dataKGam1sigXYHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 ]/. {{_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_2sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_2sigma_HL.txt"}],
 Re[
 dataKGam2sigXYHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 ]/. {{_,0} -> Sequence[]},"Table"
@@ -243,14 +243,14 @@ dataKGam2sigXYHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 
 TableKGamHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGam_1sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGam_1sigma_HL.txt"}],
 Re[
 dataKGam1sigXYZHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigma_HL.txt"}],
 Re[
 dataKGam2sigXYZHL
 	[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]

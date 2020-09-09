@@ -156,11 +156,11 @@ datatautau2sigXYZHL[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Tabl
 
 TableKTAUoneHL[ghtautau_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_1sigmaHL.txt"}],Re[datatautau1sigXYHL[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_1sigma_HL.txt"}],Re[datatautau1sigXYHL[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_2sigmaHL.txt"}],Re[datatautau2sigXYHL[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_2sigma_HL.txt"}],Re[datatautau2sigXYHL[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -279,7 +279,7 @@ Table[
 
 TableKtauHL[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKtau_1sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKtau_1sigma_HL.txt"}],
 Re[
 dataKtau1sigHL[ghtautau,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
@@ -287,7 +287,7 @@ dataKtau1sigHL[ghtautau,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKtau_2sigmaHL.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKtau_2sigma_HL.txt"}],
 Re[
 dataKtau2sigHL[ghtautau,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},

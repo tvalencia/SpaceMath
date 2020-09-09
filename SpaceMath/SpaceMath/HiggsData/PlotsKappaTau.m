@@ -21,8 +21,8 @@ Ktau1sigWXYZ::usage = "Ktau1sigWXYZ"
 dataKtau1sig::usage = "dataKtau1sig"
 dataKtau2sig::usage = "dataKtau2sig"
 
-KTAUone::usage = "\!\(\*
-StyleBox[\"KTAUone\",\nFontWeight->\"Bold\"]\)\!\(\*
+KTAUoneX::usage = "\!\(\*
+StyleBox[\"KTAUoneX\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtautau_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -38,15 +38,13 @@ StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule]  \
-This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Tau]\)]\)\ when there is dependence only on one parameter. The argument ghtautau is h\[Tau]\[Tau]\ 
-coupling. Here, h represents to SM-like Higgs boson while tau stands for tau-lepton. The label x \
-indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xlabel is used \
-for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Tau]\)]\)\ when there is dependence only on one parameter. The argument ghtautau is the h\[Tau]\[Tau]\ 
+coupling. Here, h represents to SM-like Higgs boson while tau stands for tau-lepton. The label x indicates the parameter to constrain, while xmin and xmax are the \
+initial and final values defined by users and xlabel is used for indicates the X axis label.  X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \
+Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKTAUone::usage="\!\(\*
-StyleBox[\"TableKTAUone\",\nFontWeight->\"Bold\"]\)\!\(\*
+TableKTAUoneX::usage="\!\(\*
+StyleBox[\"TableKTAUoneX\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtautau_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -57,19 +55,53 @@ StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(\[Tau]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
-hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks and tau stands for tau-lepton. The label x \
-indicates the parameter to constraint, while xmin and xmax are the \
-initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax. "
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table with two columns: KTAUone-X. The output file will be saved as TableKTAUone_1sigma_X.txt and TableRTAUone_2sigma_X.txt
+in $UserDocumentsDirectory. "
 
-Ktau::usage="Ktau[ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\), \
+KTAUoneLHC::usage = "\!\(\*
+StyleBox[\"KTAUoneLHC\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"ghtautau_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xmin_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xlabel_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Tau]\)]\)\ when there is dependence only on one parameter. The argument ghtautau is h\[Tau]\[Tau]\ 
+coupling. Here, h represents to SM-like Higgs boson while tau stands for tau-lepton. The label x indicates the parameter to constrain, while xmin and xmax are the \
+initial and final values defined by users and xlabel is used for indicates the X axis label.  X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \
+Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+
+TableKTAUoneLHC::usage="\!\(\*
+StyleBox[\"TableKTAUoneLHC\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"ghtautau_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xmin_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table with two columns: KTAUone-X. The output file will be saved as TableKTAUone_1sigma_X.txt and TableRTAUone_2sigma_X.txt
+in $UserDocumentsDirectory. "
+
+KtauLHC::usage="KtauLHC[ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(\[Tau]\)]\), \
 when there is dependence on two or more parameters. The argument ghtautau is the  h\[Tau]\[Tau]\ coupling. Here, h represents to SM-like Higgs boson while tau is the tau-lepton. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKtau::usage="TableKtau[ghtautau_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
+TableKtauLHC::usage="TableKtauLHC[ghtautau_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
 hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t, b and tau are the top and bottom quarks and the tau-lepton. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -118,7 +150,7 @@ Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],Grid
 AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
-KTAUone[ghtautau_,x_,xmin_,xmax_,xlabel_]:={
+KTAUoneLHC[ghtautau_,x_,xmin_,xmax_,xlabel_]:={
 Ktau1sigX[ghtautau,x,xmin,xmax,xlabel],
 Ktau2sigX[ghtautau,x,xmin,xmax,xlabel]
 }
@@ -154,13 +186,13 @@ datatautau2sigXYZ[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[
     kappaBotINF2sig<=kb[ghbb]<=kappaBotSUP2sig, kb[ghbb],0
 ]}], {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]*)
 
-TableKTAUone[ghtautau_,x_,xmin_,xmax_,xstep_]:={
+TableKTAUoneLHC[ghtautau_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_1sigma.txt"}],Re[datatautau1sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_1sigma_LHC.txt"}],Re[datatautau1sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_2sigma.txt"}],Re[datatautau2sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKTAUone_2sigma_LHC.txt"}],Re[datatautau2sigXY[ghtautau,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -247,7 +279,7 @@ kappaTau1sig[ghtautau,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-Ktau[
+KtauLHC[
 ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
 Ktau1sigWXYZ[
@@ -277,9 +309,9 @@ Table[
 
 (*EXPORTING TABLES FOR Ktau*)
 
-TableKtau[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+TableKtauLHC[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKtau_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKtau_1sigma_LHC.txt"}],
 Re[
 dataKtau1sig[ghtautau,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
@@ -287,7 +319,7 @@ dataKtau1sig[ghtautau,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKtau_2sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKtau_2sigma_LHC.txt"}],
 Re[
 dataKtau2sig[ghtautau,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},

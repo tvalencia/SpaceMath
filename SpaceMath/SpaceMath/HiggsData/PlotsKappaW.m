@@ -17,26 +17,26 @@ KW2sigWXYZ::usage = "KW2sigWXYZ"
 kappaw1sig::usage = "kappaw1sig"
 KW1sigWXYZ::usage = "KW1sigWXYZ"
 
-KWone::usage = "KWone[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
+KWoneLHC::usage = "KWoneLHC[ghWW_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKWone::usage="TableKWone[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the \
+TableKWoneLHC::usage="TableKWoneLHC[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the \
 hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-KW::usage="KW[ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\), \
+KWLHC::usage="KWLHC[ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\), \
 when there is dependence on two or more parameters. The arguments ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKW::usage="TableKW[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the hWW, \
+TableKWLHC::usage="TableKWLHC[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the hWW, \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -55,7 +55,7 @@ Begin["`PlotsKappaW`Private`"]
 (******************************************************************************************************************************************************)
 
 Individual process;
-kappa W
+kappa W for LHC
 
 (*kappa W to 1\[Sigma] in the case in which there is dependence in one parameter*)
 
@@ -83,7 +83,7 @@ Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],Grid
 AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
-KWone[ghWW_,x_,xmin_,xmax_,xlabel_]:={KW1sigX[ghWW,x,xmin,xmax,xlabel],KW2sigX[ghWW,x,xmin,xmax,xlabel]}
+KWoneLHC[ghWW_,x_,xmin_,xmax_,xlabel_]:={KW1sigX[ghWW,x,xmin,xmax,xlabel],KW2sigX[ghWW,x,xmin,xmax,xlabel]}
 
 (*KappaWX1sig[ghWW[c\[Alpha]],c\[Alpha],0,1,Subscript[c, \[Alpha]]]
 KappaWX2sig[ghWW[c\[Alpha]],c\[Alpha],0,1,Subscript[c, \[Alpha]]]*)
@@ -116,13 +116,13 @@ dataWW2sigXYZ[ghWW_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
     kappaBotINF2sig<=kb[ghbb]<=kappaBotSUP2sig, kb[ghbb],0
 ]}], {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]*)
 
-TableKWone[ghWW_,x_,xmin_,xmax_,xstep_]:={
+TableKWoneLHC[ghWW_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKWone_1sigma.txt"}],Re[dataWW1sigXY[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKWone_1sigma_LHC.txt"}],Re[dataWW1sigXY[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKWone_2sigma.txt"}],Re[dataWW2sigXY[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKWone_2sigma_LHC.txt"}],Re[dataWW2sigXY[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -207,7 +207,7 @@ kappaw1sig[ghWW,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-KW[
+KWLHC[
 ghWW_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
 KW1sigWXYZ[
@@ -239,10 +239,10 @@ dataKW2sig[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
 
 (*EXPORTING TABLES FOR KW*)
 
-TableKW[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
+TableKWLHC[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
   ystep_] := {
   Export[
-   FileNameJoin[{$UserDocumentsDirectory, "TableKW_1sigma.txt"}],
+   FileNameJoin[{$UserDocumentsDirectory, "TableKW_1sigma_LHC.txt"}],
    Re[
      dataKW1sig[ghWW, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},
@@ -250,7 +250,7 @@ TableKW[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
    ]
   ,
   Export[
-   FileNameJoin[{$UserDocumentsDirectory, "TableKW_2sigma.txt"}],
+   FileNameJoin[{$UserDocumentsDirectory, "TableKW_2sigma_LHC.txt"}],
    Re[
      dataKW2sig[ghWW, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},

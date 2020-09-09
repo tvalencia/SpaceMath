@@ -118,11 +118,11 @@ dataWW2sigXYZHL[ghWW_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,I
 
 TableKWoneHL[ghWW_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKWone_1sigmaHL.txt"}],Re[dataWW1sigXYHL[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKWone_1sigma_HL.txt"}],Re[dataWW1sigXYHL[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKWone_2sigmaHL.txt"}],Re[dataWW2sigXYHL[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKWone_2sigma_HL.txt"}],Re[dataWW2sigXYHL[ghWW,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -242,7 +242,7 @@ dataKW2sigHL[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
 TableKWHL[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
   ystep_] := {
   Export[
-   FileNameJoin[{$UserDocumentsDirectory, "TableKW_1sigmaHL.txt"}],
+   FileNameJoin[{$UserDocumentsDirectory, "TableKW_1sigma_HL.txt"}],
    Re[
      dataKW1sigHL[ghWW, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},
@@ -250,7 +250,7 @@ TableKWHL[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
    ]
   ,
   Export[
-   FileNameJoin[{$UserDocumentsDirectory, "TableKW_2sigmaHL.txt"}],
+   FileNameJoin[{$UserDocumentsDirectory, "TableKW_2sigma_HL.txt"}],
    Re[
      dataKW2sigHL[ghWW, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},

@@ -10,8 +10,8 @@ KGam1sigWXYZ::usage = "KGam1sigWXYZ"
 Kappagaga2sig::usage = "Kappagaga2sig"
 KGam2sigWXYZ::usage = "KGam2sigWXYZ"
 
-KGAMone::usage = "\!\(\*
-StyleBox[\"KGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
+KGAMoneX::usage = "\!\(\*
+StyleBox[\"KGAMoneX\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -36,13 +36,14 @@ StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\) when there is dependence only on one parameter. The arguments ghtt, ghbb, ghWW and gCH are the htt, hbb, hWW and h\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) \
-couplings. Here, h represents to SM-like Higgs boson, t and b the top and bottom quarks, \!\(\*SuperscriptBox[\(H\), \(-\)]\) the charged scalar boson. Labels mCH and x \
+couplings, respectively. Here, h represents to SM-like Higgs boson, t and b are the top and bottom quarks, \!\(\*SuperscriptBox[\(H\), \(-\)]\) is a charged scalar boson. Labels mCH and x \
 indicate the charged scalar mass and the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
-for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+for indicates the X axis label. X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \
+Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-TableKGAMone::usage="\!\(\*
-StyleBox[\"TableKGAMone\",\nFontWeight->\"Bold\"]\)\!\(\*
+TableKGAMoneX::usage="\!\(\*
+StyleBox[\"TableKGAMoneX\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -61,20 +62,68 @@ StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW, gCH and mCH are the htt \
-, hbb, hWW, \!\(\*SuperscriptBox[\(hH\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings, while mCH is the charged scalar boson mass that could to contributes to the process. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. The label x \
-indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax."
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] 
+This command generates a table with two columns: KVone-X. The output file will be saved as TableKVone_1sigma_X.txt and TableRVone_2sigma_X.txt
+in $UserDocumentsDirectory. Here V = W, Z."
 
-KGam::usage="KGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\) \
+KGAMoneLHC::usage = "\!\(\*
+StyleBox[\"KGAMoneLHC\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"ghbb_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"ghWW_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"gCH_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"mCH_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xmin_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xlabel_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] Type ?KGAMoneX for more details"
+
+TableKGAMoneLHC::usage="\!\(\*
+StyleBox[\"TableKGAMoneX\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"ghtt_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"ghbb_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"ghWW_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"gCH_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"mCH_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xmin_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] Type ?TableKGAMoneX for more details."
+
+
+KGamLHC::usage="KGamLHC[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\) \
 when there is dependence on two or more parameters. The arguments ghtt, ghbb, ghWW and gCH are the htt, hbb, hWW and h\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\)\
 couplings while mCH stands for the charged scalar boson mass. Here, h represents to SM-like Higgs boson while t and b the top and bottom querkas. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKGam::usage="TableKGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW and gCH are the htt, \
+TableKGamLHC::usage="TableKGamLHC[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW and gCH are the htt, \
 hbb, hWW and h-\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
@@ -120,7 +169,7 @@ Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],Grid
 AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
 ]
 
-KGAMone[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:={KGam1sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel],KGam2sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel]}
+KGAMoneLHC[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:={KGam1sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel],KGam2sigX[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel]}
 
 (*Kappa gamma in the case in which there is dependence in more than two parameters*)
 (*To 1\[Sigma]*)
@@ -176,7 +225,7 @@ Kappagaga2sig[ghtt, ghbb,ghWW,gCH,mCH,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
 
-KGam[
+KGamLHC[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 {
 KGam1sigWXYZ[
@@ -222,16 +271,16 @@ Table[
 
 (*EXPORTING TABLES FOR RGAMone*)
 
-TableKGAMone[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:={
+TableKGAMoneLHC[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_1sigma_LHC.txt"}],
 Re[
 dataKGam1sigXY[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 ]/. {{_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_2sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGAMone_2sigma_LHC.txt"}],
 Re[
 dataKGam2sigXY[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 ]/. {{_,0} -> Sequence[]},"Table"
@@ -241,16 +290,16 @@ dataKGam2sigXY[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep]
 
 (*EXPORTING TABLES FOR RGAM*)
 
-TableKGam[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+TableKGamLHC[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGam_1sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGam_1sigma_LHC.txt"}],
 Re[
 dataKGam1sigXYZ[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigma.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigma_LHC.txt"}],
 Re[
 dataKGam2sigXYZ3
 	[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]

@@ -108,11 +108,11 @@ dataKbOTone2sigHE[ghbb_,x_,xmin_,xmax_,xstep_]:=Table[{x,If[
 
 TableKBOToneHE[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigmaHE.txt"}],Re[dataKbOTone1sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_1sigma_HE.txt"}],Re[dataKbOTone1sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigmaHE.txt"}],Re[dataKbOTone2sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma_HE.txt"}],Re[dataKbOTone2sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
@@ -196,19 +196,19 @@ Table[
 
 TableKbOToneHE[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKBOTone_1sigmaHE.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKBOTone_1sigma_HE.txt"}],
 Re[dataKbOTone1sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ],
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigmaHE.txt"}],Re[dataKbOTone2sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
+FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma_HE.txt"}],Re[dataKbOTone2sigHE[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
 "Table"
 ]
 }
 
 TableKbHE[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigmaHE.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigma_HE.txt"}],
 Re[
 dataKb1sigHE[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
@@ -216,7 +216,7 @@ dataKb1sigHE[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]
 ,
 Export[
-FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigmaHE.txt"}],
+FileNameJoin[{$UserDocumentsDirectory,"TableKb_2sigma_HE.txt"}],
 Re[
 dataKb2sigHE[ghbb,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},
