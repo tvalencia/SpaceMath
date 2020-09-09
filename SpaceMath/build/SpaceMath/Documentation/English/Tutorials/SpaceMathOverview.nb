@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11426,        329]
-NotebookOptionsPosition[      7051,        236]
-NotebookOutlinePosition[      9290,        295]
-CellTagsIndexPosition[      9247,        292]
+NotebookDataLength[     11577,        333]
+NotebookOptionsPosition[      7205,        240]
+NotebookOutlinePosition[      9441,        299]
+CellTagsIndexPosition[      9398,        296]
 WindowTitle->SpaceMath Overview
 WindowFrame->Normal*)
 
@@ -60,7 +60,7 @@ SpaceMathOverview.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22534], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22542], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/SpaceMathOverview", ".html"]], None}]}]},
@@ -85,7 +85,7 @@ Cell[BoxData[
  TemplateBox[{Cell[
     TextData["SpaceMath"]],"paclet:SpaceMath/tutorial/SpaceMath#509267359"},
   "RefLink",
-  BaseStyle->"TOCChapter"]], "TOCChapter"],
+  BaseStyle->{"TOCChapter", "Section"}]], "TOCChapter"],
 
 Cell[CellGroupData[{
 
@@ -97,12 +97,16 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
  TemplateBox[{Cell[
     TextData["LHC Higgs boson data"]],
-   "paclet:SpaceMath/tutorial/SpaceMath#118596255"},
+   "paclet:SpaceMath/tutorial/SpaceMathOverview"},
   "RefLink",
-  BaseStyle->"TOCSubsection"]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"], "\n", 
+ TemplateBox[{Cell[
+    TextData[" data"]],"paclet:SpaceMath/tutorial/SpaceMath#118596255"},
+  "RefLink",
+  BaseStyle->"TOCSubsection"]}], "TOCSubsection"],
 
 Cell[BoxData[{
  TemplateBox[{Cell[
@@ -212,7 +216,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  TemplateBox[{Cell[
-    TextData["Appendix"]],"paclet:SpaceMath/tutorial/SpaceMath#3479300"},
+    TextData["Appendix"]],"paclet:SpaceMath/tutorial/SpaceMathOverview"},
   "RefLink",
   BaseStyle->"TOCSection"]], "TOCSection"],
 
@@ -225,7 +229,7 @@ Cell[BoxData[
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Remote connection"]],
-   "paclet:SpaceMath/tutorial/SpaceMath#613703207"},
+   "paclet:SpaceMath/tutorial/RemoteConnection"},
   "RefLink",
   BaseStyle->"TOCSubsection"]], "TOCSubsection"]
 }, Open  ]]
@@ -248,14 +252,14 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 8, 21, 30, 58.6064759}", 
+   "built" -> "{2020, 9, 9, 0, 3, 8.3290928}", 
     "history" -> {"XX", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Package Overview", "language" -> "en", "paclet" -> 
     "SpaceMath Package", "status" -> "None", "summary" -> "SpaceMath", 
     "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$22482, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$22489, "title" -> 
     "SpaceMath Overview", "titlemodifier" -> "", "windowtitle" -> 
     "SpaceMath Overview", "type" -> "Overview", "uri" -> 
     "SpaceMath/tutorial/SpaceMathOverview"}},
@@ -294,43 +298,43 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"306f7e73-6840-46d9-841c-a8a6f9f7af5e",
+Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"eb038e48-2700-418a-b3d3-4e6942371548",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2964, 79, 46, 0, 70, "TOCDocumentTitle",ExpressionUUID->"2cd331e2-b4d5-41e0-a4b8-21b28f4458e9"],
 Cell[CellGroupData[{
-Cell[3035, 83, 166, 4, 70, "TOCChapter",ExpressionUUID->"d834e10b-ed0b-4a26-af3b-7406a8887121"],
+Cell[3035, 83, 179, 4, 70, "TOCChapter",ExpressionUUID->"d834e10b-ed0b-4a26-af3b-7406a8887121"],
 Cell[CellGroupData[{
-Cell[3226, 91, 169, 4, 70, "TOCSection",ExpressionUUID->"c090f2b3-07cf-436c-bf61-2be083deada2"],
+Cell[3239, 91, 169, 4, 70, "TOCSection",ExpressionUUID->"c090f2b3-07cf-436c-bf61-2be083deada2"],
 Cell[CellGroupData[{
-Cell[3420, 99, 187, 5, 70, "TOCSubsection",ExpressionUUID->"8b665720-056c-4763-bf14-0c9cc67d934d"],
-Cell[3610, 106, 490, 14, 70, "TOCSubsubsection",ExpressionUUID->"121b727f-42c1-4c34-8bb3-24c8d3ab96e8"],
-Cell[4103, 122, 505, 14, 70, "TOCSubsubsection",ExpressionUUID->"3d99e77f-b1d2-4d19-986f-c7f7f2524aed"]
+Cell[3433, 99, 331, 9, 70, "TOCSubsection",ExpressionUUID->"8b665720-056c-4763-bf14-0c9cc67d934d"],
+Cell[3767, 110, 490, 14, 70, "TOCSubsubsection",ExpressionUUID->"121b727f-42c1-4c34-8bb3-24c8d3ab96e8"],
+Cell[4260, 126, 505, 14, 70, "TOCSubsubsection",ExpressionUUID->"3d99e77f-b1d2-4d19-986f-c7f7f2524aed"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4657, 142, 169, 4, 70, "TOCSection",ExpressionUUID->"580f2f99-e6e4-496b-9cf7-9b04d82f45ca"],
-Cell[4829, 148, 182, 5, 70, "TOCSubsection",ExpressionUUID->"b2870790-9735-4be3-b0ba-baeeecd4fe5c"],
-Cell[5014, 155, 175, 4, 70, "TOCSubsection",ExpressionUUID->"4c3a7733-0c86-4a35-9b77-fc1afb42e529"]
+Cell[4814, 146, 169, 4, 70, "TOCSection",ExpressionUUID->"580f2f99-e6e4-496b-9cf7-9b04d82f45ca"],
+Cell[4986, 152, 182, 5, 70, "TOCSubsection",ExpressionUUID->"b2870790-9735-4be3-b0ba-baeeecd4fe5c"],
+Cell[5171, 159, 175, 4, 70, "TOCSubsection",ExpressionUUID->"4c3a7733-0c86-4a35-9b77-fc1afb42e529"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5226, 164, 171, 5, 70, "TOCSection",ExpressionUUID->"758c93aa-de0b-45de-bd28-a243d881eea0"],
-Cell[5400, 171, 205, 5, 70, "TOCSubsection",ExpressionUUID->"309beb8c-a9d8-4a79-9e4f-ffe22b95f463"],
-Cell[5608, 178, 250, 6, 70, "TOCSubsection",ExpressionUUID->"8c4d86b3-ae1e-4568-90e4-af69d2f9ee51"]
+Cell[5383, 168, 171, 5, 70, "TOCSection",ExpressionUUID->"758c93aa-de0b-45de-bd28-a243d881eea0"],
+Cell[5557, 175, 205, 5, 70, "TOCSubsection",ExpressionUUID->"309beb8c-a9d8-4a79-9e4f-ffe22b95f463"],
+Cell[5765, 182, 250, 6, 70, "TOCSubsection",ExpressionUUID->"8c4d86b3-ae1e-4568-90e4-af69d2f9ee51"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5895, 189, 167, 4, 70, "TOCSection",ExpressionUUID->"8a72db90-0351-46f0-b131-bd2c0d8f69b4"],
-Cell[6065, 195, 182, 5, 70, "TOCSubsection",ExpressionUUID->"0c0b164a-1da1-4c11-b46b-70ce0c6e0699"]
+Cell[6052, 193, 167, 4, 70, "TOCSection",ExpressionUUID->"8a72db90-0351-46f0-b131-bd2c0d8f69b4"],
+Cell[6222, 199, 182, 5, 70, "TOCSubsection",ExpressionUUID->"0c0b164a-1da1-4c11-b46b-70ce0c6e0699"]
 }, Open  ]],
-Cell[6262, 203, 187, 5, 70, "TOCSection",ExpressionUUID->"836848b0-ec35-4048-9466-8440f1799fa7"],
+Cell[6419, 207, 187, 5, 70, "TOCSection",ExpressionUUID->"836848b0-ec35-4048-9466-8440f1799fa7"],
 Cell[CellGroupData[{
-Cell[6474, 212, 163, 4, 70, "TOCSection",ExpressionUUID->"f8acc166-ba2b-4574-a0a3-f4d9790ec1e3"],
-Cell[6640, 218, 158, 4, 70, "TOCSubsection",ExpressionUUID->"eaa08c0b-65e8-40ec-8471-9f3efbe00f3c"],
-Cell[6801, 224, 184, 5, 70, "TOCSubsection",ExpressionUUID->"7ef1a7b4-6a4e-4994-aec2-c221edc28891"]
+Cell[6631, 216, 163, 4, 70, "TOCSection",ExpressionUUID->"f8acc166-ba2b-4574-a0a3-f4d9790ec1e3"],
+Cell[6797, 222, 158, 4, 70, "TOCSubsection",ExpressionUUID->"eaa08c0b-65e8-40ec-8471-9f3efbe00f3c"],
+Cell[6958, 228, 181, 5, 70, "TOCSubsection",ExpressionUUID->"7ef1a7b4-6a4e-4994-aec2-c221edc28891"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[7024, 234, 23, 0, 70, "FooterCell",ExpressionUUID->"0ed950a6-6708-4e33-8afe-f981d77f00ed"]
+Cell[7178, 238, 23, 0, 70, "FooterCell",ExpressionUUID->"77c4b854-c0d4-420a-9b5f-deb464d0f672"]
 }
 ]
 *)

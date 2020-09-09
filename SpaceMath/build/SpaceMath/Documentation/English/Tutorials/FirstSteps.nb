@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     33552,        769]
+NotebookDataLength[     33550,        769]
 NotebookOptionsPosition[     28473,        665]
-NotebookOutlinePosition[     30965,        725]
-CellTagsIndexPosition[     30922,        722]
+NotebookOutlinePosition[     30963,        725]
+CellTagsIndexPosition[     30920,        722]
 WindowTitle->First steps
 WindowFrame->Normal*)
 
@@ -60,7 +60,7 @@ FirstSteps.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19471], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19476], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/FirstSteps", ".html"]], None}]}]},
@@ -677,7 +677,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 8, 21, 30, 43.8039523}", 
+   "built" -> "{2020, 9, 9, 0, 2, 43.5799735}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -689,7 +689,7 @@ their application to the Two-Higgs-Doublet Model Type-III (THDM-III). In the \
 following tables we show the corresponding commands to the Signal Strengths. \
 Table 1. Signal Strength R_V with V= W, Z. Dependence on one parameter at 1\
 \[Sigma] or 2\[Sigma].", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$19414, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$19419, "title" -> 
     "First steps", "titlemodifier" -> "", "windowtitle" -> "First steps", 
     "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/FirstSteps"}},
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
@@ -724,7 +724,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[583, 21, 2313, 54, 70, "AnchorBarGrid",ExpressionUUID->"f1ce54e3-5924-465c-befa-4f531ed616cb",
+Cell[583, 21, 2313, 54, 70, "AnchorBarGrid",ExpressionUUID->"7712d674-3e6f-46f0-882d-14682972f745",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2921, 79, 48, 1, 70, "Title",ExpressionUUID->"816b7260-d78b-42e7-8537-3d98165300d4",
@@ -770,7 +770,7 @@ Cell[23883, 565, 4315, 84, 70, "DefinitionBox",ExpressionUUID->"a637fd10-ac38-48
 Cell[28201, 651, 230, 9, 70, "Caption",ExpressionUUID->"c95528ee-1a73-4d6c-9c29-577e09ba65fc",
  CellID->500291650]
 }, Open  ]],
-Cell[28446, 663, 23, 0, 70, "FooterCell",ExpressionUUID->"5d84ec39-479e-4812-a756-acf6c077b78c"]
+Cell[28446, 663, 23, 0, 70, "FooterCell",ExpressionUUID->"2b3987a3-d1cc-46ff-98e4-db2ad1575411"]
 }
 ]
 *)
