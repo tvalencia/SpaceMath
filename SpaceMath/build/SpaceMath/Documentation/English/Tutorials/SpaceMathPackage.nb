@@ -60,7 +60,7 @@ SpaceMathPackage.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22834], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22829], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/SpaceMathPackage", ".html"]], None}]}]},
@@ -130,13 +130,13 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 9, 0, 3, 10.2050182}", 
+   "built" -> "{2020, 9, 9, 12, 2, 2.7013612}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
     "status" -> "None", "summary" -> " ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$22795, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$22790, "title" -> 
     "SpaceMath Overview", "titlemodifier" -> "", "windowtitle" -> 
     "SpaceMath Overview", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/SpaceMathPackage"}},
@@ -172,7 +172,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[590, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"c465e285-af96-4f43-b79d-c7b5a70a7c52",
+Cell[590, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"4634a7bd-d03e-4349-bf34-b66feb738436",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2952, 79, 66, 1, 70, "TOCDocumentTitle",ExpressionUUID->"6ed04930-d9a0-469c-8c5d-c4d3661babc1",
@@ -191,7 +191,7 @@ Cell[3541, 103, 317, 8, 70, "Subsubsection",ExpressionUUID->"c75b633d-e02b-44e1-
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[3897, 116, 23, 0, 70, "FooterCell",ExpressionUUID->"a73ae1bb-0963-40b1-8a72-a0ec88a5720e"]
+Cell[3897, 116, 23, 0, 70, "FooterCell",ExpressionUUID->"bccdc183-9b2a-44e6-89ed-9a4a4b92455e"]
 }
 ]
 *)
