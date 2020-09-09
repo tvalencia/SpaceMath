@@ -191,7 +191,8 @@ package for beyond the standard model parameter space searches}\",
                                                          month = \"8\",
                                                          year = \
 \"2020\"}"], Button["Copy to clipboard", CopyToClipboard[CopyText1]], 
-                DefaultButton[]}]], Background -> Lighter[Blue, 0.7], 
+                Button["Close", DialogReturn[]]     
+                }]], Background -> Lighter[Blue, 0.7], 
              ImageSize -> {60, 25}], 
             Button[Style["Bibitem"], 
              CreateWindow[
@@ -207,17 +208,16 @@ beyond the standard model parameter space searches,''
                                                      [arXiv:2008.\
 00564 [hep-ph]]."], 
                 Button["Copy to clipboard", 
-                 CopyToClipboard[CopyText2]], DefaultButton[]}]], 
+                 CopyToClipboard[CopyText2]], Button["Close", DialogReturn[]]}]], 
              Background -> Lighter[Blue, 0.7], ImageSize -> {60, 25}],
-             DefaultButton[]}]], Background -> Lighter[Brown, 0.5], 
+             Button["Close", DialogReturn[]]             
+             }]], Background -> Lighter[Brown, 0.5], 
          ImageSize -> {60, 25}], ""}}], 
      Import[
       FileNameJoin[{$SpaceMathDirectory, "Miscellaneous", 
         "SpaceMathLogo.jpg"}]]}, {Style[
-      "Authors:\n M. A. Arroyo-Ureña\n Facultad de Estudios \
-Superiores-Cuautitlán, Universidad Nacional Autónoma de México\n T. \
-A. Valencia-Pérez\n Facultad de Ciencias Fíico Matemáticas, \
-Benemérita Universidad Autónoma de Puebla\n Contact us:	\
+      "Authors:\n M. A. Arroyo-Ure\[NTilde]a\n Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico\n \
+T. A. Valencia-P\[EAcute]rez\n Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\n Contact us:	\
 spacemathapp@gmail.com", "Text", FontSize -> 16, FontColor -> Black], 
      SpanFromLeft}}, Background -> Lighter[White, 0.5], 
    Frame -> True]]]

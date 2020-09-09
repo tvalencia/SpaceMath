@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1321713,      22051]
-NotebookOptionsPosition[   1319841,      22012]
-NotebookOutlinePosition[   1320175,      22027]
-CellTagsIndexPosition[   1320132,      22024]
+NotebookDataLength[   1321714,      22054]
+NotebookOptionsPosition[   1319842,      22015]
+NotebookOutlinePosition[   1320176,      22030]
+CellTagsIndexPosition[   1320133,      22027]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -94,7 +94,8 @@ parameter space searches}\",\n                                                \
                        year = \"2020\"}"], 
                   Button["Copy to clipboard", 
                    CopyToClipboard[$CellContext`CopyText1]], 
-                  DefaultButton[]}]], Background -> Lighter[Blue, 0.7], 
+                  Button["Close", 
+                   DialogReturn[]]}]], Background -> Lighter[Blue, 0.7], 
                ImageSize -> {60, 25}], 
               Button[
                Style["Bibitem"], 
@@ -112,9 +113,11 @@ searches,''\n                                                     \
 [arXiv:2008.00564 [hep-ph]]."], 
                   Button["Copy to clipboard", 
                    CopyToClipboard[$CellContext`CopyText2]], 
-                  DefaultButton[]}]], Background -> Lighter[Blue, 0.7], 
+                  Button["Close", 
+                   DialogReturn[]]}]], Background -> Lighter[Blue, 0.7], 
                ImageSize -> {60, 25}], 
-              DefaultButton[]}]],
+              Button["Close", 
+               DialogReturn[]]}]],
           Evaluator->Automatic,
           ImageSize->{60, 25},
           Method->"Preemptive"], "\<\"\"\>"}
@@ -10362,7 +10365,7 @@ VVVVVVVVVVXV4QBrWbdr
      StyleBox["\<\"Authors:\\n M. A. Arroyo-Ure\[NTilde]a\\n Facultad de \
 Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma \
 de M\[EAcute]xico\\n T. A. Valencia-P\[EAcute]rez\\n Facultad de Ciencias F\
-\[IAcute]ico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad \
+\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad \
 Aut\[OAcute]noma de Puebla\\n Contact us:\\tspacemathapp@gmail.com\"\>", 
       "Text",
       StripOnInput->False,
@@ -10375,13 +10378,11 @@ Aut\[OAcute]noma de Puebla\\n Contact us:\\tspacemathapp@gmail.com\"\>",
    GridBoxFrame->{"ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> True}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Grid"]], "Print",
- CellChangeTimes->{3.808666744200653*^9, 3.8086668180954437`*^9, 
-  3.8086670192714767`*^9, 3.8086670973991213`*^9, 3.8086671498727827`*^9, 
-  3.808667302283551*^9, 3.808667530760068*^9, 3.80866772006252*^9, 
-  3.808667782424039*^9},
+ CellChangeTimes->{3.808668474819893*^9, 3.8086685705647*^9, 
+  3.808668692938116*^9, 3.808668920290004*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"9b235875-6414-4430-a41c-80886f5d38d3"]
+In[1]:=",ExpressionUUID->"0f7cd51a-0cf6-464e-9267-d0bceba7485b"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -10451,6 +10452,7 @@ w/kxnD/D+TGcP8P5M5wfw/kznB/D+TOcP8P5MZwfw/kxnB/D+TOcfjxO3fNu
 z+rW+8HpB6cfnH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cf
 nH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cf
 nH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cf/F+mUN0M
+           
            "], {{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, 
              {RGBColor[0, 0, 1], Opacity[0.2], EdgeForm[None], 
               GraphicsGroupBox[
@@ -10638,8 +10640,8 @@ nH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cf/F+mUN0M
               0.}, {
                AbsoluteThickness[0.1]}}, {2., 
               FormBox[
-               TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 
-              0.}, {
+               TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.},
+               {
                AbsoluteThickness[0.1]}}, {3., 
               FormBox[
                TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 
@@ -11098,6 +11100,7 @@ w/kxnD/D+TGcP8P5M5wfw/kznB/D+TOcP8P5MZwfw/kxnB/D+TOcfjxO3fNu
 z+rW+8HpB6cfnH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cf
 nH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cf
 nH5w+sHpB6cfnH5w+sHpB6cfnH5w+sHpB6cf/F+mUN0M
+        
         "], {{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {
            EdgeForm[], 
            Directive[
@@ -22028,31 +22031,31 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 202, 3, 31, "Input",ExpressionUUID->"9ce760b2-f3c4-4650-b80b-432e180f0a86"],
-Cell[785, 27, 629382, 10356, 384, "Print",ExpressionUUID->"9b235875-6414-4430-a41c-80886f5d38d3"]
+Cell[785, 27, 629362, 10357, 384, "Print",ExpressionUUID->"0f7cd51a-0cf6-464e-9267-d0bceba7485b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[630204, 10388, 228, 4, 31, "Input",ExpressionUUID->"7ea7d997-af83-4a77-9e22-bf5274e7ad5a"],
-Cell[630435, 10394, 181, 3, 34, "Output",ExpressionUUID->"d827fd03-dfd6-4ae1-8d95-a3c17ad74af8"]
+Cell[630184, 10389, 228, 4, 31, "Input",ExpressionUUID->"7ea7d997-af83-4a77-9e22-bf5274e7ad5a"],
+Cell[630415, 10395, 181, 3, 34, "Output",ExpressionUUID->"d827fd03-dfd6-4ae1-8d95-a3c17ad74af8"]
 }, Open  ]],
-Cell[630631, 10400, 355, 8, 31, "Input",ExpressionUUID->"1d68435c-8342-4063-bb28-694b476b4a58"],
+Cell[630611, 10401, 355, 8, 31, "Input",ExpressionUUID->"1d68435c-8342-4063-bb28-694b476b4a58"],
 Cell[CellGroupData[{
-Cell[631011, 10412, 402, 9, 31, "Input",ExpressionUUID->"74bd65b5-c9c6-477c-8102-69f94c14dc6a"],
-Cell[631416, 10423, 36845, 793, 511, "Output",ExpressionUUID->"0fc571bd-6ec2-4a47-89ce-8e09b95deec6"]
+Cell[630991, 10413, 402, 9, 31, "Input",ExpressionUUID->"74bd65b5-c9c6-477c-8102-69f94c14dc6a"],
+Cell[631396, 10424, 36866, 795, 511, "Output",ExpressionUUID->"0fc571bd-6ec2-4a47-89ce-8e09b95deec6"]
 }, Open  ]],
-Cell[668276, 11219, 154, 3, 31, "Input",ExpressionUUID->"d41821ef-798f-41a8-8148-1ed4d2b77064"],
+Cell[668277, 11222, 154, 3, 31, "Input",ExpressionUUID->"d41821ef-798f-41a8-8148-1ed4d2b77064"],
 Cell[CellGroupData[{
-Cell[668455, 11226, 10175, 200, 630, "Input",ExpressionUUID->"1fed1f23-e62c-4c0e-bd53-f37180d323a9"],
-Cell[678633, 11428, 638697, 10514, 365, "Print",ExpressionUUID->"8cfa6834-4a23-4cfe-a17b-39a7afcac542"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1317367, 21947, 657, 14, 48, "Input",ExpressionUUID->"919e8828-be2a-438d-a690-55213d427e44"],
-Cell[1318027, 21963, 469, 11, 44, "Output",ExpressionUUID->"7ca4886d-a449-400d-a9a5-8634454a3801"]
+Cell[668456, 11229, 10175, 200, 630, "Input",ExpressionUUID->"1fed1f23-e62c-4c0e-bd53-f37180d323a9"],
+Cell[678634, 11431, 638697, 10514, 365, "Print",ExpressionUUID->"8cfa6834-4a23-4cfe-a17b-39a7afcac542"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1318533, 21979, 329, 7, 28, "Input",ExpressionUUID->"a1d00d70-61b3-405b-bba4-5ba676d60e85"],
-Cell[1318865, 21988, 345, 5, 32, "Output",ExpressionUUID->"465ed1be-d51e-45cd-8e37-0040edfb9dec"]
+Cell[1317368, 21950, 657, 14, 48, "Input",ExpressionUUID->"919e8828-be2a-438d-a690-55213d427e44"],
+Cell[1318028, 21966, 469, 11, 44, "Output",ExpressionUUID->"7ca4886d-a449-400d-a9a5-8634454a3801"]
 }, Open  ]],
-Cell[1319225, 21996, 612, 14, 28, "Input",ExpressionUUID->"322fbb9b-ded8-41c8-aa08-469c05095098"]
+Cell[CellGroupData[{
+Cell[1318534, 21982, 329, 7, 28, "Input",ExpressionUUID->"a1d00d70-61b3-405b-bba4-5ba676d60e85"],
+Cell[1318866, 21991, 345, 5, 32, "Output",ExpressionUUID->"465ed1be-d51e-45cd-8e37-0040edfb9dec"]
+}, Open  ]],
+Cell[1319226, 21999, 612, 14, 28, "Input",ExpressionUUID->"322fbb9b-ded8-41c8-aa08-469c05095098"]
 }
 ]
 *)
