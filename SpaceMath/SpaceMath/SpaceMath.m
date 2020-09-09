@@ -162,25 +162,23 @@ If[Global`$SpaceMathStartupMessages =!= False,
           ImageSize -> {140, 50}, Method -> "Queued"]}, {"", 
         DisplayForm@
          ButtonBox[
-          Style["Examples", FontSize -> 14, FontColor -> Black, 
-           FontWeight -> Normal], 
+          Style["Examples",FontSize -> 14], 
           ButtonFunction :> 
            SystemOpen[
             FileNameJoin[{$SpaceMathDirectory, "Examples"}]], 
           Evaluator -> Automatic, Method -> "Preemptive", 
           Appearance -> "DialogBox", 
           Background -> Lighter[Brown, 0.5], 
-          ImageSize -> {80, 25}]}, {Button[
-         Style["Cite", FontSize -> 14, FontColor -> Black, 
-          FontWeight -> Normal], 
+          ImageSize -> {100, 35}]}, {Button[
+         Style["Cite", FontSize -> 14], 
          CreateWindow[
           
-          DialogNotebook[{Button[Style["BibTex", Bold, 12], 
+          DialogNotebook[{Button[Style["BibTex"], 
              CreateWindow[
               DialogNotebook[{CopyText1 = 
                  TextCell["@article{Arroyo-Urena:2020qup,
                                                          author = \
-\"Arroyo-Ureña, M.A. and Gaitán, R. and Valencia-Pérez, T.A.\",
+\"Arroyo-UreÃ±a, M.A. and GaitÃ¡n, R. and Valencia-PÃ©rez, T.A.\",
                                                          title = \"{$\
 \\texttt{SpaceMath}$ version 1.0. $\\\\$ A $\\texttt{Mathematica}$ \
 package for beyond the standard model parameter space searches}\",
@@ -195,14 +193,14 @@ package for beyond the standard model parameter space searches}\",
 \"2020\"}"], Button["Copy to clipboard", CopyToClipboard[CopyText1]], 
                 DefaultButton[]}]], Background -> Lighter[Blue, 0.7], 
              ImageSize -> {60, 25}], 
-            Button[Style["Bibitem", Bold, 12], 
+            Button[Style["Bibitem"], 
              CreateWindow[
               DialogNotebook[{CopyText2 = 
                  TextCell["%\\cite{Arroyo-Urena:2020qup}
                                                      \\bibitem{Arroyo-\
 Urena:2020qup}
                                                      M.~A.~Arroyo-\
-Ureña, R.~Gaitán and T.~A.~Valencia-Pérez,
+UreÃ±a, R.~GaitÃ¡n and T.~A.~Valencia-PÃ©rez,
                                                      %``$\\texttt{\
 SpaceMath}$ version 1.0. $\\\\$ A $\\texttt{Mathematica}$ package for \
 beyond the standard model parameter space searches,''
@@ -216,11 +214,11 @@ beyond the standard model parameter space searches,''
      Import[
       FileNameJoin[{$SpaceMathDirectory, "Miscellaneous", 
         "SpaceMathLogo.jpg"}]]}, {Style[
-      "Authors:\n M. A. Arroyo-Ureña\n Facultad de Estudios \
-Superiores-Cuautitlán, Universidad Nacional Autónoma de México\n T. \
-A. Valencia-Pérez\n Facultad de Ciencias Físico Matemáticas, \
-Benemérita Universidad Autónoma de Puebla\n Contact us:	\
-spacemathapp@gmail.com", "Text", FontSize -> 14, FontColor -> Black], 
+      "Authors:\n M. A. Arroyo-UreÃ±a\n Facultad de Estudios \
+Superiores-CuautitlÃ¡n, Universidad Nacional AutÃ³noma de MÃ©xico\n T. \
+A. Valencia-PÃ©rez\n Facultad de Ciencias FÃ­ico MatemÃ¡ticas, \
+BenemÃ©rita Universidad AutÃ³noma de Puebla\n Contact us:	\
+spacemathapp@gmail.com", "Text", FontSize -> 16, FontColor -> Black], 
      SpanFromLeft}}, Background -> Lighter[White, 0.5], 
    Frame -> True]]]
 

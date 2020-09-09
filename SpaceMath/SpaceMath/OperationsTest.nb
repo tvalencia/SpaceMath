@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1331192,      22212]
-NotebookOptionsPosition[   1329311,      22173]
-NotebookOutlinePosition[   1329654,      22188]
-CellTagsIndexPosition[   1329611,      22185]
+NotebookDataLength[   1321713,      22051]
+NotebookOptionsPosition[   1319841,      22012]
+NotebookOutlinePosition[   1320175,      22027]
+CellTagsIndexPosition[   1320132,      22024]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,112 +26,104 @@ Cell[BoxData[
  CellLabel->"In[1]:=",ExpressionUUID->"9ce760b2-f3c4-4650-b80b-432e180f0a86"],
 
 Cell[BoxData[
- FormBox[
-  TagBox[GridBox[{
-     {
-      StyleBox["\<\"SpaceMath v.1.0\"\>", "Title",
-       StripOnInput->False,
-       FontFamily->"Century Gothic",
-       FontSize->30,
-       FontWeight->Normal,
-       FontColor->GrayLevel[0]], "\[SpanFromLeft]"},
-     {
-      TagBox[GridBox[{
-         {
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"SpaceMath v.1.0\"\>", "Title",
+      StripOnInput->False,
+      FontSize->30,
+      FontWeight->Normal,
+      FontColor->GrayLevel[0]], "\[SpanFromLeft]"},
+    {
+     TagBox[GridBox[{
+        {
+         ButtonBox[
+          StyleBox["\<\"Documentation Center\"\>",
+           StripOnInput->False,
+           FontSize->14,
+           FontWeight->Normal,
+           FontColor->GrayLevel[0]],
+          Appearance->"DialogBox",
+          Background->RGBColor[0.8, 0.7, 0.6000000000000001],
+          ButtonFunction:>SystemOpen[
+            
+            FileNameJoin[{
+             SpaceMath`$SpaceMathDirectory, "Documentation", "English", 
+              "Tutorials", "SpaceMathOverview.nb"}]],
+          Evaluator->Automatic,
+          ImageSize->{140, 50},
+          Method->"Queued"], ""},
+        {"\<\"\"\>", 
+         TagBox[
           ButtonBox[
-           StyleBox["\<\"Documentation Center\"\>",
+           StyleBox["\<\"Examples\"\>",
             StripOnInput->False,
-            FontFamily->"Century Gothic",
-            FontSize->14,
-            FontWeight->Normal,
-            FontColor->GrayLevel[0]],
+            FontSize->14],
            Appearance->"DialogBox",
            Background->RGBColor[0.8, 0.7, 0.6000000000000001],
            ButtonFunction:>SystemOpen[
-             
-             FileNameJoin[{
-              SpaceMath`$SpaceMathDirectory, "Documentation", "English", 
-               "Tutorials", "SpaceMathOverview.nb"}]],
+             FileNameJoin[{SpaceMath`$SpaceMathDirectory, "Examples"}]],
            Evaluator->Automatic,
-           ImageSize->{140, 50},
-           Method->"Queued"], ""},
-         {"\<\"\"\>", 
-          TagBox[
-           ButtonBox[
-            StyleBox["\<\"Examples\"\>",
-             StripOnInput->False,
-             FontFamily->"Century Gothic",
-             FontSize->14,
-             FontWeight->Normal,
-             FontColor->GrayLevel[0]],
-            Appearance->"DialogBox",
-            Background->RGBColor[0.8, 0.7, 0.6000000000000001],
-            ButtonFunction:>SystemOpen[
-              FileNameJoin[{SpaceMath`$SpaceMathDirectory, "Examples"}]],
-            Evaluator->Automatic,
-            ImageSize->{80, 25},
-            Method->"Preemptive"],
-           DisplayForm]},
-         {
-          ButtonBox[
-           StyleBox["\<\"Cite\"\>",
-            StripOnInput->False,
-            FontFamily->"Century Gothic",
-            FontSize->14,
-            FontWeight->Normal,
-            FontColor->GrayLevel[0]],
-           Appearance->Automatic,
-           Background->RGBColor[0.8, 0.7, 0.6000000000000001],
-           ButtonFunction:>CreateWindow[
-             DialogNotebook[{
-               Button[
-                Style["BibTex", Bold, 12], 
-                CreateWindow[
-                 
-                 DialogNotebook[{$CellContext`CopyText1 = 
-                   TextCell[
-                    "@article{Arroyo-Urena:2020qup,\n                         \
-              author = \"Arroyo-Ure\[NTilde]a, M.A. and Gait\[AAcute]n, R. \
-and Valencia-P\[EAcute]rez, T.A.\",\n                                       \
-title = \"{$\\texttt{SpaceMath}$ version 1.0. $\\\\$ A \
+           ImageSize->{100, 35},
+           Method->"Preemptive"],
+          DisplayForm]},
+        {
+         ButtonBox[
+          StyleBox["\<\"Cite\"\>",
+           StripOnInput->False,
+           FontSize->14],
+          Appearance->Automatic,
+          Background->RGBColor[0.8, 0.7, 0.6000000000000001],
+          ButtonFunction:>CreateWindow[
+            DialogNotebook[{
+              Button[
+               Style["BibTex"], 
+               CreateWindow[
+                
+                DialogNotebook[{$CellContext`CopyText1 = 
+                  TextCell[
+                   "@article{Arroyo-Urena:2020qup,\n                          \
+                               author = \"Arroyo-Ure\[NTilde]a, M.A. and Gait\
+\[AAcute]n, R. and Valencia-P\[EAcute]rez, T.A.\",\n                          \
+                               title = \"{$\\texttt{SpaceMath}$ version 1.0. \
+$\\\\$ A $\\texttt{Mathematica}$ package for beyond the standard model \
+parameter space searches}\",\n                                                \
+         eprint = \"2008.00564\",\n                                           \
+              archivePrefix = \"arXiv\",\n                                    \
+                     primaryClass = \"hep-ph\",\n                             \
+                            month = \"8\",\n                                  \
+                       year = \"2020\"}"], 
+                  Button["Copy to clipboard", 
+                   CopyToClipboard[$CellContext`CopyText1]], 
+                  DefaultButton[]}]], Background -> Lighter[Blue, 0.7], 
+               ImageSize -> {60, 25}], 
+              Button[
+               Style["Bibitem"], 
+               CreateWindow[
+                
+                DialogNotebook[{$CellContext`CopyText2 = 
+                  TextCell[
+                   "%\\cite{Arroyo-Urena:2020qup}\n                           \
+                          \\bibitem{Arroyo-Urena:2020qup}\n                   \
+                                  M.~A.~Arroyo-Ure\[NTilde]a, \
+R.~Gait\[AAcute]n and T.~A.~Valencia-P\[EAcute]rez,\n                         \
+                            %``$\\texttt{SpaceMath}$ version 1.0. $\\\\$ A \
 $\\texttt{Mathematica}$ package for beyond the standard model parameter space \
-searches}\",\n                                       eprint = \"2008.00564\",\
-\n                                       archivePrefix = \"arXiv\",\n         \
-                              primaryClass = \"hep-ph\",\n                    \
-                   month = \"8\",\n                                       \
-year = \"2020\"}"], 
-                   Button["Copy to clipboard", 
-                    CopyToClipboard[$CellContext`CopyText1]], 
-                   DefaultButton[]}]], Background -> Lighter[Blue, 0.7], 
-                ImageSize -> {60, 25}], 
-               Button[
-                Style["Bibitem", Bold, 12], 
-                CreateWindow[
-                 
-                 DialogNotebook[{$CellContext`CopyText2 = 
-                   TextCell[
-                    "%\\cite{Arroyo-Urena:2020qup}\n                          \
-         \\bibitem{Arroyo-Urena:2020qup}\n                                   \
-M.~A.~Arroyo-Ure\[NTilde]a, R.~Gait\[AAcute]n and \
-T.~A.~Valencia-P\[EAcute]rez,\n                                   \
-%``$\\texttt{SpaceMath}$ version 1.0. $\\\\$ A $\\texttt{Mathematica}$ \
-package for beyond the standard model parameter space searches,''\n           \
-                        [arXiv:2008.00564 [hep-ph]]."], 
-                   Button["Copy to clipboard", 
-                    CopyToClipboard[$CellContext`CopyText2]], 
-                   DefaultButton[]}]], Background -> Lighter[Blue, 0.7], 
-                ImageSize -> {60, 25}], 
-               DefaultButton[]}]],
-           Evaluator->Automatic,
-           ImageSize->{60, 25},
-           Method->"Preemptive"], "\<\"\"\>"}
-        },
-        AutoDelete->False,
-        GridBoxItemSize->{
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-       "Grid"], 
-      GraphicsBox[
-       TagBox[RasterBox[CompressedData["
+searches,''\n                                                     \
+[arXiv:2008.00564 [hep-ph]]."], 
+                  Button["Copy to clipboard", 
+                   CopyToClipboard[$CellContext`CopyText2]], 
+                  DefaultButton[]}]], Background -> Lighter[Blue, 0.7], 
+               ImageSize -> {60, 25}], 
+              DefaultButton[]}]],
+          Evaluator->Automatic,
+          ImageSize->{60, 25},
+          Method->"Preemptive"], "\<\"\"\>"}
+       },
+       AutoDelete->False,
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"], 
+     GraphicsBox[
+      TagBox[RasterBox[CompressedData["
 1:eJzsyEEKgkAYBeDBNq0i8ATdoq3Qpq3SAZQmcTPCGIQ38NiOdI0Pvvfz3n8b
 5vZThRCWczlt/2ty7tfuWsYrLdOY4vuZvnGM+T6cynOr/zn6o74AAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -10359,190 +10351,37 @@ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 VVVVVVVVVVXV4QBrWbdr
-         "], {{0, 5000}, {5000, 0}}, {0, 255},
-         ColorFunction->RGBColor],
-        BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
-        Selectable->False],
-       DefaultBaseStyle->"ImageGraphics",
-       ImageSizeRaw->{5000, 5000},
-       PlotRange->{{0, 5000}, {0, 5000}},
-       ImageCache->GraphicsData["CompressedBitmap", "\<\
-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
-4+j//vfjX7W8avnf2WL9/xmx+n+T2P0LDtjxpw==\
-\>"]]},
-     {
-      StyleBox["\<\"Authors:\\n M. A. Arroyo-Ure\[NTilde]a\\n Facultad de \
+        "], {{0, 5000}, {5000, 0}}, {0, 255},
+        ColorFunction->RGBColor],
+       BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+       Selectable->False],
+      DefaultBaseStyle->"ImageGraphics",
+      ImageSizeRaw->{5000, 5000},
+      PlotRange->{{0, 5000}, {0, 5000}}]},
+    {
+     StyleBox["\<\"Authors:\\n M. A. Arroyo-Ure\[NTilde]a\\n Facultad de \
 Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma \
 de M\[EAcute]xico\\n T. A. Valencia-P\[EAcute]rez\\n Facultad de Ciencias F\
-\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad \
+\[IAcute]ico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad \
 Aut\[OAcute]noma de Puebla\\n Contact us:\\tspacemathapp@gmail.com\"\>", 
-       "Text",
-       StripOnInput->False,
-       FontFamily->"Century Gothic",
-       FontSize->14,
-       FontColor->GrayLevel[0]], "\[SpanFromLeft]"}
-    },
-    AutoDelete->False,
-    GridBoxBackground->{"Columns" -> {{
-         RGBColor[1., 1., 1.]}}},
-    GridBoxFrame->{"ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> True}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Grid"], TraditionalForm]], "Print",
- CellChangeTimes->{
-  3.808604626199173*^9, {3.808604806461318*^9, 3.80860482430661*^9}},
+      "Text",
+      StripOnInput->False,
+      FontSize->16,
+      FontColor->GrayLevel[0]], "\[SpanFromLeft]"}
+   },
+   AutoDelete->False,
+   GridBoxBackground->{"Columns" -> {{
+        RGBColor[1., 1., 1.]}}},
+   GridBoxFrame->{"ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> True}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Print",
+ CellChangeTimes->{3.808666744200653*^9, 3.8086668180954437`*^9, 
+  3.8086670192714767`*^9, 3.8086670973991213`*^9, 3.8086671498727827`*^9, 
+  3.808667302283551*^9, 3.808667530760068*^9, 3.80866772006252*^9, 
+  3.808667782424039*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"da1963f2-5cb3-47f0-acd3-a841a2994fd3"]
+In[1]:=",ExpressionUUID->"9b235875-6414-4430-a41c-80886f5d38d3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -22171,9 +22010,9 @@ Cell[BoxData[
    3.808586026303372*^9},ExpressionUUID->"322fbb9b-ded8-41c8-aa08-\
 469c05095098"]
 },
-WindowSize->{1536, 781},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
-FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+WindowSize->{1865, 1025},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -22188,32 +22027,32 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 202, 3, 28, "Input",ExpressionUUID->"9ce760b2-f3c4-4650-b80b-432e180f0a86"],
-Cell[785, 27, 638852, 10517, 365, "Print",ExpressionUUID->"da1963f2-5cb3-47f0-acd3-a841a2994fd3"]
+Cell[580, 22, 202, 3, 31, "Input",ExpressionUUID->"9ce760b2-f3c4-4650-b80b-432e180f0a86"],
+Cell[785, 27, 629382, 10356, 384, "Print",ExpressionUUID->"9b235875-6414-4430-a41c-80886f5d38d3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[639674, 10549, 228, 4, 28, "Input",ExpressionUUID->"7ea7d997-af83-4a77-9e22-bf5274e7ad5a"],
-Cell[639905, 10555, 181, 3, 32, "Output",ExpressionUUID->"d827fd03-dfd6-4ae1-8d95-a3c17ad74af8"]
+Cell[630204, 10388, 228, 4, 31, "Input",ExpressionUUID->"7ea7d997-af83-4a77-9e22-bf5274e7ad5a"],
+Cell[630435, 10394, 181, 3, 34, "Output",ExpressionUUID->"d827fd03-dfd6-4ae1-8d95-a3c17ad74af8"]
 }, Open  ]],
-Cell[640101, 10561, 355, 8, 28, "Input",ExpressionUUID->"1d68435c-8342-4063-bb28-694b476b4a58"],
+Cell[630631, 10400, 355, 8, 31, "Input",ExpressionUUID->"1d68435c-8342-4063-bb28-694b476b4a58"],
 Cell[CellGroupData[{
-Cell[640481, 10573, 402, 9, 28, "Input",ExpressionUUID->"74bd65b5-c9c6-477c-8102-69f94c14dc6a"],
-Cell[640886, 10584, 36845, 793, 512, "Output",ExpressionUUID->"0fc571bd-6ec2-4a47-89ce-8e09b95deec6"]
+Cell[631011, 10412, 402, 9, 31, "Input",ExpressionUUID->"74bd65b5-c9c6-477c-8102-69f94c14dc6a"],
+Cell[631416, 10423, 36845, 793, 511, "Output",ExpressionUUID->"0fc571bd-6ec2-4a47-89ce-8e09b95deec6"]
 }, Open  ]],
-Cell[677746, 11380, 154, 3, 28, "Input",ExpressionUUID->"d41821ef-798f-41a8-8148-1ed4d2b77064"],
+Cell[668276, 11219, 154, 3, 31, "Input",ExpressionUUID->"d41821ef-798f-41a8-8148-1ed4d2b77064"],
 Cell[CellGroupData[{
-Cell[677925, 11387, 10175, 200, 561, "Input",ExpressionUUID->"1fed1f23-e62c-4c0e-bd53-f37180d323a9"],
-Cell[688103, 11589, 638697, 10514, 365, "Print",ExpressionUUID->"8cfa6834-4a23-4cfe-a17b-39a7afcac542"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1326837, 22108, 657, 14, 48, "Input",ExpressionUUID->"919e8828-be2a-438d-a690-55213d427e44"],
-Cell[1327497, 22124, 469, 11, 44, "Output",ExpressionUUID->"7ca4886d-a449-400d-a9a5-8634454a3801"]
+Cell[668455, 11226, 10175, 200, 630, "Input",ExpressionUUID->"1fed1f23-e62c-4c0e-bd53-f37180d323a9"],
+Cell[678633, 11428, 638697, 10514, 365, "Print",ExpressionUUID->"8cfa6834-4a23-4cfe-a17b-39a7afcac542"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1328003, 22140, 329, 7, 28, "Input",ExpressionUUID->"a1d00d70-61b3-405b-bba4-5ba676d60e85"],
-Cell[1328335, 22149, 345, 5, 32, "Output",ExpressionUUID->"465ed1be-d51e-45cd-8e37-0040edfb9dec"]
+Cell[1317367, 21947, 657, 14, 48, "Input",ExpressionUUID->"919e8828-be2a-438d-a690-55213d427e44"],
+Cell[1318027, 21963, 469, 11, 44, "Output",ExpressionUUID->"7ca4886d-a449-400d-a9a5-8634454a3801"]
 }, Open  ]],
-Cell[1328695, 22157, 612, 14, 28, "Input",ExpressionUUID->"322fbb9b-ded8-41c8-aa08-469c05095098"]
+Cell[CellGroupData[{
+Cell[1318533, 21979, 329, 7, 28, "Input",ExpressionUUID->"a1d00d70-61b3-405b-bba4-5ba676d60e85"],
+Cell[1318865, 21988, 345, 5, 32, "Output",ExpressionUUID->"465ed1be-d51e-45cd-8e37-0040edfb9dec"]
+}, Open  ]],
+Cell[1319225, 21996, 612, 14, 28, "Input",ExpressionUUID->"322fbb9b-ded8-41c8-aa08-469c05095098"]
 }
 ]
 *)
