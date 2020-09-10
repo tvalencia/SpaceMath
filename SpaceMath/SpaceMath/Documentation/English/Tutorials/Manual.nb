@@ -10,11 +10,11 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6483,        177]
-NotebookOptionsPosition[      3523,        106]
-NotebookOutlinePosition[      5703,        163]
-CellTagsIndexPosition[      5660,        160]
-WindowTitle->RemoteConnection
+NotebookDataLength[      6304,        177]
+NotebookOptionsPosition[      3651,        110]
+NotebookOutlinePosition[      5721,        165]
+CellTagsIndexPosition[      5678,        162]
+WindowTitle->Manual
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -32,12 +32,12 @@ Cell[BoxData[GridBox[{
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
-       StripOnInput->False], {"\<\"SpaceMath/tutorial/RemoteConnection\"\>":>
+       StripOnInput->False], {"\<\"SpaceMath/tutorial/Manual\"\>":>
       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
       Module[{DocumentationSearch`Private`nb$}, 
        DocumentationSearch`Private`nb$ = NotebookPut[
           Notebook[{
-            Cell["SpaceMath/tutorial/RemoteConnection"]}, Visible -> False]]; 
+            Cell["SpaceMath/tutorial/Manual"]}, Visible -> False]]; 
        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
@@ -50,8 +50,8 @@ Cell[BoxData[GridBox[{
               MakeBoxes[
                Hyperlink[
                "http://reference.wolfram.com/language/SpaceMath/tutorial/\
-RemoteConnection.html"], StandardForm]], "Input", TextClipboardType -> 
-             "PlainText"]}, Visible -> False]]; 
+Manual.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, 
+           Visible -> False]]; 
        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
        NotebookClose[DocumentationSearch`Private`nb$]; 
@@ -60,10 +60,10 @@ RemoteConnection.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21565], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21036], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
-            "SpaceMath/tutorial/RemoteConnection", ".html"]], None}]}]},
+            "SpaceMath/tutorial/Manual", ".html"]], None}]}]},
       Appearance->None,
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
@@ -77,29 +77,33 @@ RemoteConnection.html"], StandardForm]], "Input", TextClipboardType ->
 
 Cell[CellGroupData[{
 
-Cell["RemoteConnection", "Title",
+Cell["Manual", "Title",
  CellID->509267359],
 
-Cell["Requirements to remote connection:", "Text",
+Cell[CellGroupData[{
+
+Cell["For more details see:", "Text",
  CellID->1534169418],
 
-Cell[BoxData[GridBox[{
-   {
-    RowBox[{"Mathematica", " ", 
-     RowBox[{"version", ":", 
-      RowBox[{"11.0", ".", "++"}]}]}], Cell[
-    "PuTTY and Xming (Windows 10).", "TableText"]}
-  }]], "DefinitionBox",
- CellID->2096742444],
+Cell[BoxData[
+ RowBox[{"URLDownload", "[", 
+  RowBox[{"\"\<https://arxiv.org/pdf/2008.00564.pdf\>\"", ",", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{"$UserDocumentsDirectory", ",", "\"\<ManualSpaceMath.pdf\>\""}], 
+     "}"}], "]"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->2058623809],
 
-Cell["", "Caption",
- CellID->1891092685],
-
-Cell["Steps to connect to server \"negrito\" for Linux.", "Text",
- CellID->432542190],
-
-Cell["", "Text",
- CellID->258989389]
+Cell[BoxData[
+ RowBox[{"SystemOpen", "[", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{"$UserDocumentsDirectory", ",", "\"\<ManualSpaceMath.pdf\>\""}], 
+    "}"}], "]"}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->2105302388]
+}, Open  ]]
 }, Open  ]],
 
 Cell[" ", "FooterCell"]
@@ -108,7 +112,7 @@ Saveable->False,
 ScreenStyleEnvironment->"Working",
 WindowSize->{725, 750},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-WindowTitle->"RemoteConnection",
+WindowTitle->"Manual",
 TaggingRules->{
  "ModificationHighlight" -> False, "ColorType" -> "TutorialColor", 
   "LinkTrails" -> GridBox[{{
@@ -118,18 +122,16 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 10, 1, 45, 29.607515}", 
+   "built" -> "{2020, 9, 10, 1, 45, 27.806204}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
-    "status" -> "None", "summary" -> 
-    "Requirements to remote connection: Steps to connect to server \
-\"negrito\" for Linux.", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$21502, "title" -> 
-    "RemoteConnection", "titlemodifier" -> "", "windowtitle" -> 
-    "RemoteConnection", "type" -> "Tutorial", "uri" -> 
-    "SpaceMath/tutorial/RemoteConnection"}},
+    "status" -> "None", "summary" -> "For more details see:", 
+    "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$20994, "title" -> 
+    "Manual", "titlemodifier" -> "", "windowtitle" -> "Manual", "type" -> 
+    "Tutorial", "uri" -> "SpaceMath/tutorial/Manual"}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
    Cell[
@@ -162,23 +164,21 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[588, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"9b838d81-0277-4033-b038-749525317819",
+Cell[578, 21, 2295, 54, 70, "AnchorBarGrid",ExpressionUUID->"1272e8c3-f319-4078-b38d-68d68c51461b",
  CellID->1],
 Cell[CellGroupData[{
-Cell[2950, 79, 53, 1, 70, "Title",ExpressionUUID->"ff8744a3-71a6-4e7b-b3b7-d52ab651a1f3",
+Cell[2898, 79, 43, 1, 70, "Title",ExpressionUUID->"7fa889a7-99d8-404f-9183-e8130714d521",
  CellID->509267359],
-Cell[3006, 82, 71, 1, 70, "Text",ExpressionUUID->"58115b5a-6d4c-4038-9585-ad5e9f418de2",
+Cell[CellGroupData[{
+Cell[2966, 84, 58, 1, 70, "Text",ExpressionUUID->"2a2f37cb-48ca-4eb4-a872-636528d3fe1e",
  CellID->1534169418],
-Cell[3080, 85, 231, 7, 70, "DefinitionBox",ExpressionUUID->"688818c2-36e5-4d02-905d-4eb507484a05",
- CellID->2096742444],
-Cell[3314, 94, 40, 1, 70, "Caption",ExpressionUUID->"a2f81256-e37d-4cbd-a86e-f084badc4bf3",
- CellID->1891092685],
-Cell[3357, 97, 85, 1, 70, "Text",ExpressionUUID->"7dd9618d-2edd-4044-91fc-641fc7ce12cf",
- CellID->432542190],
-Cell[3445, 100, 36, 1, 70, "Text",ExpressionUUID->"b06a537b-6df3-4882-8fd0-e638c143ab99",
- CellID->258989389]
+Cell[3027, 87, 319, 8, 70, "Input",ExpressionUUID->"75f86e43-de79-44d8-8d5a-95491fcfae3d",
+ CellID->2058623809],
+Cell[3349, 97, 248, 7, 70, "Input",ExpressionUUID->"bb3c696b-3c13-4d30-b84f-d326da196bd6",
+ CellID->2105302388]
+}, Open  ]]
 }, Open  ]],
-Cell[3496, 104, 23, 0, 70, "FooterCell",ExpressionUUID->"ec6f66c1-1b37-4b41-9743-5ccf9a769535"]
+Cell[3624, 108, 23, 0, 70, "FooterCell",ExpressionUUID->"aa3fee52-5e52-407b-8509-da236a13c37a"]
 }
 ]
 *)

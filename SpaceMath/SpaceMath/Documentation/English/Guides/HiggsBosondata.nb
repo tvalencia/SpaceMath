@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11352,        339]
+NotebookDataLength[     11344,        339]
 NotebookOptionsPosition[      8576,        278]
-NotebookOutlinePosition[     10244,        319]
-CellTagsIndexPosition[     10201,        316]
+NotebookOutlinePosition[     10236,        319]
+CellTagsIndexPosition[     10193,        316]
 WindowTitle->Higgs Boson data
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ HiggsBosondata.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$6830], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$6857], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/guide/HiggsBosondata", ".html"]], None}]}]},
@@ -290,7 +290,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 9, 12, 0, 52.4597669}", 
+   "built" -> "{2020, 9, 10, 1, 44, 47.872534}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -299,11 +299,11 @@ TaggingRules->{
     "The implementation of the Higgs boson data within the SpaceMath code , \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], \
 10.1140/epjc/s10052-019-6909-y. ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$6764, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$6791, "title" -> 
     "Higgs Boson data", "titlemodifier" -> "", "windowtitle" -> 
     "Higgs Boson data", "type" -> "Guide", "uri" -> 
     "SpaceMath/guide/HiggsBosondata"}},
-FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
   CharacterEncoding -> "UTF-8"]
 ]
@@ -318,7 +318,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[588, 21, 2308, 53, 70, "AnchorBarGrid",ExpressionUUID->"15bb58fc-19fb-4971-bf10-5f1cb0092eb9",
+Cell[588, 21, 2308, 53, 70, "AnchorBarGrid",ExpressionUUID->"fb959c87-8c06-4a05-a385-7a4271dd0c25",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2921, 78, 58, 1, 70, "GuideTitle",ExpressionUUID->"1cf58ebc-fd8f-44bf-946e-5568fe607611",
@@ -337,10 +337,10 @@ Cell[7457, 233, 857, 26, 70, "Text",ExpressionUUID->"346953d6-a187-4753-8920-92d
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8363, 265, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"e8ac88ea-6340-4fa5-afae-39815022c544"],
-Cell[8503, 273, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"f6e94b50-63db-44c1-af9c-59ca32d85961"]
+Cell[8363, 265, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"3624485a-931f-4773-ab08-d3cd57d131fb"],
+Cell[8503, 273, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"06d2bf58-14cb-436e-9a0c-aec8be0c255b"]
 }, Open  ]],
-Cell[8549, 276, 23, 0, 70, "FooterCell",ExpressionUUID->"a629c286-6c87-4161-a993-128e12f44531"]
+Cell[8549, 276, 23, 0, 70, "FooterCell",ExpressionUUID->"f8f108e2-33d7-4244-94fb-5390117cc1c2"]
 }
 ]
 *)

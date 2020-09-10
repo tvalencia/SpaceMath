@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5305,        146]
-NotebookOptionsPosition[      3307,         97]
-NotebookOutlinePosition[      5024,        143]
-CellTagsIndexPosition[      4981,        140]
+NotebookDataLength[      5290,        146]
+NotebookOptionsPosition[      3308,         97]
+NotebookOutlinePosition[      5009,        143]
+CellTagsIndexPosition[      4966,        140]
 WindowTitle->Rb
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ Cell[BoxData[GridBox[{
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$9977], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$10004], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], "SpaceMath/ref/Rb", 
             ".html"]], None}]}]},
@@ -110,7 +110,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2020, 9, 9, 12, 0, 59.9275608}", 
+   "built" -> "{2020, 9, 10, 1, 44, 51.898769}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -119,7 +119,7 @@ TaggingRules->{
     "tabletags" -> {}, "title" -> "Rb", "titlemodifier" -> "", "windowtitle" -> 
     "Rb", "type" -> "Symbol", "uri" -> "SpaceMath/ref/Rb"}},
 CellContext->"Global`",
-FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -128,7 +128,7 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Microsoft Windows (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -142,12 +142,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[574, 21, 2265, 53, 70, "AnchorBarGrid",ExpressionUUID->"03d5b278-25bd-4272-bda3-17b7ac9d25b1",
+Cell[574, 21, 2266, 53, 70, "AnchorBarGrid",ExpressionUUID->"32ca040c-2da4-4ae3-9db5-347d362cddeb",
  CellID->1],
-Cell[2842, 76, 159, 6, 70, "ObjectNameGrid",ExpressionUUID->"a13a4c1b-7ce6-4440-b516-045e24e3fde3"],
-Cell[3004, 84, 273, 9, 70, "Usage",ExpressionUUID->"2600f9a8-9b7c-4fa9-a600-eb88c6ac460f",
+Cell[2843, 76, 159, 6, 70, "ObjectNameGrid",ExpressionUUID->"aeff7709-cb64-415b-90f5-8a771e006948"],
+Cell[3005, 84, 273, 9, 70, "Usage",ExpressionUUID->"6526fb66-ebf1-4224-ad8a-0fa00e7ba7df",
  CellID->982511436],
-Cell[3280, 95, 23, 0, 70, "FooterCell",ExpressionUUID->"fc842d23-20a2-4ef8-acdc-e7be1297774b"]
+Cell[3281, 95, 23, 0, 70, "FooterCell",ExpressionUUID->"abcbc153-df07-4343-bc8d-33bd288fec97"]
 }
 ]
 *)

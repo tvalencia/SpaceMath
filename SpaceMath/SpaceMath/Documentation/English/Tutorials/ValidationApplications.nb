@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    668294,      11088]
-NotebookOptionsPosition[    664902,      11010]
-NotebookOutlinePosition[    667211,      11068]
-CellTagsIndexPosition[    667168,      11065]
+NotebookDataLength[    668285,      11089]
+NotebookOptionsPosition[    664909,      11011]
+NotebookOutlinePosition[    667203,      11069]
+CellTagsIndexPosition[    667160,      11066]
 WindowTitle->Validation and Applications
 WindowFrame->Normal*)
 
@@ -21,14 +21,14 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[GridBox[{
    {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "801bb475-ac09-4d75-85cf-711eaf54e6fc"], Cell[TextData[Cell[BoxData[
+     "662ccabb-117b-4357-8c24-870936bbcf34"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"805089c9-a587-446d-99e0-e0c4baca50b4"],
+        }],ExpressionUUID->"97eb53b0-3af3-4f10-88a3-e014be162122"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -62,22 +62,23 @@ ValidationApplications.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$23094], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$23374], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/ValidationApplications", ".html"]], None}]}]},
+      
       Appearance->None,
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "38d79181-4f31-4480-971d-6817dfe6e029"]], "AnchorBar",ExpressionUUID->
-     "296f7e20-4219-45a7-83d8-c2355e0271ba"]}
+     "0bfddd90-0274-420d-8108-1ef2474eb716"]], "AnchorBar",ExpressionUUID->
+     "dff4c80a-e76b-49a7-8e06-01cc65c47a7d"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"e180fe80-7bbe-4301-9285-baf4f254b5c8"],
+ CellID->1,ExpressionUUID->"cbf39e1a-462c-4553-b263-17d471ca755a"],
 
 Cell[CellGroupData[{
 
@@ -11006,7 +11007,7 @@ Cell[BoxData["XXXX"], "Output",
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"2f4ad8b2-d894-481c-ab96-0bdeebb5b562"]
+Cell[" ", "FooterCell",ExpressionUUID->"60dbe141-c972-4272-ac4f-1c073c8e8356"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -11022,7 +11023,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 9, 12, 2, 5.1087037}", 
+   "built" -> "{2020, 9, 10, 1, 45, 35.565812}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -11030,12 +11031,12 @@ TaggingRules->{
     "status" -> "None", "summary" -> 
     "In order to validate SpaceMath v1.0, we reproduce some figures of refs. \
 Nathaniel, BUAP GridBox[{{", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$23044, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$23324, "title" -> 
     "Validation and Applications", "titlemodifier" -> "", "windowtitle" -> 
     "Validation and Applications", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/ValidationApplications", "WorkflowDockedCell" -> ""}, 
   "SearchTextTranslated" -> ""},
-FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -11053,7 +11054,7 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["TutorialRelatedLinksSection"], 
     CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Microsoft Windows (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -11067,29 +11068,29 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[599, 21, 2671, 58, 53, "AnchorBarGrid",ExpressionUUID->"e180fe80-7bbe-4301-9285-baf4f254b5c8",
+Cell[599, 21, 2678, 59, 55, "AnchorBarGrid",ExpressionUUID->"cbf39e1a-462c-4553-b263-17d471ca755a",
  CellID->1],
 Cell[CellGroupData[{
-Cell[3295, 83, 119, 1, 63, "Title",ExpressionUUID->"83b438ca-f2a0-40ab-bacc-daf5319775e4",
+Cell[3302, 84, 119, 1, 65, "Title",ExpressionUUID->"83b438ca-f2a0-40ab-bacc-daf5319775e4",
  CellID->509267359],
-Cell[3417, 86, 344, 8, 35, "Text",ExpressionUUID->"421a663f-9433-42c9-9cee-4253318dcedb",
+Cell[3424, 87, 344, 8, 37, "Text",ExpressionUUID->"421a663f-9433-42c9-9cee-4253318dcedb",
  CellID->1534169418],
-Cell[3764, 96, 624347, 10239, 198, "Text",ExpressionUUID->"ecac436b-79bd-4f1b-89e1-095d8f32a56c",
+Cell[3771, 97, 624347, 10239, 198, "Text",ExpressionUUID->"ecac436b-79bd-4f1b-89e1-095d8f32a56c",
  CellID->1533893066],
-Cell[628114, 10337, 4717, 131, 324, "Text",ExpressionUUID->"1f87fdf5-a12c-4a3f-a584-63ec57f39df8",
+Cell[628121, 10338, 4717, 131, 348, "Text",ExpressionUUID->"1f87fdf5-a12c-4a3f-a584-63ec57f39df8",
  CellID->1998493277],
-Cell[632834, 10470, 100, 1, 36, "Caption",ExpressionUUID->"0a237405-f45a-4960-b529-d0ccdead7066",
+Cell[632841, 10471, 100, 1, 70, "Caption",ExpressionUUID->"0a237405-f45a-4960-b529-d0ccdead7066",
  CellID->1891092685],
-Cell[632937, 10473, 31569, 521, 561, "Text",ExpressionUUID->"4f2beb48-b5b1-4b8a-ba1f-cb32aceba14f",
+Cell[632944, 10474, 31569, 521, 70, "Text",ExpressionUUID->"4f2beb48-b5b1-4b8a-ba1f-cb32aceba14f",
  CellID->1182324748],
 Cell[CellGroupData[{
-Cell[664531, 10998, 129, 2, 70, "Input",ExpressionUUID->"dfb3f03e-c099-4e04-ac6f-e9443c899a31",
+Cell[664538, 10999, 129, 2, 70, "Input",ExpressionUUID->"dfb3f03e-c099-4e04-ac6f-e9443c899a31",
  CellID->2058623809],
-Cell[664663, 11002, 130, 2, 35, "Output",ExpressionUUID->"d26cd886-ff1a-42a3-a103-6d71e8565107",
+Cell[664670, 11003, 130, 2, 38, "Output",ExpressionUUID->"d26cd886-ff1a-42a3-a103-6d71e8565107",
  CellID->1181321046]
 }, Open  ]]
 }, Open  ]],
-Cell[664820, 11008, 78, 0, 70, "FooterCell",ExpressionUUID->"2f4ad8b2-d894-481c-ab96-0bdeebb5b562"]
+Cell[664827, 11009, 78, 0, 70, "FooterCell",ExpressionUUID->"60dbe141-c972-4272-ac4f-1c073c8e8356"]
 }
 ]
 *)
