@@ -148,17 +148,19 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 (*Style[DisplayForm@ButtonBox["SpaceMath_RXX", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/SPACEMATH_RXX",
 				ButtonNote -> "paclet:SpaceMath/SPACEMATH_RXX"], "Text"];*)
 
-
 If[Global`$SpaceMathStartupMessages =!= False, 
  Print[Grid[{{Style["SpaceMath v.1.0", "Title", FontSize -> 30, FontColor -> Black, FontWeight -> Normal], 
-     SpanFromLeft}, {Grid[{{Button[
+     SpanFromLeft}, {Grid[{
+     	{
+     	Button[
          Style["Documentation Center", FontSize -> 14, 
           FontColor -> Black, FontWeight -> Normal], 
          SystemOpen[
           FileNameJoin[{$SpaceMathDirectory, "Documentation", 
             "English", "Tutorials", "SpaceMathOverview.nb"}]], 
          Appearance -> "DialogBox", Background -> Lighter[Brown, 0.5],
-          ImageSize -> {140, 50}, Method -> "Queued"]}, {"", 
+          ImageSize -> {140, 50}, Method -> "Queued"]
+          }, {"", 
         DisplayForm@
          ButtonBox[
           Style["Examples",FontSize -> 14], 

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13521,        361]
-NotebookOptionsPosition[      8809,        268]
-NotebookOutlinePosition[      9220,        284]
-CellTagsIndexPosition[      9177,        281]
+NotebookDataLength[     13615,        366]
+NotebookOptionsPosition[      8903,        273]
+NotebookOutlinePosition[      9314,        289]
+CellTagsIndexPosition[      9271,        286]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -142,39 +142,41 @@ Cell[CellGroupData[{
 
 Cell[TextData[ButtonBox["LHC Higgs boson data",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/SpaceMathOverview"]], "TOCSubsection",
+ ButtonData->"paclet:SpaceMath/tutorial/SpaceMathOverview"]], "TOCSubsection",\
+
  CellChangeTimes->{{3.8086149560896893`*^9, 3.808614956197625*^9}, {
   3.80865940096835*^9, 
   3.80865940551484*^9}},ExpressionUUID->"8b665720-056c-4763-bf14-\
 0c9cc67d934d"],
 
 Cell[TextData[{
- ButtonBox["Signal strength modifiers",
+ ButtonBox["Signal strength modifiers ",
   BaseStyle->"Link",
   ButtonData->"paclet:SpaceMath/tutorial/Signalstrength"],
- ButtonBox[" ",
-  BaseStyle->"Link",
-  ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#158635113"],
  ButtonBox[Cell[BoxData[
   SubscriptBox["R", "X"]], "InlineFormula",ExpressionUUID->
-  "5df64338-7779-4ceb-97be-807c72dca208"],
+  "329a7fdc-ba17-42d0-a521-0c503f148b99"],
   BaseStyle->"Link",
-  ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#158635113"]
-}], "TOCSubsubsection",ExpressionUUID->"121b727f-42c1-4c34-8bb3-24c8d3ab96e8"],
+  ButtonData->"paclet:SpaceMath/tutorial/Signalstrength"]
+}], "TOCSubsubsection",
+ CellChangeTimes->{
+  3.8087100882475986`*^9, {3.808710363369306*^9, 
+   3.808710394337439*^9}},ExpressionUUID->"121b727f-42c1-4c34-8bb3-\
+24c8d3ab96e8"],
 
 Cell[TextData[{
- ButtonBox["Higgs boson coupling modifiers",
+ ButtonBox["Higgs boson coupling modifiers ",
   BaseStyle->"Link",
   ButtonData->"paclet:SpaceMath/tutorial/HiggsBosonCoupling"],
- ButtonBox[" ",
-  BaseStyle->"Link",
-  ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#11040781"],
  ButtonBox[Cell[BoxData[
   SubscriptBox["\[Kappa]", "i"]], "InlineFormula",ExpressionUUID->
-  "d810d581-8c62-4b64-863b-2e299b06ffed"],
+  "c03bb8ae-42b3-4edb-970c-e5fedb9d2d15"],
   BaseStyle->"Link",
-  ButtonData->"paclet:SpaceMath/tutorial/SpaceMath#11040781"]
-}], "TOCSubsubsection",ExpressionUUID->"3d99e77f-b1d2-4d19-986f-c7f7f2524aed"]
+  ButtonData->"paclet:SpaceMath/tutorial/HiggsBosonCoupling"]
+}], "TOCSubsubsection",
+ CellChangeTimes->{{3.808710315217918*^9, 3.8087103528693666`*^9}, 
+   3.80871040273038*^9},ExpressionUUID->"3d99e77f-b1d2-4d19-986f-\
+c7f7f2524aed"]
 }, Open  ]]
 }, Open  ]],
 
@@ -218,10 +220,11 @@ ionUUID->"309beb8c-a9d8-4a79-9e4f-ffe22b95f463"],
 Cell[TextData[ButtonBox["Constraint on free model parameter space of the \
 THDM-III by using SpaceMath v1.0",
  BaseStyle->"Link",
- ButtonData->
-  "paclet:SpaceMath/tutorial/SpaceMath#307332485"]], "TOCSubsection",
+ ButtonData->"paclet:SpaceMath/tutorial/SpaceMathOverview"]], "TOCSubsection",\
+
  CellChangeTimes->{
-  3.808659493418451*^9},ExpressionUUID->"8c4d86b3-ae1e-4568-90e4-\
+  3.808659493418451*^9, {3.808710202522759*^9, 
+   3.8087102053235188`*^9}},ExpressionUUID->"8c4d86b3-ae1e-4568-90e4-\
 af69d2f9ee51"]
 }, Open  ]],
 
@@ -257,17 +260,19 @@ ionUUID->"eaa08c0b-65e8-40ec-8471-9f3efbe00f3c"],
 
 Cell[TextData[ButtonBox["Remote connection",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/RemoteConnection"]], "TOCSubsection",
+ ButtonData->"paclet:SpaceMath/tutorial/SpaceMathOverview"]], "TOCSubsection",\
+
  CellChangeTimes->{
   3.8086162115637836`*^9, {3.808616271958378*^9, 3.8086162805085955`*^9}, 
-   3.80865934856553*^9},ExpressionUUID->"7ef1a7b4-6a4e-4994-aec2-\
+   3.80865934856553*^9, {3.808710265531987*^9, 
+   3.808710267913581*^9}},ExpressionUUID->"7ef1a7b4-6a4e-4994-aec2-\
 c221edc28891"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{687, 772},
-WindowMargins->{{Automatic, 159}, {Automatic, 30}},
+WindowMargins->{{486, Automatic}, {Automatic, 55}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
   CharacterEncoding -> "UTF-8"]
@@ -337,29 +342,29 @@ Cell[3797, 123, 284, 6, 51, "TOCChapter",ExpressionUUID->"d834e10b-ed0b-4a26-af3
 Cell[CellGroupData[{
 Cell[4106, 133, 265, 5, 29, "TOCSection",ExpressionUUID->"c090f2b3-07cf-436c-bf61-2be083deada2"],
 Cell[CellGroupData[{
-Cell[4396, 142, 321, 6, 20, "TOCSubsection",ExpressionUUID->"8b665720-056c-4763-bf14-0c9cc67d934d"],
-Cell[4720, 150, 527, 12, 21, "TOCSubsubsection",ExpressionUUID->"121b727f-42c1-4c34-8bb3-24c8d3ab96e8"],
-Cell[5250, 164, 541, 12, 21, "TOCSubsubsection",ExpressionUUID->"3d99e77f-b1d2-4d19-986f-c7f7f2524aed"]
+Cell[4396, 142, 323, 7, 20, "TOCSubsection",ExpressionUUID->"8b665720-056c-4763-bf14-0c9cc67d934d"],
+Cell[4722, 151, 521, 13, 21, "TOCSubsubsection",ExpressionUUID->"121b727f-42c1-4c34-8bb3-24c8d3ab96e8"],
+Cell[5246, 166, 537, 12, 21, "TOCSubsubsection",ExpressionUUID->"3d99e77f-b1d2-4d19-986f-c7f7f2524aed"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5840, 182, 261, 5, 29, "TOCSection",ExpressionUUID->"580f2f99-e6e4-496b-9cf7-9b04d82f45ca"],
-Cell[6104, 189, 200, 3, 20, "TOCSubsection",ExpressionUUID->"b2870790-9735-4be3-b0ba-baeeecd4fe5c"],
-Cell[6307, 194, 311, 6, 20, "TOCSubsection",ExpressionUUID->"4c3a7733-0c86-4a35-9b77-fc1afb42e529"]
+Cell[5832, 184, 261, 5, 29, "TOCSection",ExpressionUUID->"580f2f99-e6e4-496b-9cf7-9b04d82f45ca"],
+Cell[6096, 191, 200, 3, 20, "TOCSubsection",ExpressionUUID->"b2870790-9735-4be3-b0ba-baeeecd4fe5c"],
+Cell[6299, 196, 311, 6, 20, "TOCSubsection",ExpressionUUID->"4c3a7733-0c86-4a35-9b77-fc1afb42e529"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6655, 205, 265, 5, 29, "TOCSection",ExpressionUUID->"758c93aa-de0b-45de-bd28-a243d881eea0"],
-Cell[6923, 212, 223, 3, 20, "TOCSubsection",ExpressionUUID->"309beb8c-a9d8-4a79-9e4f-ffe22b95f463"],
-Cell[7149, 217, 315, 7, 20, "TOCSubsection",ExpressionUUID->"8c4d86b3-ae1e-4568-90e4-af69d2f9ee51"]
+Cell[6647, 207, 265, 5, 29, "TOCSection",ExpressionUUID->"758c93aa-de0b-45de-bd28-a243d881eea0"],
+Cell[6915, 214, 223, 3, 20, "TOCSubsection",ExpressionUUID->"309beb8c-a9d8-4a79-9e4f-ffe22b95f463"],
+Cell[7141, 219, 364, 8, 20, "TOCSubsection",ExpressionUUID->"8c4d86b3-ae1e-4568-90e4-af69d2f9ee51"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7501, 229, 261, 5, 29, "TOCSection",ExpressionUUID->"8a72db90-0351-46f0-b131-bd2c0d8f69b4"],
-Cell[7765, 236, 203, 4, 20, "TOCSubsection",ExpressionUUID->"0c0b164a-1da1-4c11-b46b-70ce0c6e0699"]
+Cell[7542, 232, 261, 5, 29, "TOCSection",ExpressionUUID->"8a72db90-0351-46f0-b131-bd2c0d8f69b4"],
+Cell[7806, 239, 203, 4, 20, "TOCSubsection",ExpressionUUID->"0c0b164a-1da1-4c11-b46b-70ce0c6e0699"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8005, 245, 259, 5, 29, "TOCSection",ExpressionUUID->"f8acc166-ba2b-4574-a0a3-f4d9790ec1e3"],
-Cell[8267, 252, 180, 3, 20, "TOCSubsection",ExpressionUUID->"eaa08c0b-65e8-40ec-8471-9f3efbe00f3c"],
-Cell[8450, 257, 319, 6, 20, "TOCSubsection",ExpressionUUID->"7ef1a7b4-6a4e-4994-aec2-c221edc28891"]
+Cell[8046, 248, 259, 5, 29, "TOCSection",ExpressionUUID->"f8acc166-ba2b-4574-a0a3-f4d9790ec1e3"],
+Cell[8308, 255, 180, 3, 20, "TOCSubsection",ExpressionUUID->"eaa08c0b-65e8-40ec-8471-9f3efbe00f3c"],
+Cell[8491, 260, 372, 8, 20, "TOCSubsection",ExpressionUUID->"7ef1a7b4-6a4e-4994-aec2-c221edc28891"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
