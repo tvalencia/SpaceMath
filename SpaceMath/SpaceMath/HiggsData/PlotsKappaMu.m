@@ -1,7 +1,7 @@
 (* Wolfram Language Package *)
 
 (******************************************************************************************************************************************************)
-(*********************************************************Begin OF Kmu************************************************************************************)
+(*********************************************************Begin OF KMu************************************************************************************)
 (******************************************************************************************************************************************************)
 Kmu1sigX::usage = "Kmu1sigX"
 Kmu2sigX::usage = "Kmu2sigX"
@@ -9,19 +9,19 @@ datamumu1sigXY::usage = "datamumu1sigXY"
 datamumu2sigXY::usage = "datamumu2sigXY"
 datamumu1sigXYZ::usage = "datamumu1sigXYZ"
 datamumu2sigXYZ::usage = "datamumu2sigXYZ"
-tablemu1sigXY::usage = "tablemu1sigXY"
-tablemu2sigXY::usage = "tablemu2sigXY"
-tablemu1sigXYZ::usage = "tablemu1sigXYZ"
-tablemu2sigXYZ::usage = "tablemu2sigXYZ"
-kappamu2sig::usage = "kappamu2sig"
+tableMu1sigXY::usage = "tableMu1sigXY"
+tableMu2sigXY::usage = "tableMu2sigXY"
+tableMu1sigXYZ::usage = "tableMu1sigXYZ"
+tableMu2sigXYZ::usage = "tableMu2sigXYZ"
+kappaMu2sig::usage = "kappaMu2sig"
 Kmu2sigWXYZ::usage = "Kmu2sigWXYZ"
-kappamu1sig::usage = "kappamu1sig"
+kappaMu1sig::usage = "kappaMu1sig"
 Kmu1sigWXYZ::usage = "Kmu1sigWXYZ"
 
 dataKmu1sig::usage = "dataKmu1sig"
 dataKmu2sig::usage = "dataKmu2sig"
 
-KMUoneLHC::usage = usage = "\!\(\*
+KMUoneLHC::usage = "\!\(\*
 StyleBox[\"KMUoneLHC\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghmumu_\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -42,7 +42,6 @@ StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command evaluates \!\(\*Sub
 coupling. Here, h represents to SM-like Higgs boson while mu stands for mu-lepton. The label x indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
-
 TableKMUoneLHC::usage="\!\(\*
 StyleBox[\"TableKMUoneLHC\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -59,18 +58,18 @@ StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table w
 in $UserDocumentsDirectory. "
 
 KmuLHC::usage="KmuLHC[ghmumu_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(\[Mu]\)]\), \
-when there is dependence on two or more parameters. The argument ghmumu is the  h\[mu]\[mu]\ coupling. Here, h represents to SM-like Higgs boson while mu is the mu-lepton. Labels x and y \
+when there is dependence on two or more parameters. The argument ghmumu is the  h\[Mu]\[Mu]\ coupling. Here, h represents to SM-like Higgs boson while mu is the mu-lepton. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constraint, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKmuLHC::usage="TableKmuLHC[ghmumu_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[mu]\)]\). The arguments ghtt, ghbb and ghmumu are the htt, \
-hbb and hmumu couplings. Here, h represents to SM-like Higgs boson while t, b and mu are the top and bottom quarks and the mu-lepton. Labels x and y \
+TableKmuLHC::usage="TableKmuLHC[ghmumu_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(\[Mu]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
+hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t, b and tau are the top and bottom quarks and the tau-lepton. Labels x and y \
 indicate the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
 to indicates the steps from xmin to xmax (ymin to ymax)."
 (******************************************************************************************************************************************************)
-(*********************************************************End OF Kmu**********************************************************************************)
+(*********************************************************End OF KMu**********************************************************************************)
 (******************************************************************************************************************************************************)
 
 Begin["`Package`"]
@@ -117,8 +116,6 @@ KMUoneLHC[ghmumu_,x_,xmin_,xmax_,xlabel_]:={
 Kmu1sigX[ghmumu,x,xmin,xmax,xlabel],
 Kmu2sigX[ghmumu,x,xmin,xmax,xlabel]
 }
-(*KappamuX1sig[ghmumu[0.9,0.1,u],u,500,2000,u[GeV]]
-KappamuX2sig[ghmumu[0.9,0.1,u],u,500,2000,u[GeV]]*)
 
 (*************************************************************************************************************************************************************************************)
 
@@ -143,11 +140,7 @@ datamumu1sigXYZ[ghmumu_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y
 (*Create a table of three columns to 2 \[Sigma] \[Rule] {x,y,kappa-mu}*)
 
 datamumu2sigXYZ[ghmumu_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Table[{x,y,If[
-    kappamuINF2sig<=kmu[ghmumu]<=kappamuSUP2sig, kmu[ghmumu],0]}, {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]
-
-(*databb2sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Do[list=Append[list={x,y,If[
-    kappaBotINF2sig<=kb[ghbb]<=kappaBotSUP2sig, kb[ghbb],0
-]}], {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]*)
+    kappaMuINF2sig<=kmu[ghmumu]<=kappaMuSUP2sig, kmu[ghmumu],0]}, {x, xmin,xmax,xstep},{y, ymin,ymax,ystep}]
 
 TableKMUoneLHC[ghmumu_,x_,xmin_,xmax_,xstep_]:={
 Export[
@@ -166,26 +159,23 @@ FileNameJoin[{$UserDocumentsDirectory,"TableKMUone_2sigma_LHC.txt"}],Re[datamumu
 
 (*This are the commands used in the shell of mathematica*)
 
-tablemu1sigXY[ghmumu_,x_,xmin_,xmax_,xstep_]:=Export[
-FileNameJoin[{$UserDocumentsDirectory,"tablemu1sigXY.txt"}],Re[datamumu1sigXY[ghmumu,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
+tableMu1sigXY[ghmumu_,x_,xmin_,xmax_,xstep_]:=Export[
+FileNameJoin[{$UserDocumentsDirectory,"tableMu1sigXY.txt"}],Re[datamumu1sigXY[ghmumu,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},"Table"
 ]
 
-tablemu2sigXY[ghmumu_,x_,xmin_,xmax_,xstep_]:=Export[
-FileNameJoin[{$UserDocumentsDirectory,"tablemu2sigXY.txt"}],Re[datamumu2sigXY[ghmumu,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
+tableMu2sigXY[ghmumu_,x_,xmin_,xmax_,xstep_]:=Export[
+FileNameJoin[{$UserDocumentsDirectory,"tableMu2sigXY.txt"}],Re[datamumu2sigXY[ghmumu,x,xmin,xmax,xstep]]/. {{_,0} ->Sequence[]}
 ,"Table"
 ]
 
-tablemu1sigXYZ[ghmumu_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-FileNameJoin[{$UserDocumentsDirectory,"tablemu1sigXYZ.txt"}],Re[datamumu1sigXYZ[ghmumu,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
+tableMu1sigXYZ[ghmumu_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
+FileNameJoin[{$UserDocumentsDirectory,"tableMu1sigXYZ.txt"}],Re[datamumu1sigXYZ[ghmumu,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. { {_,_,0}-> Sequence[]},"Table"
 ]
 
-tablemu2sigXYZ[ghmumu_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
-FileNameJoin[{$UserDocumentsDirectory,"tablemu2sigXYZ.txt"}],Re[datamumu2sigXYZ[ghmumu,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
+tableMu2sigXYZ[ghmumu_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=Export[
+FileNameJoin[{$UserDocumentsDirectory,"tableMu2sigXYZ.txt"}],Re[datamumu2sigXYZ[ghmumu,x,xmin,xmax,xstep,y, ymin,ymax,ystep]]/. {{_,_,0} ->Sequence[]}
 ,"Table"
 ]
-
-(*tablemu2sigXYZ[ghmumu[c\[Alpha],Zmumu,1000],c\[Alpha],0,1,0.1,Zmumu,0,0.1,0.01]
-tablemu1sigXY[ghmumu[c\[Alpha],0.05,1000],c\[Alpha],0,1,0.1]*)
 
 (*************************************************************************************************************************************************************************************)
 (*kappa mu in the case in which there are dependence in two or more parameters*)
@@ -193,7 +183,7 @@ tablemu1sigXY[ghmumu[c\[Alpha],0.05,1000],c\[Alpha],0,1,0.1]*)
 (*To 2\[Sigma]*)
 
 (*kappa mu to 2\[Sigma]*)
-kappamu2sig[ghmumu_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+kappaMu2sig[ghmumu_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{kappaMuINF2sig<= Abs[kmu[ghmumu]] <= kappaMuSUP2sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  ,PlotPoints->PP,FrameLabel -> {Style[xlabel, Larger, Bold], 
@@ -211,7 +201,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large
 Kmu2sigWXYZ[
 ghmumu_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-kappamu2sig[ghmumu,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
+kappaMu2sig[ghmumu,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 ],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
@@ -219,7 +209,7 @@ kappamu2sig[ghmumu,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 (*To 1\[Sigma]*)
 
 (*kappa mu to 1\[Sigma]*)
-kappamu1sig[ghmumu_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
+kappaMu1sig[ghmumu_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=
 RegionPlot[{kappaMuINF1sig<= Abs[kmu[ghmumu]] <= kappaMuSUP1sig},
  {x, xmin, xmax}, {y, ymin, ymax}
  ,PlotPoints->PP,FrameLabel -> {Style[xlabel, Larger, Bold], 
@@ -237,7 +227,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large
 Kmu1sigWXYZ[
 ghmumu_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
 Manipulate[
-kappamu1sig[ghmumu,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
+kappaMu1sig[ghmumu,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,PP
 ],
  {xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ];
@@ -251,12 +241,7 @@ Kmu2sigWXYZ[
 ghmumu,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
 
-(*Kmu1sigWXYZ[ghmumu[-ArcCos[cba]+ArcTan[tb],tb],cba,tb,-1,1,0.1,50,c\[Beta]\[Alpha],t\[Beta],xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,50]*)
-
-(*Kappamu2sig[ghmumu[c\[Alpha],Zmumu,u],u,Zmumu,500,2000,0,1
-,u[GeV],Zmumu,c\[Alpha],yfor,0.9,0.99,0.01,yformin,yformax,yforstep]*)
-
-(*TABLES FOR Kmu*)
+(*TABLES FOR Ktau*)
 
 dataKmu1sig[ghmumu_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
