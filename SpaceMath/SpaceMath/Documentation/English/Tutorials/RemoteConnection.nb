@@ -10,11 +10,11 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6483,        177]
-NotebookOptionsPosition[      3523,        106]
-NotebookOutlinePosition[      5703,        163]
-CellTagsIndexPosition[      5660,        160]
-WindowTitle->RemoteConnection
+NotebookDataLength[      8959,        248]
+NotebookOptionsPosition[      4762,        155]
+NotebookOutlinePosition[      6956,        212]
+CellTagsIndexPosition[      6913,        209]
+WindowTitle->Remote Connection
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -60,7 +60,7 @@ RemoteConnection.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21565], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21567], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/RemoteConnection", ".html"]], None}]}]},
@@ -77,29 +77,78 @@ RemoteConnection.html"], StandardForm]], "Input", TextClipboardType ->
 
 Cell[CellGroupData[{
 
-Cell["RemoteConnection", "Title",
+Cell["Remote Connection", "Title",
  CellID->509267359],
 
-Cell["Requirements to remote connection:", "Text",
+Cell[TextData[StyleBox["Requirements to remote connection:",
+ FontWeight->"Bold"]], "Text",
  CellID->1534169418],
 
-Cell[BoxData[GridBox[{
-   {
-    RowBox[{"Mathematica", " ", 
-     RowBox[{"version", ":", 
-      RowBox[{"11.0", ".", "++"}]}]}], Cell[
-    "PuTTY and Xming (Windows 10).", "TableText"]}
-  }]], "DefinitionBox",
- CellID->2096742444],
+Cell["- Mathematica version 11.0++", "Text",
+ CellID->1479620458],
 
-Cell["", "Caption",
- CellID->1891092685],
+Cell["- PuTTY and Xming (Windows 10)", "Text",
+ CellID->1983771141],
 
-Cell["Steps to connect to server \"negrito\" for Linux.", "Text",
- CellID->432542190],
+Cell["Steps to connect to server \"negrito\":", "Text",
+ CellID->388110810],
 
-Cell["", "Text",
- CellID->258989389]
+Cell[TextData[StyleBox["Linux:",
+ FontWeight->"Bold"]], "Text",
+ CellID->1357880388],
+
+Cell["\<\
+1. Open a terminal and type $ ssh spacemathuser@148.228.14.13 -Y.\
+\>", "Text",
+ CellID->538559429],
+
+Cell["2. Enter password: spacemath", "Text",
+ CellID->1729197249],
+
+Cell["\<\
+3. Type mathematicaX, where X represents the Mathematica version.\
+\>", "Text",
+ CellID->1212630729],
+
+Cell["4. Enjoy SpaceMath v1.0 package.", "Text",
+ CellID->1990247106],
+
+Cell[TextData[StyleBox["Windows 10:",
+ FontWeight->"Bold"]], "Text",
+ CellID->133994049],
+
+Cell["\<\
+1. Download and install Xming. You will need to start Xming before connecting \
+to the remote system with
+PuTTY.\
+\>", "Text",
+ CellID->1784134297],
+
+Cell["\<\
+2. Open PuTTY and type in Host Name: spacemathuser@148.228.14.13.\
+\>", "Text",
+ CellID->840503813],
+
+Cell["\<\
+3. Make sure your connection settings for the remote system have Enable X11 \
+forwarding selected; in the
+\[OpenCurlyDoubleQuote]PuTTY Configuration\[CloseCurlyDoubleQuote] window, \
+see Connection -> SSH -> X11.\
+\>", "Text",
+ CellID->1618347227],
+
+Cell["\<\
+4. Please log in. A terminal will be launched. Enter the password: spacemath\
+\>", "Text",
+ CellID->1311065050],
+
+Cell["\<\
+5. Type mathematicaX, where X represents the Mathematica version.\
+\>", "Text",
+ CellID->1301060384],
+
+Cell["6. Enjoy SpaceMath v1.0 package.", "Text",
+ CellID->2113318617]
 }, Open  ]],
 
 Cell[" ", "FooterCell"]
@@ -108,7 +157,7 @@ Saveable->False,
 ScreenStyleEnvironment->"Working",
 WindowSize->{725, 750},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-WindowTitle->"RemoteConnection",
+WindowTitle->"Remote Connection",
 TaggingRules->{
  "ModificationHighlight" -> False, "ColorType" -> "TutorialColor", 
   "LinkTrails" -> GridBox[{{
@@ -118,17 +167,17 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 10, 2, 28, 54.478463}", 
+   "built" -> "{2020, 9, 10, 14, 29, 29.623798}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
     "status" -> "None", "summary" -> 
-    "Requirements to remote connection: Steps to connect to server \
-\"negrito\" for Linux.", "synonyms" -> {}, "tabletags" -> 
+    "Requirements to remote connection: - Mathematica version 11.0++ - PuTTY \
+and Xming (Windows 10)", "synonyms" -> {}, "tabletags" -> 
     DocumentationBuild`Make`Private`tabletaggingrules$21502, "title" -> 
-    "RemoteConnection", "titlemodifier" -> "", "windowtitle" -> 
-    "RemoteConnection", "type" -> "Tutorial", "uri" -> 
+    "Remote Connection", "titlemodifier" -> "", "windowtitle" -> 
+    "Remote Connection", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/RemoteConnection"}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
@@ -162,23 +211,45 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[588, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"f5c9f090-6432-494a-b48d-69d17ae2aa69",
+Cell[589, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"876e0310-2c72-4856-8d46-f32d50f55cb7",
  CellID->1],
 Cell[CellGroupData[{
-Cell[2950, 79, 53, 1, 70, "Title",ExpressionUUID->"ff8744a3-71a6-4e7b-b3b7-d52ab651a1f3",
+Cell[2951, 79, 54, 1, 70, "Title",ExpressionUUID->"ff8744a3-71a6-4e7b-b3b7-d52ab651a1f3",
  CellID->509267359],
-Cell[3006, 82, 71, 1, 70, "Text",ExpressionUUID->"58115b5a-6d4c-4038-9585-ad5e9f418de2",
+Cell[3008, 82, 112, 2, 70, "Text",ExpressionUUID->"58115b5a-6d4c-4038-9585-ad5e9f418de2",
  CellID->1534169418],
-Cell[3080, 85, 231, 7, 70, "DefinitionBox",ExpressionUUID->"688818c2-36e5-4d02-905d-4eb507484a05",
- CellID->2096742444],
-Cell[3314, 94, 40, 1, 70, "Caption",ExpressionUUID->"a2f81256-e37d-4cbd-a86e-f084badc4bf3",
- CellID->1891092685],
-Cell[3357, 97, 85, 1, 70, "Text",ExpressionUUID->"7dd9618d-2edd-4044-91fc-641fc7ce12cf",
- CellID->432542190],
-Cell[3445, 100, 36, 1, 70, "Text",ExpressionUUID->"b06a537b-6df3-4882-8fd0-e638c143ab99",
- CellID->258989389]
+Cell[3123, 86, 65, 1, 70, "Text",ExpressionUUID->"38cb30df-87bc-46bc-b7f3-ce088d1347f2",
+ CellID->1479620458],
+Cell[3191, 89, 67, 1, 70, "Text",ExpressionUUID->"3138419f-d789-4d68-9a22-fae825855bed",
+ CellID->1983771141],
+Cell[3261, 92, 75, 1, 70, "Text",ExpressionUUID->"45822aee-cbb9-47cf-907f-b4a0f19bff98",
+ CellID->388110810],
+Cell[3339, 95, 84, 2, 70, "Text",ExpressionUUID->"d4f4ed6d-437d-4b9d-9cd5-2e08e63ee099",
+ CellID->1357880388],
+Cell[3426, 99, 109, 3, 70, "Text",ExpressionUUID->"ae3ec0d0-f256-470b-b2e7-b1ca7bc49195",
+ CellID->538559429],
+Cell[3538, 104, 65, 1, 70, "Text",ExpressionUUID->"2cf6b1a7-f886-455b-927d-fcea9e897336",
+ CellID->1729197249],
+Cell[3606, 107, 110, 3, 70, "Text",ExpressionUUID->"cf583000-6d8c-4e95-922b-3165d75476c8",
+ CellID->1212630729],
+Cell[3719, 112, 69, 1, 70, "Text",ExpressionUUID->"a52f48f5-75e1-4bcd-8eed-aba8ad300e24",
+ CellID->1990247106],
+Cell[3791, 115, 88, 2, 70, "Text",ExpressionUUID->"8663856e-bd1b-4e0b-a410-0e959631f318",
+ CellID->133994049],
+Cell[3882, 119, 157, 5, 70, "Text",ExpressionUUID->"3e451603-f285-4755-8f6e-d6cdf6aa5a33",
+ CellID->1784134297],
+Cell[4042, 126, 109, 3, 70, "Text",ExpressionUUID->"758eba79-9cea-49b4-890a-da1ed1a33445",
+ CellID->840503813],
+Cell[4154, 131, 257, 6, 70, "Text",ExpressionUUID->"b066bfad-f799-4a6b-8993-90ece1073a0f",
+ CellID->1618347227],
+Cell[4414, 139, 121, 3, 70, "Text",ExpressionUUID->"6978d309-58fc-433c-9ce7-3b0f234a328f",
+ CellID->1311065050],
+Cell[4538, 144, 110, 3, 70, "Text",ExpressionUUID->"e0b590ba-c289-43d7-9c52-227599ae8024",
+ CellID->1301060384],
+Cell[4651, 149, 69, 1, 70, "Text",ExpressionUUID->"c052ef8b-f744-48f6-abad-66c5a945194e",
+ CellID->2113318617]
 }, Open  ]],
-Cell[3496, 104, 23, 0, 70, "FooterCell",ExpressionUUID->"f093ffcb-f68f-47cc-b040-539ada31149d"]
+Cell[4735, 153, 23, 0, 70, "FooterCell",ExpressionUUID->"d803c762-1409-44fe-a5a3-6191d5ca70b2"]
 }
 ]
 *)
