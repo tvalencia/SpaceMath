@@ -60,7 +60,7 @@ SpaceMath.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22368], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22375], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/SpaceMath", ".html"]], None}]}]},
@@ -817,13 +817,13 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 11, 14, 55, 16.169794}", 
+   "built" -> "{2020, 9, 14, 21, 19, 16.502371}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
     "status" -> "None", "summary" -> " ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$22304, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$22311, "title" -> 
     "SpaceMath", "titlemodifier" -> "", "windowtitle" -> "SpaceMath", "type" -> 
     "Tutorial", "uri" -> "SpaceMath/tutorial/SpaceMath"}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
@@ -858,13 +858,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[581, 21, 2307, 54, 70, "AnchorBarGrid",ExpressionUUID->"0a8ea625-3225-4674-b697-bac65ba4d269",
+Cell[581, 21, 2307, 54, 70, "AnchorBarGrid",ExpressionUUID->"df9be177-718e-48cd-9503-6982ef93d295",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2913, 79, 96, 2, 70, "Title",ExpressionUUID->"0eb39c1b-dcf7-42e8-8be8-25f73211cc44",
  CellGroupingRules->{"TitleGrouping", Inherited},
  CellID->509267359],
-Cell[3012, 83, 35156, 617, 70, "TutorialJumpBox",ExpressionUUID->"1f477d6a-01e1-4cbb-a935-8f904294433e"],
+Cell[3012, 83, 35156, 617, 70, "TutorialJumpBox",ExpressionUUID->"99eaf800-aa38-44a3-92d8-d9f4744855f3"],
 Cell[CellGroupData[{
 Cell[38193, 704, 51, 1, 70, "Section",ExpressionUUID->"ca789e84-4993-47a1-aef6-0227f1e30d14",
  CellID->458762378],
@@ -916,7 +916,7 @@ Cell[40643, 798, 59, 1, 70, "Subsection",ExpressionUUID->"cecc54a0-6c53-4338-a5c
  CellID->613703207]
 }, Closed]]
 }, Open  ]],
-Cell[40729, 803, 23, 0, 70, "FooterCell",ExpressionUUID->"b52acc6f-6019-4acf-b3f2-82b2dc5df36c"]
+Cell[40729, 803, 23, 0, 70, "FooterCell",ExpressionUUID->"9fc0d236-5ab4-443a-a8f4-94aa071a0b92"]
 }
 ]
 *)

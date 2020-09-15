@@ -60,7 +60,7 @@ RemoteConnection.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21567], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21574], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/RemoteConnection", ".html"]], None}]}]},
@@ -167,7 +167,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 11, 14, 55, 14.019532}", 
+   "built" -> "{2020, 9, 14, 21, 19, 14.037395}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -175,7 +175,7 @@ TaggingRules->{
     "status" -> "None", "summary" -> 
     "Requirements to remote connection: - Mathematica version 11.0++ - PuTTY \
 and Xming (Windows 10)", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$21502, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$21509, "title" -> 
     "Remote Connection", "titlemodifier" -> "", "windowtitle" -> 
     "Remote Connection", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/RemoteConnection"}},
@@ -211,7 +211,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[589, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"8e09c176-5239-40b1-9b57-9eb7bb37d360",
+Cell[589, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"dc81bf5b-3991-48d2-9c29-7b65fa0272fa",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2951, 79, 54, 1, 70, "Title",ExpressionUUID->"ff8744a3-71a6-4e7b-b3b7-d52ab651a1f3",
@@ -249,7 +249,7 @@ Cell[4538, 144, 110, 3, 70, "Text",ExpressionUUID->"e0b590ba-c289-43d7-9c52-2275
 Cell[4651, 149, 69, 1, 70, "Text",ExpressionUUID->"c052ef8b-f744-48f6-abad-66c5a945194e",
  CellID->2113318617]
 }, Open  ]],
-Cell[4735, 153, 23, 0, 70, "FooterCell",ExpressionUUID->"4e9dc229-63c8-420a-80b7-fbc731672770"]
+Cell[4735, 153, 23, 0, 70, "FooterCell",ExpressionUUID->"8aecf45a-4d0d-488b-bfef-6003b97ccaf7"]
 }
 ]
 *)

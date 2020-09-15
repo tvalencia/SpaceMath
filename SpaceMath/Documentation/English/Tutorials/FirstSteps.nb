@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     51324,       1061]
-NotebookOptionsPosition[     45428,        945]
-NotebookOutlinePosition[     45846,        961]
-CellTagsIndexPosition[     45803,        958]
+NotebookDataLength[     51454,       1065]
+NotebookOptionsPosition[     45564,        949]
+NotebookOutlinePosition[     45975,        965]
+CellTagsIndexPosition[     45932,        962]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -152,14 +152,13 @@ Cell[BoxData[GridBox[{
       RowBox[{"[", "i", "]"}], "]"}]}], Cell[TextData[{
      "This command evaluates ",
      Cell[BoxData[
-      SubscriptBox["R", "V"]], "InlineFormula",
-      FormatType->"StandardForm",ExpressionUUID->
+      SubscriptBox["R", "V"]], "InlineFormula",ExpressionUUID->
       "f6fd85a3-413d-4ffb-b78b-0d47520afd4c"],
      " with V=W, Z when there is dependence only on one parameter. The \
 arguments ghtt, ghbb and ghVV are the htt, hbb, hVV couplings. Here, h \
 represents to SM-like Higgs boson while t and b are the top and bottom \
-quarks. The label x indicates the parameter to constraint, while xmin and \
-xmax are the initial and final values defined by users and xlabel is used for \
+quarks. The label x indicates the parameter to constrain, while xmin and xmax \
+are the initial and final values defined by users and xlabel is used for \
 indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 \
 (2) indicates 1\[Sigma] (2\[Sigma])."
     }], "TableText",ExpressionUUID->"1506d65a-7d13-4003-86f0-96bb053d72b6"]},
@@ -174,7 +173,7 @@ indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 \
       "71a4c7d2-5731-4626-a302-ae5cccd511f2"],
      ", with V= W, Z. The arguments ghtt, ghbb and ghVV are the htt, hbb, hVV \
 couplings. Here, h represents to SM-like Higgs boson while t and b the top \
-and bottom quarks. The label x indicates the parameter to constraint, while \
+and bottom quarks. The label x indicates the parameter to constrain, while \
 xmin and xmax are the initial and final values defined by users and xstep is \
 used to indicates the steps from xmin to xmax. The output file will be saved \
 in $UserDocumentsDirectory."
@@ -184,7 +183,8 @@ in $UserDocumentsDirectory."
   3.807124067030566*^9, 3.8071240772926693`*^9}, {3.8071241725132656`*^9, 
   3.8071242068979683`*^9}, {3.80712427769368*^9, 3.8071243273581457`*^9}, {
   3.807124369185897*^9, 3.8071244498453255`*^9}, {3.8071246832976437`*^9, 
-  3.807124823375075*^9}, {3.807125871872327*^9, 3.8071258768997755`*^9}},
+  3.807124823375075*^9}, {3.807125871872327*^9, 3.8071258768997755`*^9}, {
+  3.80912499463433*^9, 3.809125002822053*^9}},
  CellID->2096742444,ExpressionUUID->"5a41b0ea-9e18-48df-8992-edfc371ee94b"],
 
 Cell[TextData[{
@@ -212,8 +212,7 @@ Cell[BoxData[GridBox[{
       RowBox[{"[", "i", "]"}], "]"}]}], Cell[TextData[{
      "This command evaluates ",
      Cell[BoxData[
-      SubscriptBox["R", "\[Gamma]"]], "InlineFormula",
-      FormatType->"StandardForm",ExpressionUUID->
+      SubscriptBox["R", "\[Gamma]"]], "InlineFormula",ExpressionUUID->
       "980b1e32-b509-43a7-bf85-22c95b0fce81"],
      " when there is dependence only on one parameter. The arguments ghtt, \
 ghbb, ghWW and gCH are the htt, hbb, hWW and ",
@@ -257,7 +256,7 @@ label. Finally, [[i]] stands for confidence level, i=1 (2) indicates \
      " couplings, while mCH is the charged scalar boson mass that could to \
 contributes to the process. Here, h represents to SM-like Higgs boson while t \
 and b the top and bottom quarks. The label x indicates the parameter to \
-constraint, while xmin and xmax are the initial and final values defined by \
+constrain, while xmin and xmax are the initial and final values defined by \
 users and xstep is used to indicates the steps from xmin to xmax. The output \
 file will be saved in $UserDocumentsDirectory."
     }], "TableText",ExpressionUUID->"cf25045b-01e1-4410-b88b-e6c979079963"]}
@@ -272,7 +271,8 @@ file will be saved in $UserDocumentsDirectory."
   3.8071268447089467`*^9, 3.8071268657411137`*^9}, {3.8071272370886135`*^9, 
   3.8071272396372175`*^9}, {3.8071282869140854`*^9, 3.807128316723963*^9}, {
   3.807128392203065*^9, 3.8071283996377726`*^9}, {3.8071286254830666`*^9, 
-  3.8071286470336857`*^9}, {3.8071287120813107`*^9, 3.8071287120813107`*^9}},
+  3.8071286470336857`*^9}, {3.8071287120813107`*^9, 3.8071287120813107`*^9}, {
+  3.8091250365293703`*^9, 3.809125036529398*^9}},
  CellID->178227545,ExpressionUUID->"09b90d33-7ebb-4963-a81c-eea1bcd15640"],
 
 Cell[TextData[{
@@ -305,7 +305,7 @@ Cell[BoxData[GridBox[{
      " when there is dependence only on one parameter. The arguments ghtt, \
 ghbb are the htt and hbb couplings. Here, h represents to SM-like Higgs boson \
 while t and b are the top and bottom quarks. The label x indicates the \
-parameter to constraint, while xmin and xmax are the initial and final values \
+parameter to constrain, while xmin and xmax are the initial and final values \
 defined by users and xlabel is used for indicates the X axis label. Finally, \
 [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
     }], "TableText",ExpressionUUID->"a91ec62a-ef21-42cc-9832-4d25f4c68aca"]},
@@ -321,19 +321,20 @@ defined by users and xlabel is used for indicates the X axis label. Finally, \
       "c93cab33-7eb0-4347-a1a2-b4d2fbe62321"],
      ". The arguments ghtt and ghbb are the htt and hbb couplings. Here, h \
 represents to SM-like Higgs boson while t and b the top and bottom quarks. \
-The label x indicates the parameter to constraint, while xmin and xmax are \
-the initial and final values defined by users and xstep is used to indicates \
-the steps from xmin to xmax. The output file will be saved in \
+The label x indicates the parameter to constrain, while xmin and xmax are the \
+initial and final values defined by users and xstep is used to indicates the \
+steps from xmin to xmax. The output file will be saved in \
 $UserDocumentsDirectory."
     }], "TableText",ExpressionUUID->"910c1628-ee4d-4894-ae27-f0138841de22"]}
   }]], "DefinitionBox",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQA2IQvcPjjm5z7BvHmoB5xiA67VeCD4juiV3pC6LX5EyI
+1:eJxTTMoPSmViYGAQB2IQvcPjjm5z7BvHmoB5xiA67VeCD4juiV3pC6LX5EyI
 BNEae+7EgugFRtvSQPS70tc5IPreJ9UiEP2Cx7oGRPu0Zc4E0XMZ3qwC0ZtK
 zRlagLTBR25mEL2jdh8XiJY86ccLog8s6hcB0fcyG8VBNMtUHXkQ7b9ogyaI
 3rh+2nIQbbLdfBWIfnN10Q0QLZbyBUwbONyNbgXSW7Smx4Popnq2TBC9KOML
 mPYo1W8D0V+EH3aAaMlZTBORaXunF5VrQeo999WC6AUphxtB9JFZ6s0g+sn1
-kLt1cQi66XrZExD9wkXzI4gWEdr/H5l28J4uUA+kN3H/FQPRAL1Ysw0=
+kLt1cQi66XrZExD9wkXzI4gWEdr/H5l28J4uUA+kN3H/FQPR/1KOhIYkvnHM
+Yj8KpgE3CbrY
   "],
  CellID->178414509,ExpressionUUID->"946ecc87-7f71-448e-bb3e-7c71d55f0efb"],
 
@@ -371,7 +372,7 @@ Cell[BoxData[GridBox[{
 ghbb and ghtautau are the htt, hbb and htautau couplings. Here, h represents \
 to SM-like Higgs boson, t and b the top and bottom quarks and tau stands for \
 tau-lepton. Labels mCH and x indicate the charged scalar mass and the \
-parameter to constraint, while xmin and xmax are the initial and final values \
+parameter to constrain, while xmin and xmax are the initial and final values \
 defined by users and xlabel is used for indicates the X axis label. Finally, \
 [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
     }], "TableText",ExpressionUUID->"b8daa808-2ed8-46d7-9bdb-eb288f13a4af"]},
@@ -391,20 +392,20 @@ defined by users and xlabel is used for indicates the X axis label. Finally, \
      ". The arguments ghtt, ghbb and ghtautau are the htt, hbb and htautau \
 couplings. Here, h represents to SM-like Higgs boson while t and b are the \
 top and bottom quarks and tau stands for tau-lepton. The label x indicates \
-the parameter to constraint, while xmin and xmax are the initial and final \
+the parameter to constrain, while xmin and xmax are the initial and final \
 values defined by users and xstep to indicates the steps from xmin to xmax. \
 The output file will be saved in $UserDocumentsDirectory."
     }], "TableText",ExpressionUUID->"24d52441-01d7-47fe-8c69-d66f27fe74ef"]}
   }]], "DefinitionBox",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGCQBGIQvcPjjm5z7BvHmoB5xiA67VeCD4juiV3pC6LX5EyI
+1:eJxTTMoPSmViYGCQAmIQvcPjjm5z7BvHmoB5xiA67VeCD4juiV3pC6LX5EyI
 BNEae+7EgugFRtvSQPS70tc5IPreJ9UiEP2Cx7oGRPu0Zc4E0XMZ3qwC0ZtK
 zRlagLTBR25mEL2jdh8XiJY86ccLog8s6hcB0fcyG8VBNMtUHXkQ7b9ogyaI
 3rh+2nIQbbLdfBWIfnN10Q0QLZbyBUwbONyNbgXSW7Smx4Popnq2TBC9KOML
 mPYo1W8D0V+EH3aAaMlZTBORaXunF5VrQeo999WC6AUphxtB9JFZ6s0gus/1
 /6n6uDeOTi6xp0G0h9LkiyA6gSnoDoie9XflYxAtX3n9BYj+uFLtK4gWbfT4
-BaJzNCU8G4F0/Z/Z3iD6w7+m/SB6EyfPZRB9yfPRLRC9RF7yNogGAFogzCA=
-
+BaJzNCU8G4F0/Z/Z3iD6w7+m/SB6EyfPZRB9yfPRLRC9RF7yNojeNf1oaEgi
+MDwMjoFpAGjQ1Hk=
   "],
  CellID->438774238,ExpressionUUID->"5ec8fcba-b2e6-4c1b-a0c6-ccb2835a40f7"],
 
@@ -446,13 +447,13 @@ Cell[BoxData[GridBox[{
      " with V=W, Z when there is dependence on two or more parameters. The \
 arguments ghtt, ghbb, ghVV are the htt, hbb, hVV couplings. Here, h \
 represents to SM-like Higgs boson while t and b the top and bottom quarks. \
-Labels x and y indicate the parameters to constraint, while xmin (ymin) and \
+Labels x and y indicate the parameters to constrain, while xmin (ymin) and \
 xmax (ymax) are the initial and final values defined by users. Argument \
 xlabel (ylabel) is used for indicates the X axis label (Y axis label). The \
 arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an \
-additional parameter to constraint, namely: initial value, final value and \
-the steps from xformin (yformin) to xformax (yformax), respectively. Label \
-[[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), \
+additional parameter to constrain, namely: initial value, final value and the \
+steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] \
+stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), \
 Finally, PP is an option for plotting functions that specifies how many \
 initial sample points to use.\n"
     }], "TableText",ExpressionUUID->"b5619a52-a5d3-442e-bd96-abdb74734127"]},
@@ -474,21 +475,22 @@ initial sample points to use.\n"
      " with V= W, Z gauge bosons. The arguments ghtt, ghbb and ghVV are the \
 htt, hbb and hVV couplings. Here, h represents to SM-like Higgs boson while t \
 and b the top and bottom quarks. Labels x and y indicate the parameters to \
-constraint, while xmin (ymin) and xmax (ymax) are the initial and final \
-values defined by users and xstep (ystep) is used to indicates the steps from \
-xmin to xmax (ymin to ymax). The output file will be saved in \
+constrain, while xmin (ymin) and xmax (ymax) are the initial and final values \
+defined by users and xstep (ystep) is used to indicates the steps from xmin \
+to xmax (ymin to ymax). The output file will be saved in \
 $UserDocumentsDirectory."
     }], "TableText",ExpressionUUID->"23a7af81-7337-4b54-974c-85cb6eb74434"]}
   }]], "DefinitionBox",
  CellChangeTimes->CompressedData["
-1:eJxNyk0sggEAxvF3MVu+LhEZM6YVYxJbB4fkIltkbj7CrFpZG2vrYKtZRcyY
-HCL5WKtNq0lYyNaSaTZcOLSZJdyyWqN1MBd63pPDs9/27F83OT0ooxAEUZ0b
-DAhjLUZJSqAd2GuH8p8JEVyRuPvggco8BNnBmATauWdymNYkVTCeYaphorhT
-C0Um5RbcJVIeeKLhEfM5OV9FeTCgCxVCxm1/CQw71spgXKmvgPmW5loodhw1
-wmPfhgt2nPM8MBV1PEG6NEvK6XoZWcjpb9och4a5AiV0KLKkQk2rCWZp70uQ
-YaOs/5ffnZj1ou8N6aBdeq2HERvLCGuYkQ/9WEpQRfMn4XbPHWHIOXVfSoVq
-USUbZnzlbdBttong8HeQVOxctcC3/UsrXP41OCE3Xe+Ch4qGU/jIX7yA4WAm
-BBOWnStIn6E+wNFPKylLdhMlf+/zK/wD7b7kxA==
+1:eJxNyksowwEAx/F/IzWvgzGPkog2IjPKwWHmYurvkTh4zCtbmxSpHdSWtnkl
+Mod5zKP1V9aWGdqYWkM0jQuHlTSv27R/i7WDXNjvf3L49alf38KhsXYZiyCI
+/PigWxKs0EtpsbptpxrKfwZIuCi1NsP9UUMX5HuCUmgWnshhRBUehS/RkgkY
+Sq1TQ3JWuQG3CdoGj1W1xHRcwVdKAnRrvMkw19+SBi+o5Uz4otRmw0RjeQFs
+pQ5L4ZFj1QJrTmttkA5Qj5A7HGMU1D/3zMR1lq31Q91UkhJSihijRFU5C2Oc
+93mYa2Kt/FfUEJq0o2/yaqB5+EoLr008Pcwvuf7Q9tHiPI4zDDcbbwld3JG7
+dDacIHP4MOrIqoJWg4mE3d8extbdJSN82ztfhwu/ul0ojBRZ4IGi2AUfRHNn
+8MIT9cKQcesScsfZ97D3c52RJ/MFmN/+9Aqz/b7OjkFanOG6YfwDfRHsZw==
+
   "],
  CellID->96629475,ExpressionUUID->"4e704845-11a6-4750-8348-23724e6d7445"],
 
@@ -542,13 +544,13 @@ ghtt, ghbb, ghWW and gCH are the htt, hbb, hWW and ",
       "4bcdddce-1749-4786-9685-757c5517436b"],
      " couplings while mCH stands for the charged scalar boson mass. Here, h \
 represents to SM-like Higgs boson while t and b the top and bottom querkas. \
-Labels x and y indicate the parameters to constraint, while xmin (ymin) and \
+Labels x and y indicate the parameters to constrain, while xmin (ymin) and \
 xmax (ymax) are the initial and final values defined by users. Argument \
 xlabel (ylabel) is used for indicates the X axis label (Y axis label). The \
 arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an \
-additional parameter to constraint, namely: initial value, final value and \
-the steps from xformin (yformin) to xformax (yformax), respectively. Label \
-[[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), \
+additional parameter to constrain, namely: initial value, final value and the \
+steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] \
+stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), \
 Finally, PP is an option for plotting functions that specifies how many \
 initial sample points to use.\n"
     }], "TableText",ExpressionUUID->"fd36c7be-9058-4fa9-a69a-11f1fef0cd14"]},
@@ -579,22 +581,23 @@ initial sample points to use.\n"
        3.807647754539369*^9, 3.807648286301383*^9},ExpressionUUID->
       "7d055a06-c9b7-42f6-8d50-3750e9c5e4cb"],
      " couplings. Here, h represents to SM-like Higgs boson while t and b the \
-top and bottom quarks. Labels x and y indicate the parameters to constraint, \
+top and bottom quarks. Labels x and y indicate the parameters to constrain, \
 while xmin (ymin) and xmax (ymax) are the initial and final values defined by \
 users and xstep (ystep) is used to indicates the steps from xmin to xmax \
 (ymin to ymax). The output file will be saved in $UserDocumentsDirectory."
     }], "TableText",ExpressionUUID->"1a7b15c0-9231-4cd6-986b-d037d79636b2"]}
   }]], "DefinitionBox",
  CellChangeTimes->CompressedData["
-1:eJxNyksowwEAx/F/yPtxMGMij8jIc1M7UDMX1DwSB2xILJMi2kFN2uaVyBzm
-Ma+1FVnm1cbUbGTJ48JhJXkeaLIWay258P/9Tw6/PvXrm9LWU9vhRxBECjlo
-Lr/PUQhdPGnNChuKflr5cFK4UQk3u5UNkGm5F0INa18E3ZKPbvjoSe+DzvAi
-KeSPihfgMuHSwz0Jhxgmzf8K84fmQWsoZFxURcBj7TQNPoplsTBAlZ0Eq7U7
-mXB3e3YdFh5w9NDl0N5CeruXMr/koWmE1Jg11wLlQ4FiqO30UpZL8kahN/pl
-HDLUfjP/5ZY6BwzoK6yDUNN+KoN2dYYCJqbb32XNLl58tPEDLpZdEnLSrqvI
-ENjHj2NCz3ZMAdxQqvmw8dtCWa2bUsHnNds8nPiV6yDLnboOtzrTTPCGO3YI
-jy0eK3Sqlk4gvTfkGgo+5ykzOs4c1G+4e4JvbF+kgjT4qD8KJhf7aFBax0uA
-Z7vWXDjg4bLhuWCRA199dh78XjVVwABbUD38A48fDCU=
+1:eJxN0UsowwEABvB/szDPg7cIi4Y8N7UDNXNBzSNx8JhXI5OiaUpN2uaVRzjM
+Y15righD86rZJksbFw5K8jzQZIm1llz4f/+Tw9evvr7bF9fYXtZEIwiCSQYe
+FtylKoUOvqx0kQObf+oFcFS4VgQ32iYqYaLhTgg17P1m+CF9b4MPzgQJtPtl
+y6BgQDwLFwjHOtyVcok+0owvXw942GP0gRG2Yn9o1o4HwwexPAzSVSkxsES7
+nQR3dFOrMOuAuw4d19obGCpyUWbk3lf3k+qTp+ugotdTDLUtLsoCafoAdAU9
+D8EINW3yv7w8e/cm9oXGHqgRncqhRc1SwugEy5u81sGPDNK/w7n8c0JB2noR
+wIASQXgidOpCMuHahFoAq74NlCXLYyr4tGKagcO/imXI/mCuwq2W+D14xRs8
+gmaD0wjtqvkTGNrBuIQ1nzOUrKaza6rfvH2Erxx3gJLU+7gzEMbmuIOhrJwf
+Bc92jGmw28njQGvNHBe+uC18+L20VwjpJq8KGNdlrShvIH8bsVH+AZPFE/k=
+
   "],
  CellID->13751234,ExpressionUUID->"d2d318de-faea-40dc-9d40-ab9a9d6f4844"],
 
@@ -640,11 +643,11 @@ Cell[BoxData[GridBox[{
      ", when there is dependence on two or more parameters. The arguments \
 ghtt and ghbb are the htt, hbb couplings. Here, h represents to SM-like Higgs \
 boson while t and b are the top and bottom quarks. Labels x and y indicate \
-the parameters to constraint, while xmin (ymin) and xmax (ymax) are the \
+the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), \
 xformin (yformin), xforstep (yforstep) represent an additional parameter to \
-constraint, namely: initial value, final value and the steps from xformin \
+constrain, namely: initial value, final value and the steps from xformin \
 (yformin) to xformax (yformax), respectively. Label [[i]] stands for \
 confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an \
 option for plotting functions that specifies how many initial sample points \
@@ -663,22 +666,22 @@ to use.\n"
       "90112f4c-0a21-4387-80f5-b0ad13e96a06"],
      ". The arguments ghtt, ghbb are the htt, hbb couplings. Here, h \
 represents to SM-like Higgs boson while t and b are the top and bottom \
-quarks. Labels x and y indicate the parameters to constraint, while xmin \
+quarks. Labels x and y indicate the parameters to constrain, while xmin \
 (ymin) and xmax (ymax) are the initial and final values defined by users and \
 xstep (ystep) is used to indicates the steps from xmin to xmax (ymin to \
 ymax). The output file will be saved in $UserDocumentsDirectory."
     }], "TableText",ExpressionUUID->"1aca9f8f-0151-4a5c-8854-5ba7ee15b25f"]}
   }]], "DefinitionBox",
  CellChangeTimes->CompressedData["
-1:eJxNylkowwEAx/F/SJnjxa0cEzkiZykemBfUHHkzhhzLtJztQVna5m4yD2Pm
-SH9FtLkaptZcy5kilMQfTyb/FmsPmsL/93/y8OtTv77cutbyRjeCILjMoKnw
-IVkppHndZbMZUOSq5UOVcKkY6iXqChhvfhDCufQtEbRL3yWQcsR2QJtPTjfk
-94sn4QxBL8MNaRbRy5j66e0OTTILB4aelvjCPXI0AFJieTD00CRFwlJyLQGu
-r44vwsztrGVI35J3MKjByZqa91jZx2hMnKiBih5PMSSbnKyF0pR+6PR/GYSh
-Orex/+bm27oM6IssMjjXcCiHVl2cEobHWt/k1TQvzN/4DqcKzggFY/O5nxfs
-4IfEQ8dqYBpcUuv4UPBlZi2dH9HA54VdLRz+VczDdHv0IlxpitmEV7kDO3DP
-7LBAm2Z6Hwa1eV3Cqg8ta1zj0S37G+6f4I1qyKBkdPVErMMD9asRCtpLTFAS
-PL0Pox7fjmH2z/cFpDr117ClPvMOntxzKPgHmcsRxA==
+1:eJxNylkowwEAx/F/SDlf3MoZOSJnKR4cL6gxiQfH3GRazvagrLWNOXLMw5gZ
+ra2syVwNU2vOnClCLTE82doSaw+awv/3f/Lw61O/vlFNXeWtLgRBRJODuqLH
+ZAHDlj9QtpgB25wNNDjOUJfAFZaoCsbrHxlQnr7dBt/ZVhY02WN7odk7ZwDS
+hMw5uEDYluEmO4sYJE399HKFOo7BE4acl/rAfcWUPzQxeUHQTZwUAemK9QS4
+sTajgpk7WcvQdq8wwsAWB2Vq3lPNEKk2cbYe8rnuTKhod1AWsVOE0OH3OgJD
+pC7T/80tMPdr0BcbOFDecsSDx9I4AQyLPbbw6mz5oX5aK5wvvCD4pB2Xvh6w
+lxYcD+1rAWlQLZLSYPWXnpKunBDDl6U9CRz75Sth+nu0Cq62x2zBm9zhXbiv
+txugWSw7gIHdHtew9kNCGdd6ck/9modneDc+qhGQOrnhG/BQ9KaF1T2lOsgK
+kh3AyCfLKcz++b6Cpr6VW9jZnGmEZw+eJlhXfFFZ0Ug6eUn5B/crGVs=
   "],
  CellID->327053652,ExpressionUUID->"47713631-ba7e-4c7e-bb97-5c06f3424cd9"],
 
@@ -724,14 +727,14 @@ Cell[BoxData[GridBox[{
 ghtt, ghbb and ghtautau are the htt, hbb and htautau couplings. Here, h \
 represents to SM-like Higgs boson while t, b and tau are the top and bottom \
 quarks and the tau-lepton. Labels x and y indicate the parameters to \
-constraint, while xmin (ymin) and xmax (ymax) are the initial and final \
-values defined by users. Argument xlabel (ylabel) is used for indicates the X \
-axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), \
-xforstep (yforstep) represent an additional parameter to constraint, namely: \
-initial value, final value and the steps from xformin (yformin) to xformax \
-(yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) \
-indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting \
-functions that specifies how many initial sample points to use.\n\n"
+constrain, while xmin (ymin) and xmax (ymax) are the initial and final values \
+defined by users. Argument xlabel (ylabel) is used for indicates the X axis \
+label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep \
+(yforstep) represent an additional parameter to constrain, namely: initial \
+value, final value and the steps from xformin (yformin) to xformax (yformax), \
+respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\
+\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that \
+specifies how many initial sample points to use.\n\n"
     }], "TableText",ExpressionUUID->"d80cdb9d-224a-4e80-9c41-044010843a10"]},
    {
     RowBox[{
@@ -750,22 +753,22 @@ functions that specifies how many initial sample points to use.\n\n"
      ". The arguments ghtt, ghbb and ghtautau are the htt, hbb and htautau \
 couplings. Here, h represents to SM-like Higgs boson while t, b and tau are \
 the top and bottom quarks and the tau-lepton. Labels x and y indicate the \
-parameters to constraint, while xmin (ymin) and xmax (ymax) are the initial \
+parameters to constrain, while xmin (ymin) and xmax (ymax) are the initial \
 and final values defined by users and xstep (ystep) is used to indicates the \
 steps from xmin to xmax (ymin to ymax). The output file will be saved in \
 $UserDocumentsDirectory."
     }], "TableText",ExpressionUUID->"9d79dee5-e329-4062-9667-91eee58d6956"]}
   }]], "DefinitionBox",
  CellChangeTimes->CompressedData["
-1:eJxNyksowwEAx/F/SOZ18dqUzKsxhFGUA3NgavM6eQ1pk0nRagdF2sxIZNQ8
-5tGasiYMDVNrhqXhwkFJM4/TtFmsHeTC//c/Ofz61K9vWvdAkziEIAgmOWjh
-ufLHhD7ucMN6Mez56eLDaaFRALf71S0w2+oSQh3nqAf6Zd5+6A5kSaEnunwY
-8lWSZbhG+LbggayUUJIWfkWFQsuILRIyrupioF0/Gw/dEnkSDNPkpcJ6/V4O
-3DctGGDJcekW9N3rH2CiKEhZWPnUNk5qZi92QsVouATqe4OUPFmBCgbjXich
-Qxsy99+KKs/QDvpa2wjUiS7k0KFljcGULMe7vMPHTY4ze+FKzTWhIO27iaVB
-KZ+eDQOmhCJoVGv5sPXbSlm/MaOBL5unS3DqV7EBOf50A9ztzTyEdxUTJ9Bu
-DdigR7N6BhMHabew/XOJkiW+vKf+ncdnOC9oZCpJVan0DMjOcObCc/9QMaRb
-2WUw4q2ZC537H9VwukBTB/8As2ACHg==
+1:eJxNylkowwEAx/F/SO6XMaPkDkNsFPHA34OjZnOWa65GJkVqD4r0H0aaHDXH
+HGmKyN0wteZMzuJBSe6nyd9i7UFe+P/+efDw61O/voHVjXk1dgRBBDGDhsy7
+6A4pTbbmTMXB2u9KEVRL57PhYsNAMQw33knhtHCzFloUbw3wwRraDM1uya1Q
+pJKPwUmCXoDrigSikzH209UeGtpMLtDnROwOd3X9nvBBTnlDB02UP5ToViPg
+2srwHIzfSliA9LXuBnJlNtbY1PvSLkY9f6QCKtsd5VBXZ2PNVMSooI3z3AN9
+tHaD/01JM7csoc8ytcFp2QEFD7VhHdAv9PCVKqdJX47+DY5nnBJKxvozD2fY
+LOKFQ+uKlwDOD2hFsOTLyCqZ6dPAp9mdUdj7o5yBQkvQHFyuC9mAVynd23DX
+aDVBs2ZiD3KbnC9h2ccoa1jN0TX7L90+wqHs3IBORpU/Lxjyg48j4b6lJQ7y
+jPxE6PRSRMLjtfd0qI7RiGFif8FRfhVNmv5M4pwXFjBSggvWX/ahETA=
   "],
  CellID->285585198,ExpressionUUID->"c7d9670d-3268-4ba6-a945-533c61700a3f"],
 
@@ -824,15 +827,15 @@ and ",
       CellChangeTimes->{3.8076750762403307`*^9},ExpressionUUID->
       "4ba89356-87d5-4c5a-be4f-439510770715"],
      " is a charged scalar boson. Labels x and y \nindicate the parameters to \
-constraint, while xmin (ymin) and xmax (ymax) are the initial and final \
-values defined by users. Argument xlabel (ylabel) is used for indicates the X \
-axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), \
-xforstep (yforstep) represent an additional parameter to constraint, namely: \
-initial value, final value and the steps from xformin (yformin) to xformax \
-(yformax), respectively; mCH stands for the charged scalar boson. Label [[i]] \
-stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), \
-Finally, PP is an option for plotting functions that specifies how many \
-initial sample points to use.\n\n\n"
+constrain, while xmin (ymin) and xmax (ymax) are the initial and final values \
+defined by users. Argument xlabel (ylabel) is used for indicates the X axis \
+label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep \
+(yforstep) represent an additional parameter to constrain, namely: initial \
+value, final value and the steps from xformin (yformin) to xformax (yformax), \
+respectively; mCH stands for the charged scalar boson. Label [[i]] stands for \
+confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an \
+option for plotting functions that specifies how many initial sample points \
+to use.\n\n\n"
     }], "TableText",ExpressionUUID->"39f0c90f-ad23-48ac-953c-7186389d03c3"]},
    {
     RowBox[{
@@ -868,28 +871,29 @@ and ",
       CellChangeTimes->{{3.8076750762403307`*^9, 3.807658374415492*^9}},
       ExpressionUUID->"1ebc1bf2-1c04-4262-a0bc-e14e6415602a"],
      " is a charged scalar boson. Labels x and y indicate the parameters to \
-constraint, while xmin (ymin) and xmax (ymax) are the initial and final \
-values defined by users. Argument xlabel (ylabel) is used for indicates the X \
-axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), \
-xforstep (yforstep) represent an additional parameter to constraint, namely: \
-initial value, final value and the steps from xformin (yformin) to xformax \
-(yformax), respectively; mCH stands for the charged scalar boson. Label [[i]] \
-stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), \
-Finally, PP is an option for plotting functions that specifies how many \
-initial sample points to use.\n"
+constrain, while xmin (ymin) and xmax (ymax) are the initial and final values \
+defined by users. Argument xlabel (ylabel) is used for indicates the X axis \
+label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep \
+(yforstep) represent an additional parameter to constrain, namely: initial \
+value, final value and the steps from xformin (yformin) to xformax (yformax), \
+respectively; mCH stands for the charged scalar boson. Label [[i]] stands for \
+confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an \
+option for plotting functions that specifies how many initial sample points \
+to use.\n"
     }], "TableText",ExpressionUUID->"1a8d3ec5-4bf9-4955-b57e-8147c587cd30"]}
   }]], "DefinitionBox",
  CellChangeTimes->CompressedData["
-1:eJxNyltIWgEAxvGDxuj+0iqtRRdnmhWWDRxsUO6hyzhl9dKy7DKy5RA2CgdB
-MbQyiyILLDu7IMqU7LaiK4jVFmHupcGCGK1t0cCRc018GCPYznee9vDxg49/
-5v1HtSoWQRB8enCj/Di/TxmQ9VS/LILtf1pIOKKcqYRzGlM9FLqPldAqWWuH
-Qe25Bp6E+J3QH3urB5IG9TR8QQRccFkrJfppC37FsOFGrycacver4uC2bewq
-PFHrkmGEOS8dym2vc+DS4qQT3liXumDg0HYEk9rCjAUlnxoGaFdEU81Q//SK
-Gto6wozlWrEBhhO+GiGXYo3/b/Edf/c8+gpPL7S2vdXBXUrQB9P4u991TQFZ
-SsLKOXxW5iP0tA/fxUfBTpIjhKHFxEI4Y6JIqPjtZpTbR83wi2PLAof/6u1Q
-EsxywoWO66vwffHgJtx2hzzQb36+A5MeRx3AxgsLo0C1d8j88x8/w4nKmox+
-WkM6hwdFPG8ufBPsLoIct+gmjDy9J4PepR+lcERsroItvldyE60jm4w00lJ3
-b6fCVq9CBE8f1Emg5km0FM5++0AM0V7+7GJDY8lZLBSusa7Bf07cJ4E=
+1:eJxNzl1IU3EABfDLJqFmvpi6aaFmzjWV6QwmFLj5YBZXp6Fk2vyIaS4GhbFA
+UGLT5pRJK1ja+kAmKppzKXM6GGvqkLkRGSREmJkULFzTxh4iBPuf+9TD4QeH
+83Cybt652saiKIpHApcqtgp65SFpd/WrYtj+t4WGBvlUJZxRGa9DvmtLDkdF
+jnYYVu+p4HYkpxMGEy50Q1qnfAZfUqFpOK8WU33Ewt/H2XCpxx0PuetVJ6DH
+8ugk3FZqUmGMKT8DyixvzsE529NJeH5RPA1Dm5ZPMEURZSyUfGl8SLQLhpuh
+9sExJbR0RBkr1EIdjCZ900OumfX4f0vLgl1W7C+7e+CoYlUDvebcXng6x/tT
+0xSSpiXZ9+DzS35KS7wdSIyDnTSHDyO25CI4ZTTTsOGPi1E2NmSCOxNvR+Dg
+kXYMisJnJuFsx9kF+KG03wk9rogbBk0vlmHK3bgNeONghDG3bW2T6a2fv8In
+lTWZfURdBicbCrJ9eXAl3FUMOS5BCYzdrZdC39yvcmgQmqpgi39cZiRO8OhY
+PdF85WI6bPU1CODurWsiqLofL4avf3ykBoiH+/fYUC/5ngD5DtYpmO58V1fb
+Sv4F3jP+Awp3L0E=
   "],
  CellID->217214885,ExpressionUUID->"a637fd10-ac38-48b1-8d99-693064e7a02d"],
 
@@ -944,8 +948,8 @@ Cell["XXXX", "TutorialRelatedLinks",
 }, Open  ]]
 },
 WindowSize->{701, 782},
-WindowMargins->{{Automatic, 113}, {Automatic, 4}},
-FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+WindowMargins->{{266, Automatic}, {Automatic, 85}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
   CharacterEncoding -> "UTF-8"]
 ]
@@ -960,27 +964,27 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 600, 14, 22, "History",ExpressionUUID->"90697e76-7f49-4fb6-ab22-6773145c5a92",
+Cell[558, 20, 600, 14, 25, "History",ExpressionUUID->"90697e76-7f49-4fb6-ab22-6773145c5a92",
  CellID->1247902091],
 Cell[CellGroupData[{
-Cell[1183, 38, 123, 1, 27, "CategorizationSection",ExpressionUUID->"e6edadeb-e26a-40aa-a18e-b06c2ba7bf98",
+Cell[1183, 38, 123, 1, 30, "CategorizationSection",ExpressionUUID->"e6edadeb-e26a-40aa-a18e-b06c2ba7bf98",
  CellID->1122911449],
-Cell[1309, 41, 136, 2, 31, "Categorization",ExpressionUUID->"3de74243-93fb-4b47-be2a-5c9551136d9f",
+Cell[1309, 41, 136, 2, 35, "Categorization",ExpressionUUID->"3de74243-93fb-4b47-be2a-5c9551136d9f",
  CellID->686433507],
-Cell[1448, 45, 137, 2, 31, "Categorization",ExpressionUUID->"8d72500d-8a6f-47a5-a3bb-45641f6ad4c4",
+Cell[1448, 45, 137, 2, 35, "Categorization",ExpressionUUID->"8d72500d-8a6f-47a5-a3bb-45641f6ad4c4",
  CellID->605800465],
-Cell[1588, 49, 134, 2, 31, "Categorization",ExpressionUUID->"4bbb9478-8206-4442-a3c3-730437337777",
+Cell[1588, 49, 134, 2, 35, "Categorization",ExpressionUUID->"4bbb9478-8206-4442-a3c3-730437337777",
  CellID->468444828],
-Cell[1725, 53, 129, 1, 31, "Categorization",ExpressionUUID->"b239d4bd-976d-49c0-99f0-cbf22e0cffe6"]
+Cell[1725, 53, 129, 1, 35, "Categorization",ExpressionUUID->"b239d4bd-976d-49c0-99f0-cbf22e0cffe6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1891, 59, 111, 1, 27, "KeywordsSection",ExpressionUUID->"83ff28d7-79a9-435c-a4e7-e15d293eb199",
+Cell[1891, 59, 111, 1, 30, "KeywordsSection",ExpressionUUID->"83ff28d7-79a9-435c-a4e7-e15d293eb199",
  CellID->1427428552],
 Cell[2005, 62, 100, 1, 70, "Keywords",ExpressionUUID->"1558475d-b3fd-4833-a536-538676761bb5",
  CellID->1251852827]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[2142, 68, 108, 1, 17, "DetailsSection",ExpressionUUID->"93171509-1d18-4aa1-8bdb-3f6ffb0e32c4",
+Cell[2142, 68, 108, 1, 20, "DetailsSection",ExpressionUUID->"93171509-1d18-4aa1-8bdb-3f6ffb0e32c4",
  CellID->307771771],
 Cell[2253, 71, 118, 2, 70, "Details",ExpressionUUID->"4209a8d9-83bb-4146-b689-0b985f24ba0d",
  CellID->218895918],
@@ -1002,64 +1006,64 @@ Cell[3247, 103, 122, 2, 70, "Details",ExpressionUUID->"c704a860-48e6-4d65-8c76-4
  CellID->240026365]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[3406, 110, 168, 2, 105, "Title",ExpressionUUID->"816b7260-d78b-42e7-8537-3d98165300d4",
+Cell[3406, 110, 168, 2, 108, "Title",ExpressionUUID->"816b7260-d78b-42e7-8537-3d98165300d4",
  CellID->509267359],
-Cell[3577, 114, 676, 15, 51, "Text",ExpressionUUID->"06373aa6-5ee6-46df-b5e9-5797f430fd22",
+Cell[3577, 114, 676, 15, 42, "Text",ExpressionUUID->"06373aa6-5ee6-46df-b5e9-5797f430fd22",
  CellID->1534169418],
-Cell[4256, 131, 476, 10, 21, "Text",ExpressionUUID->"ee97b6d9-35ea-4216-8ef8-8c9b0aed6b81",
+Cell[4256, 131, 476, 10, 24, "Text",ExpressionUUID->"ee97b6d9-35ea-4216-8ef8-8c9b0aed6b81",
  CellID->62659039],
-Cell[4735, 143, 2455, 44, 319, "DefinitionBox",ExpressionUUID->"5a41b0ea-9e18-48df-8992-edfc371ee94b",
+Cell[4735, 143, 2467, 44, 370, "DefinitionBox",ExpressionUUID->"5a41b0ea-9e18-48df-8992-edfc371ee94b",
  CellID->2096742444],
-Cell[7193, 189, 524, 11, 28, "Caption",ExpressionUUID->"4dc72c9d-919b-4dac-bd64-77f4845add3a",
+Cell[7205, 189, 524, 11, 31, "Caption",ExpressionUUID->"4dc72c9d-919b-4dac-bd64-77f4845add3a",
  CellID->1891092685],
-Cell[7720, 202, 3918, 73, 404, "DefinitionBox",ExpressionUUID->"09b90d33-7ebb-4963-a81c-eea1bcd15640",
+Cell[7732, 202, 3934, 73, 470, "DefinitionBox",ExpressionUUID->"09b90d33-7ebb-4963-a81c-eea1bcd15640",
  CellID->178227545],
-Cell[11641, 277, 617, 12, 30, "Caption",ExpressionUUID->"bf5f9dc8-32b0-45a7-869e-8d0d6c105e43",
+Cell[11669, 277, 617, 12, 33, "Caption",ExpressionUUID->"bf5f9dc8-32b0-45a7-869e-8d0d6c105e43",
  CellID->176027171],
-Cell[12261, 291, 2400, 46, 302, "DefinitionBox",ExpressionUUID->"946ecc87-7f71-448e-bb3e-7c71d55f0efb",
+Cell[12289, 291, 2415, 47, 350, "DefinitionBox",ExpressionUUID->"946ecc87-7f71-448e-bb3e-7c71d55f0efb",
  CellID->178414509],
-Cell[14664, 339, 630, 12, 28, "Caption",ExpressionUUID->"1aa19785-f3b1-4044-a256-785b2d4208ac",
+Cell[14707, 340, 630, 12, 31, "Caption",ExpressionUUID->"1aa19785-f3b1-4044-a256-785b2d4208ac",
  CellID->17321489],
-Cell[15297, 353, 2896, 55, 334, "DefinitionBox",ExpressionUUID->"5ec8fcba-b2e6-4c1b-a0c6-ccb2835a40f7",
+Cell[15340, 354, 2910, 55, 388, "DefinitionBox",ExpressionUUID->"5ec8fcba-b2e6-4c1b-a0c6-ccb2835a40f7",
  CellID->438774238],
-Cell[18196, 410, 792, 14, 28, "Caption",ExpressionUUID->"1b51f26c-1c51-4fc9-870c-37838072e9d1",
+Cell[18253, 411, 792, 14, 31, "Caption",ExpressionUUID->"1b51f26c-1c51-4fc9-870c-37838072e9d1",
  CellID->114737056],
-Cell[18991, 426, 3599, 66, 555, "DefinitionBox",ExpressionUUID->"4e704845-11a6-4750-8348-23724e6d7445",
+Cell[19048, 427, 3617, 67, 648, "DefinitionBox",ExpressionUUID->"4e704845-11a6-4750-8348-23724e6d7445",
  CellID->96629475],
-Cell[22593, 494, 814, 15, 28, "Caption",ExpressionUUID->"fae4ade9-8d53-4864-9d20-4bbeebc9f097",
+Cell[22668, 496, 814, 15, 31, "Caption",ExpressionUUID->"fae4ade9-8d53-4864-9d20-4bbeebc9f097",
  CellID->8138014],
-Cell[23410, 511, 4524, 87, 607, "DefinitionBox",ExpressionUUID->"d2d318de-faea-40dc-9d40-ab9a9d6f4844",
+Cell[23485, 513, 4538, 88, 709, "DefinitionBox",ExpressionUUID->"d2d318de-faea-40dc-9d40-ab9a9d6f4844",
  CellID->13751234],
-Cell[27937, 600, 967, 17, 30, "Caption",ExpressionUUID->"ff3da3e7-c46c-4809-94aa-a2fde54cea0d",
+Cell[28026, 603, 967, 17, 33, "Caption",ExpressionUUID->"ff3da3e7-c46c-4809-94aa-a2fde54cea0d",
  CellID->216751024],
-Cell[28907, 619, 3471, 63, 572, "DefinitionBox",ExpressionUUID->"47713631-ba7e-4c7e-bb97-5c06f3424cd9",
+Cell[28996, 622, 3480, 63, 668, "DefinitionBox",ExpressionUUID->"47713631-ba7e-4c7e-bb97-5c06f3424cd9",
  CellID->327053652],
-Cell[32381, 684, 903, 16, 28, "Caption",ExpressionUUID->"d3f2aac0-cdac-4e7c-96c0-3330c956a1c8",
+Cell[32479, 687, 903, 16, 31, "Caption",ExpressionUUID->"d3f2aac0-cdac-4e7c-96c0-3330c956a1c8",
  CellID->287495618],
-Cell[33287, 702, 3663, 67, 623, "DefinitionBox",ExpressionUUID->"c7d9670d-3268-4ba6-a945-533c61700a3f",
+Cell[33385, 705, 3684, 67, 728, "DefinitionBox",ExpressionUUID->"c7d9670d-3268-4ba6-a945-533c61700a3f",
  CellID->285585198],
-Cell[36953, 771, 911, 16, 28, "Caption",ExpressionUUID->"54645e03-118b-4d61-a588-994035e914ca",
+Cell[37072, 774, 911, 16, 31, "Caption",ExpressionUUID->"54645e03-118b-4d61-a588-994035e914ca",
  CellID->609780990],
-Cell[37867, 789, 5621, 104, 895, "DefinitionBox",ExpressionUUID->"a637fd10-ac38-48b1-8d99-693064e7a02d",
+Cell[37986, 792, 5638, 105, 1048, "DefinitionBox",ExpressionUUID->"a637fd10-ac38-48b1-8d99-693064e7a02d",
  CellID->217214885],
-Cell[43491, 895, 1074, 20, 28, "Caption",ExpressionUUID->"c95528ee-1a73-4d6c-9c29-577e09ba65fc",
+Cell[43627, 899, 1074, 20, 31, "Caption",ExpressionUUID->"c95528ee-1a73-4d6c-9c29-577e09ba65fc",
  CellID->500291650],
 Cell[CellGroupData[{
-Cell[44590, 919, 120, 1, 64, "TutorialMoreAboutSection",ExpressionUUID->"8b16071c-5b29-4fe3-8639-ea2165fb7346",
+Cell[44726, 923, 120, 1, 67, "TutorialMoreAboutSection",ExpressionUUID->"8b16071c-5b29-4fe3-8639-ea2165fb7346",
  CellID->23220180],
-Cell[44713, 922, 109, 1, 20, "TutorialMoreAbout",ExpressionUUID->"c711de5e-cc6b-4f77-b442-01bc073ac78a",
+Cell[44849, 926, 109, 1, 23, "TutorialMoreAbout",ExpressionUUID->"c711de5e-cc6b-4f77-b442-01bc073ac78a",
  CellID->1567025153]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44859, 928, 127, 1, 70, "RelatedTutorialsSection",ExpressionUUID->"28124603-a2e9-4c00-bc24-9406b866d82d",
+Cell[44995, 932, 127, 1, 73, "RelatedTutorialsSection",ExpressionUUID->"28124603-a2e9-4c00-bc24-9406b866d82d",
  CellID->415694126],
-Cell[44989, 931, 107, 1, 20, "RelatedTutorials",ExpressionUUID->"737ab9b7-fbb4-45c4-bd52-18fb9f57c4f8",
+Cell[45125, 935, 107, 1, 23, "RelatedTutorials",ExpressionUUID->"737ab9b7-fbb4-45c4-bd52-18fb9f57c4f8",
  CellID->806871991]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[45133, 937, 153, 1, 70, "TutorialRelatedLinksSection",ExpressionUUID->"43eb72ef-e47f-420f-91b9-0fe2a61f0f17",
+Cell[45269, 941, 153, 1, 73, "TutorialRelatedLinksSection",ExpressionUUID->"43eb72ef-e47f-420f-91b9-0fe2a61f0f17",
  CellID->415694148],
-Cell[45289, 940, 111, 1, 20, "TutorialRelatedLinks",ExpressionUUID->"e9dbb0b8-5efb-438f-9d55-d4bd5ab3d96b",
+Cell[45425, 944, 111, 1, 23, "TutorialRelatedLinks",ExpressionUUID->"e9dbb0b8-5efb-438f-9d55-d4bd5ab3d96b",
  CellID->415694149]
 }, Open  ]]
 }, Open  ]]

@@ -21,14 +21,14 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[GridBox[{
    {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "4679cc52-d73c-4b7b-933c-395c1c0cf835"], Cell[TextData[Cell[BoxData[
+     "47aae6bf-1763-4dc9-9b21-acf043a1b010"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"caebc4b8-4a1b-4a45-a037-bce76f04a979"],
+        }],ExpressionUUID->"9eda8676-7038-4785-8b5d-c2e6e38b57a5"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -60,7 +60,7 @@ ComingSoon.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19244], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19252], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/ComingSoon", ".html"]], None}]}]},
@@ -68,14 +68,14 @@ ComingSoon.html"], StandardForm]], "Input", TextClipboardType ->
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "483f2f65-8a5f-4510-9b09-25abb6227fd9"]], "AnchorBar",ExpressionUUID->
-     "2b7fbc16-4f69-4382-b6a8-eb0377ce3259"]}
+     "66183fa7-372a-491e-b0af-6695ba8a92d2"]], "AnchorBar",ExpressionUUID->
+     "1af1fda7-8110-4cb4-b2fb-b368af38a1ef"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"4a1747ef-1151-4a2f-8bc4-eb3b6aa584eb"],
+ CellID->1,ExpressionUUID->"6dce7247-de78-4272-b5e5-bdbe343c4316"],
 
 Cell[CellGroupData[{
 
@@ -260,7 +260,7 @@ DLLEXPORT int fun(WolframLibraryData libData, mreal A1, mreal *Res)
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"da42ac7b-3752-4868-9914-4a6a0ccbbd14"]
+Cell[" ", "FooterCell",ExpressionUUID->"3d6ae741-b468-4220-aa24-de42c3831a26"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -276,7 +276,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 11, 14, 55, 7.437588}", 
+   "built" -> "{2020, 9, 14, 21, 19, 6.586238}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -286,7 +286,7 @@ TaggingRules->{
 separate cell below: Enter text here. Enter formula for display in a separate \
 cell below: Enter text here. Enter an inline formula like this: 2+2.", 
     "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$19159, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$19167, "title" -> 
     "Enter title here", "titlemodifier" -> "", "windowtitle" -> 
     "Enter title here", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/ComingSoon", "WorkflowDockedCell" -> ""}, 
@@ -323,7 +323,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[588, 21, 2601, 56, 55, "AnchorBarGrid",ExpressionUUID->"4a1747ef-1151-4a2f-8bc4-eb3b6aa584eb",
+Cell[588, 21, 2601, 56, 55, "AnchorBarGrid",ExpressionUUID->"6dce7247-de78-4272-b5e5-bdbe343c4316",
  CellID->1],
 Cell[CellGroupData[{
 Cell[3214, 81, 108, 1, 65, "Title",ExpressionUUID->"230a636c-56de-4835-89d2-3b20b79c6112",
@@ -413,7 +413,7 @@ Cell[8417, 243, 316, 12, 70, "Program",ExpressionUUID->"eb9ef7bc-efe6-4e31-ac1e-
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[8796, 262, 78, 0, 70, "FooterCell",ExpressionUUID->"da42ac7b-3752-4868-9914-4a6a0ccbbd14"]
+Cell[8796, 262, 78, 0, 70, "FooterCell",ExpressionUUID->"3d6ae741-b468-4220-aa24-de42c3831a26"]
 }
 ]
 *)

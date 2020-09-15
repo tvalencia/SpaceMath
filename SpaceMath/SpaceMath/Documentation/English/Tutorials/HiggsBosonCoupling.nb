@@ -61,7 +61,7 @@ HiggsBosonCoupling.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19789], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19797], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/HiggsBosonCoupling", ".html"]], None}]}]},
@@ -454,7 +454,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 11, 14, 55, 9.313882}", 
+   "built" -> "{2020, 9, 14, 21, 19, 8.658777}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -466,7 +466,7 @@ modifiers \[Kappa]_i, for a production cross section or a decay mode, are \
 defined as follows: \[Kappa]_pp^2\[LongEqual] ( \[Sigma](pp\[Rule]h) ) / ( \
 \[Sigma](pp\[Rule]h^SM) ) or \[Kappa]_X^2\[LongEqual] ( \[CapitalGamma](h\
 \[Rule]X) ) / ( \[CapitalGamma](h^SM\[Rule]X) ) . ", "synonyms" -> {}, 
-    "tabletags" -> DocumentationBuild`Make`Private`tabletaggingrules$19733, 
+    "tabletags" -> DocumentationBuild`Make`Private`tabletaggingrules$19741, 
     "title" -> "Higgs boson coupling modifiers \[Kappa]_i ", "titlemodifier" -> 
     "", "windowtitle" -> "Higgs boson coupling modifiers \[Kappa]_i ", "type" -> 
     "Tutorial", "uri" -> "SpaceMath/tutorial/HiggsBosonCoupling"}},
@@ -502,7 +502,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[612, 21, 2358, 55, 70, "AnchorBarGrid",ExpressionUUID->"931728a6-a485-4726-b9a2-461e23b7d07a",
+Cell[612, 21, 2358, 55, 70, "AnchorBarGrid",ExpressionUUID->"a4cf533f-18f4-47ef-9aad-0bd147a3df4d",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2995, 80, 207, 8, 70, "Title",ExpressionUUID->"ed525615-a963-48d1-9cf4-5b6d6423d1f2",
@@ -520,7 +520,7 @@ Cell[7148, 237, 5334, 185, 70, "DefinitionBox3Col",ExpressionUUID->"50559f26-190
 Cell[12485, 424, 370, 13, 70, "Caption",ExpressionUUID->"da542945-0cc1-4bb8-bdc1-d3ccb881a876",
  CellID->1570155392]
 }, Open  ]],
-Cell[12870, 440, 23, 0, 70, "FooterCell",ExpressionUUID->"4b7fd437-dbf4-4e31-91ab-2dd01e13a8cf"]
+Cell[12870, 440, 23, 0, 70, "FooterCell",ExpressionUUID->"fcbf3262-58f5-4bd6-ab93-3de31efde2a6"]
 }
 ]
 *)

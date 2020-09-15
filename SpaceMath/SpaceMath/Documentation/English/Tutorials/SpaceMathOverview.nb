@@ -60,7 +60,7 @@ SpaceMathOverview.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22820], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22827], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/SpaceMathOverview", ".html"]], None}]}]},
@@ -230,14 +230,14 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 11, 14, 55, 16.919516}", 
+   "built" -> "{2020, 9, 14, 21, 19, 17.284537}", 
     "history" -> {"XX", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Package Overview", "language" -> "en", "paclet" -> 
     "SpaceMath Package", "status" -> "None", "summary" -> "SpaceMath", 
     "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$22771, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$22778, "title" -> 
     "SpaceMath Overview", "titlemodifier" -> "", "windowtitle" -> 
     "SpaceMath Overview", "type" -> "Overview", "uri" -> 
     "SpaceMath/tutorial/SpaceMathOverview"}},
@@ -276,7 +276,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"73986938-0c05-4dd0-bb60-92d1ddf8b38c",
+Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"a65d5eea-b9a2-499c-b45b-41da330fe403",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2964, 79, 46, 0, 70, "TOCDocumentTitle",ExpressionUUID->"2cd331e2-b4d5-41e0-a4b8-21b28f4458e9"],
@@ -311,7 +311,7 @@ Cell[6303, 206, 181, 5, 70, "TOCSubsection",ExpressionUUID->"7ef1a7b4-6a4e-4994-
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[6523, 216, 23, 0, 70, "FooterCell",ExpressionUUID->"b40a7c7d-48c3-4eeb-aa87-21d1e6a43a25"]
+Cell[6523, 216, 23, 0, 70, "FooterCell",ExpressionUUID->"6e57cc99-5093-482f-9a86-a87f9484f1da"]
 }
 ]
 *)

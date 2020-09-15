@@ -60,7 +60,7 @@ Introduction.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$20781], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$20789], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/Introduction", ".html"]], None}]}]},
@@ -220,7 +220,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 9, 11, 14, 55, 11.802068}", 
+   "built" -> "{2020, 9, 14, 21, 19, 11.567171}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -232,7 +232,7 @@ strength modifiers R_X 2. Meson physics (a) B meson decays (b) D meson decays \
 (c) B-OverscriptBox[StyleBox[B, TI], _] mixing (d) \
 K-OverscriptBox[StyleBox[K, TI], _] mixing (e) D-OverscriptBox[StyleBox[D, \
 TI], _] mixing 3. Flavor-violanting processes ", "synonyms" -> {}, 
-    "tabletags" -> DocumentationBuild`Make`Private`tabletaggingrules$20730, 
+    "tabletags" -> DocumentationBuild`Make`Private`tabletaggingrules$20738, 
     "title" -> "Introduction", "titlemodifier" -> "", "windowtitle" -> 
     "Introduction", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/Introduction"}},
@@ -268,7 +268,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[584, 21, 2321, 54, 70, "AnchorBarGrid",ExpressionUUID->"5ecbdcbb-4e30-44d4-8ac1-c870099d742d",
+Cell[584, 21, 2321, 54, 70, "AnchorBarGrid",ExpressionUUID->"837c64a6-662c-4145-bbf6-68ecdccf3aa1",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2930, 79, 49, 1, 70, "Title",ExpressionUUID->"c9039b3e-e09f-470e-99f8-244678fc8d91",
@@ -292,7 +292,7 @@ Cell[5252, 176, 109, 5, 70, "Text",ExpressionUUID->"dbbc87de-6cf6-493d-b49a-0c9f
 Cell[5364, 183, 615, 20, 70, "Text",ExpressionUUID->"c31a14d3-9417-4be0-8480-a1e03a4c998d",
  CellID->179312628]
 }, Open  ]],
-Cell[5994, 206, 23, 0, 70, "FooterCell",ExpressionUUID->"748d0070-247f-4f4a-8aac-c1de29f668d2"]
+Cell[5994, 206, 23, 0, 70, "FooterCell",ExpressionUUID->"aa5dd405-6013-4a7e-bac5-978449b60efe"]
 }
 ]
 *)
