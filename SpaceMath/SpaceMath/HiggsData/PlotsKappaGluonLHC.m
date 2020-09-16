@@ -10,15 +10,6 @@ KGlu1sigWXYZ::usage = "KGlu1sigWXYZ"
 KappaGluGlu2sig::usage = "KappaGluGlu2sig"
 KGlu2sigWXYZ::usage = "KGlu2sigWXYZ"
 
-KGLUoneX::usage = "KGluoneX[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The arguments ghtt and ghbb are the htt and hbb couplings, respectively. Here, h represents to SM-like Higgs boson, t and b are the top and bottom quarks. \
-The label x indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xlabel is used \
-for indicates the X axis label. X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \
-Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
-
-TableKGLUoneX::usage="TableKGluoneX[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table with two columns: KGLUone-x. The output file will be saved as TableKGLUone_1sigma_X.txt and TableKGLUone_2sigma_X.txt
-in $UserDocumentsDirectory."
-
 KGLUoneLHC::usage = "KGluoneLHC[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \

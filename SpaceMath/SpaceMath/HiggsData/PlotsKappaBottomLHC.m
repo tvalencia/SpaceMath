@@ -16,21 +16,11 @@ Kb::usage = "Kb"
 dataKb1sig::usage = "dataKb1sig"
 dataKb2sig::usage = "dataKb2sig"
 
-
-KBOToneX::usage = "KBOToneX[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
-coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
-indicates the parameter to constrain, while xmin and xmax are the initial and final values defined by users and xlabel is used \
-for indicates the X axis label. X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \
-Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
-
 KBOToneLHC::usage = "KBOToneLHC[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
 indicates the parameter to constraint, while xmin and xmax are the \
 initial and final values defined by users and xlabel is used \
 for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
-
-TableKBOToneX::usage="TableKBOToneX[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table with two columns: KBOTone-x. The output file will be saved as TableKBOTone_1sigma_X.txt and TableKBOTone_2sigma_X.txt
-in $UserDocumentsDirectory."
 
 TableKBOToneLHC::usage="TableKBOToneLHC[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
 hbb coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
@@ -57,7 +47,7 @@ to indicates the steps from xmin to xmax (ymin to ymax)."
 Begin["`Package`"]
 End[]
 
-Begin["`PlotsKappaBottom`Private`"]
+Begin["`PlotsKappaBottomLHC`Private`"]
 
 (******************************************************************************************************************************************************)
 (*********************************************************Begin Kb*************************************************************************************)
@@ -201,7 +191,7 @@ Table[
 
 (*EXPORTING TABLES FOR Kb*)
 
-TableKbOTone[ghbb_,x_,xmin_,xmax_,xstep_]:={
+TableKbOToneLHC[ghbb_,x_,xmin_,xmax_,xstep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKBOTone_1sigma_LHC.txt"}],
 Re[dataKbOTone1sig[ghbb,x,xmin,xmax,xstep]]/. {{_,0} -> Sequence[]},
@@ -213,7 +203,7 @@ FileNameJoin[{$UserDocumentsDirectory,"TableKbOTone_2sigma_LHC.txt"}],Re[dataKbO
 ]
 }
 
-TableKb[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
+TableKbLHC[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:={
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKb_1sigma_LHC.txt"}],
 Re[
