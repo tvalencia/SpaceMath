@@ -1,8 +1,5 @@
 (* Mathematica Package *)
 
-(* Created by the Wolfram Workbench OCT/2019 *)
-
-
 If[ MemberQ[$Packages,"SpaceMath`"],
 	Print["SpaceMath is already loaded! To reload it, please restart the kernel."];
 	Abort[]
