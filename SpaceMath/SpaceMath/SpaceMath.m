@@ -69,8 +69,6 @@ the JLink package. It may be used by SpaceMath addons."
 
 Begin["`Private`"]
 
-(* New features*)
-
 SMDeclareHeader[file_] :=
 	Module[ {strm, einput, moreLines = True},
 		strm = OpenRead[file];
