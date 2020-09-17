@@ -114,9 +114,7 @@ Get/@listObliquePar;
 Get/@listValues;
 Get/@listMisc;
 
-
 EndPackage[];
-
 
 If[Global`$SpaceMathStartupMessages =!= False, 
  Print[Grid[{{Style["SpaceMath v.1.0", "Title", FontSize -> 30, FontColor -> Black, FontWeight -> Normal], 
