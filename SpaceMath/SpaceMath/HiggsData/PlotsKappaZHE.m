@@ -17,6 +17,8 @@ kappaz2sigHE::usage = "kappaz2sig"
 KZ2sigWXYZHE::usage = "KZ2sigWXYZ"
 kappaz1sigHE::usage = "kappaz1sig"
 KZ1sigWXYZHE::usage = "KZ1sigWXYZ"
+dataKZ1sigHE::usage = "dataKZ1sigHE"
+dataKZ2sigHE::usage = "dataKZ2sigHE"
 
 KZoneHE::usage = "KZone[ghzz_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\) when there is dependence only on one parameter. The argument ghzz is the hZZ \
 coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. The label x \
@@ -49,7 +51,7 @@ to indicates the steps from xmin to xmax (ymin to ymax)."
 Begin["`Package`"]
 End[]
 
-Begin["`PlotsKappaZ`Private`"]
+Begin["`PlotsKappaZHE`Private`"]
 
 (***************************************************************************************************************************************************)
 (**********************************************************Begin kappa Z****************************************************************************)
@@ -234,7 +236,7 @@ dataKZ2sigHE[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        kappaZINF2sigHE <= kZ[ghZZ] <= KappaZSUP2sigHE, kZ[ghZZ], 
+        kappaZINF2sigHE <= kZ[ghZZ] <= kappaZSUP2sigHE, kZ[ghZZ], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
@@ -250,12 +252,12 @@ TableKZHE[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
    "Table"
    ]
   ,
-  Export[
+ Export[
    FileNameJoin[{$UserDocumentsDirectory, "TableKZ_2sigma_HE.txt"}],
    Re[
      dataKZ2sigHE[ghZZ, x, xmin, xmax, xstep, y, ymin, ymax, ystep]
      ] /. {{_, _, 0} -> Sequence[]},
-    "Table"
+   "Table"
    ]
   }
 

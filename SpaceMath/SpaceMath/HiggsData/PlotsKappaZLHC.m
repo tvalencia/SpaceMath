@@ -17,6 +17,8 @@ kappaz2sig::usage = "kappaz2sig"
 KZ2sigWXYZ::usage = "KZ2sigWXYZ"
 kappaz1sig::usage = "kappaz1sig"
 KZ1sigWXYZ::usage = "KZ1sigWXYZ"
+dataKZ1sig::usage = "dataKZ1sig"
+dataKZ2sig::usage = "dataKZ2sig"
 
 KZoneLHC::usage = "KZoneLHC[ghzz_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\) when there is dependence only on one parameter. The argument ghzz is the hZZ \
 coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. The label x \

@@ -202,8 +202,8 @@ indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the 
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constrain, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-TableKVX::usage="TableKVX[ghtt_,ghbb_,ghVV_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(V\)]\), with V= W, Z gauge bosons. The arguments ghtt, ghbb and ghVV are the htt, \
-hbb and hVV couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
+TableKVX::usage="TableKVX[ghVV_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table with three entries arranged as {x, y, \!\(\*SubscriptBox[\(K\), \(V\)]\)}, with V= W, Z gauge bosons. The argument ghVV is the \
+hVV coupling. Here, h represents to SM-like Higgs boson. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
 initial and final values defined by users and xstep (ystep) is used \
 to indicates the steps from xmin to xmax (ymin to ymax). The output file will be saved in $UserDocumentsDirectory. \
