@@ -65,21 +65,14 @@ Module[
  packageDirValues = OptionValue[InstalledSpaceMathData];
  DeleteValues="Do you want to delete the SpaceMath data current?";
 
- (* If the data file already exists, ask the user about overwriting *)
- (*
- DeleteFile[FileNameJoin[{$TemporaryDirectory, "coneflower.jpg"}]]
- Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/stable/SpaceMath/Install.m"]
-*)
-  
  If[ DirectoryQ[packageDirValues],
   If[ OptionValue[AutoUpdateSpaceMathData],
   Quiet@DeleteFile[FileNameJoin[{packageDirValues, "data.m"}]], 
- (*   Quiet@DeleteDirectory[packageDirValues, DeleteContents -> True], *)
    Null,
    If[
    	 ChoiceDialog[
    	 	DeleteValues,
-   	 		{"Yes, delete the " <> dataFileSM <>" current"->True,
+   	 		{"Yes, update the data file " <> dataFileSM <>" and delete current file"->True,
    	 		 "No, I need it yet. Abort the deletion."->False
    	 		}, WindowFloating->True],
 	   Quiet@DeleteFile[FileNameJoin[{packageDirValues, "data.m"}]], 
@@ -90,7 +83,7 @@ Module[
 URLDownload["https://raw.githubusercontent.com/spacemathproject/SpaceMath/stable/SpaceMath/SpaceMath/Values/data.m", 
 	FileNameJoin[{packageDirValues, "data.m"}]];
  
- WriteString["stdout", "\n File data.m old removed and updated. Good bye ... \n"];
+ WriteString["stdout", "\n File data.m old removed. \n"];
 
 ];
 
