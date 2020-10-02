@@ -50,10 +50,6 @@ Module[
 ];
 
 
-(* 
-Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/stable/SpaceMath/Install.m"]
-*)
-
 Options[UpdateSpaceMathData]=
 {
 	AutoUpdateSpaceMathData-> None,
@@ -63,30 +59,38 @@ Options[UpdateSpaceMathData]=
 UpdateSpaceMathData[OptionsPattern[]]:=
 Module[
  { 
-  packageSM, packageDirSM, DeleteSM
+  dataFileSM, packageDirValues, DeleteValues
  },
- packageSM = "SpaceMath";
- packageDirSM = OptionValue[InstalledSpaceMathData];
- DeleteSM="Do you want to delete the SpaceMath data current?";
+ dataFileSM = "data file";
+ packageDirValues = OptionValue[InstalledSpaceMathData];
+ DeleteValues="Do you want to delete the SpaceMath data current?";
 
  (* If the data file already exists, ask the user about overwriting *)
- If[ DirectoryQ[packageDirSM],
+ (*
+ DeleteFile[FileNameJoin[{$TemporaryDirectory, "coneflower.jpg"}]]
+ Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/stable/SpaceMath/Install.m"]
+*)
+  
+ If[ DirectoryQ[packageDirValues],
   If[ OptionValue[AutoUpdateSpaceMathData],
-   Quiet@DeleteDirectory[packageDirSM, DeleteContents -> True],
+  Quiet@DeleteFile[FileNameJoin[{packageDirValues, "data.m"}]], 
+ (*   Quiet@DeleteDirectory[packageDirValues, DeleteContents -> True], *)
    Null,
    If[
    	 ChoiceDialog[
-   	 	DeleteSM,
-   	 		{"Yes, delete the " <> packageSM <>" package"->True,
+   	 	DeleteValues,
+   	 		{"Yes, delete the " <> dataFileSM <>" current"->True,
    	 		 "No, I need it yet. Abort the deletion."->False
    	 		}, WindowFloating->True],
-	 Quiet@DeleteDirectory[packageDirSM, DeleteContents -> True],
+	 Quiet@DeleteDirectory[packageDirValues, DeleteContents -> True],
 	 Abort[]
 	 ]
 	]
    ];
-
- WriteString["stdout", "\n Package removed! Good bye ... \n"];
+URLDownload["https://raw.githubusercontent.com/spacemathproject/SpaceMath/stable/SpaceMath/SpaceMath/Values/data.m", 
+	FileNameJoin[{packageDirValues, "data.m"}]];
+ 
+ WriteString["stdout", "\n File data.m old removed and updated. Good bye ... \n"];
 
 ];
 
