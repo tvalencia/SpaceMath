@@ -82,7 +82,7 @@ Module[
    	 		{"Yes, delete the " <> dataFileSM <>" current"->True,
    	 		 "No, I need it yet. Abort the deletion."->False
    	 		}, WindowFloating->True],
-	 Quiet@DeleteDirectory[packageDirValues, DeleteContents -> True],
+	   Quiet@DeleteFile[FileNameJoin[{packageDirValues, "data.m"}]], 
 	 Abort[]
 	 ]
 	]
