@@ -72,7 +72,7 @@ Module[
    If[
    	 ChoiceDialog[
    	 	DeleteValues,
-   	 		{"Yes, update the data file " <> dataFileSM <>" and delete current file"->True,
+   	 		{"Yes, update the " <> dataFileSM <>" and delete current file"->True,
    	 		 "No, I need it yet. Abort the deletion."->False
    	 		}, WindowFloating->True],
 	   Quiet@DeleteFile[FileNameJoin[{packageDirValues, "data.m"}]], 
