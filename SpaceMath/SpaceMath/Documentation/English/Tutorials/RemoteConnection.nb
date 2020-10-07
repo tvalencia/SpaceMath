@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      8975,        248]
+NotebookDataLength[      8976,        248]
 NotebookOptionsPosition[      4762,        155]
-NotebookOutlinePosition[      6972,        212]
-CellTagsIndexPosition[      6929,        209]
+NotebookOutlinePosition[      6973,        212]
+CellTagsIndexPosition[      6930,        209]
 WindowTitle->Remote Connection
 WindowFrame->Normal*)
 
@@ -60,7 +60,7 @@ RemoteConnection.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21565], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21570], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/RemoteConnection", ".html"]], None}]}]},
@@ -167,7 +167,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 10, 7, 13, 2, 37.0477786}", 
+   "built" -> "{2020, 10, 7, 13, 33, 45.6217435}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -175,7 +175,7 @@ TaggingRules->{
     "status" -> "None", "summary" -> 
     "Requirements to remote connection: - Mathematica version 11.0++ - PuTTY \
 and Xming (Windows 10)", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$21500, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$21505, "title" -> 
     "Remote Connection", "titlemodifier" -> "", "windowtitle" -> 
     "Remote Connection", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/RemoteConnection"}},
@@ -211,7 +211,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[589, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"82d90ef3-70c7-42e1-9f36-2dc480682aee",
+Cell[589, 21, 2337, 54, 70, "AnchorBarGrid",ExpressionUUID->"fedb8548-58af-423e-9b4c-d7bd0ecadacf",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2951, 79, 54, 1, 70, "Title",ExpressionUUID->"ff8744a3-71a6-4e7b-b3b7-d52ab651a1f3",
@@ -249,7 +249,7 @@ Cell[4538, 144, 110, 3, 70, "Text",ExpressionUUID->"e0b590ba-c289-43d7-9c52-2275
 Cell[4651, 149, 69, 1, 70, "Text",ExpressionUUID->"c052ef8b-f744-48f6-abad-66c5a945194e",
  CellID->2113318617]
 }, Open  ]],
-Cell[4735, 153, 23, 0, 70, "FooterCell",ExpressionUUID->"3e4b8e95-2b9b-48b0-9d70-7797f8c321ba"]
+Cell[4735, 153, 23, 0, 70, "FooterCell",ExpressionUUID->"a59961c7-be61-4e72-80de-2051345bf7ef"]
 }
 ]
 *)

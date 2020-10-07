@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5369,        147]
+NotebookDataLength[      5370,        147]
 NotebookOptionsPosition[      3335,         97]
-NotebookOutlinePosition[      5088,        144]
-CellTagsIndexPosition[      5045,        141]
+NotebookOutlinePosition[      5089,        144]
+CellTagsIndexPosition[      5046,        141]
 WindowTitle->TableRb
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$15008], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$15013], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/ref/TableRb", ".html"]], None}]}]},
@@ -110,7 +110,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2020, 10, 7, 13, 2, 10.6247094}", 
+   "built" -> "{2020, 10, 7, 13, 33, 13.9458883}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -143,12 +143,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[579, 21, 2273, 53, 70, "AnchorBarGrid",ExpressionUUID->"d9cff3dc-3427-464a-a830-ed7502da6961",
+Cell[579, 21, 2273, 53, 70, "AnchorBarGrid",ExpressionUUID->"6d3930f2-93d3-467f-8c18-1fb1d9220a77",
  CellID->1],
-Cell[2855, 76, 164, 6, 70, "ObjectNameGrid",ExpressionUUID->"032a608c-c93f-4737-9bc7-32e3a31e389e"],
-Cell[3022, 84, 283, 9, 70, "Usage",ExpressionUUID->"b2b1fbca-b41e-4d3f-b22b-817217864253",
+Cell[2855, 76, 164, 6, 70, "ObjectNameGrid",ExpressionUUID->"d684904c-27f9-482d-a8a6-0f2aaa50439a"],
+Cell[3022, 84, 283, 9, 70, "Usage",ExpressionUUID->"f4eaedc6-1e34-4c99-872d-26d707ed20b3",
  CellID->982511436],
-Cell[3308, 95, 23, 0, 70, "FooterCell",ExpressionUUID->"634536ec-5ca3-46e3-85e9-90238d785855"]
+Cell[3308, 95, 23, 0, 70, "FooterCell",ExpressionUUID->"6c8a10b0-0c2e-4db9-b490-fad35d04860c"]
 }
 ]
 *)
