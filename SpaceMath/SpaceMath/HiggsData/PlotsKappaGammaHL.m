@@ -9,6 +9,8 @@ Kappagaga1sigHL::usage = "Kappagaga1sigHL"
 KGam1sigWXYZHL::usage = "KGam1sigWXYZHL"
 Kappagaga2sigHL::usage = "Kappagaga2sigHL"
 KGam2sigWXYZHL::usage = "KGam2sigWXYZHL"
+dataKGam1sigXYZHL::usage = "dataKGam1sigXYZHL"
+dataKGam2sigXYZHL::usage = "dataKGam2sigXYZHL"
 
 KGAMoneHL::usage = "\!\(\*
 StyleBox[\"KGAMoneHL\",\nFontWeight->\"Bold\"]\)\!\(\*

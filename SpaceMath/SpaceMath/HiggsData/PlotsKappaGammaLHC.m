@@ -9,6 +9,10 @@ Kappagaga1sig::usage = "Kappagaga1sig"
 KGam1sigWXYZ::usage = "KGam1sigWXYZ"
 Kappagaga2sig::usage = "Kappagaga2sig"
 KGam2sigWXYZ::usage = "KGam2sigWXYZ"
+dataKGam1sigXYZ::usage = "dataKGam1sigXYZ"
+dataKGam2sigXYZ::usage = "dataKGam2sigXYZ"
+dataKGam1sigXY::usage = "dataKGam1sigXY"
+dataKGam2sigXY::usage = "dataKGam2sigXY"
 
 KGAMoneLHC::usage = "\!\(\*
 StyleBox[\"KGAMoneLHC\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -244,7 +248,7 @@ dataKGam1sigXYZ[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigma_LHC.txt"}],
 Re[
-dataKGam2sigXYZ3
+dataKGam2sigXYZ
 	[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
