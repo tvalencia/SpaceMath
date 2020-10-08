@@ -183,13 +183,13 @@ ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yf
 dataKb1sigHE[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF1sigHE <= kb[ghbb] <= KbbSUP1sigHE, kb[ghbb],0]}, 
+    kappaBotINF1sigHE <= kb[ghbb] <= kappaBotSUP1sigHE, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 dataKb2sigHE[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF2sigHE <= kb[ghbb] <= KbbSUP2sigHE, kb[ghbb],0]}, 
+    kappaBotINF2sigHE <= kb[ghbb] <= kappaBotSUP2sigHE, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Kb*)

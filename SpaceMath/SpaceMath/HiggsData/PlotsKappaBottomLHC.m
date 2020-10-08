@@ -180,13 +180,13 @@ ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yf
 dataKb1sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF1sig <= kb[ghbb] <= KbbSUP1sig, kb[ghbb],0]}, 
+    kappaBotINF1sig <= kb[ghbb] <= kappaBotSUP1sig, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 dataKb2sig[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF2sig <= kb[ghbb] <= KbbSUP2sig, kb[ghbb],0]}, 
+    kappaBotINF2sig <= kb[ghbb] <= kappaBotSUP2sig, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Kb*)

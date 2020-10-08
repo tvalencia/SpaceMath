@@ -15,8 +15,8 @@ Kb2sigWXYZHL::usage = "Kb2sigWXYZ"
 Kb1sigHL::usage = "Kb1sig"
 Kb1sigWXYZHL::usage = "Kb1sigWXYZ"
 KbHL::usage = "Kb"
-dataKb1sigHL::usage = "dataKb1sig"
-dataKb2sigHL::usage = "dataKb2sig"
+dataKb1sigHL::usage = "dataKb1sigHL"
+dataKb2sigHL::usage = "dataKb2sigHL"
 
 KBOToneHL::usage = "KBOToneHL[ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\) when there is dependence only on one parameter. The argument ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
@@ -183,13 +183,13 @@ ghbb,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yf
 dataKb1sigHL[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF1sigHL <= kb[ghbb] <= KbbSUP1sigHL, kb[ghbb],0]}, 
+    kappaBotINF1sigHL <= kb[ghbb] <= kappaBotSUP1sigHL, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 dataKb2sigHL[ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KbbINF2sigHL <= kb[ghbb] <= KbbSUP2sigHL, kb[ghbb],0]}, 
+    kappaBotINF2sigHL <= kb[ghbb] <= kappaBotSUP2sigHL, kb[ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Kb*)
