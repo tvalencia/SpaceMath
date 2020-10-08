@@ -163,13 +163,13 @@ ghtt[c\[Alpha],Ztt,u], ghbb[c\[Alpha],Zbb,u],Ztt,u,0,1,500,2000,Ztt,u,c\[Alpha],
 dataKGlu1sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaGluonINF1sig<= kgluglu[ghtt, ghbb] <=kappaGluonSUP1sig,kgluglu[ghtt, ghbb],0]}, 
+    kappaGluonINF1sig<= kgluglu[ghtt,ghbb] <=kappaGluonSUP1sig,kgluglu[ghtt,ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 dataKGlu2sig[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaGluonINF2sig<= kgluglu[ghtt, ghbb] <=kappaGluonSUP2sig,kgluglu[ghtt, ghbb],0]}, 
+    kappaGluonINF2sig<= kgluglu[ghtt,ghbb] <=kappaGluonSUP2sig,kgluglu[ghtt,ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR KGlu*)

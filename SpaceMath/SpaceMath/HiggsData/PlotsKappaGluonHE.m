@@ -9,6 +9,8 @@ KappaGluGlu1sigHE::usage = "KappaGluGlu1sig"
 KGlu1sigWXYZHE::usage = "KGlu1sigWXYZ"
 KappaGluGlu2sigHE::usage = "KappaGluGlu2sig"
 KGlu2sigWXYZHE::usage = "KGlu2sigWXYZ"
+dataKGlu1sigHE::usage = "dataKGlu1sigHE"
+dataKGlu2sigHE::usage = "dataKGlu2sigHE"
 
 KGLUoneHE::usage = "KGluoneHE[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
@@ -161,13 +163,13 @@ ghtt[c\[Alpha],Ztt,u], ghbb[c\[Alpha],Zbb,u],Ztt,u,0,1,500,2000,Ztt,u,c\[Alpha],
 dataKGlu1sigHE[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KGluINF1sigHE<= kgluglu[ghtt, ghbb] <=KGluSUP1sigHE,kgluglu[ghtt, ghbb],0]}, 
+    kappaGluonINF1sigHE<= kgluglu[ghtt, ghbb] <=kappaGluonSUP1sigHE,kgluglu[ghtt, ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 dataKGlu2sigHE[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    KGluINF2sigHE<= kgluglu[ghtt, ghbb] <=KGluSUP2sigHE,kgluglu[ghtt, ghbb],0]}, 
+    kappaGluonINF2sigHE<= kgluglu[ghtt, ghbb] <=kappaGluonSUP2sigHE,kgluglu[ghtt, ghbb],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR KGlu*)
