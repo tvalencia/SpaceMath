@@ -261,13 +261,13 @@ ghtautau,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforste
 dataKtau1sig[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaTauINF1sig <= Ktau[ghtautau] <= kappaTauSUP1sig, Ktau[ghtautau],0]}, 
+    kappaTauINF1sig <= ktau[ghtautau] <= kappaTauSUP1sig, ktau[ghtautau],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 dataKtau2sig[ghtautau_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]:=
 Table[
 {x,y,If[
-    kappaTauINF2sig <= Ktau[ghtautau] <= kappaTauSUP2sig, Ktau[ghtautau],0]}, 
+    kappaTauINF2sig <= ktau[ghtautau] <= kappaTauSUP2sig, ktau[ghtautau],0]}, 
 {x, xmin,xmax,xstep}, {y, ymin,ymax,ystep}]
 
 (*EXPORTING TABLES FOR Ktau*)
