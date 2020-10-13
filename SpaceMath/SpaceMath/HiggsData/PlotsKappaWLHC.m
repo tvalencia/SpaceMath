@@ -216,9 +216,6 @@ KW2sigWXYZ[
 ghWW,x,y,xmin,xmax,ymin,ymax,xlabel,ylabel,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep,PP]
 }
 
-(*KappaW2sig[
-ghWW[c\[Alpha],u],c\[Alpha],u,0.8,1,1,2,calpha,U,xfor,yfor,xformin,xformax,xforstep,yformin,yformax,yforstep]*)
-
 (*TABLES FOR KW*)
 
 dataKW1sig[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, 
