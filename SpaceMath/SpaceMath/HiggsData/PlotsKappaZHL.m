@@ -234,7 +234,7 @@ dataKZ2sigHL[ghZZ_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        kappaZINF2sigHL <= kZ[ghZZ] <= KappaZSUP2sigHL, kZ[ghZZ], 
+        kappaZINF2sigHL <= kZ[ghZZ] <= kappaZSUP2sigHL, kZ[ghZZ], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
