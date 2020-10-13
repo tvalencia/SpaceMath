@@ -248,8 +248,7 @@ dataKGam1sigXYZ[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 Export[
 FileNameJoin[{$UserDocumentsDirectory,"TableKGam_2sigma_LHC.txt"}],
 Re[
-dataKGam2sigXYZ
-	[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
+dataKGam2sigXYZ[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xstep,y,ymin,ymax,ystep]
 ]/. {{_,_,0} -> Sequence[]},"Table"
 ]
 }
