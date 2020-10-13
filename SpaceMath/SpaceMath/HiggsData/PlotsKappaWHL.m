@@ -225,7 +225,7 @@ dataKW1sigHL[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        kappaWINF1sigHL <= kW[ghWW] <= kappaWSUP1sigHL, KW[ghWW], 
+        kappaWINF1sigHL <= kW[ghWW] <= kappaWSUP1sigHL, kW[ghWW], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
@@ -233,7 +233,7 @@ dataKW2sigHL[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        KappaWINF2sigHL <= kW[ghWW] <= KappaWSUP2sigHL, KW[ghWW], 
+        kappaWINF2sigHL <= kW[ghWW] <= kappaWSUP2sigHL, kW[ghWW], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 

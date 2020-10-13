@@ -225,7 +225,7 @@ dataKW1sig[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        kappaWINF1sig <= kW[ghWW] <= kappaWSUP1sig, KW[ghWW], 
+        kappaWINF1sig <= kW[ghWW] <= kappaWSUP1sig, kW[ghWW], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
@@ -233,7 +233,7 @@ dataKW2sig[ghWW_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_,
   ystep_] :=
  Table[
   {x, y, If[
-        KappaWINF2sig <= kW[ghWW] <= KappaWSUP2sig, KW[ghWW], 
+        kappaWINF2sig <= kW[ghWW] <= kappaWSUP2sig, kW[ghWW], 
     0]}, 
   {x, xmin, xmax, xstep}, {y, ymin, ymax, ystep}]
 
