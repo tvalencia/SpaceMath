@@ -4,11 +4,11 @@ ParamSpace::usage="ParamSpace"
 
 LFVall::usage="LFVall"
 
-aMU::usage="aMU"
-
 Amu::usage="Amu"
 
 Brhtaumu::usage="Brhtaumu"
+
+aMU::usage="aMU"
 
 DeltaAMU::usage="DeltaAMU"
 
