@@ -1,16 +1,16 @@
 (* Wolfram Language Package *)
 
-ParamSpace::usage="See later"
+ParamSpace::usage="ParamSpace"
 
-LFVall::usage="See later"
+LFVall::usage="LFVall"
 
-aMU::usage="See later"
+aMU::usage="aMU"
 
-DeltaAMU::usage="See later"
+DeltaAMU::usage="DeltaAMU"
 
-InterParam::usage="See later"
+InterParam::usage="InterParam"
 
-LFVintersection::usage="See later"
+LFVintersection::usage="LFVintersection"
 
 Begin["`Package`"]
 End[]
