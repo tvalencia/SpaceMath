@@ -223,7 +223,7 @@ kappaGluonSUP2sigHE::usage="See later."
 kappaGluonINF2sigHE::usage="See later."
 kappaGammaSUP2sigHE::usage="See later."
 kappaGammaINF2sigHE::usage="See later."
-
+BRHtoETAU::usage="See later"
 
 (* ------------------------------------------------------------------------ *)
 
@@ -466,6 +466,7 @@ BRTAUtoEgamma=3.3*(10^(-8)); (*Upper bound of the tau\[Rule] e gamma decay*)
 BRTAUtoEEE=2.7*(10^(-8)); (*Upper bound of the tau\[Rule] 3e decay*)
 BRTAUtoMUMUMU=2.7*(10^(-8)); (*Upper bound of the tau\[Rule] 3\[Mu] decay*)
 BRHtoTAUMU=0.0025; (*Upper bound of the h\[Rule] tau mu decay*)
+BRHtoETAU=0.0061; (*Upper bound of the h\[Rule] e tau decay *)
 (* GF=1.1663787*(10^-5); (*Fermi constant*) *)
 Ttau=(2.906*10^-13) ((1/6.582)*10^25); (*tau lifetime*)
 TotWidh=0.0047; (*Total width of the Higgs boson*)
@@ -476,6 +477,7 @@ aEXP=116592091*10^-11; (*Experimental value for the muon anomalous magnetic dipo
 BRTAUtolnunu=0.17; (*Branching ratio of the tau \[Rule] l nu nu decay*)
 dmuINF=-10*(10^-20); (*lower limit of the muon alectric dipole moment*)
 dmuSUP=8*(10^-20);
+
 
 (* B-physics *)
 (*
