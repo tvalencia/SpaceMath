@@ -6,48 +6,46 @@ THIS PROGRAM EVALUATE PROCESSES IN ORDER TO FIND PARAMETER SPACES FROM EXTENDED 
 
 (* Definitions *)
 
-amu::usage="See later"
-\[Tau]fi::usage="See later"
-\[Tau]fj::usage="See later"
+amu::usage="amu"
+\[Tau]fi::usage="\[Tau]fi"
+\[Tau]fj::usage="\[Tau]fj"
 
-Widthhff::usage="See later"
-BRhfifj::usage="See later"
+Widthhff::usage="Widthhff"
+BRhfifj::usage="BRhfifj"
 
-BRhtaumu::usage="See later"
-BRhetau::usage="See later"
+BRhtaumu::usage="BRhtaumu"
+BRhetau::usage="BRhetau"
 
-\[Lambda]h::usage="See later"
-\[Lambda]A::usage="See later"
-\[Lambda]H::usage="See later"
+\[Lambda]h::usage="\[Lambda]h"
+\[Lambda]A::usage="\[Lambda]A"
+\[Lambda]H::usage="\[Lambda]H"
 
-CLh::usage="See later"
-CLA::usage="See later"
-CLH::usage="See later"
-CLOneLOOP::usage="See later"
-CLh::usage="See later"
+CLh::usage="CLh"
+CLA::usage="CLA"
+CLH::usage="CLH"
+CLOneLOOP::usage="CLOneLOOP"
  
-CLTwoLpsh::usage="See later"
-CLTwoLpsH::usage="See later"
-CLTwoLpsA::usage="See later"
-CLTwoLOOPS::usage="See later"
+CLTwoLpsh::usage="CLTwoLpsh"
+CLTwoLpsH::usage="CLTwoLpsH"
+CLTwoLpsA::usage="CLTwoLpsA"
 
-CL::usage="See later"
-CLTwoLOOPS::usage="See later"
+CL::usage="CL"
+CLTwoLOOPS::usage="CLTwoLOOPS"
 
-BRtautomugamma::usage="See later"
+BRtautomugamma::usage="BRtautomugamma"
 
 Sh::usage="See later"
 SH::usage="See later"
 SA::usage="See later"
 
-BRtauto3muons::usage="See later"
+BRtauto3muons::usage="BRtauto3muons"
 
-BRmuto3electrons::usage="See later"
+BRmuto3electrons::usage="BRmuto3electrons"
 
-dmuh::usage="See later"
-dmuH::usage="See later"
-dmuA::usage="See later"
-dmu::usage="See later"
+dmuh::usage="dmuh"
+dmuH::usage="dmuH"
+dmuA::usage="dmuA"
+dmu::usage="dmu"
 
 Begin["`Package`"]
 End[]
