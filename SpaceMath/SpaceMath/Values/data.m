@@ -35,38 +35,38 @@ GF::usage="Fermi constant"
 (* Higgs data *)
 (*Epsilon to 2\[Sigma]*)
 (*Reference: P. P. Giardino, K. Kannike, I. Masina, M. Raidal, and A. Strumia, J. High Energy Phys. 05 (2014) 046.*)
-EpstopSUP::usage="See later."
-EpstopINF::usage="See later."
-EpsbotSUP::usage="See later."
-EpsbotINF::usage="See later."
-EpstauSUP::usage="See later."
-EpstauINF::usage="See later."
-EpsZSUP::usage="See later."
-EpsZINF::usage="See later."
-EpsWSUP::usage="See later."
-EpsWINF::usage="See later."
+EpstopSUP::usage="EpstopSUP"
+EpstopINF::usage="EpstopINF"
+EpsbotSUP::usage="EpsbotSUP"
+EpsbotINF::usage="EpsbotINF"
+EpstauSUP::usage="EpstauSUP"
+EpstauINF::usage="EpstauINF"
+EpsZSUP::usage="EpsZSUP"
+EpsZINF::usage="EpsZINF"
+EpsWSUP::usage="EpsWSUP"
+EpsWINF::usage="EpsWINF"
 
 (*Signal Strengths*)
 (*Reference: ARXIV:1809.10733*)
 (*central values for gluon production*)
-Rbb::usage="See later."
-Rtautau::usage="See later."
-Rww::usage="See later."
-Rzz::usage="See later."
-Rgammagamma::usage="See later."
+Rbb::usage="Rbb"
+Rtautau::usage="Rtautau"
+Rww::usage="Rww"
+Rzz::usage="Rzz"
+Rgammagamma::usage="Rgammagamma"
 
 (*Signal Strengths to 2\[Sigma]*)
 (*Reference: ARXIV:1809.10733*)
-RbbSUP2sig::usage="See later."
-RbbINF2sig::usage="See later."
-RtautauSUP2sig::usage="See later."
-RtautauINF2sig::usage="See later."
-RwwSUP2sig::usage="See later."
-RwwINF2sig::usage="See later."
-RzzSUP2sig::usage="See later."
-RzzINF2sig::usage="See later."
-RgammagammaINF2sig::usage="See later."
-RgammagammaSUP2sig::usage="See later."
+RbbSUP2sig::usage="RbbSUP2sig"
+RbbINF2sig::usage="RbbINF2sig"
+RtautauSUP2sig::usage="RtautauSUP2sig"
+RtautauINF2sig::usage="RtautauINF2sig"
+RwwSUP2sig::usage="RwwSUP2sig"
+RwwINF2sig::usage="RwwINF2sig"
+RzzSUP2sig::usage="RzzSUP2sig"
+RzzINF2sig::usage="RzzINF2sig"
+RgammagammaINF2sig::usage="RgammagammaINF2sig"
+RgammagammaSUP2sig::usage="RgammagammaSUP2sig"
 
 (*Signal Strengths to 1\[Sigma]*)
 (*Reference: ARXIV:1809.10733*)
@@ -149,8 +149,8 @@ dmuINF::usage="lower limit of the muon alectric dipole moment"
 dmuSUP::usage="upper limit of the muon alectric dipole moment"
 
 (* b-s gamma *)
-bsgammaINF3sigma::usage="See later."
-bsgammaSUP3sigma::usage="See later."
+bsgammaINF3sigma::usage="bsgammaINF3sigma"
+bsgammaSUP3sigma::usage="bsgammaSUP3sigma"
 
 kappaZSUP1sigHL::usage="See later."
 kappaZINF1sigHL::usage="See later."
