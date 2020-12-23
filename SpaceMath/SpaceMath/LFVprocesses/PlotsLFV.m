@@ -6,11 +6,19 @@ LFVall::usage="LFVall"
 
 aMU::usage="aMU"
 
+Amu::usage="Amu"
+
+Brhtaumu::usage="Brhtaumu"
+
 DeltaAMU::usage="DeltaAMU"
 
 InterParam::usage="InterParam"
 
+Htaumu::usage="Htaumu"
+
 LFVintersection::usage="LFVintersection"
+
+muAMDM::usage"muAMDM"
 
 Begin["`Package`"]
 End[]
@@ -50,27 +58,36 @@ ParamSpace[ghmumu,ghtaumu,ghtautau,gHmumu,gHtaumu,gHtautau,gAmumu,gAtaumu,gAtaut
 
 (*Delta amu*)
 
-aMU[ghtaumu_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_]:=RegionPlot[0<BRhtaumu[ghtaumu]<BRHtoTAUMU,{x,xmin,xmax},{y,ymin,ymax}
+Brhtaumu[ghtaumu_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=RegionPlot[0<BRhtaumu[ghtaumu]<BRHtoTAUMU,{x,xmin,xmax},{y,ymin,ymax}
+,FrameLabel->{Style[xlabel,Larger,Bold],Style[ylabel,Larger,Bold](*,Style["Subscript[\[Delta]a, \[Mu]]",Larger,Bold]*)},PlotLegends->{"h\[Rule]\[Tau]\[Mu]"},AxesLabel -> {Style["x", Larger, Bold], 
+Style["y", Larger, Bold]}, AspectRatio -> 1, FrameStyle ->  Thickness[0.004], LabelStyle -> 35,ImageSize->600,GridLines -> Automatic, GridLinesStyle -> 
+ Directive[Black, 
+  Dashed], PlotStyle -> {{Blue, Opacity[0.5]}},BoundaryStyle -> {1 -> Directive[Blue, Dashed, Thickness[0.002]]},PlotPoints->PP]
+
+Htaumu[ghtaumu_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_,PP_]:=Manipulate[
+Brhtaumu[ghtaumu,x,xmin,xmax,y,ymin,ymax,xlabel,ylabel,PP],{xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+]
+
+Amu[ghmumu_,ghtaumu_,gHmumu_,gHtaumu_,gAmumu_,gAtaumu_,mh_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,PP_]:=RegionPlot[{aMUInf<=amu[ghmumu, ghtaumu, gHmumu, 
+gHtaumu, gAmumu, gAtaumu,125, mH,mA]<=aMUSup},{x,xmin,xmax},{y,ymin,ymax}
 ,FrameLabel->{Style[xlabel,Larger,Bold],Style[ylabel,Larger,Bold](*,Style["Subscript[\[Delta]a, \[Mu]]",Larger,Bold]*)},PlotLegends->{"h\[Rule]\[Tau]\[Mu]"},AxesLabel -> {Style["x", Larger, Bold], 
 Style["y", Larger, Bold]}, AspectRatio -> 1, FrameStyle ->  Thickness[0.004], LabelStyle -> 35,ImageSize->600,GridLines -> Automatic, GridLinesStyle -> 
  Directive[Black, 
   Dashed], PlotStyle -> {{Blue, Opacity[0.5]}, {Green, 
-   Opacity[50]}, {Red, Opacity[0.5]},{Yellow, Opacity[0.5]}},BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.002]]},PlotPoints->200]
+   Opacity[50]}, {Red, Opacity[0.5]},{Yellow, Opacity[0.5]}},BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.002]]},PlotPoints->PP]
 
-DeltaAMU[ghtaumu_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_]:=Manipulate[
-aMU[ghtaumu,x,xmin,xmax,y,ymin,ymax,xlabel,ylabel],{xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
-]
 
-(*RegionPlot[{aMUInf<=amu[ghmumu[a,b,1], ghtaumu[a,b,1], gHmumu[a,b,1], 
-gHtaumu[a,b,1], gAmumu[a,b,1], gAtaumu[a,b,1],125, 300,1000]<=aMUSup},{a,-1,1},{b,-1,1}
-,FrameLabel->{Style[a,Larger,Bold],Style[b,Larger,Bold],Style["\!\(\*SubscriptBox[\(\[Chi]\), \(ij\)]\)=1",Larger,Bold]},PlotLegends->{"\!\(\*SubscriptBox[\(\[Delta]a\), \(\[Mu]\)]\)"},AxesLabel -> {Style["x", Larger, Bold], 
-Style["y", Larger, Bold]}, AspectRatio -> 1, FrameStyle ->  Thickness[0.004], LabelStyle -> 35,ImageSize->1000,GridLines -> Automatic, GridLinesStyle -> 
- Directive[Black, 
-  Dashed], PlotStyle -> {{Green, Opacity[0.3]}, {Green, 
-   Opacity[50]}, {Red, Opacity[0.5]},{Yellow, Opacity[0.5]}},BoundaryStyle -> {1 -> 
-   Directive[Green, Dashed, Thickness[0.002]], 
-  2 -> Directive[Orange, Dashed, Thickness[0.002], Opacity[10]], 
-  3 -> Directive[Green, Dashed, Thickness[0.002]],4 -> Directive[Red, Dashed, Thickness[0.002]],5 -> Directive[Purple, Dashed, Thickness[0.002]]},PlotPoints->100]*)
+muAMDM[ghmumu_,ghtaumu_,gHmumu_,gHtaumu_,gAmumu_,gAtaumu_,mh_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_,PP_]:=Manipulate[
+Amu[ghmumu,ghtaumu,gHmumu,gHtaumu,gAmumu,gAtaumu,mh,mH,mA,x,xmin,xmax,y,ymin,ymax,xlabel,ylabel,PP],{xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
+
 
 (*{s\[Alpha]=Sqrt[1-c\[Alpha]^2],c\[Alpha]=0.99,Z\[Mu]\[Mu]=0.0001,Z\[Tau]\[Tau]=0.01,Ztt=0.01}*)
 

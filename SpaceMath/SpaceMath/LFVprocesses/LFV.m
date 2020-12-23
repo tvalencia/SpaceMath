@@ -38,6 +38,10 @@ Sh::usage="See later"
 SH::usage="See later"
 SA::usage="See later"
 
+Sh1::usage="See later"
+SH1::usage="See later"
+SA1::usage="See later"
+
 BRtauto3muons::usage="BRtauto3muons"
 
 BRmuto3electrons::usage="BRmuto3electrons"
@@ -109,11 +113,11 @@ BRTAUtolnunu (2*Abs[CL[gHtt,gHtaumu,mH,gAtt,gAtaumu,mA,ghtt,ghtaumu,ghtautau,mh,
 (*Decay tau to 3 muons;
 Branching ratio of the decay tau to 3 muons;
 Definitios;*)
-{
-	Sh[ghmumu_,ghtaumu_]:=ghmumu*ghtaumu,
-	SH[gHmumu_,gHtaumu_]:=gHmumu*gHtaumu,
-	SA[gAmumu_,gAtaumu_]:=gAmumu*gAtaumu
-};
+
+Sh[ghmumu_,ghtaumu_]:=ghmumu*ghtaumu
+SH[gHmumu_,gHtaumu_]:=gHmumu*gHtaumu
+SA[gAmumu_,gAtaumu_]:=gAmumu*gAtaumu
+
 
 BRtauto3muons[ghmumu_,ghtaumu_,gHmumu_,gHtaumu_,gAmumu_,gAtaumu_,mH_,mA_]:=
 (Ttau*mtau^5)/(256Pi^3) (Sh[ghmumu,ghtaumu]^2/mh^4+SH[gHmumu,gHtaumu]^2/mH^4+SA[gAmumu,gAtaumu]^2/mA^4 (Sh[ghmumu,ghtaumu]*SH[gHmumu,gHtaumu])/((mh^2)( mH^2))+2 SA[gAmumu,gAtaumu]/(3mA^2) (Sh[ghmumu,ghtaumu]/mh^2*SH[gHmumu,gHtaumu]/mH^2))
@@ -121,14 +125,12 @@ BRtauto3muons[ghmumu_,ghtaumu_,gHmumu_,gHtaumu_,gAmumu_,gAtaumu_,mH_,mA_]:=
 (*Decay mu to 3 electrons;
 Branching ratio of the decay mu to 3 electrons;
 Definitios;*)
-{
-	Sh[ghee_,ghmue_]:=ghee*ghmue,
-	SH[gHee_,gHmue_]:=gHee*gHmue,
-	SA[gAee_,gAmue_]:=gAee*gAmue
-};
+Sh1[ghee_,ghmue_]:=ghee*ghmue
+SH1[gHee_,gHmue_]:=gHee*gHmue
+SA1[gAee_,gAmue_]:=gAee*gAmue
 
 BRmuto3electrons[ghee_,ghmue_,gHee_,gHmue_,gAee_,gAmue_,mH_,mA_]:=
-(Tmuon*mmu^5)/(256Pi^3) (Sh[ghee,ghmue]^2/mh^4+SH[gHee,gHmue]^2/mH^4+SA[gAee,gAmue]^2/mA^4 (Sh[ghee,ghmue]*SH[gHee,gHmue])/((mh^2)( mH^2))+2 SA[gAee,gAmue]/(3mA^2) (Sh[ghee,ghmue]/mh^2*SH[gHee,gHmue]/mH^2))
+(Tmuon*mmu^5)/(256Pi^3) (Sh1[ghee,ghmue]^2/mh^4+SH1[gHee,gHmue]^2/mH^4+SA1[gAee,gAmue]^2/mA^4 (Sh1[ghee,ghmue]*SH1[gHee,gHmue])/((mh^2)( mH^2))+2 SA1[gAee,gAmue]/(3mA^2) (Sh1[ghee,ghmue]/mh^2*SH1[gHee,gHmue]/mH^2))
 (************************************************************************************************************************************************************************************************************************************************************************************************************************)
 (*muon Electric dipole moment*)
 dmuh[ghtaumu_,mh_] := -ee Im[ghtaumu^2]/(16 (\[Pi]^2))*mtau/(2 (mh^2)) (2 Log[mh^2/mtau^2] - 3);
