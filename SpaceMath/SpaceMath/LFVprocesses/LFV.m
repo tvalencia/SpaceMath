@@ -65,7 +65,7 @@ amu[ghmumu_,ghtaumu_,gHmumu_,gHtaumu_,gAmumu_,gAtaumu_,mh_,mH_,mA_]:=(mmu/(16(\[
 Definitions*)
 \[Tau]fi[mi_]:=(2mi/mh)^2
 \[Tau]fj[mj_]:=(2mj/mh)^2
-Decay width of the Higgs boson into fermion pair;
+(*Decay width of the Higgs boson into fermion pair;*)
 Widthhff[ghfifj_,Nc_,mi_,mj_]:=(((ghfifj^2) Nc mh)/(128 \[Pi])) *
 ((4-(Sqrt[\[Tau]fi[mi]]+Sqrt[\[Tau]fj[mj]])^2)^(3/2))(Sqrt[(4-(Sqrt[\[Tau]fi[mi]]-Sqrt[\[Tau]fj[mj]])^2)])
 
