@@ -37,6 +37,8 @@ CLTwoLOOPS::usage="See later"
 BRtautomugamma::usage="See later"
 
 Sh::usage="See later"
+SH::usage="See later"
+SA::usage="See later"
 
 BRtauto3muons::usage="See later"
 
