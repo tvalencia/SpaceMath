@@ -14,9 +14,25 @@ DeltaAMU::usage="DeltaAMU"
 
 InterParam::usage="InterParam"
 
-Htaumu::usage="Htaumu"
+HTauMu::usage="Htaumu"
+
+Brtautomugamma::usage="Brtautomugamma"
+
+TauMuGamma::usage"TauMuGamma"
 
 LFVintersection::usage="LFVintersection"
+
+BRtautomugamma::usage="BRtautomugamma"
+
+Brtauto3muons::usage="Brtauto3muons"
+
+Tau3Mu::usage="Tau3Mu"
+
+Brmuto3electrons::usage="Brmuto3electrons"
+
+Mu3E::usage="Mu3E"
+
+
 
 muAMDM::usage"muAMDM"
 
@@ -64,7 +80,7 @@ Style["y", Larger, Bold]}, AspectRatio -> 1, FrameStyle ->  Thickness[0.004], La
  Directive[Black, 
   Dashed], PlotStyle -> {{Blue, Opacity[0.5]}},BoundaryStyle -> {1 -> Directive[Blue, Dashed, Thickness[0.002]]},PlotPoints->PP]
 
-Htaumu[ghtaumu_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_,PP_]:=Manipulate[
+HTauMu[ghtaumu_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_,PP_]:=Manipulate[
 Brhtaumu[ghtaumu,x,xmin,xmax,y,ymin,ymax,xlabel,ylabel,PP],{xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
 ]
 
@@ -79,16 +95,51 @@ Style["y", Larger, Bold]}, AspectRatio -> 1, FrameStyle ->  Thickness[0.004], La
 
 muAMDM[ghmumu_,ghtaumu_,gHmumu_,gHtaumu_,gAmumu_,gAtaumu_,mh_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_,PP_]:=Manipulate[
 Amu[ghmumu,ghtaumu,gHmumu,gHtaumu,gAmumu,gAtaumu,mh,mH,mA,x,xmin,xmax,y,ymin,ymax,xlabel,ylabel,PP],{xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+Brtautomugamma[ghtaumu_,ghtautau_,gAtaumu_,gAtautau_,gHtaumu_,gHtautau_,ghtt_,gHtt_,gAtt_,mh_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,PP_] :=
+ RegionPlot[0<BRtautomugamma[ghtaumu,ghtautau,gAtaumu,gAtautau,gHtaumu,gHtautau,ghtt,gHtt,gAtt,mh,mH,mA]<BRTAUtoMUgamma,{x,xmin,xmax},{y,ymin,ymax}
+,FrameLabel->{Style[xlabel,Larger,Bold],Style[ylabel,Larger,Bold](*,Style["Subscript[\[Delta]a, \[Mu]]",Larger,Bold]*)},PlotLegends->{"\[Tau] -> \[Mu]\[Gamma]"},AxesLabel -> {Style["x", Larger, Bold], 
+Style["y", Larger, Bold]}, AspectRatio -> 1, FrameStyle ->  Thickness[0.004], LabelStyle -> 35,ImageSize->600,GridLines -> Automatic, GridLinesStyle -> 
+ Directive[Black, 
+  Dashed], PlotStyle -> {{Blue, Opacity[0.5]}},BoundaryStyle -> {1 -> Directive[Blue, Dashed, Thickness[0.002]]},PlotPoints->PP]
+
+TauMuGamma[ghtaumu_,ghtautau_,gAtaumu_,gAtautau_,gHtaumu_,gHtautau_,ghtt_,gHtt_,gAtt_,mh_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+Brtautomugamma[ghtaumu,ghtautau,gAtaumu,gAtautau,gHtaumu,gHtautau,ghtt,gHtt,gAtt,mh,mH,mA,x,xmin,xmax,y,ymin,ymax,xlabel,ylabel,PP] ,{xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Brtauto3muons[ghmumu_,ghtaumu_,gHmumu_,gHtaumu_,gAmumu_,gAtaumu_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,PP_] :=
+ RegionPlot[0<BRtauto3muons[ghmumu,ghtaumu,gHmumu,gHtaumu,gAmumu,gAtaumu,mH,mA]<BRTAUtoMUMUMU,{x,xmin,xmax},{y,ymin,ymax}
+,FrameLabel->{Style[xlabel,Larger,Bold],Style[ylabel,Larger,Bold](*,Style["Subscript[\[Delta]a, \[Mu]]",Larger,Bold]*)},PlotLegends->{"\[Tau] -> 3\[Mu]"},AxesLabel -> {Style["x", Larger, Bold], 
+Style["y", Larger, Bold]}, AspectRatio -> 1, FrameStyle ->  Thickness[0.004], LabelStyle -> 35,ImageSize->600,GridLines -> Automatic, GridLinesStyle -> 
+ Directive[Black, 
+  Dashed], PlotStyle -> {{Orange, Opacity[0.5]}},BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.002]]},PlotPoints->PP]
+  
+Tau3Mu[ghmumu_,ghtaumu_,gHmumu_,gHtaumu_,gAmumu_,gAtaumu_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+Brtauto3muons[ghmumu,ghtaumu,gHmumu,gHtaumu,gAmumu,gAtaumu,mH,mA,x,xmin,xmax,y,ymin,ymax,xlabel,ylabel,PP] ,{xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5555
+Brmuto3electrons[ghee_,ghmue_,gHee_,gHmue_,gAee_,gAmue_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,PP_] :=
+ RegionPlot[0<BRmuto3electrons[ghee,ghmue,gHee,gHmue,gAee,gAmue,mH,mA]<BRMUtoEEE,{x,xmin,xmax},{y,ymin,ymax}
+,FrameLabel->{Style[xlabel,Larger,Bold],Style[ylabel,Larger,Bold](*,Style["Subscript[\[Delta]a, \[Mu]]",Larger,Bold]*)},PlotLegends->{"\[Tau] -> 3\[Mu]"},AxesLabel -> {Style["x", Larger, Bold], 
+Style["y", Larger, Bold]}, AspectRatio -> 1, FrameStyle ->  Thickness[0.004], LabelStyle -> 35,ImageSize->600,GridLines -> Automatic, GridLinesStyle -> 
+ Directive[Black, 
+  Dashed], PlotStyle -> {{Purple, Opacity[0.5]}},BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.002]]},PlotPoints->PP]
+  
+Mu3E[ghee_,ghmue_,gHee_,gHmue_,gAee_,gAmue_,mH_,mA_,x_,xmin_,xmax_,y_,ymin_,ymax_,xlabel_,ylabel_,xfor_,xformin_,xformax_,xforstep_,yfor_,yformin_,yformax_,yforstep_,PP_]:=
+Manipulate[
+Brmuto3electrons[ghee,ghmue,gHee,gHmue,gAee,gAmue,mH,mA,x,xmin,xmax,y,ymin,ymax,xlabel,ylabel,PP] ,{xfor,xformin,xformax,xforstep},{yfor,yformin,yformax,yforstep}
+]
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 (*{s\[Alpha]=Sqrt[1-c\[Alpha]^2],c\[Alpha]=0.99,Z\[Mu]\[Mu]=0.0001,Z\[Tau]\[Tau]=0.01,Ztt=0.01}*)
 
 (*, Subscript[m, Subscript[H, F]]=1 TeV, Subscript[m, Subscript[A, F]]=0.5 TeV*)

@@ -87,7 +87,7 @@ Definitions;*)
 \[Lambda]H[mH_]:=Log[mH^2/mtau^2]-4/3
 (**************************************************)
 (**************************************************)
-(*WILSON COEFFICIENTS at ONE-LOOP*)
+WILSON COEFFICIENTS at ONE-LOOP;
 CLh[ghtaumu_,ghtautau_,mh_]:=(ghtaumu*ghtautau)*\[Lambda]h[mh]/((2) (mh^2))
 CLA[gAtaumu_,gAtautau_,mA_]:=(gAtaumu*gAtautau)*\[Lambda]A[mA]/((2) (mA^2))
 CLH[gHtaumu_,gHtautau_,mH_]:=(gHtaumu*gHtautau)*\[Lambda]H[mH]/((2) (mH^2))
@@ -95,7 +95,7 @@ CLOneLOOP[ghtaumu_,ghtautau_,gAtaumu_,gAtautau_,gHtaumu_,gHtautau_,mh_,mH_,mA_]:
 CLh[ghtaumu,ghtautau,mh]+CLA[gAtaumu,gAtautau,mA]+CLH[gHtaumu,gHtautau,mH]
 (**************************************************)
 (**************************************************)
-(*WILSON COEFFICIENTS at TWO-LOOPS*)
+WILSON COEFFICIENTS at TWO-LOOPS; 
 CLTwoLpsh[ghtt_,ghtaumu_,mh_] := (Conjugate[ghtaumu] (-0.082*ghtt + 0.11))/mh^2;
 CLTwoLpsH[gHtt_,gHtaumu_,mH_] := (Conjugate[gHtaumu] (-0.082*gHtt + 0.11))/mH^2;
 CLTwoLpsA[gAtt_,gAtaumu_,mA_] := (Conjugate[gAtaumu] (-0.082*gAtt + 0.11))/mA^2;
@@ -106,7 +106,7 @@ CL[gHtt_,gHtaumu_,mH_,gAtt_,gAtaumu_,mA_,ghtt_,ghtaumu_,ghtautau_,mh_,gAtautau_,
 CLTwoLOOPS[gHtt,gHtaumu,mH,gAtt,gAtaumu,mA,ghtt,ghtaumu,mh]
 (**************************************************)
 (**************************************************)
-(*Branching ratio of tau into mu gamma*)
+Branching ratio of tau into mu gamma;
 BRtautomugamma[ghtaumu_,ghtautau_,gAtaumu_,gAtautau_,gHtaumu_,gHtautau_,ghtt_,gHtt_,gAtt_,mh_,mH_,mA_]:=(3 \[Alpha]em)*
 BRTAUtolnunu (2*Abs[CL[gHtt,gHtaumu,mH,gAtt,gAtaumu,mA,ghtt,ghtaumu,ghtautau,mh,gAtautau,gHtautau]]^2)/(4 \[Pi] (GF^2)) 
 (************************************************************************************************************************************************************************************************************************************************************************************************************************)

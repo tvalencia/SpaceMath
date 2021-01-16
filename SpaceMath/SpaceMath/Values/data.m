@@ -137,8 +137,9 @@ BRTAUtoEgamma::usage="Upper bound of the tau\[Rule] e gamma decay"
 BRTAUtoEEE::usage="Upper bound of the tau\[Rule] 3e decay"
 BRTAUtoMUMUMU::usage="Upper bound of the tau\[Rule] 3\[Mu] decay"
 BRHtoTAUMU::usage="Upper bound of the h\[Rule] tau mu decay"
-GF::usage="Fermi constant"
+(*GF::usage="Fermi constant"*)
 Ttau::usage="tau lifetime"
+Tmuon::usage"muon lifetime"
 TotWidh::usage="Total width of the Higgs boson"
 aMUInf::usage="lower limit of the discrepancy interval of the muon anomalous magnetic dipole moment"
 aMUSup::usage="upper limit of the discrepancy interval of the muon anomalous magnetic dipole moment"
@@ -256,7 +257,7 @@ SW=Sqrt[1-(CW^2)]; (*sine of Weinberg angle*)
 gw=ge/SW; (*Weak constant coupling (W)*)
 gz=gw/CW; (*Weak constant coupling (Z)*)
 ge=Sqrt[4 \[Pi] \[Alpha]em]; (*electric charge*)
-GF=1.16637^-5; (*Fermi constant*)
+GF=1.16637*10^-5; (*Fermi constant*)
 
 (*value of bounds*)
 (* Higgs data *)
@@ -469,6 +470,7 @@ BRHtoTAUMU=0.0025; (*Upper bound of the h\[Rule] tau mu decay*)
 BRHtoETAU=0.0061; (*Upper bound of the h\[Rule] e tau decay *)
 (* GF=1.1663787*(10^-5); (*Fermi constant*) *)
 Ttau=(2.906*10^-13) ((1/6.582)*10^25); (*tau lifetime*)
+Tmuon=(2.197*10^-6) ((1/6.582)*10^25); 
 TotWidh=0.0047; (*Total width of the Higgs boson*)
 aMUInf=1.32*10^-9; (*lower limit of the discrepancy interval of the muon anomalous magnetic dipole moment*)
 aMUSup=4.44*10^-9; (*upper limit of the discrepancy interval of the muon anomalous magnetic dipole moment*)
