@@ -21,12 +21,10 @@ StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule]  \
-This command evaluates \!\(\*SubscriptBox[\(K\), \(V\)]\) with V=W, \
-Z when there is dependence only on one parameter. The arguments ghtt, ghbb and ghVV are the htt, hbb, hVV \
-couplings. Here, h represents to SM-like Higgs boson while t and b are the top and bottom quarks. The label x \
-indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xlabel is used \
-for indicates the X axis label. X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC). \ 
+This command evaluates \!\(\*SubscriptBox[\(K\), \(V\)]\) (V=W, Z) when there is dependence only on one parameter. The argument ghVV is hVV coupling. 
+Here, h represents to SM-like Higgs boson while W is the W gauge boson. 
+The label x indicates the parameter to constrain, while xmin and xmax are the initial and final values defined by users and xlabel is used 
+for indicates the X axis label. X stands for a specific collider: X=LHC (Large Hadron Collider), X=HL (High Luminosity LHC), X=HE (High Energy LHC).  
 Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
 
 KGAMoneX::usage = "\!\(\*
@@ -107,7 +105,7 @@ StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of \!\(\*SubscriptBox[\(K\), \(V\)]\), with V= W, Z. The argument ghVV is the hVV \
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table of \!\(\*SubscriptBox[\(K\), \(V\)]\) (V= W, Z). The argument ghVV is the hVV \
 coupling. Here, h represents to SM-like Higgs boson while V=W, Z is a gauge boson. The label x \
 indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \

@@ -18,11 +18,7 @@ KZ2sigWXYZHL::usage = "KZ2sigWXYZ"
 kappaz1sigHL::usage = "kappaz1sig"
 KZ1sigWXYZHL::usage = "KZ1sigWXYZ"
 
-KZoneHL::usage = "KZone[ghzz_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\) when there is dependence only on one parameter. The argument ghzz is the hZZ \
-coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. The label x \
-indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xlabel is used \
-for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+KZoneHL::usage = "Type ?KVoneX for more details."
 
 TableKZoneHL::usage="TableKZone[ghzz_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\). The argument ghzz is the \
 hZZ coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. The label x \
@@ -30,12 +26,7 @@ indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-KZHL::usage="KZ[ghzz_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\), \
-when there is dependence on two or more parameters. The arguments ghzz is the hZZ \
-coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. Labels x and y \
-indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
-initial and final values defined by users. Argument xlabel (ylabel) is used \
-for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constrain, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
+KZHL::usage = "Type ?KVX for more details."
 
 TableKZHL::usage="TableKZ[ghzz_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\). The argument ghzz is the hZZ, \
 coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. Labels x and y \

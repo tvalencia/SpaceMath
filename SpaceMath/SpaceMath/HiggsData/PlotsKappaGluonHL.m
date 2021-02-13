@@ -12,11 +12,7 @@ KGlu2sigWXYZHL::usage = "KGlu2sigWXYZ"
 dataKGlu1sigHL::usage = "dataKGlu1sigHL"
 dataKGlu2sigHL::usage = "dataKGlu2sigHL"
 
-KGLUoneHL::usage = "KGluoneHL[ghtt_,ghbb_,x_,xmin_,xmax_,xlabel_][[i]]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\) when there is dependence only on one parameter. The argument ghWW is the hWW \
-coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
-indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xlabel is used \
-for indicates the X axis label. Finally, [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma])."
+KGLUoneHL::usage = "Type ?KGLUoneX for more details."
 
 TableKGLUoneHL::usage="TableKGluoneHL[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the \
 hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
@@ -24,12 +20,7 @@ indicates the parameter to constrain, while xmin and xmax are the \
 initial and final values defined by users and xstep is used \
 to indicates the steps from xmin to xmax. "
 
-KGluHL::usage="KGluHL[ghtt_,ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\), \
-when there is dependence on two or more parameters. The arguments ghWW is the hWW \
-coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
-indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
-initial and final values defined by users. Argument xlabel (ylabel) is used \
-for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constrain, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
+KGluHL::usage = "Type ?KGluX for more details."
 
 TableKGluHL::usage="TableKGluHL[ghtt_,ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the hWW, \
 coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. Labels x and y \
