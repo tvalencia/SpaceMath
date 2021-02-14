@@ -20,11 +20,7 @@ dataKb2sigHL::usage = "dataKb2sigHL"
 
 KBOToneHL::usage = "Type ?KBOToneX for more details."
 
-TableKBOToneHL::usage="TableKBOToneHL[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the \
-hbb coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. The label x \
-indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax. "
+TableKBOToneHL::usage = "Type ?TableKBOToneX for more details."
 
 KbHL::usage = "Type ?KbX for more details."
 

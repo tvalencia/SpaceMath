@@ -148,12 +148,12 @@ StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table with two columns: KTAUone-X. The output file will be saved as TableKTAUone_1sigma_X.txt and TableRTAUone_2sigma_X.txt
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table with two columns: KTAUoneX. The output file will be saved as TableKTAUone_1sigma_X.txt and TableKTAUone_2sigma_X.txt
 in $UserDocumentsDirectory. "
 
 
 
-TableKBOToneX::usage="TableKBOToneX[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table with two columns: KBOTone-x. The output file will be saved as TableKBOTone_1sigma_X.txt and TableKBOTone_2sigma_X.txt
+TableKBOToneX::usage="TableKBOToneX[ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table with two columns: KBOToneX. The output file will be saved as TableKBOTone_1sigma_X.txt and TableKBOTone_2sigma_X.txt
 in $UserDocumentsDirectory."
 
 
