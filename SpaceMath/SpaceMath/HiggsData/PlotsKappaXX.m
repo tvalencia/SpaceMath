@@ -133,8 +133,8 @@ StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] 
-This command generates a table with two columns: KVone-X. The output file will be saved as TableKVone_1sigma_X.txt and TableRVone_2sigma_X.txt
-in $UserDocumentsDirectory. Here V = W, Z."
+This command generates a table with two columns: KGAMoneX. The output file will be saved as TableKVone_1sigma_X.txt and TableRVone_2sigma_X.txt
+in $UserDocumentsDirectory."
 
 TableKTAUoneX::usage="\!\(\*
 StyleBox[\"TableKTAUoneX\",\nFontWeight->\"Bold\"]\)\!\(\*
