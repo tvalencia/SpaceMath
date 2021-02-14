@@ -19,11 +19,7 @@ KW1sigWXYZHL::usage = "KW1sigWXYZ"
 
 KWoneHL::usage = "Type ?KVoneX for more details."
 
-TableKWoneHL::usage="TableKWoneHL[ghWW_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(W\)]\). The argument ghWW is the \
-hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
-indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax. "
+TableKWoneHL::usage= "Type ?TableKVoneX for more details."
 
 KWHL::usage = "Type ?KVX for more details."
 
