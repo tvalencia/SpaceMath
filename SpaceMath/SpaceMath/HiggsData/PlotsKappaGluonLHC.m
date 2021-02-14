@@ -14,11 +14,7 @@ dataKGlu2sig::usage = "dataKGlu2sig"
 
 KGLUoneLHC::usage = "Type ?KGLUoneX for more details."
 
-TableKGLUoneLHC::usage="TableKGluoneLHC[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(gluon\)]\). The argument ghWW is the \
-hWW coupling. Here, h represents to SM-like Higgs boson while W is the W gauge boson. The label x \
-indicates the parameter to constrain, while xmin and xmax are the \
-initial and final values defined by users and xstep is used \
-to indicates the steps from xmin to xmax. "
+TableKGLUoneLHC::usage = "Type ?TableKGLUoneX for more details."
 
 KGluLHC::usage = "Type ?KGluX for more details."
 

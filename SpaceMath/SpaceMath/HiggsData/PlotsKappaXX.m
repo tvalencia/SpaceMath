@@ -158,7 +158,7 @@ in $UserDocumentsDirectory."
 
 
 
-TableKGLUoneX::usage="TableKGluoneX[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table with two columns: KGLUone-x. The output file will be saved as TableKGLUone_1sigma_X.txt and TableKGLUone_2sigma_X.txt
+TableKGLUoneX::usage="TableKGluoneX[ghtt_,ghbb_,x_,xmin_,xmax_,xstep_] \[Rule] This command generates a table with two columns: KGLUoneX. The output file will be saved as TableKGLUone_1sigma_X.txt and TableKGLUone_2sigma_X.txt
 in $UserDocumentsDirectory."
 
 (*********************************************************Begin KappaX************************************************************************************)
