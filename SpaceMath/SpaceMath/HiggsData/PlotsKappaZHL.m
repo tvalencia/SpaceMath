@@ -24,11 +24,7 @@ TableKZoneHL::usage = "Type ?TableKVoneX for more details."
 
 KZHL::usage = "Type ?KVX for more details."
 
-TableKZHL::usage="TableKZ[ghzz_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(Z\)]\). The argument ghzz is the hZZ, \
-coupling. Here, h represents to SM-like Higgs boson while Z is the Z gauge boson. Labels x and y \
-indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
-initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax)."
+TableKZHL::usage = "Type ?TableKVX for more details."
 (******************************************************************************************************************************************************)
 (*********************************************************End OF Kappa-Z*******************************************************************************)
 (******************************************************************************************************************************************************)
