@@ -23,20 +23,7 @@ dataKtau2sig::usage = "dataKtau2sig"
 
 KTAUoneLHC::usage = "Type ?KTAUoneX for more details."
 
-TableKTAUoneLHC::usage="\!\(\*
-StyleBox[\"TableKTAUoneLHC\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ghtautau_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"x_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xmin_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xmax_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"xstep_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\[Rule] This command generates a table with two columns: KTAUone-X. The output file will be saved as TableKTAUone_1sigma_X.txt and TableRTAUone_2sigma_X.txt
-in $UserDocumentsDirectory. "
+TableKTAUoneLHC::usage = "Type ?TableKTAUoneX for more details."
 
 KtauLHC::usage = "Type ?KtauX for more details."
 
