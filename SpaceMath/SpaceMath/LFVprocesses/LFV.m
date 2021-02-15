@@ -34,13 +34,13 @@ CLTwoLOOPS::usage="CLTwoLOOPS"
 
 BRtautomugamma::usage="BRtautomugamma"
 
-Sh::usage="See later"
-SH::usage="See later"
-SA::usage="See later"
+Sh::usage="Sh"
+SH::usage="SH"
+SA::usage="SA"
 
-Sh1::usage="See later"
-SH1::usage="See later"
-SA1::usage="See later"
+Sh1::usage="Sh1"
+SH1::usage="SH1"
+SA1::usage="SA1"
 
 BRtauto3muons::usage="BRtauto3muons"
 
