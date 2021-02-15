@@ -45,7 +45,7 @@ FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
+AspectRatio->1,Filling->{3->{2}},FillingStyle->{RGBColor["#6A6F6A"],Opacity[0.1]}
 ]
 
 (*kappa \[Gamma] to 2\[Sigma] in the case in which there is dependence in one parameter*)
@@ -58,7 +58,7 @@ FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->1,Filling->{3->{2}},FillingStyle->{Blue,Opacity[0.1]}
+AspectRatio->1,Filling->{3->{2}},FillingStyle->{RGBColor["#6A6F6A"],Opacity[0.1]}
 ]
 
 KGAMoneHE[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:={KGam1sigXHE[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel],KGam2sigXHE[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel]}
