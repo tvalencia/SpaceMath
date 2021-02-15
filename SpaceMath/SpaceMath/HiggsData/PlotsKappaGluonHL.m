@@ -3,12 +3,12 @@
 (***************************************************************************************************************************************************)
 (**********************************************************Begin kappa gluon HL************************************************************************)
 (***************************************************************************************************************************************************)
-KGlu1sigXHL::usage = "KGlu1sigX"
-KGlu2sigXHL::usage = "KGlu2sigX"
-KappaGluGlu1sigHL::usage = "KappaGluGlu1sig"
-KGlu1sigWXYZHL::usage = "KGlu1sigWXYZ"
-KappaGluGlu2sigHL::usage = "KappaGluGlu2sig"
-KGlu2sigWXYZHL::usage = "KGlu2sigWXYZ"
+KGlu1sigXHL::usage = "KGlu1sigXHL"
+KGlu2sigXHL::usage = "KGlu2sigXHL"
+KappaGluGlu1sigHL::usage = "KappaGluGlu1sigHL"
+KGlu1sigWXYZHL::usage = "KGlu1sigWXYZHL"
+KappaGluGlu2sigHL::usage = "KappaGluGlu2sigHL"
+KGlu2sigWXYZHL::usage = "KGlu2sigWXYZHL"
 dataKGlu1sigHL::usage = "dataKGlu1sigHL"
 dataKGlu2sigHL::usage = "dataKGlu2sigHL"
 

@@ -5,16 +5,16 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF Kappa-Bottom************************************************************************)
 (******************************************************************************************************************************************************)
-Kb1sigXHL::usage = "Kb1sigX"
-Kb2sigXHL::usage = "Kb2sigX"
-dataKbOTone1sigHL::usage = "dataKbOTone1sig"
-dataKbOTone2sigHL::usage = "dataKbOTone2sig"
-TableKbOToneHL::usage = "TableKbOTone"
-Kb2sigHL::usage = "Kb2sig"
-Kb2sigWXYZHL::usage = "Kb2sigWXYZ"
-Kb1sigHL::usage = "Kb1sig"
-Kb1sigWXYZHL::usage = "Kb1sigWXYZ"
-KbHL::usage = "Kb"
+Kb1sigXHL::usage = "Kb1sigXHL"
+Kb2sigXHL::usage = "Kb2sigXHL"
+dataKbOTone1sigHL::usage = "dataKbOTone1sigHL"
+dataKbOTone2sigHL::usage = "dataKbOTone2sigHL"
+TableKbOToneHL::usage = "TableKbOToneHL"
+Kb2sigHL::usage = "Kb2sigHL"
+Kb2sigWXYZHL::usage = "Kb2sigWXYZHL"
+Kb1sigHL::usage = "Kb1sigHL"
+Kb1sigWXYZHL::usage = "Kb1sigWXYZHL"
+KbHL::usage = "KbHL"
 dataKb1sigHL::usage = "dataKb1sigHL"
 dataKb2sigHL::usage = "dataKb2sigHL"
 

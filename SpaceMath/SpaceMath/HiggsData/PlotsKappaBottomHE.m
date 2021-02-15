@@ -5,18 +5,18 @@
 (******************************************************************************************************************************************************)
 (*********************************************************Begin OF Kappa-Bottom************************************************************************)
 (******************************************************************************************************************************************************)
-Kb1sigXHE::usage = "Kb1sigX"
-Kb2sigXHE::usage = "Kb2sigX"
-dataKbOTone1sigHE::usage = "dataKbOTone1sig"
-dataKbOTone2sigHE::usage = "dataKbOTone2sig"
-TableKbOToneHE::usage = "TableKbOTone"
-Kb2sigHE::usage = "Kb2sig"
-Kb2sigWXYZHE::usage = "Kb2sigWXYZ"
-Kb1sigHE::usage = "Kb1sig"
-Kb1sigWXYZHE::usage = "Kb1sigWXYZ"
-KbHE::usage = "Kb"
-dataKb1sigHE::usage = "dataKb1sig"
-dataKb2sigHE::usage = "dataKb2sig"
+Kb1sigXHE::usage = "Kb1sigXHE"
+Kb2sigXHE::usage = "Kb2sigXHE"
+dataKbOTone1sigHE::usage = "dataKbOTone1sigHE"
+dataKbOTone2sigHE::usage = "dataKbOTone2sigHE"
+TableKbOToneHE::usage = "TableKbOToneHE"
+Kb2sigHE::usage = "Kb2sigHE"
+Kb2sigWXYZHE::usage = "Kb2sigWXYZHE"
+Kb1sigHE::usage = "Kb1sigHE"
+Kb1sigWXYZHE::usage = "Kb1sigWXYZHE"
+KbHE::usage = "KbHE"
+dataKb1sigHE::usage = "dataKb1sigHE"
+dataKb2sigHE::usage = "dataKb2sigHE"
 
 KBOToneHE::usage = "Type ?KBOToneX for more details."
 
