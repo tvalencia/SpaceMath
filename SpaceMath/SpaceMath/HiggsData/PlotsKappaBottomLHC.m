@@ -22,11 +22,8 @@ TableKBOToneLHC::usage = "Type ?TableKBOToneX for more details."
 
 KbLHC::usage = "Type ?KbX for more details."
 
-TableKbLHC::usage="TableKbLHC[ghbb_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\). The argument ghbb is the hbb, \
-coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
-indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
-initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax)."
+TableKbLHC::usage = "Type ?TableKbX for more details."
+
 (******************************************************************************************************************************************************)
 (*********************************************************End OF Kappa-Bottom************************************************************************************)
 (******************************************************************************************************************************************************)

@@ -20,11 +20,8 @@ TableKGAMoneLHC::usage = "Type ?TableKGAMoneX for more details."
 
 KGamLHC::usage = "Type ?KGamX for more details."
 
-TableKGamLHC::usage="TableKGamLHC[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xstep_,y_,ymin_,ymax_,ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(K\), \(\[Gamma]\)]\). The arguments ghtt, ghbb, ghWW and gCH are the htt, \
-hbb, hWW and h-\!\(\*SuperscriptBox[\(H\), \(-\)]\)\!\(\*SuperscriptBox[\(H\), \(+\)]\) couplings. Here, h represents to SM-like Higgs boson while t and b the top and bottom quarks. Labels x and y \
-indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
-initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax)."
+TableKGamLHC::usage = "Type ?TableKGamX for more details."
+
 (******************************************************************************************************************************************************)
 (*********************************************************END OF KGamma************************************************************************************)
 (******************************************************************************************************************************************************)

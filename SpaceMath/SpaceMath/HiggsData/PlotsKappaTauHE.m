@@ -27,11 +27,8 @@ TableKTAUoneHE::usage = "Type ?TableKTAUoneX for more details."
 
 KtauHE::usage = "Type ?KtauX for more details."
 
-TableKtauHE::usage="TableKtauHE[ghtautau_, x_, xmin_, xmax_, xstep_, y_, ymin_, ymax_, ystep_]\[Rule] This command generates a table of the signal strength \!\(\*SubscriptBox[\(R\), \(\[Tau]\)]\). The arguments ghtt, ghbb and ghtautau are the htt, \
-hbb and htautau couplings. Here, h represents to SM-like Higgs boson while t, b and tau are the top and bottom quarks and the tau-lepton. Labels x and y \
-indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
-initial and final values defined by users and xstep (ystep) is used \
-to indicates the steps from xmin to xmax (ymin to ymax)."
+TableKtauHE::usage = "Type ?TableKtauX for more details."
+
 (******************************************************************************************************************************************************)
 (*********************************************************End OF KTau**********************************************************************************)
 (******************************************************************************************************************************************************)
