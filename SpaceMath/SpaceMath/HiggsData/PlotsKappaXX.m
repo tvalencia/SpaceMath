@@ -4,7 +4,7 @@
 (*********************************************************Begin KappaX*********************************************************************************)
 (******************************************************************************************************************************************************)
 KVoneX::usage = "\!\(\*
-StyleBox[\"KVone\",\nFontWeight->\"Bold\"]\)\!\(\*
+StyleBox[\"KVoneX\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"ghVV_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -186,7 +186,7 @@ indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the 
 initial and final values defined by users. Argument xlabel (ylabel) is used \
 for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) represent an additional parameter to constrain, namely: initial value, final value and the steps from xformin (yformin) to xformax (yformax), respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that specifies how many initial sample points to use."
 
-KbX::usage="KbLHC[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\), \
+KbX::usage="KbX[ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]\[Rule] This command evaluates \!\(\*SubscriptBox[\(\[Kappa]\), \(b\)]\), \
 when there is dependence on two or more parameters. The arguments ghbb is the hbb \
 coupling. Here, h represents to SM-like Higgs boson while b is the bottom quark. Labels x and y \
 indicate the parameters to constrain, while xmin (ymin) and xmax (ymax) are the \
