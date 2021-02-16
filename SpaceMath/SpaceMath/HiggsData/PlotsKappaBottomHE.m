@@ -118,7 +118,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}}, PlotPoints->PP]
+     Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#00761B"],Opacity[0.75]}, PlotPoints->PP]
 
 Kb2sigWXYZHE[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
@@ -143,7 +143,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
  GridLines -> Automatic, GridLinesStyle -> 
  Directive[Black, 
- Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[1]}},PlotPoints->PP]
+ Dashed],BoundaryStyle -> {1 -> Directive[Red, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#00761B"],Opacity[0.75]},PlotPoints->PP]
 
 Kb1sigWXYZHE[
 ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
