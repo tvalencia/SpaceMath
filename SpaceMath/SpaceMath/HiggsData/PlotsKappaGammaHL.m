@@ -45,7 +45,7 @@ FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->1,Filling->{3->{2}},FillingStyle->{RGBColor["#FA8072"],Opacity[0.1]}
+AspectRatio->1,Filling->{3->{2}},FillingStyle->{RGBColor["#FA8072"],Opacity[0.75]}
 ]
 
 (*kappa \[Gamma] to 2\[Sigma] in the case in which there is dependence in one parameter*)
@@ -58,7 +58,7 @@ FrameStyle->Thickness[0.003],(*AxesLabel->{Style["x",Large,Bold,Bold],
 Style["y",Large,Bold,Bold]},*)LabelStyle->30,PlotStyle->{Directive[AbsoluteThickness[3.3],
 Red],Directive[AbsoluteThickness[3.3],Dashing[{0.09,0.04}],Purple],Directive[AbsoluteThickness[3.3],
 Dashing[{0.03,0.03,0.003}],Purple]},GridLinesStyle->Directive[Black,Dashed],GridLines->Automatic,
-AspectRatio->1,Filling->{3->{2}},FillingStyle->{RGBColor["#FA8072"],Opacity[0.1]}
+AspectRatio->1,Filling->{3->{2}},FillingStyle->{RGBColor["#FA8072"],Opacity[0.75]}
 ]
 
 KGAMoneHL[ghtt_,ghbb_,ghWW_,gCH_,mCH_,x_,xmin_,xmax_,xlabel_]:={KGam1sigXHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel],KGam2sigXHL[ghtt,ghbb,ghWW,gCH,mCH,x,xmin,xmax,xlabel]}
@@ -80,7 +80,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]},PlotStyle -> {RGBColor["#FA8072"],Opacity[0.1]}, AspectRatio -> 1]
+     Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]},PlotStyle -> {RGBColor["#FA8072"],Opacity[0.75]}, AspectRatio -> 1]
 
 KGam1sigWXYZHL[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
@@ -106,7 +106,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#FA8072"],Opacity[0.1]}, AspectRatio -> 1,PlotPoints->PP]
+     Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#FA8072"],Opacity[0.75]}, AspectRatio -> 1,PlotPoints->PP]
 
 KGam2sigWXYZHL[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
