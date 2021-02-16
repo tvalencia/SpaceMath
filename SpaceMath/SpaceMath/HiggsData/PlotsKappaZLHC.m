@@ -158,7 +158,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Blue, Dashed, Thickness[0.003]]}, PlotStyle -> {{Blue, Opacity[0.3]}}, AspectRatio->1]
+     Dashed], BoundaryStyle -> {1 -> Directive[Blue, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#FE4D00"],Opacity[0.75]}, AspectRatio->1]
 
 KZ2sigWXYZ[
 ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
@@ -184,7 +184,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Blue, Dashed, Thickness[0.003]]}, PlotStyle -> {{Blue, Opacity[0.3]}}, AspectRatio->1]
+     Dashed], BoundaryStyle -> {1 -> Directive[Blue, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#FE4D00"],Opacity[0.75]}, AspectRatio->1]
 
 KZ1sigWXYZ[
 ghZZ_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
