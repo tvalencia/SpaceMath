@@ -94,7 +94,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.003]]}, PlotStyle -> {{Purple, Opacity[0.3]}}, AspectRatio->1]
+     Dashed], BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#BACE29"],Opacity[0.75]}, AspectRatio->1]
 
 KGlu1sigWXYZ[
 ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
@@ -119,7 +119,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.003]]}, PlotStyle -> {{Purple, Opacity[0.3]}}, AspectRatio->1]
+     Dashed], BoundaryStyle -> {1 -> Directive[Purple, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#BACE29"],Opacity[0.75]}, AspectRatio->1]
 
 KGlu2sigWXYZ[
 ghtt_, ghbb_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=

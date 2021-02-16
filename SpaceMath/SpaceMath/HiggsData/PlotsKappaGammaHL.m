@@ -80,8 +80,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, 
-PlotStyle -> {{Orange, Opacity[0.3]}}, AspectRatio -> 1]
+     Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]},PlotStyle -> {RGBColor["#FA8072"],Opacity[0.1]}, AspectRatio -> 1]
 
 KGam1sigWXYZHL[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
@@ -107,7 +106,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 1000,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, PlotStyle -> {{Orange, Opacity[0.3]}}, AspectRatio -> 1,PlotPoints->PP]
+     Dashed], BoundaryStyle -> {1 -> Directive[Orange, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#FA8072"],Opacity[0.1]}, AspectRatio -> 1,PlotPoints->PP]
 
 KGam2sigWXYZHL[
 ghtt_, ghbb_,ghWW_,gCH_,mCH_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=

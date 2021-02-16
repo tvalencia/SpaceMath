@@ -166,7 +166,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Yellow, Dashed, Thickness[0.003]]}, PlotStyle -> {{Yellow, Opacity[0.8]}}, AspectRatio->1]
+     Dashed], BoundaryStyle -> {1 -> Directive[Yellow, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#411B6B"],Opacity[0.5]}, AspectRatio->1]
 
 Ktau2sigWXYZHL[
 ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
@@ -192,7 +192,7 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Large
  FrameStyle ->  Thickness[0.004], LabelStyle -> 35, ImageSize -> 800,
   GridLines -> Automatic, GridLinesStyle -> 
    Directive[Black, 
-     Dashed], BoundaryStyle -> {1 -> Directive[Yellow, Dashed, Thickness[0.003]]}, PlotStyle -> {{Yellow, Opacity[0.3]}}, AspectRatio->1]
+     Dashed], BoundaryStyle -> {1 -> Directive[Yellow, Dashed, Thickness[0.003]]}, PlotStyle -> {RGBColor["#411B6B"],Opacity[0.5]}, AspectRatio->1]
 
 Ktau1sigWXYZHL[
 ghtautau_,x_,y_,xmin_,xmax_,ymin_,ymax_,xlabel_,ylabel_,xfor_,yfor_,xformin_,xformax_,xforstep_,yformin_,yformax_,yforstep_,PP_]:=
