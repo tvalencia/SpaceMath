@@ -105,9 +105,9 @@ StyleBox[\"SpaceMath\",\nFontWeight->\"Bold\",\nFontSlant->\"Italic\"]\)", Mediu
    FrameStyle ->  Thickness[0.004], LabelStyle -> 35, 
   ImageSize -> 800,
     GridLines -> Automatic, 
-  GridLinesStyle ->    Directive[Black, Dashed],
+  GridLinesStyle ->    Directive[Black, Dashed]
   (* PlotMarkers->{{\[FilledUpTriangle],3}}, *)
-  PlotRange -> Full(*,
+  (*,PlotRange -> Full,
 PlotLegends -> 
  Placed[{Style["\!\(\*SubscriptBox[\(R\), \(Z\)]\)", Larger, 
     Bold]}, {1, 0.6}]*),AspectRatio->1
