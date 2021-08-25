@@ -4,7 +4,7 @@
 
 FUpperLimit::usage ="F[\[Mu]_, \[Sigma]_, CL_, x1_, x2_]"
 UpperLimit::usage = "UpperLimit[\[Mu]_, \[Sigma]_, CL_, x1_, x2_]-> This command evaluates the upper bound for a given mean (\[Mu]), standard deviation (\[Sigma]), and Confidence Level (CL). 
-\[Mu] indicates the mean of the population, \[Sigma] is the standard deviation of the population, CL is the Confidence Level (in percent), x1 for an upper limit is specifically '-Infinity' and finally x2 is the same as mu."
+\[Mu] indicates the mean of the population, \[Sigma] is the standard deviation of the population, CL is the Confidence Level (in percent), x1 for an upper limit is specifically '-Infinity' and finally x2 is the same as \[Mu]."
 
 (*
 UpperLimit[\[Mu]_, \[Sigma]_, CL_, x1_, x2_]-> This command evaluates the upper bound for a given mean (\[Mu]), standard deviation (\[Sigma]), and Confidence Level (CL)
