@@ -94,6 +94,7 @@ listLFVprocesses = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"LFVprocess
 listObliquePar = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"ObliquePar"}]];
 listValues = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"Values"}]];
 listMisc = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"Miscellaneous"}]];
+listLimits = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"Limits"}]];
 
 AppendTo[$ContextPath, "SpaceMath`Package`"];
 
@@ -102,12 +103,15 @@ SMDeclareHeader/@listLFVprocesses;
 SMDeclareHeader/@listObliquePar;
 SMDeclareHeader/@listValues;
 SMDeclareHeader/@listMisc;
+SMDeclareHeader/@listLimits;
+
 
 Get/@listHiggsData;
 Get/@listLFVprocesses;
 Get/@listObliquePar;
 Get/@listValues;
 Get/@listMisc;
+Get/@listLimits;
 
 
 EndPackage[];
