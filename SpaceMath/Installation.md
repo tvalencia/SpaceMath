@@ -13,4 +13,3 @@ Download (https://github.com/spacemathproject/SpaceMath/archive/refs/heads/devel
 Unzip the folder inside $UserBaseDirectory/Applications
 
 This should install SpaceMath on your system.
-test
