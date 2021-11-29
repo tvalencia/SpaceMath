@@ -143,7 +143,7 @@ If[Global`$SpaceMathStartupMessages =!= False,
       {
       Style[
       "Authors:\n  \[CirclePlus] M. A. Arroyo-Ure\[NTilde]a\n Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico\n \
- \[CircleTimes] T. A. Valencia-P\[EAcute]rez\n Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\n Contact us:	\
+ \[CircleTimes] T. A. Valencia-P\[EAcute]rez\n Instituto de F\[IAcute]sica, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico\n Contact us:	\
 spacemathapp@gmail.com", "Text", FontSize -> 16, FontColor -> Black], SpanFromLeft}}, Background -> Lighter[White, 0.5], Frame -> True]]]
 
 BeginPackage["SpaceMath`"];
