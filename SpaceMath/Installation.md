@@ -10,6 +10,6 @@ Manual installation
 
 Download (https://github.com/tvalencia/SpaceMath/archive/refs/heads/development.zip)
 
-Unzip the folder inside $UserBaseDirectory/Applications
+Unzip the zip file and copy the SpaceMath directory from SpaceMath-stable/SpaceMath/ to the Applications directory inside $UserBaseDirectory.
 
 This should install SpaceMath on your system.
